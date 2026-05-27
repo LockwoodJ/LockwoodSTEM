@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CNC Mill | FabLab Certification Hub</title>
+<title>FabLab Level 4 Certification | Lockwood STEM</title>
 <style id="lockwood-critical-fallback">
 /* Critical Lockwood STEM fallback + Google Sites embed support.
    This keeps pages styled even if an external CSS file is slow or missing. */
@@ -385,8 +385,11 @@ footer p,
 </style>
 <link href="../assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="../assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
+
+<link href="../assets/certification-test.css" rel="stylesheet"/>
+<script defer src="../assets/certification-test.js"></script>
 </head>
-<body class="ls-has-standard-chrome"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<body class="ls-has-standard-chrome cert-test-page"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
 <header class="ls-global-header" role="banner">
 <nav aria-label="Main navigation" class="ls-global-nav">
 <a aria-label="Lockwood STEM Home" class="ls-global-brand" href="../index.html">
@@ -409,27 +412,279 @@ footer p,
 </nav>
 </header>
 <div id="main-content"></div>
-<section class="hero"><div class="hero-inner"><div class="breadcrumbs"><a href="level-3.html">Level 3</a> / CNC</div><div class="eyebrow">Advanced Equipment</div><h1>CNC Certification: DMC2 Mini, FoxAlien, and Genmitsu</h1><p>CNC machines remove material using a spinning cutting tool. Safe CNC work depends on secure workholding, correct zeroing, approved toolpaths, and emergency stop readiness.</p></div></section>
-<section><div class="container">
-<h2>Equipment You Will Use</h2><div class="tool-gallery"><div class="tool-card">
-<img alt="DMC2 Mini CNC Mill" class="real-tool-img" src="https://shariffdmc.com/wp-content/uploads/2024/08/DSC00161-1024x683.jpg"/>
-<h3>DMC2 Mini CNC Mill</h3>
-<p>Desktop CNC mill used for precision subtractive manufacturing workflows.</p>
-</div><div class="tool-card">
-<img alt="FoxAlien CNC" class="real-tool-img" src="https://cdn.shopify.com/s/files/1/0366/4147/2649/files/1_de0ca1c9-8377-4d61-98fe-ff8d028fcdea_1024x1024.jpg?v=1724753864"/>
-<h3>FoxAlien CNC</h3>
-<p>CNC router platform used for routing, carving, and toolpath practice.</p>
-</div><div class="tool-card">
-<img alt="Genmitsu CNC" class="real-tool-img" src="https://www.sainsmart.com/cdn/shop/files/4040-PRO20261.webp?v=1768806382&amp;width=416"/>
-<h3>Genmitsu CNC</h3>
-<p>Desktop CNC platform used for controlled routing and milling activities.</p>
-</div></div>
-<div class="grid">
-<div class="card span-7"><h2>What You Need to Learn</h2><div class="lesson-block"><h3>CNC setup is the project.</h3><p>Most CNC problems happen before cutting starts: loose stock, wrong zero, wrong bit, bad toolpath, or clamps in the toolpath. Certification means you can slow down and verify the setup.</p></div><ul class="checklist"><li>Secure stock with approved workholding.</li><li>Select the correct tool and toolpath.</li><li>Set work zero accurately.</li><li>Simulate or preview before cutting.</li><li>Stay ready to pause or stop the machine.</li></ul></div>
-<div class="card span-5"><h2>Chip Load Simulator</h2><div class="sim"><div class="controls"><label>Feed Rate<input id="feedRate" max="80" min="5" oninput="updateCNCSim()" type="range" value="25"/></label><label>RPM<input id="rpm" max="24000" min="5000" oninput="updateCNCSim()" type="range" value="12000"/></label><label>Flutes<select id="flutes" onchange="updateCNCSim()"><option>1</option><option selected="">2</option><option>3</option><option>4</option></select></label></div><div class="output" id="cncOutput"></div></div></div>
-<div class="card span-12"><h2>Student Procedure</h2><ol class="procedure"><li>Check the design, stock size, material, and cutting tool.</li><li>Secure the workpiece using the approved workholding method.</li><li>Set zero and confirm safe clearance above clamps and fixtures.</li><li>Preview the toolpath and get approval before the first cut.</li><li>Watch the first motion and first pass carefully.</li><li>Stop for chatter, burning, loose stock, bit deflection, or unexpected motion.</li></ol></div>
-<div class="card span-12"><h2>Knowledge Check</h2><div class="quiz" id="quiz-cnc"><div class="quiz-question" data-answer="b"><p>What must be verified before running a CNC job?</p><label><input name="quiz-cnc1" type="radio" value="a"/> Only the file name</label><label><input name="quiz-cnc1" type="radio" value="b"/> Tool, zero, stock, workholding, and toolpath</label><label><input name="quiz-cnc1" type="radio" value="c"/> Only the material color</label></div><div class="quiz-question" data-answer="c"><p>What is unsafe during CNC operation?</p><label><input name="quiz-cnc2" type="radio" value="a"/> Watching the first pass</label><label><input name="quiz-cnc2" type="radio" value="b"/> Knowing the emergency stop location</label><label><input name="quiz-cnc2" type="radio" value="c"/> Leaving the machine unattended</label></div><div class="quiz-question" data-answer="a"><p>Why is workholding important?</p><label><input name="quiz-cnc3" type="radio" value="a"/> Loose material can shift and create a dangerous failure</label><label><input name="quiz-cnc3" type="radio" value="b"/> It makes the machine quieter only</label><label><input name="quiz-cnc3" type="radio" value="c"/> It replaces the need for a toolpath preview</label></div><button onclick="gradeQuiz('quiz-cnc')">Check Answers</button><div class="quiz-result"></div></div></div>
-</div></div></section>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Level 4 Certification Test</div><h1>Leadership and Lab Assistant Knowledge Test</h1><p>Complete this test after reviewing Level 4 leadership expectations. Score 80% or higher to generate your Level 4 certificate of completion.</p><div class="hero-actions"><a class="btn secondary" href="level-4.html">Review Level 4 Training</a><a class="btn secondary" href="index.html">Certification Home</a></div></div></section>
+<section class="cert-test-page" data-level="4" data-level-title="Level 4: Leadership / Lab Assistant" data-test-title="FabLab Level 4 Certification">
+<div class="test-shell test-layout">
+<div class="test-card">
+<h2>Student Information</h2>
+<p>Enter your name exactly as you want it to appear on the certificate. A passing score is 80% or higher.</p>
+<div class="student-info-grid">
+<div class="field"><label for="studentName">Student Name</label><input id="studentName" type="text" autocomplete="name" placeholder="First and last name"></div>
+<div class="field"><label for="studentPeriod">Class Period / Course</label><input id="studentPeriod" type="text" placeholder="Example: IED Period 2"></div>
+</div>
+<div class="progress-note"><p><strong>Certificate rule:</strong> When you score 80% or higher, a certificate of completion will appear at the bottom of this page. Print or save it as a PDF and submit it where your instructor requests.</p></div>
+</div>
+<div class="test-card">
+<h2>FabLab Level 4 Certification</h2>
+<p>Choose the best answer for each question.</p>
+<form id="certTestForm">
+<div class="question" data-answer="a">
+<h3>1. What is the first responsibility of a Level 4 lab assistant?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q1" value="a"> <span><strong>A.</strong> Safety and responsible behavior</span></label>
+<label class="answer"><input type="radio" name="q1" value="b"> <span><strong>B.</strong> Finishing other students projects</span></label>
+<label class="answer"><input type="radio" name="q1" value="c"> <span><strong>C.</strong> Running every machine</span></label>
+<label class="answer"><input type="radio" name="q1" value="d"> <span><strong>D.</strong> Giving final permission without the instructor</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>2. If a peer bypasses a safety rule, what should a lab assistant do?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q2" value="a"> <span><strong>A.</strong> Calmly stop the situation and notify the instructor</span></label>
+<label class="answer"><input type="radio" name="q2" value="b"> <span><strong>B.</strong> Ignore it if they are almost done</span></label>
+<label class="answer"><input type="radio" name="q2" value="c"> <span><strong>C.</strong> Make a joke about it</span></label>
+<label class="answer"><input type="radio" name="q2" value="d"> <span><strong>D.</strong> Fix the machine afterward only</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>3. What is the best way to help a classmate with a CAD file?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q3" value="a"> <span><strong>A.</strong> Ask guiding questions and help them check requirements</span></label>
+<label class="answer"><input type="radio" name="q3" value="b"> <span><strong>B.</strong> Take over and complete the file for them</span></label>
+<label class="answer"><input type="radio" name="q3" value="c"> <span><strong>C.</strong> Approve it without looking</span></label>
+<label class="answer"><input type="radio" name="q3" value="d"> <span><strong>D.</strong> Delete their sketch</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>4. What should a lab assistant do with damaged tools or missing supplies?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q4" value="a"> <span><strong>A.</strong> Report them and help document/organize as directed</span></label>
+<label class="answer"><input type="radio" name="q4" value="b"> <span><strong>B.</strong> Hide them</span></label>
+<label class="answer"><input type="radio" name="q4" value="c"> <span><strong>C.</strong> Use them anyway</span></label>
+<label class="answer"><input type="radio" name="q4" value="d"> <span><strong>D.</strong> Blame the next class</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>5. Which behavior best models leadership?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q5" value="a"> <span><strong>A.</strong> Following the same rules you expect others to follow</span></label>
+<label class="answer"><input type="radio" name="q5" value="b"> <span><strong>B.</strong> Skipping cleanup because you are advanced</span></label>
+<label class="answer"><input type="radio" name="q5" value="c"> <span><strong>C.</strong> Using tools to impress friends</span></label>
+<label class="answer"><input type="radio" name="q5" value="d"> <span><strong>D.</strong> Correcting people loudly</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>6. What should a lab assistant do when they are unsure?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q6" value="a"> <span><strong>A.</strong> Ask the instructor instead of guessing</span></label>
+<label class="answer"><input type="radio" name="q6" value="b"> <span><strong>B.</strong> Make a quick decision anyway</span></label>
+<label class="answer"><input type="radio" name="q6" value="c"> <span><strong>C.</strong> Let students vote</span></label>
+<label class="answer"><input type="radio" name="q6" value="d"> <span><strong>D.</strong> Ignore the issue</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>7. Who gives final approval for machine use?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q7" value="a"> <span><strong>A.</strong> The instructor</span></label>
+<label class="answer"><input type="radio" name="q7" value="b"> <span><strong>B.</strong> Any Level 4 student</span></label>
+<label class="answer"><input type="radio" name="q7" value="c"> <span><strong>C.</strong> The student with the best project</span></label>
+<label class="answer"><input type="radio" name="q7" value="d"> <span><strong>D.</strong> The person who submitted first</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>8. What is appropriate peer support?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q8" value="a"> <span><strong>A.</strong> Helping classmates understand the process without doing the work for them</span></label>
+<label class="answer"><input type="radio" name="q8" value="b"> <span><strong>B.</strong> Completing classmates assignments</span></label>
+<label class="answer"><input type="radio" name="q8" value="c"> <span><strong>C.</strong> Changing grades</span></label>
+<label class="answer"><input type="radio" name="q8" value="d"> <span><strong>D.</strong> Approving unsafe shortcuts</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>9. What should happen if a student wants to use a tool they are not certified on?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q9" value="a"> <span><strong>A.</strong> Redirect them to training and instructor approval</span></label>
+<label class="answer"><input type="radio" name="q9" value="b"> <span><strong>B.</strong> Let them try once</span></label>
+<label class="answer"><input type="radio" name="q9" value="c"> <span><strong>C.</strong> Have another student supervise privately</span></label>
+<label class="answer"><input type="radio" name="q9" value="d"> <span><strong>D.</strong> Tell them certification does not matter</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>10. Why should Level 4 students avoid taking over others projects?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q10" value="a"> <span><strong>A.</strong> Students need to learn and own their design decisions</span></label>
+<label class="answer"><input type="radio" name="q10" value="b"> <span><strong>B.</strong> It takes too little time</span></label>
+<label class="answer"><input type="radio" name="q10" value="c"> <span><strong>C.</strong> It makes cleanup easier</span></label>
+<label class="answer"><input type="radio" name="q10" value="d"> <span><strong>D.</strong> It improves every grade</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>11. What is a good way to communicate a safety reminder?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q11" value="a"> <span><strong>A.</strong> Calm, specific, respectful language</span></label>
+<label class="answer"><input type="radio" name="q11" value="b"> <span><strong>B.</strong> Sarcasm</span></label>
+<label class="answer"><input type="radio" name="q11" value="c"> <span><strong>C.</strong> Yelling across the room</span></label>
+<label class="answer"><input type="radio" name="q11" value="d"> <span><strong>D.</strong> Ignoring until later</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>12. What should a lab assistant do during cleanup?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q12" value="a"> <span><strong>A.</strong> Model cleanup, help reset stations, and ensure tools return to correct locations</span></label>
+<label class="answer"><input type="radio" name="q12" value="b"> <span><strong>B.</strong> Leave early</span></label>
+<label class="answer"><input type="radio" name="q12" value="c"> <span><strong>C.</strong> Only clean their own project</span></label>
+<label class="answer"><input type="radio" name="q12" value="d"> <span><strong>D.</strong> Move tools randomly</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>13. What type of information should not be shared publicly?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q13" value="a"> <span><strong>A.</strong> Student private information or grades</span></label>
+<label class="answer"><input type="radio" name="q13" value="b"> <span><strong>B.</strong> General safety reminders</span></label>
+<label class="answer"><input type="radio" name="q13" value="c"> <span><strong>C.</strong> Tool locations</span></label>
+<label class="answer"><input type="radio" name="q13" value="d"> <span><strong>D.</strong> Approved cleanup steps</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>14. What should a lab assistant do if a job appears to be failing?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q14" value="a"> <span><strong>A.</strong> Notify the instructor and follow approved stop procedures</span></label>
+<label class="answer"><input type="radio" name="q14" value="b"> <span><strong>B.</strong> Touch moving/hot parts immediately</span></label>
+<label class="answer"><input type="radio" name="q14" value="c"> <span><strong>C.</strong> Walk away</span></label>
+<label class="answer"><input type="radio" name="q14" value="d"> <span><strong>D.</strong> Increase settings randomly</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>15. How should a Level 4 student handle disagreement about a safety issue?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q15" value="a"> <span><strong>A.</strong> Defer to the instructor and prioritize safety</span></label>
+<label class="answer"><input type="radio" name="q15" value="b"> <span><strong>B.</strong> Let the loudest person decide</span></label>
+<label class="answer"><input type="radio" name="q15" value="c"> <span><strong>C.</strong> Ignore the rule</span></label>
+<label class="answer"><input type="radio" name="q15" value="d"> <span><strong>D.</strong> Continue working</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>16. What is the purpose of documenting lab issues?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q16" value="a"> <span><strong>A.</strong> It helps maintain safety, supplies, and equipment reliability</span></label>
+<label class="answer"><input type="radio" name="q16" value="b"> <span><strong>B.</strong> It creates extra paperwork only</span></label>
+<label class="answer"><input type="radio" name="q16" value="c"> <span><strong>C.</strong> It replaces repairs</span></label>
+<label class="answer"><input type="radio" name="q16" value="d"> <span><strong>D.</strong> It is optional gossip</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>17. Which action supports a professional FabLab culture?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q17" value="a"> <span><strong>A.</strong> Keeping the space organized and ready for the next user</span></label>
+<label class="answer"><input type="radio" name="q17" value="b"> <span><strong>B.</strong> Leaving failed parts everywhere</span></label>
+<label class="answer"><input type="radio" name="q17" value="c"> <span><strong>C.</strong> Running jokes during tool use</span></label>
+<label class="answer"><input type="radio" name="q17" value="d"> <span><strong>D.</strong> Changing procedures without approval</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>18. If a classmate asks for an answer to a certification test, what should a lab assistant do?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q18" value="a"> <span><strong>A.</strong> Encourage them to review training and learn the material</span></label>
+<label class="answer"><input type="radio" name="q18" value="b"> <span><strong>B.</strong> Give them the answer</span></label>
+<label class="answer"><input type="radio" name="q18" value="c"> <span><strong>C.</strong> Take the test for them</span></label>
+<label class="answer"><input type="radio" name="q18" value="d"> <span><strong>D.</strong> Tell them the test does not matter</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>19. Why should lab assistants know emergency equipment locations?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q19" value="a"> <span><strong>A.</strong> They may need to respond quickly or direct others to safety</span></label>
+<label class="answer"><input type="radio" name="q19" value="b"> <span><strong>B.</strong> It is only for decoration</span></label>
+<label class="answer"><input type="radio" name="q19" value="c"> <span><strong>C.</strong> It replaces instructor supervision</span></label>
+<label class="answer"><input type="radio" name="q19" value="d"> <span><strong>D.</strong> It is not part of leadership</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>20. What is the safest response to overcrowding around a machine?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q20" value="a"> <span><strong>A.</strong> Reduce the crowd and keep only necessary people nearby</span></label>
+<label class="answer"><input type="radio" name="q20" value="b"> <span><strong>B.</strong> Invite more students to watch closely</span></label>
+<label class="answer"><input type="radio" name="q20" value="c"> <span><strong>C.</strong> Ignore it</span></label>
+<label class="answer"><input type="radio" name="q20" value="d"> <span><strong>D.</strong> Speed up the job</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>21. What should Level 4 students remember about authority?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q21" value="a"> <span><strong>A.</strong> They support the instructor but do not replace instructor approval</span></label>
+<label class="answer"><input type="radio" name="q21" value="b"> <span><strong>B.</strong> They outrank all classmates</span></label>
+<label class="answer"><input type="radio" name="q21" value="c"> <span><strong>C.</strong> They can change project rules</span></label>
+<label class="answer"><input type="radio" name="q21" value="d"> <span><strong>D.</strong> They can approve any material</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>22. What does good leadership look like when a student is frustrated?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q22" value="a"> <span><strong>A.</strong> Help them slow down, identify the issue, and ask for support if needed</span></label>
+<label class="answer"><input type="radio" name="q22" value="b"> <span><strong>B.</strong> Take the tool and do it yourself</span></label>
+<label class="answer"><input type="radio" name="q22" value="c"> <span><strong>C.</strong> Tell them to quit</span></label>
+<label class="answer"><input type="radio" name="q22" value="d"> <span><strong>D.</strong> Ignore them</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>23. How should a lab assistant treat tools and materials?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q23" value="a"> <span><strong>A.</strong> As shared resources that must be protected and reset</span></label>
+<label class="answer"><input type="radio" name="q23" value="b"> <span><strong>B.</strong> As personal property</span></label>
+<label class="answer"><input type="radio" name="q23" value="c"> <span><strong>C.</strong> As disposable items</span></label>
+<label class="answer"><input type="radio" name="q23" value="d"> <span><strong>D.</strong> As rewards for advanced students only</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>24. What is the best summary of Level 4 certification?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q24" value="a"> <span><strong>A.</strong> Leadership means protecting people, equipment, learning, and the workspace</span></label>
+<label class="answer"><input type="radio" name="q24" value="b"> <span><strong>B.</strong> Leadership means using all machines whenever you want</span></label>
+<label class="answer"><input type="radio" name="q24" value="c"> <span><strong>C.</strong> Leadership means skipping training</span></label>
+<label class="answer"><input type="radio" name="q24" value="d"> <span><strong>D.</strong> Leadership means finishing fastest</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>25. A Level 4 certificate should show that the student can:</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q25" value="a"> <span><strong>A.</strong> Model safe habits, support peers, and communicate when instructor help is needed</span></label>
+<label class="answer"><input type="radio" name="q25" value="b"> <span><strong>B.</strong> Override instructor rules</span></label>
+<label class="answer"><input type="radio" name="q25" value="c"> <span><strong>C.</strong> Access all files and grades</span></label>
+<label class="answer"><input type="radio" name="q25" value="d"> <span><strong>D.</strong> Run the lab alone</span></label>
+</div>
+</div>
+</form>
+<div class="test-actions">
+<button class="cert-btn" type="button" onclick="gradeCertificationTest()">Submit Test</button>
+<a class="cert-btn secondary" href="level-4.html">Review Training</a>
+</div>
+<div id="testResult" class="result-box"></div>
+</div>
+<div class="certificate-wrap test-card" id="certificateWrap">
+<div class="certificate" id="certificate">
+<img src="../assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+<div class="cert-subtitle">Certificate of Completion</div>
+<div class="cert-title" id="certTitle">FabLab Level 4 Certification</div>
+<p>This certifies that</p>
+<div class="student-name" id="certStudent">Student Name</div>
+<p>has completed the required knowledge test with a passing score of 80% or higher.</p>
+<div class="cert-meta">
+<div><strong>Certification Level</strong><span id="certLevel">Level 4: Leadership / Lab Assistant</span></div>
+<div><strong>Score</strong><span id="certScore">Pending</span></div>
+<div><strong>Date</strong><span id="certDate">Pending</span></div>
+<div><strong>Class / Period</strong><span id="certPeriod">Pending</span></div>
+<div><strong>Certificate ID</strong><span id="certId">Pending</span></div>
+<div><strong>Instructor</strong><span>Lockwood STEM FabLab</span></div>
+</div>
+</div>
+<div class="test-actions">
+<button class="cert-btn yellow" type="button" onclick="printCertificate()">Print / Save Certificate</button>
+<a class="cert-btn secondary" href="index.html">Return to Certification Home</a>
+</div>
+<p class="print-only-note">Tip: Use your browser print menu and choose “Save as PDF” if you need to upload the certificate digitally.</p>
+</div>
+</div>
+</section>
 <footer class="ls-global-footer" role="contentinfo">
 <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
 <div aria-label="Footer navigation" class="ls-footer-links">

@@ -1,0 +1,86 @@
+/* Lockwood STEM final action/button contrast fix
+   Ensures button-like links remain readable after global card readability guards. */
+:root{
+  --ls-action-blue:#0047c7;
+  --ls-action-blue-2:#003399;
+  --ls-action-text:#ffffff;
+}
+
+/* Primary/action links on cards and panels */
+:is(
+  .fablab-link,
+  .card-link.button,
+  .card-link.btn,
+  .button-primary,
+  .btn-primary,
+  .primary-btn,
+  .cta,
+  .cta-button,
+  .ls-global-cta,
+  a[class*="button"],
+  a[class*="btn"],
+  a[class*="cta"]
+):not(.button-secondary):not(.secondary):not(.yellow):not(.tag):not(.badge){
+  background:linear-gradient(135deg,var(--ls-action-blue),var(--ls-action-blue-2))!important;
+  color:var(--ls-action-text)!important;
+  text-shadow:none!important;
+  border-color:rgba(0,51,153,.18)!important;
+}
+:is(
+  .fablab-link,
+  .card-link.button,
+  .card-link.btn,
+  .button-primary,
+  .btn-primary,
+  .primary-btn,
+  .cta,
+  .cta-button,
+  .ls-global-cta,
+  a[class*="button"],
+  a[class*="btn"],
+  a[class*="cta"]
+):not(.button-secondary):not(.secondary):not(.yellow):not(.tag):not(.badge) *{
+  color:var(--ls-action-text)!important;
+  text-shadow:none!important;
+}
+
+/* FabLab shortcut cards: keep the card readable, but the action buttons high contrast. */
+.fablab-card{color:#101827!important;}
+.fablab-card h1,.fablab-card h2,.fablab-card h3,.fablab-card h4,.fablab-card strong{color:#101827!important;}
+.fablab-card p,.fablab-card li{color:#334155!important;}
+.fablab-card .fablab-link{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:100%!important;
+  min-height:46px!important;
+  background:linear-gradient(135deg,#0047c7,#003399)!important;
+  color:#ffffff!important;
+  font-weight:900!important;
+  text-decoration:none!important;
+  letter-spacing:.01em!important;
+}
+.fablab-card .fablab-link:hover,
+.fablab-card:focus-within .fablab-link{
+  background:linear-gradient(135deg,#003399,#002266)!important;
+  color:#ffffff!important;
+}
+
+/* Icon chips: blue chips need white text. Yellow chips keep dark text. */
+.fablab-icon{
+  color:#ffffff!important;
+  text-shadow:none!important;
+}
+.fablab-card:nth-child(3) .fablab-icon,
+.fablab-icon.yellow{
+  color:#101827!important;
+}
+.fablab-card:nth-child(2) .fablab-icon{
+  color:#07111f!important;
+}
+
+/* Generic dark-blue buttons that are spans/divs rather than anchors. */
+:is(.action-link,.resource-link,.project-link,.quick-link,.open-link){
+  color:#ffffff!important;
+  text-shadow:none!important;
+}

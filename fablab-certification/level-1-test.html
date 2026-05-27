@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CNC Mill | FabLab Certification Hub</title>
+<title>FabLab Level 1 Certification | Lockwood STEM</title>
 <style id="lockwood-critical-fallback">
 /* Critical Lockwood STEM fallback + Google Sites embed support.
    This keeps pages styled even if an external CSS file is slow or missing. */
@@ -385,8 +385,11 @@ footer p,
 </style>
 <link href="../assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="../assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
+
+<link href="../assets/certification-test.css" rel="stylesheet"/>
+<script defer src="../assets/certification-test.js"></script>
 </head>
-<body class="ls-has-standard-chrome"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<body class="ls-has-standard-chrome cert-test-page"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
 <header class="ls-global-header" role="banner">
 <nav aria-label="Main navigation" class="ls-global-nav">
 <a aria-label="Lockwood STEM Home" class="ls-global-brand" href="../index.html">
@@ -409,27 +412,279 @@ footer p,
 </nav>
 </header>
 <div id="main-content"></div>
-<section class="hero"><div class="hero-inner"><div class="breadcrumbs"><a href="level-3.html">Level 3</a> / CNC</div><div class="eyebrow">Advanced Equipment</div><h1>CNC Certification: DMC2 Mini, FoxAlien, and Genmitsu</h1><p>CNC machines remove material using a spinning cutting tool. Safe CNC work depends on secure workholding, correct zeroing, approved toolpaths, and emergency stop readiness.</p></div></section>
-<section><div class="container">
-<h2>Equipment You Will Use</h2><div class="tool-gallery"><div class="tool-card">
-<img alt="DMC2 Mini CNC Mill" class="real-tool-img" src="https://shariffdmc.com/wp-content/uploads/2024/08/DSC00161-1024x683.jpg"/>
-<h3>DMC2 Mini CNC Mill</h3>
-<p>Desktop CNC mill used for precision subtractive manufacturing workflows.</p>
-</div><div class="tool-card">
-<img alt="FoxAlien CNC" class="real-tool-img" src="https://cdn.shopify.com/s/files/1/0366/4147/2649/files/1_de0ca1c9-8377-4d61-98fe-ff8d028fcdea_1024x1024.jpg?v=1724753864"/>
-<h3>FoxAlien CNC</h3>
-<p>CNC router platform used for routing, carving, and toolpath practice.</p>
-</div><div class="tool-card">
-<img alt="Genmitsu CNC" class="real-tool-img" src="https://www.sainsmart.com/cdn/shop/files/4040-PRO20261.webp?v=1768806382&amp;width=416"/>
-<h3>Genmitsu CNC</h3>
-<p>Desktop CNC platform used for controlled routing and milling activities.</p>
-</div></div>
-<div class="grid">
-<div class="card span-7"><h2>What You Need to Learn</h2><div class="lesson-block"><h3>CNC setup is the project.</h3><p>Most CNC problems happen before cutting starts: loose stock, wrong zero, wrong bit, bad toolpath, or clamps in the toolpath. Certification means you can slow down and verify the setup.</p></div><ul class="checklist"><li>Secure stock with approved workholding.</li><li>Select the correct tool and toolpath.</li><li>Set work zero accurately.</li><li>Simulate or preview before cutting.</li><li>Stay ready to pause or stop the machine.</li></ul></div>
-<div class="card span-5"><h2>Chip Load Simulator</h2><div class="sim"><div class="controls"><label>Feed Rate<input id="feedRate" max="80" min="5" oninput="updateCNCSim()" type="range" value="25"/></label><label>RPM<input id="rpm" max="24000" min="5000" oninput="updateCNCSim()" type="range" value="12000"/></label><label>Flutes<select id="flutes" onchange="updateCNCSim()"><option>1</option><option selected="">2</option><option>3</option><option>4</option></select></label></div><div class="output" id="cncOutput"></div></div></div>
-<div class="card span-12"><h2>Student Procedure</h2><ol class="procedure"><li>Check the design, stock size, material, and cutting tool.</li><li>Secure the workpiece using the approved workholding method.</li><li>Set zero and confirm safe clearance above clamps and fixtures.</li><li>Preview the toolpath and get approval before the first cut.</li><li>Watch the first motion and first pass carefully.</li><li>Stop for chatter, burning, loose stock, bit deflection, or unexpected motion.</li></ol></div>
-<div class="card span-12"><h2>Knowledge Check</h2><div class="quiz" id="quiz-cnc"><div class="quiz-question" data-answer="b"><p>What must be verified before running a CNC job?</p><label><input name="quiz-cnc1" type="radio" value="a"/> Only the file name</label><label><input name="quiz-cnc1" type="radio" value="b"/> Tool, zero, stock, workholding, and toolpath</label><label><input name="quiz-cnc1" type="radio" value="c"/> Only the material color</label></div><div class="quiz-question" data-answer="c"><p>What is unsafe during CNC operation?</p><label><input name="quiz-cnc2" type="radio" value="a"/> Watching the first pass</label><label><input name="quiz-cnc2" type="radio" value="b"/> Knowing the emergency stop location</label><label><input name="quiz-cnc2" type="radio" value="c"/> Leaving the machine unattended</label></div><div class="quiz-question" data-answer="a"><p>Why is workholding important?</p><label><input name="quiz-cnc3" type="radio" value="a"/> Loose material can shift and create a dangerous failure</label><label><input name="quiz-cnc3" type="radio" value="b"/> It makes the machine quieter only</label><label><input name="quiz-cnc3" type="radio" value="c"/> It replaces the need for a toolpath preview</label></div><button onclick="gradeQuiz('quiz-cnc')">Check Answers</button><div class="quiz-result"></div></div></div>
-</div></div></section>
+<section class="hero"><div class="hero-inner"><div class="eyebrow">Level 1 Certification Test</div><h1>Core Access Knowledge Test</h1><p>Complete this test after reviewing Level 1 safety and hand tool training. Score 80% or higher to generate your Level 1 certificate of completion.</p><div class="hero-actions"><a class="btn secondary" href="level-1.html">Review Level 1 Training</a><a class="btn secondary" href="index.html">Certification Home</a></div></div></section>
+<section class="cert-test-page" data-level="1" data-level-title="Level 1: Core Access" data-test-title="FabLab Level 1 Certification">
+<div class="test-shell test-layout">
+<div class="test-card">
+<h2>Student Information</h2>
+<p>Enter your name exactly as you want it to appear on the certificate. A passing score is 80% or higher.</p>
+<div class="student-info-grid">
+<div class="field"><label for="studentName">Student Name</label><input id="studentName" type="text" autocomplete="name" placeholder="First and last name"></div>
+<div class="field"><label for="studentPeriod">Class Period / Course</label><input id="studentPeriod" type="text" placeholder="Example: IED Period 2"></div>
+</div>
+<div class="progress-note"><p><strong>Certificate rule:</strong> When you score 80% or higher, a certificate of completion will appear at the bottom of this page. Print or save it as a PDF and submit it where your instructor requests.</p></div>
+</div>
+<div class="test-card">
+<h2>FabLab Level 1 Certification</h2>
+<p>Choose the best answer for each question.</p>
+<form id="certTestForm">
+<div class="question" data-answer="b">
+<h3>1. What should you do before using any tool in the FabLab for the first time?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q1" value="a"> <span><strong>A.</strong> Try it carefully if it looks simple</span></label>
+<label class="answer"><input type="radio" name="q1" value="b"> <span><strong>B.</strong> Get trained, understand the expectations, and receive permission</span></label>
+<label class="answer"><input type="radio" name="q1" value="c"> <span><strong>C.</strong> Ask another student to show you quickly</span></label>
+<label class="answer"><input type="radio" name="q1" value="d"> <span><strong>D.</strong> Use the tool only during cleanup time</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>2. Which habit best protects everyone in the workspace?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q2" value="a"> <span><strong>A.</strong> Keeping walkways clear and returning tools after use</span></label>
+<label class="answer"><input type="radio" name="q2" value="b"> <span><strong>B.</strong> Leaving projects out so others can see them</span></label>
+<label class="answer"><input type="radio" name="q2" value="c"> <span><strong>C.</strong> Working quickly to finish before cleanup</span></label>
+<label class="answer"><input type="radio" name="q2" value="d"> <span><strong>D.</strong> Sharing eye protection when needed</span></label>
+</div>
+</div>
+<div class="question" data-answer="c">
+<h3>3. What is the correct response if you notice damaged equipment?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q3" value="a"> <span><strong>A.</strong> Use it gently</span></label>
+<label class="answer"><input type="radio" name="q3" value="b"> <span><strong>B.</strong> Hide it so no one gets blamed</span></label>
+<label class="answer"><input type="radio" name="q3" value="c"> <span><strong>C.</strong> Stop using it and tell the instructor</span></label>
+<label class="answer"><input type="radio" name="q3" value="d"> <span><strong>D.</strong> Let the next class handle it</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>4. When is eye protection required?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q4" value="a"> <span><strong>A.</strong> Only when using power tools</span></label>
+<label class="answer"><input type="radio" name="q4" value="b"> <span><strong>B.</strong> Whenever the activity, tool, or instructor requires it</span></label>
+<label class="answer"><input type="radio" name="q4" value="c"> <span><strong>C.</strong> Only during tests</span></label>
+<label class="answer"><input type="radio" name="q4" value="d"> <span><strong>D.</strong> Only if you are close to the front of the room</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>5. Why should long hair, loose sleeves, and dangling jewelry be secured?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q5" value="a"> <span><strong>A.</strong> They can get caught in tools or workpieces</span></label>
+<label class="answer"><input type="radio" name="q5" value="b"> <span><strong>B.</strong> They make cleanup slower</span></label>
+<label class="answer"><input type="radio" name="q5" value="c"> <span><strong>C.</strong> They are against school style rules</span></label>
+<label class="answer"><input type="radio" name="q5" value="d"> <span><strong>D.</strong> They reduce measurement accuracy</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>6. What does a clean workspace help prevent?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q6" value="a"> <span><strong>A.</strong> Only lost grades</span></label>
+<label class="answer"><input type="radio" name="q6" value="b"> <span><strong>B.</strong> Trips, tool damage, material waste, and unsafe mistakes</span></label>
+<label class="answer"><input type="radio" name="q6" value="c"> <span><strong>C.</strong> All design changes</span></label>
+<label class="answer"><input type="radio" name="q6" value="d"> <span><strong>D.</strong> The need for instructions</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>7. If you are unsure whether a material is approved, what should you do?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q7" value="a"> <span><strong>A.</strong> Cut a small sample first</span></label>
+<label class="answer"><input type="radio" name="q7" value="b"> <span><strong>B.</strong> Ask the instructor before using it</span></label>
+<label class="answer"><input type="radio" name="q7" value="c"> <span><strong>C.</strong> Use it only on low settings</span></label>
+<label class="answer"><input type="radio" name="q7" value="d"> <span><strong>D.</strong> Let another student test it</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>8. What is the safest way to carry a sharp hand tool?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q8" value="a"> <span><strong>A.</strong> Pointed down or safely controlled, away from others</span></label>
+<label class="answer"><input type="radio" name="q8" value="b"> <span><strong>B.</strong> Pointed outward so people see it</span></label>
+<label class="answer"><input type="radio" name="q8" value="c"> <span><strong>C.</strong> In your pocket</span></label>
+<label class="answer"><input type="radio" name="q8" value="d"> <span><strong>D.</strong> Tossed gently across the table</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>9. What should happen at the end of a FabLab work session?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q9" value="a"> <span><strong>A.</strong> Tools and materials are returned, surfaces are cleaned, and projects are stored properly</span></label>
+<label class="answer"><input type="radio" name="q9" value="b"> <span><strong>B.</strong> Only your personal project is put away</span></label>
+<label class="answer"><input type="radio" name="q9" value="c"> <span><strong>C.</strong> The next group cleans up</span></label>
+<label class="answer"><input type="radio" name="q9" value="d"> <span><strong>D.</strong> Turn off the lights and leave</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>10. Which statement best describes responsible FabLab access?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q10" value="a"> <span><strong>A.</strong> Access means I can use any tool when I want</span></label>
+<label class="answer"><input type="radio" name="q10" value="b"> <span><strong>B.</strong> Access is earned by showing safe, reliable habits</span></label>
+<label class="answer"><input type="radio" name="q10" value="c"> <span><strong>C.</strong> Access only matters for advanced tools</span></label>
+<label class="answer"><input type="radio" name="q10" value="d"> <span><strong>D.</strong> Access is the same as finishing a quiz</span></label>
+</div>
+</div>
+<div class="question" data-answer="c">
+<h3>11. What should you do if someone nearby is acting unsafely?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q11" value="a"> <span><strong>A.</strong> Ignore it if it does not affect you</span></label>
+<label class="answer"><input type="radio" name="q11" value="b"> <span><strong>B.</strong> Join them so they stop faster</span></label>
+<label class="answer"><input type="radio" name="q11" value="c"> <span><strong>C.</strong> Stop, move away if needed, and notify the instructor</span></label>
+<label class="answer"><input type="radio" name="q11" value="d"> <span><strong>D.</strong> Record it for later</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>12. Why should tools be returned to their labeled locations?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q12" value="a"> <span><strong>A.</strong> It makes the lab look nicer only</span></label>
+<label class="answer"><input type="radio" name="q12" value="b"> <span><strong>B.</strong> It helps everyone find tools and notice missing or damaged items</span></label>
+<label class="answer"><input type="radio" name="q12" value="c"> <span><strong>C.</strong> It prevents students from using them again</span></label>
+<label class="answer"><input type="radio" name="q12" value="d"> <span><strong>D.</strong> It is only necessary on Fridays</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>13. Which item is most appropriate for marking a measured cut line?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q13" value="a"> <span><strong>A.</strong> A controlled pencil or marking tool</span></label>
+<label class="answer"><input type="radio" name="q13" value="b"> <span><strong>B.</strong> A finger scratch</span></label>
+<label class="answer"><input type="radio" name="q13" value="c"> <span><strong>C.</strong> A random scratch with scissors</span></label>
+<label class="answer"><input type="radio" name="q13" value="d"> <span><strong>D.</strong> Guessing from the edge</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>14. What is the best way to measure a part for a fabrication request?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q14" value="a"> <span><strong>A.</strong> Estimate to the nearest inch</span></label>
+<label class="answer"><input type="radio" name="q14" value="b"> <span><strong>B.</strong> Use an appropriate measuring tool and record units clearly</span></label>
+<label class="answer"><input type="radio" name="q14" value="c"> <span><strong>C.</strong> Ask a friend to guess</span></label>
+<label class="answer"><input type="radio" name="q14" value="d"> <span><strong>D.</strong> Measure only after submitting</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>15. If a tool falls on the floor, what should you do first?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q15" value="a"> <span><strong>A.</strong> Kick it under the table</span></label>
+<label class="answer"><input type="radio" name="q15" value="b"> <span><strong>B.</strong> Pick it up carefully if safe and check/report damage</span></label>
+<label class="answer"><input type="radio" name="q15" value="c"> <span><strong>C.</strong> Keep working and ignore it</span></label>
+<label class="answer"><input type="radio" name="q15" value="d"> <span><strong>D.</strong> Put it into any drawer</span></label>
+</div>
+</div>
+<div class="question" data-answer="c">
+<h3>16. What does PPE stand for?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q16" value="a"> <span><strong>A.</strong> Personal Project Equipment</span></label>
+<label class="answer"><input type="radio" name="q16" value="b"> <span><strong>B.</strong> Public Preparation Exam</span></label>
+<label class="answer"><input type="radio" name="q16" value="c"> <span><strong>C.</strong> Personal Protective Equipment</span></label>
+<label class="answer"><input type="radio" name="q16" value="d"> <span><strong>D.</strong> Printed Part Evaluation</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>17. Why is horseplay not allowed in the FabLab?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q17" value="a"> <span><strong>A.</strong> It makes projects less creative</span></label>
+<label class="answer"><input type="radio" name="q17" value="b"> <span><strong>B.</strong> It can cause injuries around tools, materials, and equipment</span></label>
+<label class="answer"><input type="radio" name="q17" value="c"> <span><strong>C.</strong> It slows the internet</span></label>
+<label class="answer"><input type="radio" name="q17" value="d"> <span><strong>D.</strong> It only bothers the instructor</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>18. What should you do before leaving scraps or leftover material?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q18" value="a"> <span><strong>A.</strong> Throw all scraps away immediately</span></label>
+<label class="answer"><input type="radio" name="q18" value="b"> <span><strong>B.</strong> Ask where approved scraps should go and sort them properly</span></label>
+<label class="answer"><input type="radio" name="q18" value="c"> <span><strong>C.</strong> Hide them in a cabinet</span></label>
+<label class="answer"><input type="radio" name="q18" value="d"> <span><strong>D.</strong> Leave them for the next class</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>19. What is the safest way to learn a new hand tool?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q19" value="a"> <span><strong>A.</strong> Watch a random student use it</span></label>
+<label class="answer"><input type="radio" name="q19" value="b"> <span><strong>B.</strong> Read/watch the training, ask questions, and practice under supervision</span></label>
+<label class="answer"><input type="radio" name="q19" value="c"> <span><strong>C.</strong> Use it when no one is looking</span></label>
+<label class="answer"><input type="radio" name="q19" value="d"> <span><strong>D.</strong> Skip the practice if you have used a similar tool at home</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>20. Why should food and drinks stay away from tool/work areas?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q20" value="a"> <span><strong>A.</strong> They can contaminate work, spill on equipment, or create unsafe distractions</span></label>
+<label class="answer"><input type="radio" name="q20" value="b"> <span><strong>B.</strong> They make projects heavier</span></label>
+<label class="answer"><input type="radio" name="q20" value="c"> <span><strong>C.</strong> They affect laser focus</span></label>
+<label class="answer"><input type="radio" name="q20" value="d"> <span><strong>D.</strong> They change CAD dimensions</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>21. What should you do during an emergency or alarm?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q21" value="a"> <span><strong>A.</strong> Finish your cut first</span></label>
+<label class="answer"><input type="radio" name="q21" value="b"> <span><strong>B.</strong> Follow instructor directions immediately</span></label>
+<label class="answer"><input type="radio" name="q21" value="c"> <span><strong>C.</strong> Ask classmates to vote</span></label>
+<label class="answer"><input type="radio" name="q21" value="d"> <span><strong>D.</strong> Pack up your project</span></label>
+</div>
+</div>
+<div class="question" data-answer="d">
+<h3>22. Which is a sign that you should stop and ask for help?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q22" value="a"> <span><strong>A.</strong> You are confused about the next step</span></label>
+<label class="answer"><input type="radio" name="q22" value="b"> <span><strong>B.</strong> The tool sounds or feels wrong</span></label>
+<label class="answer"><input type="radio" name="q22" value="c"> <span><strong>C.</strong> The material is moving unexpectedly</span></label>
+<label class="answer"><input type="radio" name="q22" value="d"> <span><strong>D.</strong> All of these</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>23. What is the purpose of a safety certification?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q23" value="a"> <span><strong>A.</strong> To prove you never need supervision</span></label>
+<label class="answer"><input type="radio" name="q23" value="b"> <span><strong>B.</strong> To show you understand expectations before using the lab</span></label>
+<label class="answer"><input type="radio" name="q23" value="c"> <span><strong>C.</strong> To replace all future training</span></label>
+<label class="answer"><input type="radio" name="q23" value="d"> <span><strong>D.</strong> To avoid cleanup duties</span></label>
+</div>
+</div>
+<div class="question" data-answer="a">
+<h3>24. Which statement best describes the instructor’s role?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q24" value="a"> <span><strong>A.</strong> The instructor gives final approval for tool use and safety decisions</span></label>
+<label class="answer"><input type="radio" name="q24" value="b"> <span><strong>B.</strong> The instructor only grades projects</span></label>
+<label class="answer"><input type="radio" name="q24" value="c"> <span><strong>C.</strong> The instructor only helps with CAD</span></label>
+<label class="answer"><input type="radio" name="q24" value="d"> <span><strong>D.</strong> The instructor approves tools after the fact</span></label>
+</div>
+</div>
+<div class="question" data-answer="b">
+<h3>25. What should a Level 1 student focus on most?</h3>
+<div class="answers">
+<label class="answer"><input type="radio" name="q25" value="a"> <span><strong>A.</strong> Speed</span></label>
+<label class="answer"><input type="radio" name="q25" value="b"> <span><strong>B.</strong> Safe habits, awareness, cleanup, and asking before using tools</span></label>
+<label class="answer"><input type="radio" name="q25" value="c"> <span><strong>C.</strong> Using advanced machines alone</span></label>
+<label class="answer"><input type="radio" name="q25" value="d"> <span><strong>D.</strong> Finishing projects without documentation</span></label>
+</div>
+</div>
+</form>
+<div class="test-actions">
+<button class="cert-btn" type="button" onclick="gradeCertificationTest()">Submit Test</button>
+<a class="cert-btn secondary" href="level-1.html">Review Training</a>
+</div>
+<div id="testResult" class="result-box"></div>
+</div>
+<div class="certificate-wrap test-card" id="certificateWrap">
+<div class="certificate" id="certificate">
+<img src="../assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+<div class="cert-subtitle">Certificate of Completion</div>
+<div class="cert-title" id="certTitle">FabLab Level 1 Certification</div>
+<p>This certifies that</p>
+<div class="student-name" id="certStudent">Student Name</div>
+<p>has completed the required knowledge test with a passing score of 80% or higher.</p>
+<div class="cert-meta">
+<div><strong>Certification Level</strong><span id="certLevel">Level 1: Core Access</span></div>
+<div><strong>Score</strong><span id="certScore">Pending</span></div>
+<div><strong>Date</strong><span id="certDate">Pending</span></div>
+<div><strong>Class / Period</strong><span id="certPeriod">Pending</span></div>
+<div><strong>Certificate ID</strong><span id="certId">Pending</span></div>
+<div><strong>Instructor</strong><span>Lockwood STEM FabLab</span></div>
+</div>
+</div>
+<div class="test-actions">
+<button class="cert-btn yellow" type="button" onclick="printCertificate()">Print / Save Certificate</button>
+<a class="cert-btn secondary" href="index.html">Return to Certification Home</a>
+</div>
+<p class="print-only-note">Tip: Use your browser print menu and choose “Save as PDF” if you need to upload the certificate digitally.</p>
+</div>
+</div>
+</section>
 <footer class="ls-global-footer" role="contentinfo">
 <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
 <div aria-label="Footer navigation" class="ls-footer-links">

@@ -889,3 +889,9 @@ footer{padding:28px 24px;color:var(--muted);text-align:center;font-size:.9rem}
   .unit-roadmap-card { grid-template-columns: 1fr; }
 }
 [id]{scroll-margin-top:110px}
+
+/* Direct FabLab button/icon contrast reinforcement */
+.fablab-link{color:#fff!important;text-decoration:none!important;}
+.fablab-link *{color:#fff!important;}
+.fablab-icon{color:#fff!important;}
+.fablab-card:nth-child(3) .fablab-icon{color:#101827!important;}
