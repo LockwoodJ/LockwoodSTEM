@@ -2,5 +2,4 @@
 
 Checked 1825 local links/assets.
 
-Missing: 1
-- fablab-certification.html: ../assets/google-sites-embed.css
+Missing: 0
