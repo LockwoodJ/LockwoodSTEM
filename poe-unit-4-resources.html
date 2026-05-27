@@ -4,6 +4,55 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>POE Unit 4 Resources | Lockwood STEM</title>
+
+<style id="lockwood-critical-fallback">
+/* Critical Lockwood STEM fallback + Google Sites embed support.
+   This keeps pages styled even if an external CSS file is slow or missing. */
+:root{
+  --ls-blue:#003399;--ls-blue-2:#0054c8;--ls-green:#33cc66;--ls-yellow:#ffcc00;
+  --ls-dark:#101827;--ls-text:#1f2937;--ls-muted:#667085;--ls-bg:#f6f9ff;
+  --ls-card:#ffffff;--ls-border:rgba(0,51,153,.14);--ls-shadow:0 16px 40px rgba(0,51,153,.14);
+}
+html{scroll-behavior:smooth;width:100%;margin:0;padding:0;}
+body{margin:0;padding:0;width:100%;min-height:100vh;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ls-text);background:radial-gradient(circle at top left,rgba(0,51,153,.12),transparent 28%),linear-gradient(180deg,#fff 0%,var(--ls-bg) 62%,#eef4ff 100%);overflow-x:hidden;}
+img{max-width:100%;height:auto;}
+a{color:inherit;}
+main{width:100%;max-width:none;margin:0;padding:0;}
+section{width:min(100%,1600px);margin:0 auto;padding:clamp(18px,3vw,44px);}
+.ls-global-header{position:sticky;top:0;z-index:1000;width:100%;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,51,153,.12);box-shadow:0 8px 22px rgba(17,24,39,.06);}
+.ls-global-nav{width:min(100%,1600px);margin:0 auto;padding:10px clamp(14px,2vw,28px);display:flex;align-items:center;justify-content:space-between;gap:18px;}
+.ls-global-brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;color:var(--ls-blue);white-space:nowrap;}
+.ls-global-brand img{width:42px;height:42px;object-fit:contain;}
+.ls-global-links{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap;}
+.ls-global-links a,.ls-footer-links a{display:inline-flex;align-items:center;text-decoration:none;font-weight:800;color:var(--ls-text);padding:9px 11px;border-radius:999px;transition:.16s ease;}
+.ls-global-links a:hover,.ls-footer-links a:hover{background:rgba(0,51,153,.08);color:var(--ls-blue);transform:translateY(-1px);}
+.ls-global-cta,.btn-primary{background:linear-gradient(135deg,var(--ls-blue),var(--ls-blue-2))!important;color:#fff!important;box-shadow:0 10px 22px rgba(0,51,153,.22);}
+.hero,.course-hero{width:100%;max-width:none;margin:0;padding:clamp(26px,5vw,72px) clamp(18px,4vw,52px);background:radial-gradient(circle at 82% 18%,rgba(255,204,0,.24),transparent 28%),linear-gradient(135deg,#ffffff 0%,#eef4ff 48%,#e7f1ff 100%);border-bottom:1px solid rgba(0,51,153,.12);}
+.hero-shell,.hero-grid,.course-hero-inner{width:min(100%,1500px);margin:0 auto;}
+.hero-grid,.course-hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(22px,4vw,56px);align-items:center;}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:#fff;border:1px solid var(--ls-border);color:var(--ls-blue);font-size:.78rem;font-weight:900;letter-spacing:.04em;text-transform:uppercase;box-shadow:0 8px 20px rgba(17,24,39,.06);}
+.spark{width:9px;height:9px;border-radius:999px;background:var(--ls-green);box-shadow:0 0 0 5px rgba(51,204,102,.18);}
+h1{margin:.28em 0 .22em;font-size:clamp(2.25rem,6vw,5.3rem);line-height:.94;letter-spacing:-.065em;color:var(--ls-dark);}
+h1 span{color:var(--ls-blue);}
+h2{font-size:clamp(1.55rem,3vw,2.5rem);line-height:1.05;letter-spacing:-.04em;color:var(--ls-dark);}
+h3{font-size:1.25rem;color:var(--ls-dark);}
+p,.subtitle{font-size:clamp(1rem,1.45vw,1.18rem);line-height:1.6;color:var(--ls-muted);}
+.actions,.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;}
+.btn,.button,.home-link-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border-radius:999px;text-decoration:none;font-weight:900;border:1px solid rgba(0,51,153,.14);background:#fff;color:var(--ls-blue);box-shadow:0 8px 20px rgba(17,24,39,.07);}
+.btn:hover,.button:hover,.home-main-card:hover,.home-tile:hover,.home-quick-link:hover{transform:translateY(-2px);}
+.btn-secondary{background:#fff;color:var(--ls-blue);}
+.visual-panel,.home-main-card,.home-tile,.card,.intro-card,.video-card{background:rgba(255,255,255,.92);border:1px solid rgba(0,51,153,.12);border-radius:24px;box-shadow:var(--ls-shadow);padding:clamp(18px,2.4vw,30px);}
+.visual-panel{text-align:center;}
+.visual-panel img{max-height:210px;object-fit:contain;margin-bottom:16px;}
+.section-heading{width:min(100%,1500px);margin:0 auto 22px;}
+.home-dashboard-grid,.home-tile-grid,.home-quick-grid,.card-grid,.grid{width:min(100%,1500px);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+.home-main-card,.home-tile,.home-quick-link{text-decoration:none;color:inherit;transition:.16s ease;}
+.home-icon{display:inline-flex;align-items:center;justify-content:center;min-width:54px;height:38px;padding:0 12px;border-radius:12px;background:rgba(0,51,153,.08);color:var(--ls-blue);font-weight:900;margin-bottom:10px;}
+.ls-global-footer,footer{width:100%;padding:26px 18px;text-align:center;background:#101827;color:#fff;margin-top:28px;}
+.ls-footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:10px;}.ls-footer-links a{color:#fff;}
+@media(max-width:900px){.ls-global-nav{align-items:flex-start;flex-direction:column}.ls-global-links{justify-content:flex-start}.hero-grid,.course-hero-inner{grid-template-columns:1fr}section{padding:24px 16px}h1{letter-spacing:-.045em}.visual-panel img{max-height:150px}}
+</style>
+
 <link rel="stylesheet" href="assets/unit-styles.css" />
 <style id="lockwood-anchor-fix">
 html { scroll-behavior: smooth; }
@@ -11,6 +60,7 @@ html { scroll-behavior: smooth; }
 </style>
 
 <link rel="stylesheet" href="assets/lockwood-polish.css">
+<link rel="stylesheet" href="assets/google-sites-embed.css">
 </head>
 <body class="ls-visual-upgrade ls-theme-poe">
 <header class="ls-global-header">
@@ -27,8 +77,7 @@ html { scroll-behavior: smooth; }
       <a href="poe.html">POE</a>
       <a href="adm.html">Advanced Manufacturing</a>
       <a href="fablab.html">FabLab</a>
-    <a href="fablab-certification/index.html">Certification Hub</a>
-      <a href="fablab-certification/index.html">Certifications</a>
+    <a href="fablab-certification/index.html">Certifications</a>
       <a href="resources.html">Resources</a>
       <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
     </div>
