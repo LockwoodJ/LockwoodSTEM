@@ -1,0 +1,193 @@
+
+/* Lockwood STEM Global Polish - added by ChatGPT */
+:root{
+  --ls-blue:#003399;--ls-blue2:#0054c8;--ls-green:#33cc66;--ls-yellow:#ffcc00;
+  --ls-bg:#f5f8ff;--ls-ink:#172033;--ls-muted:#5d6b82;--ls-border:#dfe7f1;--ls-white:#fff;
+  --ls-shadow:0 18px 45px rgba(0,51,153,.13);--ls-soft:0 10px 28px rgba(23,32,51,.08);
+}
+html{scroll-behavior:smooth} [id]{scroll-margin-top:110px}
+body{min-height:100vh;}
+a{transition:color .2s ease,background .2s ease,transform .2s ease,box-shadow .2s ease}
+.ls-global-header{position:sticky;top:0;z-index:9999;padding:14px 18px;background:rgba(245,248,255,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(223,231,241,.9)}
+.ls-global-nav{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px;background:rgba(255,255,255,.92);border:1px solid var(--ls-border);border-radius:22px;padding:10px 12px;box-shadow:var(--ls-soft)}
+.ls-global-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ls-ink);font-weight:900;letter-spacing:-.02em;white-space:nowrap}.ls-global-brand img{width:38px;height:38px;object-fit:contain;border-radius:10px}.ls-global-brand span{font-size:1rem}
+.ls-global-links{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap}.ls-global-links a{color:var(--ls-ink);text-decoration:none;font-weight:800;font-size:.9rem;padding:9px 11px;border-radius:999px}.ls-global-links a:hover{background:#eef4ff;color:var(--ls-blue);transform:translateY(-1px)}.ls-global-links .ls-global-cta{background:linear-gradient(135deg,var(--ls-green),#23b85a);color:#063017;box-shadow:0 10px 20px rgba(51,204,102,.2)}.ls-global-links .ls-global-cta:hover{background:linear-gradient(135deg,var(--ls-yellow),#ffd84d);color:#322600}
+.ls-course-jump{max-width:1120px;margin:18px auto 0;background:linear-gradient(135deg,#fff,#f7fbff);border:1px solid var(--ls-border);border-radius:22px;padding:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;box-shadow:var(--ls-soft)}.ls-course-jump strong{color:var(--ls-blue);margin-right:4px}.ls-course-jump a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:var(--ls-ink);font-weight:800;background:#f5f5f5;border:1px solid var(--ls-border);border-radius:999px;padding:9px 13px}.ls-course-jump a:hover{background:var(--ls-blue);color:#fff;transform:translateY(-1px)}
+.ls-global-footer{margin:34px auto 0;max-width:1180px;padding:24px 18px 38px;text-align:center;color:var(--ls-muted);font:14px/1.55 Arial,Helvetica,sans-serif}.ls-global-footer strong{color:var(--ls-blue)}.ls-global-footer .ls-footer-links{margin-top:10px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.ls-global-footer a{color:var(--ls-blue);font-weight:800;text-decoration:none}.ls-global-footer a:hover{text-decoration:underline}
+.ls-page-shell{max-width:1120px;margin:0 auto;padding:24px 18px 54px;font-family:Arial,Helvetica,sans-serif;color:var(--ls-ink)}.ls-page-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--ls-blue),#001d66);color:#fff;border-radius:30px;padding:42px 34px;box-shadow:var(--ls-shadow)}.ls-page-hero::after{content:attr(data-mark);position:absolute;right:22px;top:6px;font-size:118px;font-weight:900;letter-spacing:-7px;line-height:1;color:rgba(255,255,255,.08)}.ls-page-eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.14);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.05em}.ls-page-hero h1{position:relative;z-index:1;margin:18px 0 10px;max-width:820px;font-size:clamp(2.2rem,5vw,4.4rem);line-height:.96;letter-spacing:-.055em}.ls-page-hero p{position:relative;z-index:1;max-width:800px;margin:0;color:rgba(255,255,255,.88);font-size:1.15rem}.ls-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:28px;position:relative;z-index:1}.ls-meta div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.20);border-radius:16px;padding:15px}.ls-meta strong{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:rgba(255,255,255,.72);margin-bottom:4px}.ls-meta span{font-weight:900;color:#fff}.ls-section{background:#fff;border:1px solid var(--ls-border);border-radius:22px;padding:28px;margin-top:22px;box-shadow:var(--ls-soft)}.ls-section h2{margin:0 0 12px;color:var(--ls-blue);font-size:29px;letter-spacing:-.04em}.ls-section p{margin:0 0 14px;line-height:1.65}.ls-grid-2,.ls-grid-3,.ls-grid-4{display:grid;gap:16px;margin-top:18px}.ls-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.ls-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.ls-grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}.ls-card{border:1px solid var(--ls-border);border-radius:18px;padding:18px;background:linear-gradient(180deg,#fff 0%,#fbfdff 100%)}.ls-card h3{margin:0 0 8px;color:var(--ls-ink);font-size:18px}.ls-card p{margin:0;color:var(--ls-muted);font-size:15px}.ls-accent{border-top:6px solid var(--ls-green)}.ls-accent:nth-child(2){border-top-color:var(--ls-yellow)}.ls-accent:nth-child(3){border-top-color:var(--ls-blue)}.ls-accent:nth-child(4){border-top-color:#79a9ff}.ls-badges{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0;padding:0;list-style:none}.ls-badges li{background:var(--ls-bg);border:1px solid var(--ls-border);border-radius:999px;padding:9px 13px;font-weight:800}.ls-callout{border-left:7px solid var(--ls-green);background:#f7fff9;border-radius:16px;padding:18px;margin-top:16px}.ls-callout.blue{border-left-color:var(--ls-blue);background:#f4f7ff}.ls-callout.yellow{border-left-color:var(--ls-yellow);background:#fffaf0}.ls-table-wrap{overflow-x:auto;border:1px solid var(--ls-border);border-radius:16px;margin-top:16px}.ls-table{width:100%;border-collapse:collapse;min-width:420px}.ls-table th,.ls-table td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--ls-border)}.ls-table th{background:var(--ls-blue);color:#fff;text-transform:uppercase;font-size:13px;letter-spacing:.06em}.ls-table tr:last-child td{border-bottom:0}.ls-table td:first-child{font-weight:900;color:var(--ls-blue)}
+@media (max-width:900px){.ls-global-header{position:relative}.ls-global-nav{align-items:flex-start;flex-direction:column}.ls-global-links{justify-content:flex-start}.ls-page-shell{padding:14px}.ls-page-hero{padding:30px 22px}.ls-meta,.ls-grid-2,.ls-grid-3,.ls-grid-4{grid-template-columns:1fr}.ls-section{padding:22px}.ls-page-hero::after{font-size:78px}}
+
+/* Lockwood STEM Visual Upgrade - icons, themes, motion */
+:root{
+  --course-accent:var(--ls-blue);
+  --course-accent-2:var(--ls-green);
+  --course-accent-3:var(--ls-yellow);
+  --course-glow:rgba(0,51,153,.16);
+}
+body.ls-theme-ied{--course-accent:#003399;--course-accent-2:#33cc66;--course-accent-3:#ffcc00;--course-glow:rgba(0,51,153,.18)}
+body.ls-theme-poe{--course-accent:#0f766e;--course-accent-2:#14b8a6;--course-accent-3:#f59e0b;--course-glow:rgba(15,118,110,.18)}
+body.ls-theme-am{--course-accent:#6d28d9;--course-accent-2:#06b6d4;--course-accent-3:#f97316;--course-glow:rgba(109,40,217,.18)}
+body.ls-theme-fablab{--course-accent:#dc2626;--course-accent-2:#f97316;--course-accent-3:#ffcc00;--course-glow:rgba(220,38,38,.16)}
+body.ls-theme-home{--course-accent:#003399;--course-accent-2:#33cc66;--course-accent-3:#ffcc00;--course-glow:rgba(0,51,153,.16)}
+body.ls-theme-resource{--course-accent:#334155;--course-accent-2:#33cc66;--course-accent-3:#ffcc00;--course-glow:rgba(51,65,85,.14)}
+
+body.ls-visual-upgrade .ls-page-hero,
+body.ls-visual-upgrade .hero,
+body.ls-visual-upgrade .course-hero,
+body.ls-visual-upgrade .ls-hero{
+  background:linear-gradient(135deg,var(--course-accent),#071733 72%) !important;
+  box-shadow:0 24px 70px var(--course-glow) !important;
+}
+body.ls-visual-upgrade .ls-global-nav{border-top:4px solid var(--course-accent)}
+body.ls-visual-upgrade .ls-global-links a:hover{background:color-mix(in srgb,var(--course-accent) 12%,white);color:var(--course-accent)}
+body.ls-visual-upgrade .ls-global-links .ls-global-cta{background:linear-gradient(135deg,var(--course-accent-2),var(--course-accent-3));color:#102018}
+
+body.ls-visual-upgrade .ls-section,
+body.ls-visual-upgrade section,
+body.ls-visual-upgrade .section{
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+body.ls-visual-upgrade .ls-section:hover,
+body.ls-visual-upgrade section:hover,
+body.ls-visual-upgrade .section:hover{
+  border-color:color-mix(in srgb,var(--course-accent) 28%,var(--ls-border));
+}
+body.ls-visual-upgrade .ls-card,
+body.ls-visual-upgrade .card,
+body.ls-visual-upgrade .project-card,
+body.ls-visual-upgrade .resource-card,
+body.ls-visual-upgrade .unit-card,
+body.ls-visual-upgrade .course-card,
+body.ls-visual-upgrade .tool-card,
+body.ls-visual-upgrade .challenge-card,
+body.ls-visual-upgrade .ls-project-item,
+body.ls-visual-upgrade .ls-level-card{
+  transition:transform .24s ease, box-shadow .24s ease, border-color .24s ease, background .24s ease;
+  will-change:transform;
+}
+body.ls-visual-upgrade .ls-card:hover,
+body.ls-visual-upgrade .card:hover,
+body.ls-visual-upgrade .project-card:hover,
+body.ls-visual-upgrade .resource-card:hover,
+body.ls-visual-upgrade .unit-card:hover,
+body.ls-visual-upgrade .course-card:hover,
+body.ls-visual-upgrade .tool-card:hover,
+body.ls-visual-upgrade .challenge-card:hover,
+body.ls-visual-upgrade .ls-project-item:hover,
+body.ls-visual-upgrade .ls-level-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 42px var(--course-glow);
+  border-color:color-mix(in srgb,var(--course-accent) 38%,var(--ls-border));
+}
+body.ls-visual-upgrade .ls-card h3,
+body.ls-visual-upgrade .card h3,
+body.ls-visual-upgrade .project-card h3,
+body.ls-visual-upgrade .resource-card h3,
+body.ls-visual-upgrade .unit-card h3{transition:color .24s ease}
+body.ls-visual-upgrade .ls-card:hover h3,
+body.ls-visual-upgrade .card:hover h3,
+body.ls-visual-upgrade .project-card:hover h3,
+body.ls-visual-upgrade .resource-card:hover h3,
+body.ls-visual-upgrade .unit-card:hover h3{color:var(--course-accent)}
+
+body.ls-visual-upgrade .ls-section h2,
+body.ls-visual-upgrade section h2,
+body.ls-visual-upgrade .section h2{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+body.ls-visual-upgrade .ls-section h2::before,
+body.ls-visual-upgrade section h2::before,
+body.ls-visual-upgrade .section h2::before{
+  content:"◆";
+  width:34px;
+  height:34px;
+  min-width:34px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  background:linear-gradient(135deg,var(--course-accent),var(--course-accent-2));
+  color:white;
+  font-size:15px;
+  box-shadow:0 10px 22px var(--course-glow);
+}
+body.ls-visual-upgrade .ls-section:has(h2),
+body.ls-visual-upgrade section:has(h2){position:relative;overflow:hidden}
+body.ls-visual-upgrade .ls-section:has(h2)::after,
+body.ls-visual-upgrade section:has(h2)::after{
+  content:"";
+  position:absolute;
+  right:-70px;
+  top:-70px;
+  width:150px;
+  height:150px;
+  border-radius:999px;
+  background:radial-gradient(circle, color-mix(in srgb,var(--course-accent) 13%,transparent), transparent 70%);
+  pointer-events:none;
+}
+
+/* More specific icon set using common section classes/titles available across pages */
+body.ls-visual-upgrade h2[id*="unit"]::before{content:"▦"}
+body.ls-visual-upgrade h2[id*="project"]::before{content:"✦"}
+body.ls-visual-upgrade h2[id*="resource"]::before{content:"◎"}
+body.ls-visual-upgrade h2[id*="fabrication"]::before{content:"⚙"}
+body.ls-visual-upgrade h2[id*="tool"]::before{content:"◈"}
+
+body.ls-visual-upgrade .ls-accent,
+body.ls-visual-upgrade .unit-card,
+body.ls-visual-upgrade .course-card{
+  border-top-color:var(--course-accent) !important;
+}
+body.ls-visual-upgrade .ls-accent:nth-child(2),
+body.ls-visual-upgrade .unit-card:nth-child(2),
+body.ls-visual-upgrade .course-card:nth-child(2){border-top-color:var(--course-accent-2) !important}
+body.ls-visual-upgrade .ls-accent:nth-child(3),
+body.ls-visual-upgrade .unit-card:nth-child(3),
+body.ls-visual-upgrade .course-card:nth-child(3){border-top-color:var(--course-accent-3) !important}
+
+body.ls-visual-upgrade .ls-badges li,
+body.ls-visual-upgrade .ls-badge-list li,
+body.ls-visual-upgrade .badge,
+body.ls-visual-upgrade .tag{
+  transition:transform .22s ease, background .22s ease, color .22s ease, border-color .22s ease;
+}
+body.ls-visual-upgrade .ls-badges li:hover,
+body.ls-visual-upgrade .ls-badge-list li:hover,
+body.ls-visual-upgrade .badge:hover,
+body.ls-visual-upgrade .tag:hover{
+  transform:translateY(-2px);
+  background:var(--course-accent);
+  border-color:var(--course-accent);
+  color:white;
+}
+
+body.ls-visual-upgrade .ls-project-icon,
+body.ls-visual-upgrade .project-icon,
+body.ls-visual-upgrade .icon{
+  background:linear-gradient(135deg,var(--course-accent),var(--course-accent-2)) !important;
+  box-shadow:0 10px 20px var(--course-glow);
+}
+
+body.ls-visual-upgrade a.button,
+body.ls-visual-upgrade .button,
+body.ls-visual-upgrade .btn,
+body.ls-visual-upgrade .cta,
+body.ls-visual-upgrade .primary-btn{
+  transition:transform .22s ease, box-shadow .22s ease, filter .22s ease;
+}
+body.ls-visual-upgrade a.button:hover,
+body.ls-visual-upgrade .button:hover,
+body.ls-visual-upgrade .btn:hover,
+body.ls-visual-upgrade .cta:hover,
+body.ls-visual-upgrade .primary-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 28px var(--course-glow);
+  filter:saturate(1.08);
+}
+
+@media (prefers-reduced-motion: reduce){
+  body.ls-visual-upgrade *,body.ls-visual-upgrade *::before,body.ls-visual-upgrade *::after{transition:none !important;animation:none !important;scroll-behavior:auto !important}
+  body.ls-visual-upgrade .ls-card:hover,body.ls-visual-upgrade .card:hover,body.ls-visual-upgrade .project-card:hover,body.ls-visual-upgrade .resource-card:hover,body.ls-visual-upgrade .unit-card:hover,body.ls-visual-upgrade .course-card:hover,body.ls-visual-upgrade .tool-card:hover,body.ls-visual-upgrade .challenge-card:hover,body.ls-visual-upgrade .ls-project-item:hover,body.ls-visual-upgrade .ls-level-card:hover{transform:none}
+}
