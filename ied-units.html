@@ -172,6 +172,333 @@ p,.subtitle{font-size:clamp(1rem,1.45vw,1.18rem);line-height:1.6;color:var(--ls-
 <link rel="stylesheet" href="assets/google-sites-embed.css">
 
 <link rel="stylesheet" href="assets/lockwood-standard-chrome.css">
+<link rel="stylesheet" href="assets/lockwood-contrast-final.css">
+<style id="lockwood-contrast-final-inline">
+
+/* =========================================================
+   Lockwood STEM Final Contrast Guard
+   Loaded last on every page to prevent low-contrast combinations
+   such as dark text on dark gradient headers, muted text in footers,
+   and hard-to-read controls inside dark hero sections.
+   WCAG target: normal text >= 4.5:1; large/bold text >= 3:1.
+   ========================================================= */
+:root{
+  --ls-cg-navy:#071733;
+  --ls-cg-navy-2:#101827;
+  --ls-cg-text:#101827;
+  --ls-cg-muted:#334155;
+  --ls-cg-white:#ffffff;
+  --ls-cg-soft:#f8fafc;
+  --ls-cg-link:#cfe2ff;
+  --ls-cg-yellow:#ffcc00;
+  --ls-cg-blue:#003399;
+  --ls-cg-green:#33cc66;
+  --ls-cg-focus:#ffcc00;
+}
+
+/* Global safe defaults on light backgrounds. */
+body{color:var(--ls-cg-text);} 
+main, .page, .site, .shell, .container, .ls-page-shell{color:var(--ls-cg-text);} 
+
+/* Standard navigation: always light background + dark readable links. */
+.ls-global-header,
+.ls-global-header .ls-global-nav{
+  background:rgba(255,255,255,.97)!important;
+  color:var(--ls-cg-text)!important;
+}
+.ls-global-brand,
+.ls-global-brand span,
+.ls-global-links a:not(.ls-global-cta):not([aria-current="page"]){
+  color:var(--ls-cg-text)!important;
+}
+.ls-global-links a:not(.ls-global-cta):not([aria-current="page"]){
+  background:#eef4ff!important;
+  border-color:rgba(0,51,153,.16)!important;
+}
+.ls-global-links a:not(.ls-global-cta):not([aria-current="page"]):hover,
+.ls-global-links a:not(.ls-global-cta):not([aria-current="page"]):focus-visible{
+  color:#002266!important;
+  background:#dfeaff!important;
+}
+.ls-global-links a[aria-current="page"],
+.ls-global-links a.ls-active,
+.ls-global-links a.ls-global-cta{
+  background:linear-gradient(135deg,#003399,#0054c8)!important;
+  color:#ffffff!important;
+  border-color:rgba(0,51,153,.22)!important;
+}
+
+/* Dark heroes and page banners: text must be white/yellow, not navy/gray. */
+body.ls-visual-upgrade :is(.hero,.course-hero,.ls-hero,.ls-page-hero),
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero).dark,
+.ls-page-hero{
+  color:#ffffff!important;
+}
+body.ls-visual-upgrade :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(h1,h2,h3,h4),
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero).dark :is(h1,h2,h3,h4),
+.ls-page-hero :is(h1,h2,h3,h4){
+  color:#ffffff!important;
+  text-shadow:0 2px 12px rgba(0,0,0,.42)!important;
+}
+body.ls-visual-upgrade :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(h1,h2,h3,h4) span,
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero).dark :is(h1,h2,h3,h4) span,
+.ls-page-hero :is(h1,h2,h3,h4) span,
+body.agenda-page .hero h1 span{
+  color:#ffcc00!important;
+  text-shadow:0 2px 12px rgba(0,0,0,.48)!important;
+}
+body.ls-visual-upgrade :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(p,li,.subtitle,.lead,.description),
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero).dark :is(p,li,.subtitle,.lead,.description),
+.ls-page-hero :is(p,li,.subtitle,.lead,.description){
+  color:#f8fafc!important;
+  font-weight:700!important;
+}
+body.ls-visual-upgrade :is(.hero,.course-hero,.ls-hero,.ls-page-hero) a:not(.button):not(.btn),
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero).dark a:not(.button):not(.btn),
+.ls-page-hero a:not(.button):not(.btn){
+  color:#ffec99!important;
+  font-weight:900!important;
+}
+
+/* Hero badges/eyebrows should remain readable on dark backgrounds. */
+body.ls-visual-upgrade :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.eyebrow,.ls-page-eyebrow,.tag,.badge),
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero).dark :is(.eyebrow,.ls-page-eyebrow,.tag,.badge),
+.ls-page-hero :is(.eyebrow,.ls-page-eyebrow,.tag,.badge){
+  background:#ffffff!important;
+  color:#003399!important;
+  border-color:rgba(255,255,255,.90)!important;
+  text-shadow:none!important;
+}
+
+/* Form controls inside dark hero/title areas must be light boxes with dark text. */
+body.ls-visual-upgrade :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.select-wrap,.date-wrap,.control,.controls,.filter,.search-box),
+body.agenda-page .hero :is(.select-wrap,.date-wrap,.badge){
+  background:#f8fafc!important;
+  color:#101827!important;
+  border-color:rgba(255,255,255,.88)!important;
+  text-shadow:none!important;
+}
+body.ls-visual-upgrade :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(label,select,input,option),
+body.agenda-page .hero :is(label,select,input,option){
+  color:#101827!important;
+  text-shadow:none!important;
+}
+
+/* Button contrast. */
+:is(.button,.btn,.cta,.primary-btn,button){
+  font-weight:900;
+}
+body.ls-visual-upgrade :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.button,.btn,.cta,button):not(.button-primary):not(.btn-primary):not(.primary),
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero).dark :is(.button,.btn,.cta,button):not(.button-primary):not(.btn-primary):not(.primary){
+  background:#ffffff!important;
+  color:#003399!important;
+  border:1px solid rgba(255,255,255,.75)!important;
+  text-shadow:none!important;
+}
+body.ls-visual-upgrade :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.button-primary,.btn-primary,.primary),
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero).dark :is(.button-primary,.btn-primary,.primary){
+  background:#ffcc00!important;
+  color:#101827!important;
+  border-color:#ffcc00!important;
+  text-shadow:none!important;
+}
+
+/* Card headers: prevent black/gray text on dark blue/green gradients. */
+.card-header:not(.yellow),
+.ls-card-header:not(.yellow),
+.resource-header:not(.yellow),
+.project-header:not(.yellow){
+  background:linear-gradient(135deg,#003399,#0b2452)!important;
+  color:#ffffff!important;
+}
+.card-header.green{
+  background:linear-gradient(135deg,#166534,#003399)!important;
+  color:#ffffff!important;
+}
+.card-header.yellow,
+.ls-card-header.yellow{
+  background:linear-gradient(135deg,#ffcc00,#f2b400)!important;
+  color:#101827!important;
+}
+.card-header:not(.yellow) *,
+.ls-card-header:not(.yellow) *,
+.resource-header:not(.yellow) *,
+.project-header:not(.yellow) *{
+  color:#ffffff!important;
+}
+.card-header.yellow *,
+.ls-card-header.yellow *{
+  color:#101827!important;
+}
+
+/* Dark sections/panels/footers: all readable by default. */
+:is(.dark,.dark-section,.bg-dark,.panel-dark,.ls-dark-section,[class*="dark-panel"],[class*="dark-card"]),
+:is(.dark,.dark-section,.bg-dark,.panel-dark,.ls-dark-section,[class*="dark-panel"],[class*="dark-card"]) *{
+  color:#f8fafc!important;
+}
+:is(.dark,.dark-section,.bg-dark,.panel-dark,.ls-dark-section,[class*="dark-panel"],[class*="dark-card"]) a{
+  color:#ffec99!important;
+}
+.ls-global-footer,
+footer.ls-global-footer,
+footer{
+  background:linear-gradient(135deg,#06152f,#0b2452 60%,#101827)!important;
+  color:#f8fafc!important;
+}
+.ls-global-footer *,
+footer.ls-global-footer *,
+footer *{
+  color:#f8fafc!important;
+}
+.ls-global-footer a,
+footer.ls-global-footer a,
+footer a{
+  color:#cfe2ff!important;
+  text-decoration:none!important;
+}
+.ls-global-footer a:hover,
+footer.ls-global-footer a:hover,
+footer a:hover,
+.ls-global-footer a:focus-visible,
+footer.ls-global-footer a:focus-visible,
+footer a:focus-visible{
+  color:#ffcc00!important;
+  text-decoration:underline!important;
+}
+
+/* Light cards/content: keep copy readable, avoiding overly pale gray. */
+:is(.card,.ls-card,.resource-card,.project-card,.unit-card,.course-card,.tool-card,.challenge-card,.feature-panel,.intro-card,.info-card) :is(p,li,.muted,.subtitle,.description){
+  color:#334155!important;
+}
+:is(.card,.ls-card,.resource-card,.project-card,.unit-card,.course-card,.tool-card,.challenge-card,.feature-panel,.intro-card,.info-card) :is(h1,h2,h3,h4){
+  color:#101827!important;
+}
+:is(.card,.ls-card,.resource-card,.project-card,.unit-card,.course-card,.tool-card,.challenge-card,.feature-panel,.intro-card,.info-card) a:not(.button):not(.btn){
+  color:#003399!important;
+  font-weight:900;
+}
+
+/* Tables and labels. */
+th{background:#003399!important;color:#ffffff!important;}
+td{color:#101827;}
+label{color:#334155;}
+
+/* Accessibility: visible focus and reduced motion. */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid #ffcc00!important;
+  outline-offset:3px!important;
+  box-shadow:0 0 0 6px rgba(255,204,0,.24)!important;
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important;}
+}
+
+/* Simple-selector fallback for older/course-specific pages. */
+body.ls-visual-upgrade .hero,
+body.ls-visual-upgrade .course-hero,
+body.ls-visual-upgrade .ls-hero,
+body.ls-visual-upgrade .ls-page-hero{
+  background:linear-gradient(135deg,var(--course-accent, #003399),#071733 72%)!important;
+  color:#ffffff!important;
+}
+body.ls-visual-upgrade .hero h1,
+body.ls-visual-upgrade .hero h2,
+body.ls-visual-upgrade .hero h3,
+body.ls-visual-upgrade .hero h4,
+body.ls-visual-upgrade .course-hero h1,
+body.ls-visual-upgrade .course-hero h2,
+body.ls-visual-upgrade .course-hero h3,
+body.ls-visual-upgrade .course-hero h4,
+body.ls-visual-upgrade .ls-hero h1,
+body.ls-visual-upgrade .ls-hero h2,
+body.ls-visual-upgrade .ls-hero h3,
+body.ls-visual-upgrade .ls-hero h4,
+body.ls-visual-upgrade .ls-page-hero h1,
+body.ls-visual-upgrade .ls-page-hero h2,
+body.ls-visual-upgrade .ls-page-hero h3,
+body.ls-visual-upgrade .ls-page-hero h4{
+  color:#ffffff!important;
+  text-shadow:0 2px 12px rgba(0,0,0,.42)!important;
+}
+body.ls-visual-upgrade .hero h1 span,
+body.ls-visual-upgrade .hero h2 span,
+body.ls-visual-upgrade .course-hero h1 span,
+body.ls-visual-upgrade .course-hero h2 span,
+body.ls-visual-upgrade .ls-hero h1 span,
+body.ls-visual-upgrade .ls-page-hero h1 span{
+  color:#ffcc00!important;
+  text-shadow:0 2px 12px rgba(0,0,0,.45)!important;
+}
+body.ls-visual-upgrade .hero p,
+body.ls-visual-upgrade .hero li,
+body.ls-visual-upgrade .hero .subtitle,
+body.ls-visual-upgrade .course-hero p,
+body.ls-visual-upgrade .course-hero .subtitle,
+body.ls-visual-upgrade .ls-hero p,
+body.ls-visual-upgrade .ls-page-hero p{
+  color:#f8fafc!important;
+}
+body.ls-visual-upgrade .hero .btn-primary,
+body.ls-visual-upgrade .hero .button-primary,
+body.ls-visual-upgrade .hero .primary,
+body.ls-visual-upgrade .course-hero .btn-primary,
+body.ls-visual-upgrade .course-hero .button-primary{
+  background:#ffcc00!important;
+  color:#101827!important;
+}
+body.ls-visual-upgrade .hero .btn-secondary,
+body.ls-visual-upgrade .hero .button-secondary,
+body.ls-visual-upgrade .course-hero .btn-secondary,
+body.ls-visual-upgrade .course-hero .button-secondary{
+  background:#ffffff!important;
+  color:#003399!important;
+}
+.ls-global-footer .ls-footer-brand-line,
+.ls-global-footer .ls-footer-meta,
+footer .ls-footer-brand-line,
+footer .ls-footer-meta,
+footer p,
+.ls-global-footer p{
+  color:#f8fafc!important;
+}
+
+/* Yellow callouts/tags: use black text for full 12.9:1 contrast on Lockwood yellow. */
+.yellow,
+.callout.yellow,
+.ls-callout.yellow,
+.card-header.yellow,
+.tag.yellow,
+.resource-badge.yellow{
+  color:#101827!important;
+}
+.yellow *,
+.callout.yellow *,
+.ls-callout.yellow *,
+.card-header.yellow *,
+.tag.yellow *,
+.resource-badge.yellow *{
+  color:#101827!important;
+}
+
+/* Number/icon circles with colored fills keep white text; their fill is enforced dark/blue. */
+.num,
+.workflow-number,
+.service-icon{
+  background:#003399!important;
+  color:#ffffff!important;
+}
+
+</style>
+<link rel="stylesheet" href="assets/lockwood-readability-final.css">
+<style id="lockwood-readability-final-inline">
+.visual-panel,.card,.resource,.resource-card,.project-card,.unit-card,.course-card,.tool-card,.feature-panel,.intro-card,.info-card,.dashboard-card,.launch-card,.quick-card,.tile,.panel,.light-panel,.white-panel{color:#101827!important;text-shadow:none!important;}
+.visual-panel :is(h1,h2,h3,h4,h5,h6,strong,b),.card :is(h1,h2,h3,h4,h5,h6,strong,b),.resource :is(h1,h2,h3,h4,h5,h6,strong,b),.resource-card :is(h1,h2,h3,h4,h5,h6,strong,b),.feature-panel :is(h1,h2,h3,h4,h5,h6,strong,b),.info-card :is(h1,h2,h3,h4,h5,h6,strong,b),.dashboard-card :is(h1,h2,h3,h4,h5,h6,strong,b),.tile :is(h1,h2,h3,h4,h5,h6,strong,b),.panel :is(h1,h2,h3,h4,h5,h6,strong,b){color:#101827!important;text-shadow:none!important;}
+.visual-panel :is(p,li,span,small,div,.subtitle,.description,.muted),.card :is(p,li,span,small,div,.subtitle,.description,.muted),.resource :is(p,li,span,small,div,.subtitle,.description,.muted),.resource-card :is(p,li,span,small,div,.subtitle,.description,.muted),.feature-panel :is(p,li,span,small,div,.subtitle,.description,.muted),.info-card :is(p,li,span,small,div,.subtitle,.description,.muted),.dashboard-card :is(p,li,span,small,div,.subtitle,.description,.muted),.tile :is(p,li,span,small,div,.subtitle,.description,.muted),.panel :is(p,li,span,small,div,.subtitle,.description,.muted){color:#334155!important;text-shadow:none!important;}
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.visual-panel,.card,.feature-panel,.info-card,.resource-card,.dashboard-card,.tile,.panel,.light-panel,.white-panel){background-color:rgba(255,255,255,.94)!important;color:#101827!important;text-shadow:none!important;}
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.visual-panel,.card,.feature-panel,.info-card,.resource-card,.dashboard-card,.tile,.panel,.light-panel,.white-panel) :is(h1,h2,h3,h4,h5,h6,strong,b){color:#101827!important;text-shadow:none!important;}
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.visual-panel,.card,.feature-panel,.info-card,.resource-card,.dashboard-card,.tile,.panel,.light-panel,.white-panel) :is(p,li,span,small,div,.subtitle,.description,.muted){color:#334155!important;text-shadow:none!important;}
+.card-header:not(.yellow),.resource-header:not(.yellow),.project-header:not(.yellow),.ls-card-header:not(.yellow){background:linear-gradient(135deg,#003399,#0b2452)!important;color:#fff!important;}.card-header:not(.yellow) *,.resource-header:not(.yellow) *,.project-header:not(.yellow) *,.ls-card-header:not(.yellow) *{color:#fff!important;}
+</style>
 </head>
 
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">

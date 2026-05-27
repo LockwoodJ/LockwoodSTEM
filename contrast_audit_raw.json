@@ -1,0 +1,2363 @@
+{
+  "adm-project-1.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Fabrication Request",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "adm-project-2.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Fabrication Request",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "adm-project-3.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Fabrication Request",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "adm-projects.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "adm-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "adm-syllabus.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "p",
+      "text": "To be eligible for full credit through revision, the original submission must be turned in on time. ",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 3.29,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "adm-unit-1-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "adm-unit-1.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "adm-unit-2-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "adm-unit-2.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "adm-unit-3-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "adm-unit-3.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "adm-unit-4-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "adm-unit-4.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "adm-units.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Unit",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Unit",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Unit",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Unit",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "adm.html": [
+    {
+      "selector": "a",
+      "text": "Advanced Manufacturing",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "agenda.html": [
+    {
+      "selector": "a",
+      "text": "Agenda",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "air-rocket-challenge.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "air-rocket-project.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Submit Project",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "cad-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "courses.html": [
+    {
+      "selector": "a",
+      "text": "Courses",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "donations.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "engineering-notebook-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "fablab-certification/3d-printers.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "div.breadcrumbs",
+      "text": "Level 2 / 3D Printers",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "a",
+      "text": "Level 2",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "h1",
+      "text": "3D Printer Certification: Bambu Lab P1S",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Learn how to turn a CAD model into a successful printed part by preparing the file, choosing smart s",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/cnc-mill.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "div.breadcrumbs",
+      "text": "Level 3 / CNC",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "a",
+      "text": "Level 3",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "h1",
+      "text": "CNC Certification: DMC2 Mini, FoxAlien, and Genmitsu",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "CNC machines remove material using a spinning cutting tool. Safe CNC work depends on secure workhold",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/hand-tools.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "div.breadcrumbs",
+      "text": "Level 1 / Hand Tools",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "a",
+      "text": "Level 1",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "h1",
+      "text": "Hand Tool Certification",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Hand tools are used constantly in the FabLab. Learn how to measure accurately, cut safely, shape cle",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/index.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "h1",
+      "text": "Learn the tools. Earn access. Build with confidence.",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "This certification hub teaches you how to work safely in the FabLab, choose the right tool for the j",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/laser-cutter.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "div.breadcrumbs",
+      "text": "Level 3 / Laser Cutter",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "a",
+      "text": "Level 3",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "h1",
+      "text": "Laser Cutter Certification: OMTech 80W / 40W",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Laser cutters are powerful tools for precise cutting and engraving. Safe laser work begins with appr",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/level-1.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "h1",
+      "text": "Start here: safety, awareness, and basic tool habits.",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Level 1 is required before you complete any FabLab work. Your goal is to show that you can enter the",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/level-2.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "h1",
+      "text": "Move from safe participation to supervised tool use.",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Level 2 tools are common in engineering projects. You will learn how to prepare the work, use the to",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/level-3.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "h1",
+      "text": "Prepare files carefully. Control risk. Monitor the machine.",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Laser cutters and CNC machines can produce professional parts, but they require careful setup, appro",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/level-4.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "h1",
+      "text": "Help the FabLab run safely and smoothly.",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Level 4 students model professional habits, help classmates prepare, keep the space organized, and k",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/power-tools.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "div.breadcrumbs",
+      "text": "Level 2 / Power Tools",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "a",
+      "text": "Level 2",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "h1",
+      "text": "Power Tool Certification",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Power tools save time, but they require focus, guarding, clamping, safe body position, and instructo",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/shop-safety.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "div.breadcrumbs",
+      "text": "Level 1 / Shop Safety",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "a",
+      "text": "Level 1",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "h1",
+      "text": "Shop Safety & Emergency Procedures",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "The FabLab is a shared workspace. Your first responsibility is to protect yourself, your classmates,",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification/soldering-electronics.html": [
+    {
+      "selector": "a",
+      "text": "Certifications",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "div.breadcrumbs",
+      "text": "Level 2 / Soldering & Electronics",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "a",
+      "text": "Level 2",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "h1",
+      "text": "Soldering & Electronics Certification",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 81.96,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Learn how to assemble simple circuits, recognize polarity, solder safely, and inspect your work befo",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fablab-certification.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "fablab-faq.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "fablab.html": [
+    {
+      "selector": "a",
+      "text": "FabLab",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "div.workflow-number",
+      "text": "1",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "div.workflow-number",
+      "text": "4",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Submit Fabrication Request",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "fabrication-request.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "p",
+      "text": "Review the CAD checklist to make sure your file is export-ready, correctly named, and meets project ",
+      "color": "rgba(255, 255, 255, 0.7)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "fabrication.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "div.alert",
+      "text": "Important: Your file link must be shared so anyone with the link can view it. Do not submit unfinish",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "strong",
+      "text": "Important:",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 700
+    },
+    {
+      "selector": "div.service-icon",
+      "text": "3D",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "fusion-resource-page.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "h1",
+      "text": "Autodesk Fusion Tutorial Library",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 64,
+      "fontWeight": 700
+    },
+    {
+      "selector": "span.tag.yellow",
+      "text": "Start Here",
+      "color": "rgb(122, 90, 0)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 4.22,
+      "required": 4.5,
+      "fontSize": 12.48,
+      "fontWeight": 700
+    },
+    {
+      "selector": "span.tag.yellow",
+      "text": "Beginner",
+      "color": "rgb(122, 90, 0)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 4.22,
+      "required": 4.5,
+      "fontSize": 12.48,
+      "fontWeight": 700
+    },
+    {
+      "selector": "span.tag.yellow",
+      "text": "CAD Practice",
+      "color": "rgb(122, 90, 0)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 4.22,
+      "required": 4.5,
+      "fontSize": 12.48,
+      "fontWeight": 700
+    },
+    {
+      "selector": "span.tag.yellow",
+      "text": "Independent Practice",
+      "color": "rgb(122, 90, 0)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 4.22,
+      "required": 4.5,
+      "fontSize": 12.48,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Lockwood STEM | Autodesk Fusion Tutorial Library",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    },
+    {
+      "selector": "strong",
+      "text": "Lockwood STEM",
+      "color": "rgb(0, 51, 153)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.39,
+      "required": 3,
+      "fontSize": 18.88,
+      "fontWeight": 700
+    }
+  ],
+  "fusion-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "h1",
+      "text": "Autodesk Fusion Tutorial Library",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 64,
+      "fontWeight": 700
+    },
+    {
+      "selector": "span.tag.yellow",
+      "text": "Start Here",
+      "color": "rgb(122, 90, 0)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 4.22,
+      "required": 4.5,
+      "fontSize": 12.48,
+      "fontWeight": 700
+    },
+    {
+      "selector": "span.tag.yellow",
+      "text": "Beginner",
+      "color": "rgb(122, 90, 0)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 4.22,
+      "required": 4.5,
+      "fontSize": 12.48,
+      "fontWeight": 700
+    },
+    {
+      "selector": "span.tag.yellow",
+      "text": "CAD Practice",
+      "color": "rgb(122, 90, 0)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 4.22,
+      "required": 4.5,
+      "fontSize": 12.48,
+      "fontWeight": 700
+    },
+    {
+      "selector": "span.tag.yellow",
+      "text": "Independent Practice",
+      "color": "rgb(122, 90, 0)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 4.22,
+      "required": 4.5,
+      "fontSize": 12.48,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Lockwood STEM | Autodesk Fusion Tutorial Library",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    },
+    {
+      "selector": "strong",
+      "text": "Lockwood STEM",
+      "color": "rgb(0, 51, 153)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.39,
+      "required": 3,
+      "fontSize": 18.88,
+      "fontWeight": 700
+    }
+  ],
+  "google-sites-home.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    }
+  ],
+  "ied-projects.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "ied-syllabus.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "p",
+      "text": "To be eligible for full credit through revision, the original submission must be turned in on time. ",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 3.29,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "ied-units.html": [
+    {
+      "error": "Page.set_content: Execution context was destroyed, most likely because of a navigation\nCall log:\n  - setting frame content, waiting until \"domcontentl"
+    }
+  ],
+  "ied.html": [
+    {
+      "selector": "a",
+      "text": "IED",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "p",
+      "text": "Make sure your file is complete, named clearly, and ready for review before submitting.",
+      "color": "rgba(255, 255, 255, 0.82)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Submit Project",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "ied_air_rocket_challenge.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.primary",
+      "text": "Go to FabLab Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "h2",
+      "text": "Ready for launch?",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 40,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Start by reviewing the constraints, sketching fin ideas, and planning how each part will fit before ",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "index.html": [
+    {
+      "selector": "a",
+      "text": "Home",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "mini-golf-challenge.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.primary",
+      "text": "Go to FabLab Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "h2",
+      "text": "Ready to begin?",
+      "color": "rgb(16, 24, 39)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 1.17,
+      "required": 3,
+      "fontSize": 40,
+      "fontWeight": 700
+    },
+    {
+      "selector": "p",
+      "text": "Start by reviewing the constraints, sketching multiple ideas, and planning how your team will build ",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(11, 36, 82)",
+      "ratio": 3.04,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "mini-golf-project.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Submit Project",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "poe-leather-goods-project.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "span.num",
+      "text": "1",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "span.num",
+      "text": "2",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "span.num",
+      "text": "3",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "span.num",
+      "text": "4",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "span.num",
+      "text": "5",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "span.num",
+      "text": "6",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "span.num",
+      "text": "7",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "span.num",
+      "text": "8",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Fabrication Request",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "poe-project-1.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Fabrication Request",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "poe-project-2.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Fabrication Request",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "poe-project-3.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Fabrication Request",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "poe-projects.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "poe-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "poe-syllabus.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "p",
+      "text": "To be eligible for full credit through revision, the original submission must be turned in on time. ",
+      "color": "rgb(102, 112, 133)",
+      "bg": "rgb(255, 204, 0)",
+      "ratio": 3.29,
+      "required": 4.5,
+      "fontSize": 18.88,
+      "fontWeight": 400
+    }
+  ],
+  "poe-unit-1-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "poe-unit-1.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "poe-unit-2-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "poe-unit-2.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "poe-unit-3-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "poe-unit-3.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "poe-unit-4-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "poe-unit-4.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "poe-units.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Unit",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Unit",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Unit",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Unit",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "poe.html": [
+    {
+      "selector": "a",
+      "text": "POE",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "product-improvement-project.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Submit Project",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "resources.html": [
+    {
+      "selector": "a",
+      "text": "Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "start-here.html": [
+    {
+      "selector": "a",
+      "text": "Start Here",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 400
+    },
+    {
+      "selector": "div.num",
+      "text": "1",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "div.num",
+      "text": "2",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "div.num",
+      "text": "3",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "div.num",
+      "text": "4",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "div.num",
+      "text": "5",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "unit-1-design-and-problem-solving.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Project",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Submit Work",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "unit-1-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "unit-2-assembly-design.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Project",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Submit Work",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "unit-2-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "unit-3-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ],
+  "unit-3-thoughtful-product-design.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Project",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Submit Work",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "unit-4-making-things-move.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Open Resources",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "View Project Options",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    },
+    {
+      "selector": "a.btn.btn-primary",
+      "text": "Submit Work",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 900
+    }
+  ],
+  "unit-4-resources.html": [
+    {
+      "selector": "a.ls-global-cta",
+      "text": "Fabrication",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(255, 255, 255)",
+      "ratio": 1,
+      "required": 4.5,
+      "fontSize": 16,
+      "fontWeight": 800
+    }
+  ]
+}
