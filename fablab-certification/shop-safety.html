@@ -56,8 +56,32 @@ p,.subtitle{font-size:clamp(1rem,1.45vw,1.18rem);line-height:1.6;color:var(--ls-
 <link rel="stylesheet" href="assets/style.css">
 <script defer src="assets/script.js"></script>
 <link rel="stylesheet" href="../assets/google-sites-embed.css">
+
+<link rel="stylesheet" href="../assets/lockwood-standard-chrome.css">
 </head>
-<body><header class="site-header"><div class="nav"><a class="brand" href="../index.html"><img class="brand-logo" src="../assets/lockwood-stem-logo.png" alt="Lockwood STEM logo"><span>Lockwood STEM Certification Hub</span></a><nav class="nav-links"><a class="main-link" href="../index.html">Home</a><a class="main-link" href="../agenda.html">Agenda</a><a class="main-link" href="../courses.html">Courses</a><a class="main-link" href="../fablab.html">FabLab</a><a href="index.html">Certifications</a><a href="level-1.html">Level 1</a><a href="level-2.html">Level 2</a><a href="level-3.html">Level 3</a><a href="level-4.html">Level 4</a><a class="fabrication-link" href="../fabrication.html">Fabrication</a></nav></div></header>
+<body class="ls-has-standard-chrome"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<header class="ls-global-header" role="banner">
+  <nav class="ls-global-nav" aria-label="Main navigation">
+    <a class="ls-global-brand" href="../index.html" aria-label="Lockwood STEM Home">
+      <img src="../assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+      <span>Lockwood STEM</span>
+    </a>
+    <div class="ls-global-links">
+      <a href="../index.html">Home</a>
+      <a href="../start-here.html">Start Here</a>
+      <a href="../agenda.html">Agenda</a>
+      <a href="../courses.html">Courses</a>
+      <a href="../ied.html">IED</a>
+      <a href="../poe.html">POE</a>
+      <a href="../adm.html">Advanced Manufacturing</a>
+      <a href="../fablab.html">FabLab</a>
+      <a href="../fablab-certification/index.html" aria-current="page">Certifications</a>
+      <a href="../resources.html">Resources</a>
+      <a class="ls-global-cta" href="../fabrication.html">Fabrication</a>
+    </div>
+  </nav>
+</header>
+<div id="main-content"></div>
 <section class="hero"><div class="hero-inner"><div class="breadcrumbs"><a href="level-1.html">Level 1</a> / Shop Safety</div><div class="eyebrow">Core Access</div><h1>Shop Safety & Emergency Procedures</h1><p>The FabLab is a shared workspace. Your first responsibility is to protect yourself, your classmates, the equipment, and the learning environment.</p></div></section>
 <section><div class="container grid">
 <div class="card span-8"><h2>What You Need to Learn</h2><div class="lesson-block"><h3>Safety is a habit, not a checklist.</h3><p>Before you use any tool, pause and scan the workspace. Ask: Do I have the right PPE? Is the material secure? Is the tool in good condition? Do I know what to do if something goes wrong?</p></div><ul class="checklist"><li>Wear required PPE before entering active work zones.</li><li>Secure hair, sleeves, lanyards, jewelry, and loose clothing.</li><li>Inspect tools before use and report damage immediately.</li><li>Know where emergency stops, exits, first aid, fire extinguisher, and eyewash are located.</li><li>Use only tools you are certified and approved to use.</li></ul><div class="danger"><strong>Stop-work rule:</strong> Any student may pause work when they notice an unsafe condition. Safety is never considered an interruption.</div></div>
@@ -65,5 +89,18 @@ p,.subtitle{font-size:clamp(1rem,1.45vw,1.18rem);line-height:1.6;color:var(--ls-
 <div class="card span-12"><h2>Emergency Habits</h2><ol class="procedure"><li>Stop the tool or step away from the hazard if it is safe to do so.</li><li>Notify the instructor immediately.</li><li>Keep other students away from the area.</li><li>Do not restart work until the instructor clears the situation.</li></ol></div>
 <div class="card span-12"><h2>Knowledge Check</h2><div class="quiz" id="quiz-safety"><div class="quiz-question" data-answer="c"><p>What should you do before using a tool that looks damaged?</p><label><input type="radio" name="quiz-safety1" value="a"> Use it carefully</label><label><input type="radio" name="quiz-safety1" value="b"> Ask another student to try it</label><label><input type="radio" name="quiz-safety1" value="c"> Stop and report it to the instructor</label></div><div class="quiz-question" data-answer="b"><p>Which item is required in most active work zones?</p><label><input type="radio" name="quiz-safety2" value="a"> Headphones</label><label><input type="radio" name="quiz-safety2" value="b"> Safety glasses</label><label><input type="radio" name="quiz-safety2" value="c"> Open-toed shoes</label></div><div class="quiz-question" data-answer="a"><p>Who may call a stop-work pause?</p><label><input type="radio" name="quiz-safety3" value="a"> Any student who sees an unsafe condition</label><label><input type="radio" name="quiz-safety3" value="b"> Only the project manager</label><label><input type="radio" name="quiz-safety3" value="c"> Only Level 4 students</label></div><button onclick="gradeQuiz('quiz-safety')">Check Answers</button><div class="quiz-result"></div></div></div>
 </div></section>
-<footer class="footer"><div class="footer-inner"><div><strong>Lockwood STEM FabLab Certification Hub</strong><br>Training • Safety • Tool Access • Fabrication Readiness</div><div><a href="../index.html">Lockwood STEM Home</a> · <a href="../fablab.html">FabLab</a> · <a href="index.html">Certification Hub</a> · <a href="../fabrication.html">Fabrication Request</a></div></div></footer></body>
+<footer class="ls-global-footer" role="contentinfo">
+  <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
+  <div class="ls-footer-links" aria-label="Footer navigation">
+    <a href="../index.html">Home</a>
+    <a href="../start-here.html">Start Here</a>
+    <a href="../agenda.html">Agenda</a>
+    <a href="../courses.html">Courses</a>
+    <a href="../fablab.html">FabLab</a>
+    <a href="../fablab-certification/index.html">Certifications</a>
+    <a href="../fabrication.html">Fabrication Request</a>
+    <a href="../resources.html">Resources</a>
+  </div>
+</footer>
+</body>
 </html>

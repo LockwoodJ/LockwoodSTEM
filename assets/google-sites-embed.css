@@ -188,3 +188,239 @@ button,
     transition-duration:.001ms!important;
   }
 }
+
+
+/* Additional contrast safeguards for nested colored text inside dark hero treatments.
+   Fixes cases such as a blue word inside a dark navy agenda hero. */
+body.ls-visual-upgrade .ls-page-hero h1 span,
+body.ls-visual-upgrade .hero h1 span,
+body.ls-visual-upgrade .course-hero h1 span,
+body.ls-visual-upgrade .ls-hero h1 span,
+body.ls-visual-upgrade .ls-page-hero .accent,
+body.ls-visual-upgrade .hero .accent,
+body.ls-visual-upgrade .course-hero .accent,
+body.ls-visual-upgrade .ls-hero .accent{
+  color:#ffcc00!important;
+  text-shadow:0 2px 10px rgba(0,0,0,.45)!important;
+}
+
+body.ls-visual-upgrade .hero .eyebrow,
+body.ls-visual-upgrade .course-hero .eyebrow,
+body.ls-visual-upgrade .ls-page-hero .eyebrow{
+  background:#ffffff!important;
+  color:#003399!important;
+  border-color:rgba(255,255,255,.85)!important;
+}
+
+body.ls-visual-upgrade .hero .subtitle,
+body.ls-visual-upgrade .course-hero .subtitle,
+body.ls-visual-upgrade .ls-page-hero .subtitle{
+  color:#f8fafc!important;
+  font-weight:700!important;
+}
+
+
+/* =========================================================
+   Lockwood STEM Standard Header + Footer System
+   Added to keep navigation, contrast, and spacing consistent
+   across the main site and FabLab Certification Hub.
+   ========================================================= */
+:root {
+  --ls-blue: #003399;
+  --ls-blue-2: #0054c8;
+  --ls-green: #33cc66;
+  --ls-yellow: #ffcc00;
+  --ls-dark: #101827;
+  --ls-text: #1f2937;
+  --ls-muted: #667085;
+  --ls-header-bg: rgba(255, 255, 255, 0.96);
+  --ls-footer-bg: #101827;
+  --ls-footer-text: #f8fafc;
+}
+
+.ls-global-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  background: var(--ls-header-bg) !important;
+  border-bottom: 1px solid rgba(0, 51, 153, 0.14) !important;
+  box-shadow: 0 8px 24px rgba(16, 24, 39, 0.08) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.ls-global-nav {
+  width: min(100%, 1600px);
+  margin: 0 auto;
+  padding: 10px clamp(14px, 2vw, 28px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.ls-global-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ls-blue) !important;
+  text-decoration: none !important;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.ls-global-brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.ls-global-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ls-global-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 8px 11px;
+  border-radius: 999px;
+  color: var(--ls-text) !important;
+  text-decoration: none !important;
+  font-size: 0.9rem;
+  font-weight: 850;
+  line-height: 1;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.ls-global-links a:hover,
+.ls-global-links a:focus-visible {
+  color: var(--ls-blue) !important;
+  background: rgba(0, 51, 153, 0.08) !important;
+  border-color: rgba(0, 51, 153, 0.14) !important;
+  transform: translateY(-1px);
+}
+
+.ls-global-links .ls-global-cta {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, var(--ls-blue), var(--ls-blue-2)) !important;
+  border-color: rgba(0, 51, 153, 0.2) !important;
+  box-shadow: 0 10px 22px rgba(0, 51, 153, 0.22);
+}
+
+.ls-global-links .ls-global-cta:hover,
+.ls-global-links .ls-global-cta:focus-visible {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, var(--ls-blue-2), var(--ls-blue)) !important;
+}
+
+.ls-global-footer {
+  width: 100%;
+  margin-top: 32px;
+  padding: 28px 18px;
+  text-align: center;
+  background: var(--ls-footer-bg) !important;
+  color: var(--ls-footer-text) !important;
+  border-top: 4px solid var(--ls-blue);
+}
+
+.ls-global-footer strong,
+.ls-global-footer p,
+.ls-global-footer span {
+  color: var(--ls-footer-text) !important;
+}
+
+.ls-footer-brand-line {
+  margin: 0;
+  color: var(--ls-footer-text) !important;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.ls-footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.ls-footer-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  color: #eaf1ff !important;
+  text-decoration: none !important;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ls-footer-links a:hover,
+.ls-footer-links a:focus-visible {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.26);
+}
+
+.ls-footer-meta {
+  margin: 12px 0 0;
+  color: #b8c3d6 !important;
+  font-size: 0.86rem;
+}
+
+.ls-global-header a:focus-visible,
+.ls-global-footer a:focus-visible {
+  outline: 3px solid var(--ls-yellow);
+  outline-offset: 3px;
+}
+
+body.agenda-page .ls-global-footer {
+  margin-top: 0;
+}
+
+body.agenda-page .page {
+  min-height: calc(100vh - 86px);
+}
+
+@media (max-width: 980px) {
+  .ls-global-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ls-global-links {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 620px) {
+  .ls-global-brand span {
+    font-size: 0.98rem;
+  }
+
+  .ls-global-brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .ls-global-links a {
+    font-size: 0.82rem;
+    padding: 8px 9px;
+  }
+}

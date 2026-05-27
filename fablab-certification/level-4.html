@@ -56,12 +56,49 @@ p,.subtitle{font-size:clamp(1rem,1.45vw,1.18rem);line-height:1.6;color:var(--ls-
 <link rel="stylesheet" href="assets/style.css">
 <script defer src="assets/script.js"></script>
 <link rel="stylesheet" href="../assets/google-sites-embed.css">
+
+<link rel="stylesheet" href="../assets/lockwood-standard-chrome.css">
 </head>
-<body><header class="site-header"><div class="nav"><a class="brand" href="../index.html"><img class="brand-logo" src="../assets/lockwood-stem-logo.png" alt="Lockwood STEM logo"><span>Lockwood STEM Certification Hub</span></a><nav class="nav-links"><a class="main-link" href="../index.html">Home</a><a class="main-link" href="../agenda.html">Agenda</a><a class="main-link" href="../courses.html">Courses</a><a class="main-link" href="../fablab.html">FabLab</a><a href="index.html">Certifications</a><a href="level-1.html">Level 1</a><a href="level-2.html">Level 2</a><a href="level-3.html">Level 3</a><a href="level-4.html">Level 4</a><a class="fabrication-link" href="../fabrication.html">Fabrication</a></nav></div></header>
+<body class="ls-has-standard-chrome"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<header class="ls-global-header" role="banner">
+  <nav class="ls-global-nav" aria-label="Main navigation">
+    <a class="ls-global-brand" href="../index.html" aria-label="Lockwood STEM Home">
+      <img src="../assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+      <span>Lockwood STEM</span>
+    </a>
+    <div class="ls-global-links">
+      <a href="../index.html">Home</a>
+      <a href="../start-here.html">Start Here</a>
+      <a href="../agenda.html">Agenda</a>
+      <a href="../courses.html">Courses</a>
+      <a href="../ied.html">IED</a>
+      <a href="../poe.html">POE</a>
+      <a href="../adm.html">Advanced Manufacturing</a>
+      <a href="../fablab.html">FabLab</a>
+      <a href="../fablab-certification/index.html" aria-current="page">Certifications</a>
+      <a href="../resources.html">Resources</a>
+      <a class="ls-global-cta" href="../fabrication.html">Fabrication</a>
+    </div>
+  </nav>
+</header>
+<div id="main-content"></div>
 <section class="hero"><div class="hero-inner"><div class="eyebrow">Level 4 • Leadership</div><h1>Help the FabLab run safely and smoothly.</h1><p>Level 4 students model professional habits, help classmates prepare, keep the space organized, and know when to involve the instructor.</p></div></section>
 <section><div class="container grid">
 <div class="card span-8"><h2>Leadership Looks Like...</h2><ul class="checklist"><li>Using calm, clear language when reminding peers about safety.</li><li>Helping classmates prepare files without doing the work for them.</li><li>Reporting damaged tools, missing supplies, or unsafe behavior.</li><li>Supporting cleanup, organization, and project documentation.</li><li>Knowing that only the instructor gives final approval for machine use.</li></ul></div>
 <div class="card span-4"><h2>Leadership Check</h2><div class="quiz" id="quiz-lead"><div class="quiz-question" data-answer="b"><p>What should a lab assistant do if a peer bypasses a safety rule?</p><label><input type="radio" name="quiz-lead1" value="a"> Ignore it if the project is almost finished</label><label><input type="radio" name="quiz-lead1" value="b"> Stop the situation and notify the instructor</label><label><input type="radio" name="quiz-lead1" value="c"> Fix it quietly later</label></div><div class="quiz-question" data-answer="a"><p>What is the best way to help a classmate with a file?</p><label><input type="radio" name="quiz-lead2" value="a"> Ask guiding questions and help them check requirements</label><label><input type="radio" name="quiz-lead2" value="b"> Take over and finish the file for them</label><label><input type="radio" name="quiz-lead2" value="c"> Approve it without looking closely</label></div><button onclick="gradeQuiz('quiz-lead')">Check Answers</button><div class="quiz-result"></div></div></div>
 </div></section>
-<footer class="footer"><div class="footer-inner"><div><strong>Lockwood STEM FabLab Certification Hub</strong><br>Training • Safety • Tool Access • Fabrication Readiness</div><div><a href="../index.html">Lockwood STEM Home</a> · <a href="../fablab.html">FabLab</a> · <a href="index.html">Certification Hub</a> · <a href="../fabrication.html">Fabrication Request</a></div></div></footer></body>
+<footer class="ls-global-footer" role="contentinfo">
+  <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
+  <div class="ls-footer-links" aria-label="Footer navigation">
+    <a href="../index.html">Home</a>
+    <a href="../start-here.html">Start Here</a>
+    <a href="../agenda.html">Agenda</a>
+    <a href="../courses.html">Courses</a>
+    <a href="../fablab.html">FabLab</a>
+    <a href="../fablab-certification/index.html">Certifications</a>
+    <a href="../fabrication.html">Fabrication Request</a>
+    <a href="../resources.html">Resources</a>
+  </div>
+</footer>
+</body>
 </html>
