@@ -61,9 +61,12 @@ html { scroll-behavior: smooth; }
 
 <link rel="stylesheet" href="assets/lockwood-polish.css">
 <link rel="stylesheet" href="assets/google-sites-embed.css">
+
+<link rel="stylesheet" href="assets/lockwood-standard-chrome.css">
 </head>
-<body class="ls-visual-upgrade ls-theme-am">
-<header class="ls-global-header">
+<body class="ls-visual-upgrade ls-theme-am ls-has-standard-chrome">
+<a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<header class="ls-global-header" role="banner">
   <nav class="ls-global-nav" aria-label="Main navigation">
     <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
       <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
@@ -71,19 +74,20 @@ html { scroll-behavior: smooth; }
     </a>
     <div class="ls-global-links">
       <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
       <a href="agenda.html">Agenda</a>
       <a href="courses.html">Courses</a>
       <a href="ied.html">IED</a>
       <a href="poe.html">POE</a>
       <a href="adm.html">Advanced Manufacturing</a>
       <a href="fablab.html">FabLab</a>
-    <a href="fablab-certification/index.html">Certifications</a>
+      <a href="fablab-certification/index.html">Certifications</a>
       <a href="resources.html">Resources</a>
       <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
     </div>
   </nav>
 </header>
-<main>
+<main id="main-content">
 
   <section class="hero">
     <div class="hero-shell">
@@ -141,13 +145,17 @@ html { scroll-behavior: smooth; }
   </section>
 
 </main>
-<footer class="ls-global-footer">
-  <strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation
-  <div class="ls-footer-links">
+<footer class="ls-global-footer" role="contentinfo">
+  <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
+  <div class="ls-footer-links" aria-label="Footer navigation">
     <a href="index.html">Home</a>
+    <a href="start-here.html">Start Here</a>
+    <a href="agenda.html">Agenda</a>
     <a href="courses.html">Courses</a>
     <a href="fablab.html">FabLab</a>
+    <a href="fablab-certification/index.html">Certifications</a>
     <a href="fabrication.html">Fabrication Request</a>
+    <a href="resources.html">Resources</a>
   </div>
 </footer>
 </body>

@@ -399,27 +399,36 @@
   </style>
 
   <link rel="stylesheet" href="assets/google-sites-embed.css">
+
+<link rel="stylesheet" href="assets/lockwood-standard-chrome.css">
 </head>
 
-<body>
-  <main class="site">
+<body class="ls-has-standard-chrome">
+  <main id="main-content" class="site">
     <div class="shell">
 
-      <header class="topbar">
-        <a class="brand" href="index.html">
-          <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
-          <span>Lockwood STEM</span>
-        </a>
-
-        <nav class="nav" aria-label="Main navigation">
-          <a href="agenda.html">Agenda</a>
-          <a href="courses.html">Courses</a>
-          <a href="fablab.html">FabLab</a>
-          <a href="fablab-certification/">Certifications</a>
-          <a href="fabrication.html">Fabrication</a>
-          <a href="resources.html">Resources</a>
-        </nav>
-      </header>
+      <a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<header class="ls-global-header" role="banner">
+  <nav class="ls-global-nav" aria-label="Main navigation">
+    <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
+      <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+      <span>Lockwood STEM</span>
+    </a>
+    <div class="ls-global-links">
+      <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="courses.html">Courses</a>
+      <a href="ied.html">IED</a>
+      <a href="poe.html">POE</a>
+      <a href="adm.html">Advanced Manufacturing</a>
+      <a href="fablab.html">FabLab</a>
+      <a href="fablab-certification/index.html">Certifications</a>
+      <a href="resources.html">Resources</a>
+      <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
+    </div>
+  </nav>
+</header>
 
       <section class="hero">
         <div class="eyebrow"><span class="spark"></span> Engineering • Manufacturing • Innovation</div>
@@ -430,7 +439,8 @@
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="agenda.html">Open Daily Agenda</a>
+          <a class="button button-primary" href="start-here.html">Start Here</a>
+          <a class="button button-secondary" href="agenda.html">Open Daily Agenda</a>
           <a class="button button-secondary" href="fabrication.html">Submit Fabrication Request</a>
           <a class="button button-secondary" href="fablab-certification/">Open Certification Hub</a>
         </div>
@@ -443,6 +453,14 @@
         </div>
 
         <div class="grid">
+
+          <a class="card" href="start-here.html">
+            <div class="icon">START</div>
+            <h3>Start Here Guide</h3>
+            <p>New students can learn how to use the agenda, course hubs, FabLab, fabrication requests, and support resources.</p>
+            <div class="card-link">Open guide →</div>
+          </a>
+
           <a class="card" href="agenda.html">
             <div class="icon">DAY</div>
             <h3>Daily Agenda</h3>
@@ -545,11 +563,20 @@
         </div>
       </section>
 
-      <footer class="footer">
-        <strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation
-      </footer>
-
-    </div>
+      </div>
   </main>
+<footer class="ls-global-footer" role="contentinfo">
+  <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
+  <div class="ls-footer-links" aria-label="Footer navigation">
+    <a href="index.html">Home</a>
+    <a href="start-here.html">Start Here</a>
+    <a href="agenda.html">Agenda</a>
+    <a href="courses.html">Courses</a>
+    <a href="fablab.html">FabLab</a>
+    <a href="fablab-certification/index.html">Certifications</a>
+    <a href="fabrication.html">Fabrication Request</a>
+    <a href="resources.html">Resources</a>
+  </div>
+</footer>
 </body>
 </html>

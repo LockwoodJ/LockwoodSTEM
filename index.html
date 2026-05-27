@@ -61,31 +61,35 @@ html { scroll-behavior: smooth; }
 
 <link rel="stylesheet" href="assets/lockwood-polish.css">
 <link rel="stylesheet" href="assets/google-sites-embed.css">
+
+<link rel="stylesheet" href="assets/lockwood-standard-chrome.css">
 </head>
 
-<body class="ls-visual-upgrade ls-theme-home">
-<header class="ls-global-header">
+<body class="ls-visual-upgrade ls-theme-home ls-has-standard-chrome">
+<a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<header class="ls-global-header" role="banner">
   <nav class="ls-global-nav" aria-label="Main navigation">
     <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
       <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
       <span>Lockwood STEM</span>
     </a>
     <div class="ls-global-links">
-      <a href="index.html">Home</a>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="start-here.html">Start Here</a>
       <a href="agenda.html">Agenda</a>
       <a href="courses.html">Courses</a>
       <a href="ied.html">IED</a>
       <a href="poe.html">POE</a>
       <a href="adm.html">Advanced Manufacturing</a>
       <a href="fablab.html">FabLab</a>
-    <a href="fablab-certification/index.html">Certifications</a>
+      <a href="fablab-certification/index.html">Certifications</a>
       <a href="resources.html">Resources</a>
       <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
     </div>
   </nav>
 </header>
 
-<main>
+<main id="main-content">
   <section class="hero">
     <div class="hero-shell">
       <div class="hero-grid">
@@ -94,7 +98,8 @@ html { scroll-behavior: smooth; }
           <h1>Lockwood STEM <span>Home</span></h1>
           <p class="subtitle">Start here for the daily agenda, course pages, FabLab resources, engineering supports, and fabrication submissions.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="agenda.html">Open Daily Agenda</a>
+            <a class="btn btn-primary" href="start-here.html">Start Here</a>
+            <a class="btn btn-secondary" href="agenda.html">Open Daily Agenda</a>
             <a class="btn btn-secondary" href="courses.html">Open Courses</a>
             <a class="btn btn-secondary" href="fabrication.html">Submit Fabrication Request</a>
           </div>
@@ -115,6 +120,14 @@ html { scroll-behavior: smooth; }
     </div>
 
     <div class="home-dashboard-grid">
+
+      <a class="home-main-card" href="start-here.html">
+        <div class="home-icon">START</div>
+        <h3>Start Here Guide</h3>
+        <p>New to the site? Learn how to find agendas, course hubs, FabLab certification, fabrication requests, and student resources.</p>
+        <span class="home-link-button">Open Start Here →</span>
+      </a>
+
       <a class="home-main-card" href="agenda.html">
         <div class="home-icon">DAY</div>
         <h3>Daily Agenda</h3>
@@ -175,6 +188,7 @@ html { scroll-behavior: smooth; }
     </div>
 
     <div class="home-quick-grid">
+      <a class="home-quick-link" href="start-here.html">Start Here</a>
       <a class="home-quick-link" href="agenda.html">Daily Agenda</a>
       <a class="home-quick-link" href="ied.html">Courses</a>
       <a class="home-quick-link" href="ied-projects.html">Projects</a>
@@ -184,14 +198,17 @@ html { scroll-behavior: smooth; }
     </div>
   </section>
 </main>
-
-<footer class="ls-global-footer">
-  <strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation
-  <div class="ls-footer-links">
+<footer class="ls-global-footer" role="contentinfo">
+  <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
+  <div class="ls-footer-links" aria-label="Footer navigation">
     <a href="index.html">Home</a>
+    <a href="start-here.html">Start Here</a>
+    <a href="agenda.html">Agenda</a>
     <a href="courses.html">Courses</a>
     <a href="fablab.html">FabLab</a>
+    <a href="fablab-certification/index.html">Certifications</a>
     <a href="fabrication.html">Fabrication Request</a>
+    <a href="resources.html">Resources</a>
   </div>
 </footer>
 </body>

@@ -57,8 +57,11 @@ html { scroll-behavior: smooth; }
 
 <link rel="stylesheet" href="assets/lockwood-polish.css">
 <link rel="stylesheet" href="assets/google-sites-embed.css">
+
+<link rel="stylesheet" href="assets/lockwood-standard-chrome.css">
 </head>
-<body class="ls-visual-upgrade ls-theme-resource"><header class="ls-global-header">
+<body class="ls-visual-upgrade ls-theme-resource ls-has-standard-chrome"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<header class="ls-global-header" role="banner">
   <nav class="ls-global-nav" aria-label="Main navigation">
     <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
       <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
@@ -66,18 +69,19 @@ html { scroll-behavior: smooth; }
     </a>
     <div class="ls-global-links">
       <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
       <a href="agenda.html">Agenda</a>
       <a href="courses.html">Courses</a>
       <a href="ied.html">IED</a>
       <a href="poe.html">POE</a>
       <a href="adm.html">Advanced Manufacturing</a>
       <a href="fablab.html">FabLab</a>
-    <a href="fablab-certification/index.html">Certifications</a>
-      <a href="resources.html">Resources</a>
+      <a href="fablab-certification/index.html">Certifications</a>
+      <a href="resources.html" aria-current="page">Resources</a>
       <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
     </div>
   </nav>
-</header><main>
+</header><main id="main-content">
 <section class="hero"><div class="hero-shell"><div class="hero-grid"><div>
 <div class="eyebrow"><span class="spark"></span> IED Resource Hub</div>
 <h1>Student <span>Resources</span></h1>
@@ -91,13 +95,17 @@ html { scroll-behavior: smooth; }
 </div></section>
 <section><div class="grid-2"><div class="panel"><h3>When to Use Resources</h3><ul><li>Before starting a new project or unit activity.</li><li>When your CAD model is not behaving correctly.</li><li>Before submitting a 3D print or laser cut request.</li><li>When your engineering notebook needs stronger evidence.</li></ul></div><div class="panel"><h3>Before Asking for Review</h3><ul><li>Check your file name and file type.</li><li>Confirm your notebook shows your design process.</li><li>Include screenshots, photos, sketches, or test evidence.</li><li>Make sure your work matches the project requirements.</li></ul></div></div></section>
 </main>
-<footer class="ls-global-footer">
-  <strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation
-  <div class="ls-footer-links">
+<footer class="ls-global-footer" role="contentinfo">
+  <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
+  <div class="ls-footer-links" aria-label="Footer navigation">
     <a href="index.html">Home</a>
+    <a href="start-here.html">Start Here</a>
+    <a href="agenda.html">Agenda</a>
     <a href="courses.html">Courses</a>
     <a href="fablab.html">FabLab</a>
+    <a href="fablab-certification/index.html">Certifications</a>
     <a href="fabrication.html">Fabrication Request</a>
+    <a href="resources.html">Resources</a>
   </div>
 </footer>
 </body></html>

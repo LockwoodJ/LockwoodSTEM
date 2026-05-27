@@ -57,8 +57,11 @@ html { scroll-behavior: smooth; }
 
 <link rel="stylesheet" href="assets/lockwood-polish.css">
 <link rel="stylesheet" href="assets/google-sites-embed.css">
+
+<link rel="stylesheet" href="assets/lockwood-standard-chrome.css">
 </head>
-<body class="ls-visual-upgrade ls-theme-resource"><header class="ls-global-header">
+<body class="ls-visual-upgrade ls-theme-resource ls-has-standard-chrome"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<header class="ls-global-header" role="banner">
   <nav class="ls-global-nav" aria-label="Main navigation">
     <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
       <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
@@ -66,29 +69,34 @@ html { scroll-behavior: smooth; }
     </a>
     <div class="ls-global-links">
       <a href="index.html">Home</a>
+      <a href="start-here.html">Start Here</a>
       <a href="agenda.html">Agenda</a>
       <a href="courses.html">Courses</a>
       <a href="ied.html">IED</a>
       <a href="poe.html">POE</a>
       <a href="adm.html">Advanced Manufacturing</a>
       <a href="fablab.html">FabLab</a>
-    <a href="fablab-certification/index.html">Certifications</a>
+      <a href="fablab-certification/index.html">Certifications</a>
       <a href="resources.html">Resources</a>
       <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
     </div>
   </nav>
-</header><main>
+</header><main id="main-content">
 <section class="hero"><div class="hero-shell"><div class="hero-grid"><div><div class="eyebrow"><span class="spark"></span> CAD Resources</div><h1>CAD <span>Support</span></h1><p class="subtitle">Use this page when creating models, assemblies, drawings, dimensions, and fabrication-ready files for IED projects.</p><div class="actions"><a class="btn btn-primary" href="#checklists">CAD Checklists</a><a class="btn btn-secondary" href="resources.html">All Resources</a><a class="btn btn-secondary" href="fabrication.html">Submit File</a></div></div><div class="visual-panel"><img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo" /><h2>Model with Purpose</h2><p>Accurate CAD should communicate design intent, dimensions, and fabrication needs clearly.</p></div></div></div></section>
 <section id="checklists"><div class="section-heading"><h2>CAD Checklists</h2><p>Use these checklists before submitting CAD files, drawings, or fabrication requests.</p></div><div class="grid-3"><article class="card"><span class="card-tag">Sketching</span><h3>Sketch Setup</h3><p>Start on the correct plane, use constraints, apply dimensions, and keep sketches simple and intentional.</p></article><article class="card"><span class="card-tag">Modeling</span><h3>Feature Quality</h3><p>Use clear features, avoid unnecessary complexity, name important parts, and check geometry.</p></article><article class="card"><span class="card-tag">Assemblies</span><h3>Fit and Function</h3><p>Check part relationships, tolerances, movement, alignment, and how components interact.</p></article></div></section>
 <section><div class="section-heading"><h2>Before Submitting CAD</h2><p>Run through these checks before requesting a 3D print, laser cut, or project review.</p></div><div class="grid-2"><div class="panel"><h3>Model Check</h3><ul><li>All important dimensions are defined.</li><li>The model is oriented correctly for fabrication.</li><li>There are no floating, broken, or incomplete features.</li><li>File names clearly identify the course, project, and part.</li><li>The design matches the project constraints.</li></ul></div><div class="panel"><h3>Drawing / Export Check</h3><ul><li>Drawings include correct views and dimensions.</li><li>Laser files use correct line types and clean geometry.</li><li>3D print files are exported in the required format.</li><li>Assemblies show how parts fit together.</li><li>Special material or fabrication notes are included.</li></ul></div></div></section>
 </main>
-<footer class="ls-global-footer">
-  <strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation
-  <div class="ls-footer-links">
+<footer class="ls-global-footer" role="contentinfo">
+  <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
+  <div class="ls-footer-links" aria-label="Footer navigation">
     <a href="index.html">Home</a>
+    <a href="start-here.html">Start Here</a>
+    <a href="agenda.html">Agenda</a>
     <a href="courses.html">Courses</a>
     <a href="fablab.html">FabLab</a>
+    <a href="fablab-certification/index.html">Certifications</a>
     <a href="fabrication.html">Fabrication Request</a>
+    <a href="resources.html">Resources</a>
   </div>
 </footer>
 </body></html>
