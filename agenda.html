@@ -901,6 +901,222 @@ footer p,
 :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.visual-panel,.card,.feature-panel,.info-card,.resource-card,.dashboard-card,.tile,.panel,.light-panel,.white-panel) :is(p,li,span,small,div,.subtitle,.description,.muted){color:#334155!important;text-shadow:none!important;}
 .card-header:not(.yellow),.resource-header:not(.yellow),.project-header:not(.yellow),.ls-card-header:not(.yellow){background:linear-gradient(135deg,#003399,#0b2452)!important;color:#fff!important;}.card-header:not(.yellow) *,.resource-header:not(.yellow) *,.project-header:not(.yellow) *,.ls-card-header:not(.yellow) *{color:#fff!important;}
 </style>
+
+<style id="agenda-day-week-view-upgrade">
+/* Day / Week view upgrade for the Daily Agenda page. */
+body.agenda-page .controls {
+  grid-template-columns: minmax(180px, 1fr) 150px auto auto auto auto !important;
+}
+
+body.agenda-page .view-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(255,255,255,.95);
+  box-shadow: var(--soft);
+  white-space: nowrap;
+}
+
+body.agenda-page .view-toggle .view-btn {
+  box-shadow: none !important;
+  padding: 8px 12px !important;
+  min-width: 62px;
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: var(--course-primary) !important;
+  border: 0 !important;
+}
+
+body.agenda-page .view-toggle .view-btn.active,
+body.agenda-page .view-toggle .view-btn[aria-pressed="true"] {
+  background: linear-gradient(135deg, var(--course-primary), var(--course-secondary)) !important;
+  color: #ffffff !important;
+}
+
+body.agenda-page .week-grid {
+  min-height: 0;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+body.agenda-page .week-day-card {
+  min-width: 0;
+  min-height: 0;
+  background: rgba(255,255,255,.92);
+  border: 1px solid rgba(255,255,255,.94);
+  border-radius: 14px;
+  box-shadow: var(--soft);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+body.agenda-page .week-day-card.today {
+  outline: 3px solid var(--course-accent);
+  outline-offset: -3px;
+}
+
+body.agenda-page .week-day-header {
+  flex: 0 0 auto;
+  padding: 10px 12px;
+  background: linear-gradient(135deg, var(--course-primary), var(--course-secondary));
+  color: #ffffff !important;
+}
+
+body.agenda-page .week-day-header h2 {
+  margin: 0;
+  color: #ffffff !important;
+  font-size: 1rem;
+  letter-spacing: -.03em;
+}
+
+body.agenda-page .week-day-header span {
+  display: block;
+  margin-top: 3px;
+  color: rgba(255,255,255,.92) !important;
+  font-size: .76rem;
+  font-weight: 800;
+}
+
+body.agenda-page .week-day-body {
+  min-height: 0;
+  padding: 10px;
+  overflow: auto;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+body.agenda-page .week-section {
+  background: var(--course-soft);
+  border-radius: 12px;
+  padding: 9px 10px;
+  color: var(--dark);
+}
+
+body.agenda-page .week-label {
+  margin-bottom: 5px;
+  color: var(--course-primary) !important;
+  font-size: .72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+body.agenda-page .week-content {
+  color: var(--text) !important;
+  font-size: .82rem;
+  line-height: 1.28;
+  font-weight: 750;
+}
+
+body.agenda-page .week-content .agenda-list {
+  font-size: .82rem;
+  line-height: 1.22;
+  padding-left: 16px;
+}
+
+body.agenda-page .week-empty {
+  color: #475467 !important;
+  font-style: italic;
+  font-weight: 800;
+}
+
+body.agenda-page .week-help {
+  margin-top: 8px;
+  color: #eaf2ff !important;
+  font-size: .82rem;
+  font-weight: 800;
+}
+
+@media(max-width: 1100px) {
+  body.agenda-page .week-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media(max-width: 900px) {
+  body.agenda-page .controls {
+    grid-template-columns: 1fr !important;
+  }
+  body.agenda-page .view-toggle {
+    width: 100%;
+  }
+  body.agenda-page .view-toggle .view-btn {
+    flex: 1 1 0;
+  }
+}
+
+@media(max-width: 700px) {
+  body.agenda-page .week-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+
+<style id="agenda-final-section-heading-contrast-fix">
+/* FINAL agenda section heading contrast fix.
+   This loads last so broader card readability rules cannot turn blue header text black. */
+body.agenda-page #app .card-header,
+body.agenda-page #app .card-header:not(.yellow),
+body.agenda-page #app .card-header.quote-header,
+body.agenda-page #app .week-day-header {
+  background: linear-gradient(135deg, #003399, #0b2452) !important;
+  color: #ffffff !important;
+}
+
+body.agenda-page #app .card-header.green {
+  background: linear-gradient(135deg, #166534, #003399) !important;
+  color: #ffffff !important;
+}
+
+body.agenda-page #app .card-header.yellow {
+  background: linear-gradient(135deg, #ffcc00, #f2b400) !important;
+  color: #101827 !important;
+}
+
+body.agenda-page #app .card-header h1,
+body.agenda-page #app .card-header h2,
+body.agenda-page #app .card-header h3,
+body.agenda-page #app .card-header h4,
+body.agenda-page #app .card-header span,
+body.agenda-page #app .card-header strong,
+body.agenda-page #app .card-header div,
+body.agenda-page #app .card-header:not(.yellow) h1,
+body.agenda-page #app .card-header:not(.yellow) h2,
+body.agenda-page #app .card-header:not(.yellow) h3,
+body.agenda-page #app .card-header:not(.yellow) h4,
+body.agenda-page #app .card-header:not(.yellow) span,
+body.agenda-page #app .card-header:not(.yellow) strong,
+body.agenda-page #app .card-header:not(.yellow) div,
+body.agenda-page #app .week-day-header h1,
+body.agenda-page #app .week-day-header h2,
+body.agenda-page #app .week-day-header h3,
+body.agenda-page #app .week-day-header span,
+body.agenda-page #app .week-day-header strong,
+body.agenda-page #app .week-day-header div {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+body.agenda-page #app .card-header.yellow h1,
+body.agenda-page #app .card-header.yellow h2,
+body.agenda-page #app .card-header.yellow h3,
+body.agenda-page #app .card-header.yellow h4,
+body.agenda-page #app .card-header.yellow span,
+body.agenda-page #app .card-header.yellow strong,
+body.agenda-page #app .card-header.yellow div {
+  color: #101827 !important;
+  text-shadow: none !important;
+}
+</style>
+
 </head>
 
 <body class="theme-ied ls-visual-upgrade ls-theme-resource agenda-page ls-has-standard-chrome">
@@ -951,6 +1167,11 @@ footer p,
           <input id="datePicker" type="date" />
         </div>
 
+        <div class="view-toggle" role="group" aria-label="Agenda view mode">
+          <button id="dayViewBtn" type="button" class="view-btn active" aria-pressed="true">Day</button>
+          <button id="weekViewBtn" type="button" class="view-btn" aria-pressed="false">Week</button>
+        </div>
+
         <button id="prevBtn">◀ Previous</button>
         <button id="todayBtn" class="primary">Today</button>
         <button id="nextBtn">Next ▶</button>
@@ -980,6 +1201,7 @@ let rows = [];
 let quoteRows = [];
 let currentCourse = "IED";
 let currentDate = "";
+let viewMode = "day";
 
 const els = {
   app: document.getElementById("app"),
@@ -988,6 +1210,8 @@ const els = {
   prevBtn: document.getElementById("prevBtn"),
   todayBtn: document.getElementById("todayBtn"),
   nextBtn: document.getElementById("nextBtn"),
+  dayViewBtn: document.getElementById("dayViewBtn"),
+  weekViewBtn: document.getElementById("weekViewBtn"),
   dateBadge: document.getElementById("dateBadge"),
   courseBadge: document.getElementById("courseBadge"),
   lessonBadge: document.getElementById("lessonBadge")
@@ -1073,6 +1297,64 @@ function displayDate(iso) {
   });
 }
 
+
+function shortDisplayDate(iso) {
+  const d = new Date(iso + "T12:00:00");
+  if (isNaN(d)) return iso || "";
+
+  return d.toLocaleDateString(undefined, {
+    month: "short",
+    day: "numeric"
+  });
+}
+
+function addDaysISO(iso, days) {
+  const d = new Date(iso + "T12:00:00");
+  if (isNaN(d)) return iso;
+  d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+function startOfSchoolWeekISO(iso) {
+  const d = new Date(iso + "T12:00:00");
+  if (isNaN(d)) return iso;
+
+  // Monday is the start of the school week. Sunday rolls back six days.
+  const day = d.getDay();
+  const diff = day === 0 ? -6 : 1 - day;
+  d.setDate(d.getDate() + diff);
+  return d.toISOString().slice(0, 10);
+}
+
+function schoolWeekDates(iso) {
+  const monday = startOfSchoolWeekISO(iso);
+  return [0, 1, 2, 3, 4].map(offset => addDaysISO(monday, offset));
+}
+
+function displayWeekRange(iso) {
+  const dates = schoolWeekDates(iso);
+  return `${shortDisplayDate(dates[0])}–${shortDisplayDate(dates[4])}`;
+}
+
+function dayName(iso) {
+  const d = new Date(iso + "T12:00:00");
+  if (isNaN(d)) return iso || "Day";
+  return d.toLocaleDateString(undefined, { weekday: "long" });
+}
+
+function setViewMode(mode) {
+  viewMode = mode === "week" ? "week" : "day";
+
+  if (els.dayViewBtn && els.weekViewBtn) {
+    els.dayViewBtn.classList.toggle("active", viewMode === "day");
+    els.weekViewBtn.classList.toggle("active", viewMode === "week");
+    els.dayViewBtn.setAttribute("aria-pressed", viewMode === "day" ? "true" : "false");
+    els.weekViewBtn.setAttribute("aria-pressed", viewMode === "week" ? "true" : "false");
+  }
+
+  render();
+}
+
 function todayISO() {
   const now = new Date();
   const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
@@ -1135,14 +1417,19 @@ function nearestAgenda() {
 }
 
 function shiftDate(direction) {
+  if (viewMode === "week") {
+    currentDate = addDaysISO(currentDate, direction * 7);
+    els.datePicker.value = currentDate;
+    render();
+    return;
+  }
+
   const filtered = courseRows();
   const dates = filtered.map(r => r._date);
   const index = dates.indexOf(currentDate);
 
   if (index === -1) {
-    const current = new Date(currentDate + "T12:00:00");
-    current.setDate(current.getDate() + direction);
-    currentDate = current.toISOString().slice(0, 10);
+    currentDate = addDaysISO(currentDate, direction);
   } else {
     const nextIndex = Math.min(Math.max(index + direction, 0), dates.length - 1);
     currentDate = dates[nextIndex];
@@ -1152,7 +1439,50 @@ function shiftDate(direction) {
   render();
 }
 
+
+function renderWeekView() {
+  const dates = schoolWeekDates(currentDate);
+  const today = todayISO();
+  const rowsByDate = new Map(rows.map(r => [r._date, r]));
+
+  els.dateBadge.textContent = `Week of ${displayWeekRange(currentDate)}`;
+  els.courseBadge.textContent = courseName(currentCourse);
+  els.lessonBadge.textContent = "Week view: agenda and homework";
+
+  els.app.className = "week-grid fade";
+  els.app.innerHTML = dates.map(date => {
+    const agenda = rowsByDate.get(date);
+    const isToday = date === today ? " today" : "";
+    const agendaContent = agenda ? listify(agenda.Agenda) : `<span class="week-empty">No agenda listed.</span>`;
+    const homeworkContent = agenda ? listify(agenda.Homework) : `<span class="week-empty">No homework listed.</span>`;
+
+    return `
+      <article class="week-day-card${isToday}">
+        <div class="week-day-header">
+          <h2>${escapeHTML(dayName(date))}</h2>
+          <span>${escapeHTML(shortDisplayDate(date))}</span>
+        </div>
+        <div class="week-day-body">
+          <section class="week-section">
+            <div class="week-label">Agenda</div>
+            <div class="week-content">${agendaContent}</div>
+          </section>
+          <section class="week-section">
+            <div class="week-label">Homework</div>
+            <div class="week-content">${homeworkContent}</div>
+          </section>
+        </div>
+      </article>
+    `;
+  }).join("");
+}
+
 function render() {
+  if (viewMode === "week") {
+    renderWeekView();
+    return;
+  }
+
   const agenda = findAgenda();
   const quote = findQuote();
 
@@ -1289,6 +1619,11 @@ els.datePicker.addEventListener("change", () => {
   currentDate = els.datePicker.value;
   render();
 });
+
+if (els.dayViewBtn && els.weekViewBtn) {
+  els.dayViewBtn.addEventListener("click", () => setViewMode("day"));
+  els.weekViewBtn.addEventListener("click", () => setViewMode("week"));
+}
 
 els.prevBtn.addEventListener("click", () => shiftDate(-1));
 els.nextBtn.addEventListener("click", () => shiftDate(1));
