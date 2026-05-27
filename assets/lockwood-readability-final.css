@@ -1,0 +1,267 @@
+
+/* =========================================================
+   Lockwood STEM Final Readability Patch
+   Purpose: fix light text on light panels/cards and dark text on dark areas.
+   This file is intentionally loaded last and uses targeted !important rules.
+   ========================================================= */
+:root{
+  --ls-readable-dark:#101827;
+  --ls-readable-body:#243042;
+  --ls-readable-muted:#334155;
+  --ls-readable-blue:#003399;
+  --ls-readable-white:#f8fafc;
+  --ls-readable-yellow:#ffcc00;
+}
+
+/* Default readable body text. */
+body{color:var(--ls-readable-body)!important;}
+
+/* All explicitly light surfaces must use dark text, even when nested inside a dark hero. */
+:is(
+  .visual-panel,
+  .card,
+  .resource,
+  .resource-card,
+  .project-card,
+  .unit-card,
+  .course-card,
+  .tool-card,
+  .challenge-card,
+  .feature-panel,
+  .intro-card,
+  .info-card,
+  .dashboard-card,
+  .launch-card,
+  .quick-card,
+  .path-card,
+  .workflow-card,
+  .step-card,
+  .service-card,
+  .tile,
+  .panel,
+  .white-panel,
+  .light-panel,
+  .content-panel,
+  .resource,
+  .resource-item,
+  .project-tile,
+  .course-tile,
+  .fablab-card,
+  .cert-card,
+  .lesson-card,
+  .section-card,
+  .callout:not(.dark):not(.blue):not(.navy),
+  .ls-card,
+  .ls-panel,
+  .ls-callout:not(.dark):not(.blue):not(.navy)
+){
+  color:var(--ls-readable-dark)!important;
+  text-shadow:none!important;
+}
+
+:is(
+  .visual-panel,
+  .card,
+  .resource,
+  .resource-card,
+  .project-card,
+  .unit-card,
+  .course-card,
+  .tool-card,
+  .challenge-card,
+  .feature-panel,
+  .intro-card,
+  .info-card,
+  .dashboard-card,
+  .launch-card,
+  .quick-card,
+  .path-card,
+  .workflow-card,
+  .step-card,
+  .service-card,
+  .tile,
+  .panel,
+  .white-panel,
+  .light-panel,
+  .content-panel,
+  .resource-item,
+  .project-tile,
+  .course-tile,
+  .fablab-card,
+  .cert-card,
+  .lesson-card,
+  .section-card,
+  .callout:not(.dark):not(.blue):not(.navy),
+  .ls-card,
+  .ls-panel,
+  .ls-callout:not(.dark):not(.blue):not(.navy)
+) :is(h1,h2,h3,h4,h5,h6,strong,b,.title,.card-title,.resource-title){
+  color:var(--ls-readable-dark)!important;
+  text-shadow:none!important;
+}
+
+:is(
+  .visual-panel,
+  .card,
+  .resource,
+  .resource-card,
+  .project-card,
+  .unit-card,
+  .course-card,
+  .tool-card,
+  .challenge-card,
+  .feature-panel,
+  .intro-card,
+  .info-card,
+  .dashboard-card,
+  .launch-card,
+  .quick-card,
+  .path-card,
+  .workflow-card,
+  .step-card,
+  .service-card,
+  .tile,
+  .panel,
+  .white-panel,
+  .light-panel,
+  .content-panel,
+  .resource-item,
+  .project-tile,
+  .course-tile,
+  .fablab-card,
+  .cert-card,
+  .lesson-card,
+  .section-card,
+  .callout:not(.dark):not(.blue):not(.navy),
+  .ls-card,
+  .ls-panel,
+  .ls-callout:not(.dark):not(.blue):not(.navy)
+) :is(p,li,span,small,div,.subtitle,.description,.muted,.meta,.card-text,.resource-copy){
+  color:var(--ls-readable-muted)!important;
+  text-shadow:none!important;
+}
+
+:is(
+  .visual-panel,
+  .card,
+  .resource,
+  .resource-card,
+  .project-card,
+  .unit-card,
+  .course-card,
+  .tool-card,
+  .challenge-card,
+  .feature-panel,
+  .intro-card,
+  .info-card,
+  .dashboard-card,
+  .launch-card,
+  .quick-card,
+  .path-card,
+  .workflow-card,
+  .step-card,
+  .service-card,
+  .tile,
+  .panel,
+  .white-panel,
+  .light-panel,
+  .content-panel,
+  .resource-item,
+  .project-tile,
+  .course-tile,
+  .fablab-card,
+  .cert-card,
+  .lesson-card,
+  .section-card,
+  .callout:not(.dark):not(.blue):not(.navy),
+  .ls-card,
+  .ls-panel,
+  .ls-callout:not(.dark):not(.blue):not(.navy)
+) a:not(.btn):not(.button):not(.ls-global-cta){
+  color:var(--ls-readable-blue)!important;
+  text-shadow:none!important;
+  font-weight:900!important;
+}
+
+/* The most common missed case: a light visual panel inside a dark hero. */
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.visual-panel,.card,.feature-panel,.info-card,.intro-card,.resource-card,.dashboard-card,.tile,.panel,.light-panel,.white-panel){
+  background-color:rgba(255,255,255,.94)!important;
+  color:var(--ls-readable-dark)!important;
+  text-shadow:none!important;
+}
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.visual-panel,.card,.feature-panel,.info-card,.intro-card,.resource-card,.dashboard-card,.tile,.panel,.light-panel,.white-panel) :is(h1,h2,h3,h4,h5,h6,strong,b){
+  color:var(--ls-readable-dark)!important;
+  text-shadow:none!important;
+}
+:is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.visual-panel,.card,.feature-panel,.info-card,.intro-card,.resource-card,.dashboard-card,.tile,.panel,.light-panel,.white-panel) :is(p,li,span,small,div,.subtitle,.description,.muted){
+  color:var(--ls-readable-muted)!important;
+  text-shadow:none!important;
+}
+
+/* Keep true dark sections and footers readable. */
+:is(.dark,.dark-section,.bg-dark,.panel-dark,.ls-dark-section,[class*="dark-panel"],[class*="dark-card"],.hero-dark,.navy,.blue-section){
+  color:var(--ls-readable-white)!important;
+}
+:is(.dark,.dark-section,.bg-dark,.panel-dark,.ls-dark-section,[class*="dark-panel"],[class*="dark-card"],.hero-dark,.navy,.blue-section) :is(h1,h2,h3,h4,h5,h6,p,li,span,small,strong,b,div){
+  color:var(--ls-readable-white)!important;
+}
+:is(.dark,.dark-section,.bg-dark,.panel-dark,.ls-dark-section,[class*="dark-panel"],[class*="dark-card"],.hero-dark,.navy,.blue-section) a{
+  color:#ffec99!important;
+}
+
+/* But if a light card appears inside a dark section, restore dark text. */
+:is(.dark,.dark-section,.bg-dark,.panel-dark,.ls-dark-section,[class*="dark-panel"],[class*="dark-card"],.hero-dark,.navy,.blue-section) :is(.visual-panel,.card,.resource-card,.feature-panel,.info-card,.intro-card,.dashboard-card,.launch-card,.quick-card,.tile,.panel,.light-panel,.white-panel),
+:is(.dark,.dark-section,.bg-dark,.panel-dark,.ls-dark-section,[class*="dark-panel"],[class*="dark-card"],.hero-dark,.navy,.blue-section) :is(.visual-panel,.card,.resource-card,.feature-panel,.info-card,.intro-card,.dashboard-card,.launch-card,.quick-card,.tile,.panel,.light-panel,.white-panel) :is(h1,h2,h3,h4,h5,h6,strong,b){
+  color:var(--ls-readable-dark)!important;
+  text-shadow:none!important;
+}
+:is(.dark,.dark-section,.bg-dark,.panel-dark,.ls-dark-section,[class*="dark-panel"],[class*="dark-card"],.hero-dark,.navy,.blue-section) :is(.visual-panel,.card,.resource-card,.feature-panel,.info-card,.intro-card,.dashboard-card,.launch-card,.quick-card,.tile,.panel,.light-panel,.white-panel) :is(p,li,span,small,div,.subtitle,.description,.muted){
+  color:var(--ls-readable-muted)!important;
+  text-shadow:none!important;
+}
+
+/* Badges and labels: avoid washed-out text. */
+:is(.tag,.badge,.eyebrow,.card-tag,.resource-badge,.pill,.chip):not(.dark):not(.blue):not(.yellow){
+  color:#0f172a!important;
+  text-shadow:none!important;
+}
+:is(.yellow,.tag.yellow,.badge.yellow,.callout.yellow,.card-header.yellow){
+  background:#ffcc00!important;
+  color:#101827!important;
+  text-shadow:none!important;
+}
+:is(.yellow,.tag.yellow,.badge.yellow,.callout.yellow,.card-header.yellow) *{
+  color:#101827!important;
+  text-shadow:none!important;
+}
+
+/* Dark headers inside cards should stay light. */
+:is(.card-header,.resource-header,.project-header,.unit-header,.section-header-dark,.ls-card-header):not(.yellow){
+  background:linear-gradient(135deg,#003399,#0b2452)!important;
+  color:#ffffff!important;
+}
+:is(.card-header,.resource-header,.project-header,.unit-header,.section-header-dark,.ls-card-header):not(.yellow) *{
+  color:#ffffff!important;
+}
+
+/* Global footer/navigation readability. */
+.ls-global-footer, footer.ls-global-footer, footer{
+  background:linear-gradient(135deg,#06152f,#0b2452 60%,#101827)!important;
+  color:#f8fafc!important;
+}
+.ls-global-footer *, footer.ls-global-footer *, footer *{color:#f8fafc!important;}
+.ls-global-footer a, footer.ls-global-footer a, footer a{color:#cfe2ff!important;}
+.ls-global-footer a:hover, footer.ls-global-footer a:hover, footer a:hover{color:#ffcc00!important;}
+
+/* Forms and tables. */
+input,select,textarea{color:#101827!important;background-color:#ffffff!important;}
+label{color:#334155!important;}
+th{background:#003399!important;color:#ffffff!important;}
+td{color:#101827!important;}
+
+/* Focus visibility. */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid #ffcc00!important;
+  outline-offset:3px!important;
+  box-shadow:0 0 0 6px rgba(255,204,0,.25)!important;
+}
