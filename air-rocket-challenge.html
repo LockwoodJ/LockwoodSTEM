@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IED | Air Rocket Design Challenge</title>
+
+<style>
+:root {
+  --dark: #101827;
+  --text: #1f2937;
+  --muted: #667085;
+  --light: #f5f5f5;
+
+  --primary: #003399;
+  --secondary: #0054c8;
+  --accent: #33cc66;
+  --soft: rgba(0, 51, 153, 0.13);
+
+  --shadow: 0 24px 70px rgba(0, 51, 153, 0.16);
+  --soft-shadow: 0 14px 38px rgba(17, 24, 39, 0.08);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: linear-gradient(180deg, #ffffff, #f6f9ff);
+}
+
+.page {
+  max-width: 1150px;
+  margin: auto;
+  padding: 24px;
+}
+
+.hero {
+  position: relative;
+  padding: 40px;
+  border-radius: 32px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: var(--shadow);
+}
+
+.floating-logo {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  width: 140px;
+  height: 140px;
+  border-radius: 30px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 50px rgba(0,51,153,0.2);
+}
+
+.floating-logo img {
+  width: 110px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.section {
+  margin-top: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--soft-shadow);
+}
+
+.card-header {
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.timeline {
+  display: grid;
+  gap: 10px;
+}
+
+.timeline div {
+  padding: 12px;
+  background: var(--soft);
+  border-radius: 12px;
+}
+
+.rubric table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rubric th {
+  background: var(--primary);
+  color: white;
+  padding: 10px;
+}
+
+.rubric td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media(max-width: 800px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-logo {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 15px;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="assets/lockwood-polish.css">
+</head>
+
+<body class="ls-visual-upgrade ls-theme-ied">
+<header class="ls-global-header">
+  <nav class="ls-global-nav" aria-label="Main navigation">
+    <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
+      <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+      <span>Lockwood STEM</span>
+    </a>
+    <div class="ls-global-links">
+      <a href="index.html">Home</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="courses.html">Courses</a>
+      <a href="ied.html">IED</a>
+      <a href="poe.html">POE</a>
+      <a href="adm.html">Advanced Manufacturing</a>
+      <a href="fablab.html">FabLab</a>
+      <a href="fablab-certification/index.html">Certifications</a>
+      <a href="resources.html">Resources</a>
+      <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
+    </div>
+  </nav>
+</header>
+<div class="page">
+
+<section class="hero">
+  <div class="floating-logo">
+    <img src="assets/ied-logo.png">
+  </div>
+
+  <h1>Air Rocket Design Challenge</h1>
+  <p class="subtitle">Design and build an air rocket that launches safely, flies consistently, and demonstrates strong assembly design through fit, fin design, testing, and iteration.</p>
+</section>
+
+<div class="section grid-2">
+
+  <div class="card">
+    <div class="card-header">Challenge Overview</div>
+    <p>You will design and build a rocket that launches using compressed air. Your goal is to create a stable, repeatable flight by applying proper engineering design principles.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-header">Design Constraints</div>
+    <ul>
+      <li>Modify provided rocket body design</li>
+      <li>Create one unique fin design</li>
+      <li>Fins must use a press-fit</li>
+      <li>Body must use a slip-fit on launcher</li>
+      <li>Must launch safely and consistently</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="section card">
+  <div class="card-header">Engineering Goals</div>
+  <ul>
+    <li>Improve stability and flight consistency</li>
+    <li>Design effective fin geometry</li>
+    <li>Apply proper fit tolerances</li>
+    <li>Use testing and iteration to improve performance</li>
+  </ul>
+</div>
+
+<div class="section card">
+  <div class="card-header">Project Timeline (5 Days)</div>
+  <div class="timeline">
+    <div><strong>Day 1:</strong> Intro, sketching, design planning</div>
+    <div><strong>Day 2:</strong> CAD + fin design</div>
+    <div><strong>Day 3:</strong> Build + fabrication</div>
+    <div><strong>Day 4:</strong> Testing and iteration</div>
+    <div><strong>Day 5:</strong> Final launch + evaluation</div>
+  </div>
+</div>
+
+<div class="section card rubric">
+  <div class="card-header">100-Point Rubric</div>
+  <table>
+    <tr><th>Category</th><th>Points</th><th>Description</th></tr>
+    <tr><td>Design Process</td><td>20</td><td>Clear use of sketching, planning, testing, and iteration</td></tr>
+    <tr><td>Assembly Design</td><td>15</td><td>Press-fit fins and slip-fit body are precise and functional</td></tr>
+    <tr><td>Flight Performance</td><td>15</td><td>Rocket launches safely and flies consistently</td></tr>
+    <tr><td>Fin Design</td><td>10</td><td>Unique and effective fin geometry</td></tr>
+    <tr><td>Build Quality</td><td>10</td><td>Clean, durable construction</td></tr>
+    <tr><td>Testing & Iteration</td><td>10</td><td>Improvements based on testing</td></tr>
+    <tr><td>Documentation</td><td>10</td><td>Clear sketches and notes</td></tr>
+    <tr><td>Teamwork</td><td>10</td><td>Collaboration and use of class time</td></tr>
+  </table>
+</div>
+
+<div class="section card">
+  <div class="card-header">Fabrication</div>
+  <p>3D printing is allowed for certified students. Others must submit through the FabLab Fabrication page.</p>
+  <a class="btn" href="fabrication.html">Go to Fabrication Page</a>
+</div>
+
+</div>
+<footer class="ls-global-footer">
+  <strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation
+  <div class="ls-footer-links">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="fablab.html">FabLab</a>
+    <a href="fablab-certification/index.html">Certification Hub</a>
+    <a href="fabrication.html">Fabrication Request</a>
+  </div>
+</footer>
+</body>
+</html>

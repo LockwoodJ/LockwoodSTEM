@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Autodesk Fusion Tutorial Library | Lockwood STEM</title>
+
+  <style>
+    :root {
+      --blue: #003399;
+      --green: #33cc66;
+      --yellow: #ffcc00;
+      --light: #f5f5f5;
+      --dark: #1f2937;
+      --text: #243042;
+      --muted: #64748b;
+      --border: #dbe4ef;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f7faff 0%, #eef4ff 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(255, 204, 0, 0.22), transparent 35%),
+        linear-gradient(135deg, var(--blue), #002266);
+      color: white;
+      border-radius: 24px;
+      padding: 42px 36px;
+      box-shadow: 0 18px 40px rgba(0, 51, 153, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border: 16px solid rgba(51, 204, 102, 0.25);
+      border-radius: 50%;
+      right: -55px;
+      bottom: -55px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1.05;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 16px 0 0;
+      font-size: 1.1rem;
+      color: #e6eefc;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 12px;
+      padding: 12px 18px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--green);
+      color: #062713;
+      box-shadow: 0 8px 18px rgba(51, 204, 102, 0.25);
+    }
+
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin: 26px 0;
+    }
+
+    .intro-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+    }
+
+    .intro-card h2 {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 1.2rem;
+    }
+
+    .intro-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .section-header {
+      margin: 40px 0 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-marker {
+      width: 12px;
+      height: 36px;
+      background: var(--green);
+      border-radius: 999px;
+      box-shadow: 0 0 0 5px rgba(51, 204, 102, 0.16);
+    }
+
+    .section-header h2 {
+      margin: 0;
+      color: var(--dark);
+      font-size: 2rem;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .video-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 38px rgba(15, 23, 42, 0.12);
+    }
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #111827;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-content {
+      padding: 22px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: #edf7ff;
+      color: var(--blue);
+      border: 1px solid #d7eaff;
+    }
+
+    .tag.green {
+      background: #ecfff3;
+      color: #15703a;
+      border-color: #c8f3d8;
+    }
+
+    .tag.yellow {
+      background: #fff8d9;
+      color: #7a5a00;
+      border-color: #ffec94;
+    }
+
+    .video-content h3 {
+      margin: 0 0 8px;
+      color: var(--dark);
+      font-size: 1.35rem;
+    }
+
+    .video-content p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .resource-note {
+      margin-top: 32px;
+      background: linear-gradient(135deg, #ffffff, #f9fbff);
+      border: 1px solid var(--border);
+      border-left: 8px solid var(--green);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .resource-note h2 {
+      margin-top: 0;
+      color: var(--blue);
+    }
+
+    .resource-note p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .footer {
+      text-align: center;
+      margin: 42px 0 10px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer strong {
+      color: var(--blue);
+    }
+
+    @media (max-width: 850px) {
+      .intro-grid,
+      .video-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 32px 24px;
+      }
+
+      .page-wrapper {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page-wrapper">
+
+    <section class="hero">
+      <span class="eyebrow">Lockwood STEM Resource Library</span>
+      <h1>Autodesk Fusion Tutorial Library</h1>
+      <p>
+        A collection of Autodesk Fusion tutorial videos for students who need support
+        with sketching, modeling, editing, and building confidence in CAD.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="#tutorials">View Tutorials</a>
+        <a class="button button-secondary" href="https://www.lockwoodstem.org/" target="_blank" rel="noopener">Back to Lockwood STEM</a>
+      </div>
+    </section>
+
+    <section class="intro-grid">
+      <div class="intro-card">
+        <h2>Getting Started</h2>
+        <p>Use these videos to review the Fusion workspace, navigation tools, and basic modeling workflow.</p>
+      </div>
+
+      <div class="intro-card">
+        <h2>Skill Support</h2>
+        <p>Return to these tutorials when you need help with a tool, technique, or modeling process.</p>
+      </div>
+
+      <div class="intro-card">
+        <h2>Independent Learning</h2>
+        <p>Pause, rewind, and follow along at your own pace while practicing inside Autodesk Fusion.</p>
+      </div>
+    </section>
+
+    <section class="section-header" id="tutorials">
+      <div class="section-marker"></div>
+      <h2>Fusion Tutorial Videos</h2>
+    </section>
+
+    <section class="video-grid">
+
+      <article class="video-card">
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/zmGbUH-P1lE?si=0P8_RVWbKr7GDY5h"
+            title="Autodesk Fusion Tutorial Video 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="video-content">
+          <div class="tag-row">
+            <span class="tag green">Tutorial 1</span>
+            <span class="tag">Fusion Basics</span>
+            <span class="tag yellow">Start Here</span>
+          </div>
+          <h3>Fusion Tutorial 1</h3>
+          <p>
+            A starting tutorial for reviewing the Fusion workspace, basic navigation,
+            and the beginning steps of creating a digital model.
+          </p>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/eb3uGHwB6BQ?si=VjyNSsYyrzOyBvJm"
+            title="Autodesk Fusion Tutorial Video 2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="video-content">
+          <div class="tag-row">
+            <span class="tag green">Tutorial 2</span>
+            <span class="tag">Modeling Practice</span>
+            <span class="tag yellow">Beginner</span>
+          </div>
+          <h3>Fusion Tutorial 2</h3>
+          <p>
+            A practice tutorial focused on building comfort with common modeling tools
+            and the general CAD design process.
+          </p>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/hhQAUZsj26Q?si=7E7HtQBO_7x4q9v_"
+            title="Autodesk Fusion Tutorial Video 3"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="video-content">
+          <div class="tag-row">
+            <span class="tag green">Tutorial 3</span>
+            <span class="tag">Skill Builder</span>
+            <span class="tag yellow">CAD Practice</span>
+          </div>
+          <h3>Fusion Tutorial 3</h3>
+          <p>
+            A skill-building tutorial for strengthening modeling habits, working with
+            sketches, and creating more accurate 3D forms.
+          </p>
+        </div>
+      </article>
+
+      <article class="video-card">
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/uMxV2aF0pYc?si=SQRRHWl89XRuXEUf"
+            title="Autodesk Fusion Tutorial Video 4"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="video-content">
+          <div class="tag-row">
+            <span class="tag green">Tutorial 4</span>
+            <span class="tag">Applied Modeling</span>
+            <span class="tag yellow">Independent Practice</span>
+          </div>
+          <h3>Fusion Tutorial 4</h3>
+          <p>
+            An applied modeling tutorial for practicing Fusion tools with more independence
+            and improving problem-solving within a CAD workflow.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="resource-note">
+      <h2>Using This Resource</h2>
+      <p>
+        This page is intended as a support library for students learning Autodesk Fusion.
+        Students may use these tutorials when they need help getting started, reviewing a tool,
+        or practicing a specific CAD workflow.
+      </p>
+    </section>
+
+    <section class="footer">
+      <p>
+        <strong>Lockwood STEM</strong> | Autodesk Fusion Tutorial Library
+      </p>
+    </section>
+
+  </main>
+</body>
+</html>

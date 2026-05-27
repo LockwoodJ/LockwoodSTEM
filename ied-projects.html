@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IED Projects | Lockwood STEM</title>
+<style>
+:root{
+  --blue:#003399;--blue2:#0054c8;--green:#33cc66;--yellow:#ffcc00;
+  --light:#f5f5f5;--dark:#101827;--text:#1f2937;--muted:#667085;
+  --shadow:0 24px 70px rgba(0,51,153,.16);--soft:0 14px 38px rgba(17,24,39,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;color:var(--text);min-height:100vh;
+  background:radial-gradient(circle at top left,rgba(51,204,102,.18),transparent 32%),
+  radial-gradient(circle at top right,rgba(0,51,153,.18),transparent 34%),
+  linear-gradient(180deg,#fff 0%,#f6f9ff 55%,var(--light) 100%);
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(rgba(0,51,153,.04) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(0,51,153,.04) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.75),transparent 80%);
+}
+a{color:inherit;text-decoration:none}
+header{padding:18px 24px}
+.nav{
+  max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  background:rgba(255,255,255,.72);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.86);
+  border-radius:999px;padding:10px 14px 10px 18px;box-shadow:var(--soft)
+}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;color:var(--blue);letter-spacing:-.03em}
+.brand img{height:48px;width:auto;filter:drop-shadow(0 10px 22px rgba(0,51,153,.18))}
+.nav-links{display:flex;align-items:center;gap:6px;font-weight:800;font-size:.9rem;color:var(--dark)}
+.nav-links a{padding:10px 12px;border-radius:999px;transition:.2s ease;white-space:nowrap}
+.nav-links a:hover{background:rgba(0,51,153,.08);color:var(--blue)}
+.submit-link{background:linear-gradient(135deg,var(--green),#1f9f52);color:#07111f;box-shadow:0 10px 22px rgba(51,204,102,.22)}
+.hero{max-width:1180px;margin:0 auto;padding:52px 24px 34px}
+.hero-shell{
+  border-radius:42px;padding:44px;background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(255,255,255,.42)),
+  radial-gradient(circle at 86% 14%,rgba(51,204,102,.18),transparent 26%),
+  radial-gradient(circle at 12% 18%,rgba(255,204,0,.18),transparent 24%);
+  border:1px solid rgba(255,255,255,.86);box-shadow:var(--shadow)
+}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:42px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;padding:9px 15px;border-radius:999px;
+  background:rgba(255,255,255,.78);border:1px solid rgba(51,204,102,.35);color:#176b38;
+  font-size:.88rem;font-weight:900;box-shadow:0 10px 26px rgba(17,24,39,.06);margin-bottom:22px
+}
+.spark{width:10px;height:10px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 5px rgba(255,204,0,.25)}
+h1{font-size:clamp(3rem,7vw,6.35rem);line-height:.92;letter-spacing:-.08em;color:var(--dark);margin-bottom:22px}
+h1 span{color:var(--blue)}
+.subtitle{font-size:clamp(1.08rem,2vw,1.28rem);color:var(--muted);max-width:720px;line-height:1.6;margin-bottom:28px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;padding:14px 20px;border-radius:999px;font-weight:900;border:2px solid transparent;transition:.2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:white;box-shadow:0 14px 30px rgba(0,51,153,.25)}
+.btn-secondary{background:white;color:var(--blue);border-color:rgba(0,51,153,.12);box-shadow:0 10px 24px rgba(17,24,39,.06)}
+.visual-panel{
+  width:min(420px,100%);margin-left:auto;border-radius:42px;background:linear-gradient(135deg,rgba(255,255,255,.84),rgba(255,255,255,.5)),
+  radial-gradient(circle at 80% 18%,rgba(255,204,0,.24),transparent 34%),
+  radial-gradient(circle at 14% 90%,rgba(51,204,102,.18),transparent 35%);
+  border:1px solid rgba(255,255,255,.9);box-shadow:var(--shadow);padding:36px;text-align:center
+}
+.visual-panel img{width:min(300px,82%);height:auto;margin:0 auto 24px;display:block;filter:drop-shadow(0 26px 46px rgba(0,51,153,.18))}
+.visual-panel h2{color:var(--blue);font-size:1.45rem;letter-spacing:-.04em;margin-bottom:8px}
+.visual-panel p{color:var(--muted)}
+section{max-width:1180px;margin:0 auto;padding:42px 24px}
+.section-heading{max-width:780px;margin-bottom:24px}
+.section-heading h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.05;letter-spacing:-.06em;color:var(--dark);margin-bottom:12px}
+.section-heading h2::after{content:"";display:block;width:76px;height:5px;border-radius:999px;margin-top:16px;background:linear-gradient(90deg,var(--green),var(--yellow))}
+.section-heading p{color:var(--muted);font-size:1.06rem}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.project-card{
+  min-height:340px;display:flex;flex-direction:column;background:rgba(255,255,255,.84);backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.9);border-radius:28px;box-shadow:var(--soft);padding:26px;position:relative;overflow:hidden;transition:.22s ease
+}
+.project-card::before{content:"";position:absolute;inset:0 0 auto 0;height:6px;background:linear-gradient(90deg,var(--green),var(--blue),var(--yellow))}
+.project-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.project-tag{
+  width:fit-content;display:inline-flex;margin-bottom:16px;border-radius:999px;padding:6px 10px;font-size:.75rem;
+  font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:#7a5b00;background:rgba(255,204,0,.25);border:1px solid rgba(255,204,0,.35)
+}
+.project-card h3{font-size:1.35rem;color:var(--dark);letter-spacing:-.04em;line-height:1.15;margin-bottom:12px}
+.project-card p{color:var(--muted);font-size:.97rem;line-height:1.55;margin-bottom:18px}
+.project-meta{display:grid;gap:8px;margin-top:auto;margin-bottom:18px}
+.meta-row{display:flex;justify-content:space-between;gap:12px;padding:10px 12px;border-radius:14px;background:rgba(0,51,153,.055);color:var(--muted);font-size:.88rem;font-weight:800}
+.meta-row strong{color:var(--blue)}
+.project-link{display:inline-flex;justify-content:center;padding:12px 16px;border-radius:999px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:white;font-weight:900;margin-top:auto}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:rgba(255,255,255,.84);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.9);border-radius:28px;box-shadow:var(--soft);padding:28px}
+.panel h3{font-size:1.25rem;color:var(--dark);letter-spacing:-.03em;margin-bottom:12px}
+.panel ul{padding-left:20px;color:var(--muted)}
+.panel li{margin:8px 0}
+footer{padding:28px 24px;color:var(--muted);text-align:center;font-size:.9rem}
+@media(max-width:920px){.hero-grid,.info-grid{grid-template-columns:1fr}.visual-panel{margin:0}.project-grid{grid-template-columns:1fr}}
+@media(max-width:680px){header{padding:14px}.nav{border-radius:24px}.nav-links{display:none}.hero{padding:28px 18px}.hero-shell{border-radius:30px;padding:28px 20px}.visual-panel{border-radius:30px;padding:28px 20px}.brand img{height:44px}}
+</style>
+<style id="lockwood-anchor-fix">
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 110px; }
+</style>
+
+<link rel="stylesheet" href="assets/lockwood-polish.css">
+</head>
+
+<body class="ls-visual-upgrade ls-theme-ied">
+<header class="ls-global-header">
+  <nav class="ls-global-nav" aria-label="Main navigation">
+    <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
+      <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+      <span>Lockwood STEM</span>
+    </a>
+    <div class="ls-global-links">
+      <a href="index.html">Home</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="courses.html">Courses</a>
+      <a href="ied.html">IED</a>
+      <a href="poe.html">POE</a>
+      <a href="adm.html">Advanced Manufacturing</a>
+      <a href="fablab.html">FabLab</a>
+      <a href="fablab-certification/index.html">Certifications</a>
+      <a href="resources.html">Resources</a>
+      <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-shell">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><span class="spark"></span> PLTW IED • Project Hub</div>
+          <h1>IED <span>Projects</span></h1>
+          <p class="subtitle">Use this page to open major IED design challenges, review project focus areas, and prepare for documentation and fabrication.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="fabrication.html">Submit Fabrication Request</a>
+          </div>
+        </div>
+        <div class="visual-panel">
+          <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo" />
+          <h2>Design Challenges</h2>
+          <p>Define the problem, create concepts, model solutions, test ideas, and improve your work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-heading">
+      <h2>Project Landing Page</h2>
+      <p>Each project connects to a major part of the IED design process.</p>
+    </div>
+    <div class="project-grid">
+      <article class="project-card">
+        <span class="project-tag">Design Challenge</span>
+        <h3>Mini Golf Engineering Challenge</h3>
+        <p>Design a portable miniature golf hole that meets space, storage, gameplay, and documentation constraints.</p>
+        <div class="project-meta">
+          <div class="meta-row"><span>Focus</span><strong>Design Process</strong></div>
+          <div class="meta-row"><span>Evidence</span><strong>Notebook + Prototype</strong></div>
+          <div class="meta-row"><span>Skills</span><strong>Sketching + Testing</strong></div>
+        </div>
+        <a class="project-link" href="mini-golf-project.html">Open Project</a>
+      </article>
+
+      <article class="project-card">
+        <span class="project-tag">Assembly Design Challenge</span>
+        <h3>Air Rocket Design Challenge</h3>
+        <p>Use CAD, tolerances, assemblies, testing, and iteration to improve the performance of a rocket design.</p>
+        <div class="project-meta">
+          <div class="meta-row"><span>Focus</span><strong>Assembly Design</strong></div>
+          <div class="meta-row"><span>Evidence</span><strong>CAD + Test Data</strong></div>
+          <div class="meta-row"><span>Skills</span><strong>Tolerances + Iteration</strong></div>
+        </div>
+        <a class="project-link" href="air-rocket-project.html">Open Project</a>
+      </article>
+
+      <article class="project-card">
+        <span class="project-tag">Product Design Challenge</span>
+        <h3>Product Improvement Project</h3>
+        <p>Analyze an existing product and redesign it to better meet user needs, performance goals, and design constraints.</p>
+        <div class="project-meta">
+          <div class="meta-row"><span>Focus</span><strong>User-Centered Design</strong></div>
+          <div class="meta-row"><span>Evidence</span><strong>Research + Redesign</strong></div>
+          <div class="meta-row"><span>Skills</span><strong>Feedback + Improvement</strong></div>
+        </div>
+        <a class="project-link" href="product-improvement-project.html">Open Project</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="expectations">
+    <div class="section-heading">
+      <h2>Project Expectations</h2>
+      <p>Strong projects show the full engineering process, not just the final product.</p>
+    </div>
+    <div class="info-grid">
+      <div class="panel">
+        <h3>Every Project Should Include</h3>
+        <ul>
+          <li>Problem definition and constraints</li>
+          <li>Sketches, planning, or concept development</li>
+          <li>Engineering notebook evidence</li>
+          <li>Testing, feedback, or revision</li>
+          <li>Final reflection on what improved</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Before Submitting</h3>
+        <ul>
+          <li>Check all file names and file types</li>
+          <li>Include screenshots, photos, or documentation</li>
+          <li>Make sure your work matches the project requirements</li>
+          <li>Submit fabrication files only when ready for review</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Lockwood STEM</footer>
+<footer class="ls-global-footer">
+  <strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation
+  <div class="ls-footer-links">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="fablab.html">FabLab</a>
+    <a href="fablab-certification/index.html">Certification Hub</a>
+    <a href="fabrication.html">Fabrication Request</a>
+  </div>
+</footer>
+</body>
+</html>

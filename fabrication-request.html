@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fabrication Request | Lockwood STEM</title>
+<style>
+:root{
+  --blue:#003399;--blue2:#0054c8;--green:#33cc66;--yellow:#ffcc00;
+  --light:#f5f5f5;--dark:#101827;--text:#1f2937;--muted:#667085;
+  --shadow:0 24px 70px rgba(0,51,153,.16);--soft:0 14px 38px rgba(17,24,39,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;color:var(--text);min-height:100vh;
+  background:radial-gradient(circle at top left,rgba(51,204,102,.18),transparent 32%),
+  radial-gradient(circle at top right,rgba(0,51,153,.18),transparent 34%),
+  linear-gradient(180deg,#fff 0%,#f6f9ff 55%,var(--light) 100%);
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(rgba(0,51,153,.04) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(0,51,153,.04) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.75),transparent 80%);
+}
+a{color:inherit;text-decoration:none}
+header{padding:18px 24px}
+.nav{
+  max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  background:rgba(255,255,255,.72);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.86);
+  border-radius:999px;padding:10px 14px 10px 18px;box-shadow:var(--soft)
+}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;color:var(--blue);letter-spacing:-.03em}
+.brand img{height:48px;width:auto;filter:drop-shadow(0 10px 22px rgba(0,51,153,.18))}
+.nav-links{display:flex;align-items:center;gap:6px;font-weight:800;font-size:.9rem;color:var(--dark)}
+.nav-links a{padding:10px 12px;border-radius:999px;transition:.2s ease;white-space:nowrap}
+.nav-links a:hover{background:rgba(0,51,153,.08);color:var(--blue)}
+.submit-link{background:linear-gradient(135deg,var(--green),#1f9f52);color:#07111f !important;box-shadow:0 10px 22px rgba(51,204,102,.22)}
+
+/* Hero */
+.hero{max-width:1180px;margin:0 auto;padding:52px 24px 34px}
+.hero-shell{
+  border-radius:42px;padding:44px;
+  background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(255,255,255,.42)),
+  radial-gradient(circle at 86% 14%,rgba(51,204,102,.18),transparent 26%),
+  radial-gradient(circle at 12% 18%,rgba(255,204,0,.18),transparent 24%);
+  border:1px solid rgba(255,255,255,.86);box-shadow:var(--shadow)
+}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:42px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;padding:9px 15px;border-radius:999px;
+  background:rgba(255,255,255,.78);border:1px solid rgba(51,204,102,.35);color:#176b38;
+  font-size:.88rem;font-weight:900;box-shadow:0 10px 26px rgba(17,24,39,.06);margin-bottom:22px
+}
+.spark{width:10px;height:10px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 5px rgba(255,204,0,.25)}
+h1{font-size:clamp(2.4rem,6vw,5rem);line-height:.95;letter-spacing:-.06em;color:var(--dark);margin-bottom:22px}
+h1 span{color:var(--blue)}
+.subtitle{font-size:clamp(1rem,2vw,1.2rem);color:var(--muted);max-width:640px;line-height:1.6;margin-bottom:28px}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-flex;padding:14px 20px;border-radius:999px;font-weight:900;border:2px solid transparent;transition:.2s ease;cursor:pointer;font-size:1rem;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:white;box-shadow:0 14px 30px rgba(0,51,153,.25)}
+.btn-secondary{background:white;color:var(--blue);border-color:rgba(0,51,153,.12);box-shadow:0 10px 24px rgba(17,24,39,.06)}
+.btn-green{background:var(--green);color:#07111f;box-shadow:0 14px 30px rgba(51,204,102,.28)}
+.visual-panel{
+  width:min(420px,100%);margin-left:auto;border-radius:42px;
+  background:linear-gradient(135deg,rgba(255,255,255,.84),rgba(255,255,255,.5)),
+  radial-gradient(circle at 80% 18%,rgba(255,204,0,.24),transparent 34%),
+  radial-gradient(circle at 14% 90%,rgba(51,204,102,.18),transparent 35%);
+  border:1px solid rgba(255,255,255,.9);box-shadow:var(--shadow);padding:36px;text-align:center
+}
+.visual-panel img{width:min(200px,82%);height:auto;margin:0 auto 24px;display:block;filter:drop-shadow(0 26px 46px rgba(0,51,153,.18))}
+.visual-panel h2{color:var(--blue);font-size:1.45rem;letter-spacing:-.04em;margin-bottom:8px}
+.visual-panel p{color:var(--muted)}
+
+/* Section nav */
+.project-nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,51,153,.08);padding:0 24px}
+.project-nav-inner{max-width:1180px;margin:0 auto;display:flex;gap:4px;overflow-x:auto;padding:10px 0}
+.project-nav-inner a{padding:8px 14px;border-radius:999px;font-weight:800;font-size:.88rem;color:var(--muted);white-space:nowrap;transition:.2s}
+.project-nav-inner a:hover{background:rgba(0,51,153,.08);color:var(--blue)}
+
+/* Sections */
+section{max-width:1180px;margin:0 auto;padding:42px 24px}
+.section-heading{max-width:780px;margin-bottom:28px}
+.section-heading h2{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.05;letter-spacing:-.05em;color:var(--dark);margin-bottom:12px}
+.section-heading h2::after{content:"";display:block;width:76px;height:5px;border-radius:999px;margin-top:16px;background:linear-gradient(90deg,var(--green),var(--yellow))}
+.section-heading p{color:var(--muted);font-size:1.06rem}
+
+/* Service cards */
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:10px}
+.service-card{
+  border-radius:28px;padding:28px;background:rgba(255,255,255,.84);
+  border:2px solid rgba(255,255,255,.9);box-shadow:var(--soft);cursor:pointer;
+  transition:.2s ease;position:relative;overflow:hidden
+}
+.service-card::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,var(--green),var(--blue),var(--yellow))}
+.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.service-card.active{border-color:var(--blue);box-shadow:var(--shadow)}
+.service-card.active::before{background:linear-gradient(90deg,var(--blue),var(--blue2))}
+.service-icon{font-size:2rem;margin-bottom:12px}
+.service-card h3{font-size:1.2rem;color:var(--dark);letter-spacing:-.03em;margin-bottom:6px}
+.service-card p{color:var(--muted);font-size:.9rem}
+.service-tag{
+  display:inline-block;margin-top:12px;padding:5px 10px;border-radius:999px;font-size:.75rem;
+  font-weight:900;letter-spacing:.04em;text-transform:uppercase;
+  background:rgba(255,204,0,.2);color:#7a5b00;border:1px solid rgba(255,204,0,.3)
+}
+.service-card.active .service-tag{background:rgba(0,51,153,.1);color:var(--blue);border-color:rgba(0,51,153,.2)}
+
+/* Form panels */
+.form-panel{display:none}
+.form-panel.active{display:block}
+
+/* Form layout */
+.panel{
+  background:rgba(255,255,255,.84);backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.9);border-radius:28px;box-shadow:var(--soft);padding:32px
+}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+
+label.field-label{display:block;font-weight:900;font-size:.88rem;color:var(--dark);margin-bottom:7px;letter-spacing:.01em}
+.required{color:#cc3300;margin-left:2px}
+input[type=text],input[type=email],input[type=date],input[type=number],select,textarea{
+  width:100%;padding:11px 16px;border-radius:14px;border:1.5px solid rgba(0,51,153,.14);
+  font-size:.97rem;font-family:Arial,Helvetica,sans-serif;color:var(--text);
+  background:white;outline:none;transition:border-color .2s,box-shadow .2s
+}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,51,153,.08)}
+select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23667085'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
+textarea{resize:vertical;min-height:100px;line-height:1.55}
+.field{margin-bottom:20px}
+.field-hint{font-size:.82rem;color:var(--muted);margin-top:5px}
+
+/* Material chips */
+.chip-group{display:flex;flex-wrap:wrap;gap:10px}
+.chip{
+  padding:9px 16px;border-radius:999px;border:1.5px solid rgba(0,51,153,.14);
+  font-size:.88rem;font-weight:800;cursor:pointer;transition:.18s;background:white;color:var(--muted)
+}
+.chip:hover{border-color:var(--blue);color:var(--blue)}
+.chip.selected{background:rgba(0,51,153,.08);border-color:var(--blue);color:var(--blue)}
+
+/* Upload zone */
+.upload-zone{
+  border:2px dashed rgba(0,51,153,.2);border-radius:20px;padding:36px;
+  text-align:center;cursor:pointer;transition:.2s;background:rgba(255,255,255,.6);position:relative
+}
+.upload-zone:hover{border-color:var(--blue);background:rgba(0,51,153,.03)}
+.upload-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.upload-icon{font-size:2.4rem;display:block;margin-bottom:10px}
+.upload-text{font-weight:900;color:var(--blue);font-size:.97rem}
+.upload-sub{color:var(--muted);font-size:.85rem;margin-top:4px}
+.upload-filename{margin-top:10px;font-size:.88rem;font-weight:800;color:#176b38;display:none}
+
+/* Callout */
+.callout{max-width:1180px;margin:0 auto;padding:0 24px 52px}
+.callout-inner{
+  border-radius:28px;padding:36px 42px;display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;
+  background:linear-gradient(135deg,var(--dark),#1e3a6a);color:white;box-shadow:var(--shadow)
+}
+.callout-inner h2{font-size:1.9rem;letter-spacing:-.05em;margin-bottom:6px}
+.callout-inner p{color:rgba(255,255,255,.7)}
+
+/* Status message */
+.status-msg{
+  padding:18px 24px;border-radius:18px;font-weight:800;font-size:1rem;margin-top:20px;display:none
+}
+.status-msg.success{background:rgba(51,204,102,.15);color:#176b38;border:1.5px solid rgba(51,204,102,.3)}
+.status-msg.error{background:rgba(204,51,0,.1);color:#8b1a00;border:1.5px solid rgba(204,51,0,.2)}
+
+
+/* Live FabLab tracker */
+.tracker-shell{
+  background:rgba(255,255,255,.86);
+  border:1px solid rgba(255,255,255,.92);
+  border-radius:32px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.tracker-head{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  padding:26px 28px;
+  background:linear-gradient(135deg,rgba(0,51,153,.08),rgba(51,204,102,.10));
+  border-bottom:1px solid rgba(0,51,153,.08);
+}
+.tracker-head h3{font-size:1.55rem;letter-spacing:-.04em;color:var(--dark);margin-bottom:6px}
+.tracker-head p{color:var(--muted);line-height:1.45;max-width:760px}
+.tracker-badges{display:flex;gap:10px;flex-wrap:wrap}
+.tracker-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:white;border:1px solid rgba(0,51,153,.10);font-weight:900;color:var(--blue);font-size:.82rem;box-shadow:0 8px 18px rgba(17,24,39,.05)}
+.tracker-frame-wrap{padding:0;background:white}
+.tracker-frame{display:block;width:100%;height:760px;border:0;background:white}
+.tracker-note{padding:14px 22px;color:var(--muted);font-size:.86rem;background:#fff;border-top:1px solid rgba(0,51,153,.08)}
+@media(max-width:700px){.tracker-frame{height:980px}.tracker-head{padding:22px}.tracker-head h3{font-size:1.25rem}}
+
+footer{padding:28px 24px;color:var(--muted);text-align:center;font-size:.9rem}
+
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr}.visual-panel{margin:0}.service-grid,.grid-2,.grid-3{grid-template-columns:1fr}}
+@media(max-width:680px){header{padding:14px}.nav{border-radius:24px}.nav-links{display:none}.hero{padding:28px 18px}.hero-shell{border-radius:30px;padding:28px 20px}.visual-panel{border-radius:30px;padding:24px}.callout-inner{flex-direction:column;padding:28px}}
+</style>
+<style id="lockwood-anchor-fix">
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 110px; }
+</style>
+
+<link rel="stylesheet" href="assets/lockwood-polish.css">
+</head>
+
+<body class="ls-visual-upgrade ls-theme-fablab">
+<header class="ls-global-header">
+  <nav class="ls-global-nav" aria-label="Main navigation">
+    <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
+      <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+      <span>Lockwood STEM</span>
+    </a>
+    <div class="ls-global-links">
+      <a href="index.html">Home</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="courses.html">Courses</a>
+      <a href="ied.html">IED</a>
+      <a href="poe.html">POE</a>
+      <a href="adm.html">Advanced Manufacturing</a>
+      <a href="fablab.html">FabLab</a>
+      <a href="fablab-certification/index.html">Certifications</a>
+      <a href="resources.html">Resources</a>
+      <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-shell">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow"><span class="spark"></span> Fabrication Lab</div>
+          <h1>Fabrication <span>Request</span></h1>
+          <p class="subtitle">Submit a request to have your design 3D printed, laser engraved, or CNC milled. Make sure your CAD file is complete and named correctly before submitting.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#service">Choose a Service</a>
+            <a class="btn btn-secondary" href="#live-tracker">View Live Tracker</a>
+            <a class="btn btn-secondary" href="cad-resources.html">CAD Checklist</a>
+            <a class="btn btn-secondary" href="ied-projects.html">Back to Projects</a>
+          </div>
+        </div>
+        <div class="visual-panel">
+          <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo" />
+          <h2>Before You Submit</h2>
+          <p>Check your file names, dimensions, material needs, and CAD export format before filling out this form.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="project-nav">
+    <div class="project-nav-inner">
+      <a href="#service">Service</a>
+      <a href="#live-tracker">Live Tracker</a>
+      <a href="#student-info">Student Info</a>
+      <a href="#details">Job Details</a>
+      <a href="#file">File Upload</a>
+      <a href="#notes">Notes</a>
+      <a href="#submit">Submit</a>
+    </div>
+  </div>
+
+  <!-- Service selection -->
+  <section id="service">
+    <div class="section-heading">
+      <h2>Select a Service</h2>
+      <p>Choose the fabrication method that matches your project. Different services require different file types and specifications.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card active" onclick="selectService('print', this)">
+        <div class="service-icon">▲</div>
+        <h3>3D Printing</h3>
+        <p>FDM or resin printing for 3D models and prototypes. Export as STL, OBJ, or 3MF.</p>
+        <span class="service-tag">STL / OBJ / 3MF</span>
+      </div>
+      <div class="service-card" onclick="selectService('laser', this)">
+        <div class="service-icon">◈</div>
+        <h3>Laser Engraving</h3>
+        <p>Cut or etch flat sheet materials like plywood, acrylic, or cardboard. Export as SVG or DXF.</p>
+        <span class="service-tag">SVG / DXF / AI</span>
+      </div>
+      <div class="service-card" onclick="selectService('cnc', this)">
+        <div class="service-icon">◻</div>
+        <h3>CNC Milling</h3>
+        <p>Route or mill wood, HDPE, or aluminum stock. Export as DXF, STEP, or G-code.</p>
+        <span class="service-tag">DXF / STEP / G-code</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live student tracker -->
+  <section id="live-tracker">
+    <div class="section-heading">
+      <h2>Live FabLab Tracker</h2>
+      <p>Use this tracker to check which jobs are ready to be picked up and see the current status of each 3D printer.</p>
+    </div>
+
+    <div class="tracker-shell">
+      <div class="tracker-head">
+        <div>
+          <h3>Pickup Queue + Printer Status</h3>
+          <p>The tracker updates from the FabLab request system. Student-facing information is limited to job status, queue position, machine assignment, and public notes.</p>
+        </div>
+        <div class="tracker-badges">
+          <span class="tracker-badge">✓ Ready for Pickup</span>
+          <span class="tracker-badge">● Printer Status</span>
+          <span class="tracker-badge">↻ Live Queue</span>
+        </div>
+      </div>
+
+      <div class="tracker-frame-wrap">
+        <iframe
+          class="tracker-frame"
+          title="FabLab live tracker"
+          src="https://script.google.com/macros/s/AKfycbycuu9rghR-SfXLADDQSYEGs2ReTXklBDnjdgz8Px_8PMW4prGGiWhLAwg1VveGNcqC/exec?view=student"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <div class="tracker-note">
+        If the tracker does not load, open this page in a new tab or ask your teacher to check the Apps Script deployment permissions.
+      </div>
+    </div>
+  </section>
+
+
+  <!-- The form -->
+  <section id="form">
+    <form id="fab-form" onsubmit="handleSubmit(event)" novalidate>
+      <input type="hidden" id="service-field" name="service" value="3D Printing" />
+
+      <!-- Student info -->
+      <div class="section-heading" id="student-info" style="padding-top:8px">
+        <h2>Student Info</h2>
+        <p>Include your name, student ID, and email so lab staff can follow up with you about your request.</p>
+      </div>
+      <div class="panel" style="margin-bottom:28px">
+        <div class="grid-2">
+          <div class="field">
+            <label class="field-label" for="student-name">Full name <span class="required">*</span></label>
+            <input type="text" id="student-name" name="name" placeholder="First Last" required />
+          </div>
+          <div class="field">
+            <label class="field-label" for="student-id">Student ID <span class="required">*</span></label>
+            <input type="text" id="student-id" name="studentId" placeholder="e.g. S-20251234" required />
+          </div>
+        </div>
+        <div class="field">
+          <label class="field-label" for="student-email">School email <span class="required">*</span></label>
+          <input type="email" id="student-email" name="email" placeholder="you@school.edu" required />
+        </div>
+      </div>
+
+      <!-- 3D Print panel -->
+      <div class="form-panel active" id="panel-print">
+        <div class="section-heading" id="details">
+          <h2>3D Print Details</h2>
+          <p>Specify your material, dimensions, and quantity. Double-check your model is watertight and exported correctly.</p>
+        </div>
+        <div class="panel" style="margin-bottom:28px">
+          <div class="field">
+            <label class="field-label">Material <span class="required">*</span></label>
+            <div class="chip-group" id="chips-print">
+              <div class="chip selected" onclick="selectChip(this,'chips-print','mat-print')">PLA</div>
+              <div class="chip" onclick="selectChip(this,'chips-print','mat-print')">PETG</div>
+              <div class="chip" onclick="selectChip(this,'chips-print','mat-print')">ABS</div>
+              <div class="chip" onclick="selectChip(this,'chips-print','mat-print')">TPU (flex)</div>
+              <div class="chip" onclick="selectChip(this,'chips-print','mat-print')">Resin</div>
+              <div class="chip" onclick="selectChip(this,'chips-print','mat-print')">No preference</div>
+            </div>
+            <input type="hidden" id="mat-print" name="material" value="PLA" />
+          </div>
+          <div class="field">
+            <label class="field-label" for="color-print">Color preference</label>
+            <input type="text" id="color-print" name="color" placeholder="e.g. Black, White, or No preference" />
+          </div>
+          <div class="grid-3">
+            <div class="field">
+              <label class="field-label" for="dim-print">Max bounding box (mm)</label>
+              <input type="text" id="dim-print" name="dimensions" placeholder="e.g. 80 × 60 × 40" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="qty-print">Quantity <span class="required">*</span></label>
+              <input type="number" id="qty-print" name="quantity" min="1" value="1" required />
+            </div>
+            <div class="field">
+              <label class="field-label" for="infill-print">Infill</label>
+              <select id="infill-print" name="infill">
+                <option>20% — Standard</option>
+                <option>40% — Strong</option>
+                <option>70% — Heavy</option>
+                <option>100% — Solid</option>
+                <option>No preference</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laser panel -->
+      <div class="form-panel" id="panel-laser">
+        <div class="section-heading" id="details-laser">
+          <h2>Laser Details</h2>
+          <p>Specify your material, sheet size, thickness, and operation type. Use vector lines for cuts and raster fills for etching.</p>
+        </div>
+        <div class="panel" style="margin-bottom:28px">
+          <div class="field">
+            <label class="field-label">Material <span class="required">*</span></label>
+            <div class="chip-group" id="chips-laser">
+              <div class="chip selected" onclick="selectChip(this,'chips-laser','mat-laser')">Plywood</div>
+              <div class="chip" onclick="selectChip(this,'chips-laser','mat-laser')">Acrylic</div>
+              <div class="chip" onclick="selectChip(this,'chips-laser','mat-laser')">Cardboard</div>
+              <div class="chip" onclick="selectChip(this,'chips-laser','mat-laser')">Leather</div>
+              <div class="chip" onclick="selectChip(this,'chips-laser','mat-laser')">Fabric</div>
+              <div class="chip" onclick="selectChip(this,'chips-laser','mat-laser')">Other</div>
+            </div>
+            <input type="hidden" id="mat-laser" name="material" value="Plywood" />
+          </div>
+          <div class="grid-2">
+            <div class="field">
+              <label class="field-label" for="op-laser">Operation</label>
+              <select id="op-laser" name="laserOperation">
+                <option>Cut through</option>
+                <option>Engrave (raster)</option>
+                <option>Score (vector)</option>
+                <option>Cut and engrave</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="field-label" for="thick-laser">Material thickness (mm)</label>
+              <input type="number" id="thick-laser" name="thickness" min="1" placeholder="e.g. 6" />
+            </div>
+          </div>
+          <div class="grid-2">
+            <div class="field">
+              <label class="field-label" for="sheet-laser">Sheet size (mm)</label>
+              <input type="text" id="sheet-laser" name="dimensions" placeholder="e.g. 300 × 200" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="qty-laser">Quantity <span class="required">*</span></label>
+              <input type="number" id="qty-laser" name="quantity" min="1" value="1" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CNC panel -->
+      <div class="form-panel" id="panel-cnc">
+        <div class="section-heading" id="details-cnc">
+          <h2>CNC Details</h2>
+          <p>Specify your stock material, dimensions, and desired finish. Include toolpath notes if you have specific requirements.</p>
+        </div>
+        <div class="panel" style="margin-bottom:28px">
+          <div class="field">
+            <label class="field-label">Material <span class="required">*</span></label>
+            <div class="chip-group" id="chips-cnc">
+              <div class="chip selected" onclick="selectChip(this,'chips-cnc','mat-cnc')">Hardwood</div>
+              <div class="chip" onclick="selectChip(this,'chips-cnc','mat-cnc')">Softwood</div>
+              <div class="chip" onclick="selectChip(this,'chips-cnc','mat-cnc')">Plywood</div>
+              <div class="chip" onclick="selectChip(this,'chips-cnc','mat-cnc')">Aluminum</div>
+              <div class="chip" onclick="selectChip(this,'chips-cnc','mat-cnc')">HDPE</div>
+              <div class="chip" onclick="selectChip(this,'chips-cnc','mat-cnc')">Other</div>
+            </div>
+            <input type="hidden" id="mat-cnc" name="material" value="Hardwood" />
+          </div>
+          <div class="grid-2">
+            <div class="field">
+              <label class="field-label" for="dim-cnc">Stock dimensions (mm)</label>
+              <input type="text" id="dim-cnc" name="dimensions" placeholder="e.g. 200 × 150 × 25" />
+            </div>
+            <div class="field">
+              <label class="field-label" for="finish-cnc">Surface finish</label>
+              <select id="finish-cnc" name="finish">
+                <option>As milled</option>
+                <option>Sanded (120 grit)</option>
+                <option>Sanded (220 grit)</option>
+                <option>No preference</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label class="field-label" for="qty-cnc">Quantity <span class="required">*</span></label>
+            <input type="number" id="qty-cnc" name="quantity" min="1" value="1" />
+          </div>
+        </div>
+      </div>
+
+      <!-- File upload -->
+      <div class="section-heading" id="file">
+        <h2>File Upload</h2>
+        <p>Upload your design file. Make sure it is named clearly with your course, project, and part name before uploading.</p>
+      </div>
+      <div class="panel" style="margin-bottom:28px">
+        <div class="field">
+          <label class="field-label">Design file <span class="required">*</span></label>
+          <div class="upload-zone" id="upload-zone">
+            <input type="file" id="file-input" name="file" accept=".stl,.obj,.3mf,.svg,.dxf,.ai,.pdf,.step,.iges,.f3d,.nc,.gcode" required onchange="showFilename()" />
+            <span class="upload-icon">📁</span>
+            <div class="upload-text">Click to upload or drag and drop</div>
+            <div class="upload-sub" id="format-hint">STL / OBJ / 3MF</div>
+          </div>
+          <div class="upload-filename" id="filename-display"></div>
+          <p class="field-hint">If your file is too large to upload directly, share a Google Drive link in the Notes field below.</p>
+        </div>
+
+        <!-- Deadline & priority -->
+        <div class="grid-2">
+          <div class="field">
+            <label class="field-label" for="deadline">Requested completion date</label>
+            <input type="date" id="deadline" name="deadline" />
+          </div>
+          <div class="field">
+            <label class="field-label" for="priority">Priority</label>
+            <select id="priority" name="priority">
+              <option>Standard (3–5 school days)</option>
+              <option>Rush (1–2 school days)</option>
+              <option>Flexible — no deadline</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notes -->
+      <div class="section-heading" id="notes">
+        <h2>Project Notes</h2>
+        <p>Describe your project and include any special requirements, tolerances, or context lab staff should know.</p>
+      </div>
+      <div class="panel" style="margin-bottom:28px">
+        <div class="field">
+          <label class="field-label" for="project-name">Project name <span class="required">*</span></label>
+          <input type="text" id="project-name" name="projectName" placeholder="e.g. Air Rocket Fin" required />
+        </div>
+        <div class="field">
+          <label class="field-label" for="course">Course</label>
+          <select id="course" name="course">
+            <option>IED — Introduction to Engineering Design</option>
+            <option>POE — Principles of Engineering</option>
+            <option>ADM — Advanced Manufacturing</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="field-label" for="notes-field">Description and special notes</label>
+          <textarea id="notes-field" name="notes" placeholder="Describe your project, how this part is used, any fit/tolerance requirements, or a Google Drive link to a large file…"></textarea>
+        </div>
+        <div class="field">
+          <label class="field-label" for="gdrive-link">Google Drive file link (if applicable)</label>
+          <input type="text" id="gdrive-link" name="driveLink" placeholder="https://drive.google.com/..." />
+          <p class="field-hint">Paste a sharing link to your file if it was too large to upload directly above.</p>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div id="submit" class="panel" style="margin-bottom:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px">
+        <div>
+          <p style="font-weight:900;color:var(--dark);font-size:1.05rem;margin-bottom:4px">Ready to submit?</p>
+          <p style="color:var(--muted);font-size:.92rem">Check your file name, material, and notes before sending. You will receive an email confirmation once your request is reviewed.</p>
+        </div>
+        <button type="submit" class="btn btn-green" id="submit-btn">Submit Request</button>
+      </div>
+
+      <div class="status-msg" id="status-msg"></div>
+    </form>
+  </section>
+
+  <div class="callout">
+    <div class="callout-inner">
+      <div>
+        <h2>Check your CAD before submitting.</h2>
+        <p>Review the CAD checklist to make sure your file is export-ready, correctly named, and meets project constraints.</p>
+      </div>
+      <a class="btn btn-green" href="cad-resources.html">Open CAD Checklist</a>
+    </div>
+  </div>
+</main>
+
+<footer>© 2026 Lockwood STEM</footer>
+
+<script>
+// ─── CONFIGURATION ────────────────────────────────────────────────────────────
+// Replace this URL with your deployed Google Apps Script Web App URL
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycuu9rghR-SfXLADDQSYEGs2ReTXklBDnjdgz8Px_8PMW4prGGiWhLAwg1VveGNcqC/exec';
+// ─────────────────────────────────────────────────────────────────────────────
+
+const formatHints = {
+  print: 'STL / OBJ / 3MF',
+  laser: 'SVG / DXF / AI / PDF',
+  cnc: 'DXF / STEP / IGES / F3D / G-code'
+};
+const serviceNames = {
+  print: '3D Printing',
+  laser: 'Laser Engraving',
+  cnc: 'CNC Milling'
+};
+
+let currentService = 'print';
+
+function selectService(name, el) {
+  currentService = name;
+  document.querySelectorAll('.service-card').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('.form-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('panel-' + name).classList.add('active');
+  document.getElementById('format-hint').textContent = formatHints[name];
+  document.getElementById('service-field').value = serviceNames[name];
+}
+
+function selectChip(el, groupId, hiddenId) {
+  document.getElementById(groupId).querySelectorAll('.chip').forEach(c => c.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById(hiddenId).value = el.textContent.trim();
+}
+
+function showFilename() {
+  const f = document.getElementById('file-input').files[0];
+  const d = document.getElementById('filename-display');
+  if (f) { d.textContent = '✓ ' + f.name; d.style.display = 'block'; }
+}
+
+async function handleSubmit(e) {
+  e.preventDefault();
+  const form = document.getElementById('fab-form');
+  const btn = document.getElementById('submit-btn');
+  const msg = document.getElementById('status-msg');
+
+  // Basic validation
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  btn.textContent = 'Submitting…';
+  btn.disabled = true;
+  msg.style.display = 'none';
+
+  // Build form data
+  const data = {
+    timestamp: new Date().toLocaleString(),
+    service: document.getElementById('service-field').value,
+    name: document.getElementById('student-name').value,
+    studentId: document.getElementById('student-id').value,
+    email: document.getElementById('student-email').value,
+    projectName: document.getElementById('project-name').value,
+    course: document.getElementById('course').value,
+    deadline: document.getElementById('deadline').value,
+    priority: document.getElementById('priority').value,
+    driveLink: document.getElementById('gdrive-link').value,
+    notes: document.getElementById('notes-field').value,
+    filename: document.getElementById('file-input').files[0]?.name || '(none)'
+  };
+
+  // Grab active panel fields
+  if (currentService === 'print') {
+    data.material = document.getElementById('mat-print').value;
+    data.color = document.getElementById('color-print').value;
+    data.dimensions = document.getElementById('dim-print').value;
+    data.quantity = document.getElementById('qty-print').value;
+    data.infill = document.getElementById('infill-print').value;
+  } else if (currentService === 'laser') {
+    data.material = document.getElementById('mat-laser').value;
+    data.dimensions = document.getElementById('sheet-laser').value;
+    data.thickness = document.getElementById('thick-laser').value;
+    data.quantity = document.getElementById('qty-laser').value;
+    data.laserOperation = document.getElementById('op-laser').value;
+  } else {
+    data.material = document.getElementById('mat-cnc').value;
+    data.dimensions = document.getElementById('dim-cnc').value;
+    data.quantity = document.getElementById('qty-cnc').value;
+    data.finish = document.getElementById('finish-cnc').value;
+  }
+
+  // If no Apps Script URL is configured, show instructions
+  if (APPS_SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL_HERE') {
+    showStatus('success', '✓ Form validated successfully! To go live, replace YOUR_APPS_SCRIPT_URL_HERE in the script with your Google Apps Script web app URL. See the setup guide below.');
+    btn.textContent = 'Submit Request';
+    btn.disabled = false;
+    return;
+  }
+
+  try {
+    await fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    showStatus('success', '✓ Request submitted! Lab staff will review your request and follow up by email.');
+    form.reset();
+    document.getElementById('filename-display').style.display = 'none';
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('selected'));
+    document.querySelector('#chips-print .chip').classList.add('selected');
+  } catch (err) {
+    showStatus('error', '✗ Something went wrong. Please try again or see your teacher directly.');
+  }
+
+  btn.textContent = 'Submit Request';
+  btn.disabled = false;
+}
+
+function showStatus(type, text) {
+  const msg = document.getElementById('status-msg');
+  msg.className = 'status-msg ' + type;
+  msg.textContent = text;
+  msg.style.display = 'block';
+  msg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+</script>
+<footer class="ls-global-footer">
+  <strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation
+  <div class="ls-footer-links">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="fablab.html">FabLab</a>
+    <a href="fablab-certification/index.html">Certification Hub</a>
+    <a href="fabrication.html">Fabrication Request</a>
+  </div>
+</footer>
+</body>
+</html>

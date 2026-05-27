@@ -1,0 +1,21 @@
+Lockwood STEM Student-Facing Rewrite Report
+
+Scope:
+- Updated all HTML files in the visual-upgrade site package.
+- Preserved existing navigation, course themes, icons, hover effects, and transitions.
+- Converted developer/teacher-facing language to professional student-facing language.
+
+Language updates included:
+- "Course Description" -> "What You’ll Learn"
+- "Course Units" -> "What You’ll Work On"
+- "Required Materials" -> "What You Need Each Day"
+- "Grading Policy" -> "How You Earn Your Grade"
+- "Academic Integrity" -> "Your Responsibility as an Engineer"
+- Third-person student language revised to direct second-person language.
+- Removed leftover developer/placeholder wording where detected.
+- Revised certification wording to speak directly to students.
+
+Quality checks:
+- Local link audit completed.
+- Broken internal links found: 0
+- Remaining flagged developer/placeholder phrases found: 0

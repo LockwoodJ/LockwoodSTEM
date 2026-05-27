@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IED | Mini Golf Engineering Challenge</title>
+
+<style>
+:root {
+  --dark: #101827;
+  --text: #1f2937;
+  --muted: #667085;
+  --light: #f5f5f5;
+  --white: #ffffff;
+
+  --ied-primary: #003399;
+  --ied-secondary: #0054c8;
+  --ied-accent: #33cc66;
+  --ied-yellow: #ffcc00;
+  --ied-soft: rgba(0, 51, 153, 0.13);
+
+  --shadow: 0 24px 70px rgba(0, 51, 153, 0.16);
+  --soft-shadow: 0 14px 38px rgba(17, 24, 39, 0.08);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, var(--ied-soft), transparent 32%),
+    radial-gradient(circle at top right, rgba(51, 204, 102, 0.16), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f6f9ff 55%, var(--light) 100%);
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 51, 153, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 51, 153, 0.04) 1px, transparent 1px);
+  background-size: 44px 44px;
+  pointer-events: none;
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.75), transparent 80%);
+}
+
+.page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.brand-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.86);
+  border: 1px solid rgba(255,255,255,.9);
+  box-shadow: var(--soft-shadow);
+  color: var(--ied-primary);
+  font-weight: 900;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ied-accent);
+  box-shadow: 0 0 0 5px var(--ied-soft);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-links a,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 12px 16px;
+  font-weight: 900;
+  color: var(--ied-primary);
+  background: rgba(255,255,255,.88);
+  box-shadow: var(--soft-shadow);
+  border: 1px solid rgba(255,255,255,.9);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.nav-links a:hover,
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 42px rgba(17,24,39,.12);
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, var(--ied-primary), var(--ied-secondary));
+  color: white;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 36px;
+  padding: 42px;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.9), rgba(255,255,255,.58)),
+    radial-gradient(circle at 88% 18%, rgba(51,204,102,.24), transparent 28%),
+    radial-gradient(circle at 14% 18%, rgba(255,204,0,.18), transparent 24%);
+  border: 1px solid rgba(255,255,255,.9);
+  box-shadow: var(--shadow);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  bottom: -110px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(0,51,153,.12), rgba(51,204,102,.22));
+  border: 1px solid rgba(255,255,255,.5);
+}
+
+.floating-logo-badge {
+  position: absolute;
+  top: 26px;
+  right: 30px;
+  z-index: 2;
+  width: 148px;
+  height: 148px;
+  padding: 12px;
+  border-radius: 34px;
+  background: linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,255,255,.78));
+  border: 1px solid rgba(255,255,255,.96);
+  box-shadow:
+    0 22px 54px rgba(0, 51, 153, 0.18),
+    0 0 0 8px rgba(0, 51, 153, 0.055);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.floating-logo-badge::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 26px;
+  border: 1px solid rgba(0, 51, 153, 0.10);
+  pointer-events: none;
+}
+
+.floating-ied-logo {
+  width: 124px;
+  height: 124px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  padding-right: 130px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 15px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.78);
+  border: 1px solid var(--ied-soft);
+  color: var(--ied-primary);
+  font-size: .88rem;
+  font-weight: 900;
+  box-shadow: 0 10px 26px rgba(17,24,39,.06);
+  margin-bottom: 18px;
+}
+
+.spark {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ied-accent);
+  box-shadow: 0 0 0 5px var(--ied-soft);
+}
+
+h1 {
+  font-size: clamp(2.8rem, 6vw, 5.3rem);
+  line-height: .92;
+  letter-spacing: -.08em;
+  color: var(--dark);
+  margin: 0 0 18px;
+}
+
+h1 span { color: var(--ied-primary); }
+
+.subtitle {
+  color: var(--muted);
+  font-size: 1.16rem;
+  line-height: 1.55;
+  max-width: 780px;
+  margin: 0 0 26px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.quick-card {
+  background: rgba(255,255,255,.86);
+  border: 1px solid rgba(255,255,255,.9);
+  border-radius: 22px;
+  padding: 16px;
+  box-shadow: var(--soft-shadow);
+}
+
+.quick-card strong {
+  display: block;
+  color: var(--ied-primary);
+  font-size: .9rem;
+  margin-bottom: 6px;
+}
+
+.quick-card span {
+  color: var(--muted);
+  font-weight: 800;
+  font-size: .95rem;
+}
+
+.section { margin-top: 24px; scroll-margin-top: 24px; }
+
+.section-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 14px;
+}
+
+.section-title h2 {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  color: var(--dark);
+  letter-spacing: -.05em;
+}
+
+.section-title p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.card,
+.info-card {
+  background: rgba(255,255,255,.86);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,.9);
+  border-radius: 28px;
+  box-shadow: var(--soft-shadow);
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 16px 20px;
+  background: linear-gradient(135deg, var(--ied-primary), var(--ied-secondary));
+  color: white;
+}
+
+.card-header.green {
+  background: linear-gradient(135deg, var(--ied-accent), var(--ied-secondary));
+  color: #07111f;
+}
+
+.card-header.yellow {
+  background: linear-gradient(135deg, var(--ied-yellow), #f2b400);
+  color: #211800;
+}
+
+.card-header h2,
+.card-header h3 {
+  margin: 0;
+  letter-spacing: -.03em;
+}
+
+.card-body { padding: 22px; }
+
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.three-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.check-list,
+.number-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.check-list li,
+.number-list li {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  align-items: start;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.check-list li::before {
+  content: "✓";
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: var(--ied-soft);
+  color: var(--ied-primary);
+  font-weight: 900;
+}
+
+.number-list {
+  counter-reset: item;
+}
+
+.number-list li {
+  counter-increment: item;
+}
+
+.number-list li::before {
+  content: counter(item);
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--ied-primary), var(--ied-secondary));
+  color: white;
+  font-size: .82rem;
+  font-weight: 900;
+}
+
+.timeline {
+  display: grid;
+  gap: 12px;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 18px;
+  background: var(--ied-soft);
+}
+
+.timeline-row strong {
+  color: var(--ied-primary);
+}
+
+.timeline-row span {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.rubric-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  font-size: .94rem;
+}
+
+.rubric-table th {
+  background: linear-gradient(135deg, var(--ied-primary), var(--ied-secondary));
+  color: white;
+  text-align: left;
+  padding: 14px;
+}
+
+.rubric-table td {
+  padding: 14px;
+  vertical-align: top;
+  background: rgba(255,255,255,.8);
+  border-bottom: 1px solid rgba(0,51,153,.09);
+}
+
+.rubric-table tr:last-child td {
+  border-bottom: none;
+}
+
+.rubric-table td:first-child {
+  font-weight: 900;
+  color: var(--ied-primary);
+  width: 23%;
+}
+
+.rubric-table td:nth-child(2) {
+  font-weight: 900;
+  width: 9%;
+}
+
+.callout {
+  padding: 20px;
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(0,51,153,.08), rgba(51,204,102,.12));
+  border: 1px solid rgba(0,51,153,.12);
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.footer-card {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(0,51,153,.95), rgba(0,84,200,.92));
+  color: white;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.footer-card h2 {
+  margin: 0 0 6px;
+  letter-spacing: -.04em;
+}
+
+.footer-card p {
+  margin: 0;
+  opacity: .88;
+  line-height: 1.4;
+}
+
+.footer-card .btn { flex: 0 0 auto; }
+
+@media(max-width: 980px) {
+  .top-nav,
+  .footer-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    padding-right: 0;
+  }
+
+  .floating-logo-badge {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 122px;
+    height: 122px;
+    margin-bottom: 18px;
+  }
+
+  .floating-ied-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .quick-grid,
+  .three-grid,
+  .two-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 640px) {
+  .page { padding: 14px; }
+
+  .hero {
+    padding: 28px 22px;
+    border-radius: 28px;
+  }
+
+  .nav-links,
+  .nav-links a,
+  .hero-actions,
+  .hero-actions .btn,
+  .footer-card .btn {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.65rem;
+  }
+
+  .section-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .timeline-row {
+    grid-template-columns: 1fr;
+  }
+
+  .rubric-table {
+    font-size: .86rem;
+  }
+
+  .rubric-table th,
+  .rubric-table td {
+    padding: 10px;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="assets/lockwood-polish.css">
+</head>
+
+<body class="ls-visual-upgrade ls-theme-ied">
+<header class="ls-global-header">
+  <nav class="ls-global-nav" aria-label="Main navigation">
+    <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
+      <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+      <span>Lockwood STEM</span>
+    </a>
+    <div class="ls-global-links">
+      <a href="index.html">Home</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="courses.html">Courses</a>
+      <a href="ied.html">IED</a>
+      <a href="poe.html">POE</a>
+      <a href="adm.html">Advanced Manufacturing</a>
+      <a href="fablab.html">FabLab</a>
+      <a href="fablab-certification/index.html">Certifications</a>
+      <a href="resources.html">Resources</a>
+      <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
+    </div>
+  </nav>
+</header>
+  <main class="page">
+    <nav class="top-nav">
+      <div class="brand-pill"><span class="brand-dot"></span> Lockwood STEM | IED</div>
+      <div class="nav-links">
+        <a href="ied.html">IED Home</a>
+        <a href="ied-projects.html">Projects</a>
+        <a href="agenda.html">Daily Agenda</a>
+        <a href="resources.html">Resources</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="floating-logo-badge">
+        <img src="assets/ied-logo.png" alt="Introduction to Engineering Design Logo" class="floating-ied-logo" />
+      </div>
+
+      <div class="hero-content">
+        <div class="eyebrow"><span class="spark"></span> IED Engineering Challenge</div>
+        <h1>Mini Golf <span>Engineering Challenge</span></h1>
+        <p class="subtitle">Design, build, test, and improve a playable miniature golf hole that meets real constraints for size, storage, gameplay, and fabrication.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#brief">View Challenge Brief</a>
+          <a class="btn" href="#rubric">View 100-Point Rubric</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-grid">
+      <div class="quick-card">
+        <strong>Project Type</strong>
+        <span>Team Design Challenge</span>
+      </div>
+      <div class="quick-card">
+        <strong>Estimated Length</strong>
+        <span>8 Class Periods</span>
+      </div>
+      <div class="quick-card">
+        <strong>Final Product</strong>
+        <span>Playable Mini Golf Hole</span>
+      </div>
+      <div class="quick-card">
+        <strong>Total Points</strong>
+        <span>100 Points</span>
+      </div>
+    </section>
+
+    <section class="section two-grid" id="brief">
+      <div class="card">
+        <div class="card-header"><h2>Challenge Brief</h2></div>
+        <div class="card-body">
+          <p class="callout">Your team has been hired to design a portable miniature golf hole for a classroom engineering showcase. Your design must be fun to play, easy to store, structurally sound, and clearly documented through the engineering design process.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header green"><h2>Design Goal</h2></div>
+        <div class="card-body">
+          <ul class="check-list">
+            <li>Create a playable miniature golf hole with a clear start and finish.</li>
+            <li>Use at least one obstacle or interactive feature.</li>
+            <li>Apply sketching, modeling, prototyping, testing, and iteration.</li>
+            <li>Build a final design that is polished, durable, and easy to transport.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="constraints">
+      <div class="section-title">
+        <div>
+          <h2>Design Constraints</h2>
+          <p>Your solution must meet every required constraint.</p>
+        </div>
+      </div>
+
+      <div class="three-grid">
+        <div class="card">
+          <div class="card-header"><h3>Size</h3></div>
+          <div class="card-body">
+            <ul class="check-list">
+              <li>The assembled hole must fit within a 3 ft × 5 ft footprint.</li>
+              <li>The design must be playable within the classroom space.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header yellow"><h3>Storage</h3></div>
+          <div class="card-body">
+            <ul class="check-list">
+              <li>The entire hole must store and transport inside an 18 in × 12 in × 6 in copy paper box lid.</li>
+              <li>Parts may be modular, removable, or collapsible.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header green"><h3>Gameplay</h3></div>
+          <div class="card-body">
+            <ul class="check-list">
+              <li>The hole must include at least one obstacle.</li>
+              <li>The ball must have a clear path from start to finish.</li>
+              <li>The challenge should be playable, fair, and repeatable.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section two-grid" id="fablab">
+      <div class="card">
+        <div class="card-header"><h2>FabLab Fabrication</h2></div>
+        <div class="card-body">
+          <ul class="check-list">
+            <li>3D printing is allowed for certified students.</li>
+            <li>Laser cutting is allowed for certified students.</li>
+            <li>If you are not certified, submit fabrication requests through the FabLab Fabrication page.</li>
+            <li>Fabricated parts must support your design goals and meet all project constraints.</li>
+          </ul>
+          <div style="margin-top:18px;">
+            <a class="btn primary" href="fabrication.html">Go to FabLab Fabrication</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header yellow"><h2>Important Fabrication Notes</h2></div>
+        <div class="card-body">
+          <ul class="check-list">
+            <li>Submit fabrication requests early. Waiting until the end may limit what can be made.</li>
+            <li>Your design should not depend entirely on fabricated parts.</li>
+            <li>All parts should be measured, labeled, and documented in your engineering notebook.</li>
+            <li>Unsafe, oversized, or unclear fabrication requests may be rejected.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="deliverables">
+      <div class="section-title">
+        <div>
+          <h2>Required Deliverables</h2>
+          <p>Each team must submit evidence of both the process and the final solution.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <ol class="number-list">
+            <li>Engineering notebook documentation showing research, sketches, decisions, testing, and iteration.</li>
+            <li>Initial concept sketches with labels and notes explaining intended gameplay.</li>
+            <li>Measured layout plan showing the overall size, ball path, obstacle location, and hole placement.</li>
+            <li>Prototype evidence showing how the design changed based on testing.</li>
+            <li>Final playable miniature golf hole that meets the project constraints.</li>
+            <li>Final reflection explaining what worked, what changed, and how the team improved the design.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="timeline">
+      <div class="section-title">
+        <div>
+          <h2>Suggested Project Timeline</h2>
+          <p>This timeline may be adjusted based on class progress and fabrication needs.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body timeline">
+          <div class="timeline-row"><strong>Day 1</strong><span>Challenge introduction, constraints, team planning, and early brainstorming.</span></div>
+          <div class="timeline-row"><strong>Day 2</strong><span>Concept sketches, layout planning, and selection of best design direction.</span></div>
+          <div class="timeline-row"><strong>Day 3</strong><span>Measured design plan, material planning, and fabrication request preparation if needed.</span></div>
+          <div class="timeline-row"><strong>Day 4</strong><span>Prototype construction and early testing of ball path, obstacle, and hole function.</span></div>
+          <div class="timeline-row"><strong>Day 5</strong><span>Iteration and improvement based on testing data and peer feedback.</span></div>
+          <div class="timeline-row"><strong>Day 6</strong><span>Final construction, finishing, and quality checks.</span></div>
+          <div class="timeline-row"><strong>Day 7</strong><span>Gameplay testing, revisions, and engineering notebook completion.</span></div>
+          <div class="timeline-row"><strong>Day 8</strong><span>Final showcase, scoring, reflection, and project submission.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rubric">
+      <div class="section-title">
+        <div>
+          <h2>100-Point Rubric</h2>
+          <p>Your grade is based on the design process, final product, documentation, and teamwork.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <table class="rubric-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Points</th>
+                <th>Excellent Performance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Design Process</td>
+                <td>20</td>
+                <td>Team clearly follows the engineering design process through brainstorming, planning, prototyping, testing, and iteration. Design decisions are thoughtful and supported by evidence.</td>
+              </tr>
+              <tr>
+                <td>Meeting Constraints</td>
+                <td>15</td>
+                <td>Final design meets the 3 ft × 5 ft footprint, stores within the 18 in × 12 in × 6 in box lid, includes at least one obstacle, and remains playable and safe.</td>
+              </tr>
+              <tr>
+                <td>Functionality and Playability</td>
+                <td>15</td>
+                <td>Mini golf hole functions reliably, has a clear start and finish, provides an appropriate challenge, and can be played repeatedly without major failure.</td>
+              </tr>
+              <tr>
+                <td>Creativity and User Experience</td>
+                <td>10</td>
+                <td>Design is creative, engaging, and visually appealing. Obstacles and features improve the player experience rather than simply decorating the hole.</td>
+              </tr>
+              <tr>
+                <td>Build Quality and Craftsmanship</td>
+                <td>10</td>
+                <td>Final product is sturdy, clean, well-assembled, and carefully finished. Materials are used appropriately and parts fit together well.</td>
+              </tr>
+              <tr>
+                <td>Sketches, Layouts, and Technical Planning</td>
+                <td>10</td>
+                <td>Sketches and plans are clear, labeled, measured, and useful for understanding the design. Layout shows ball path, obstacles, hole placement, and key dimensions.</td>
+              </tr>
+              <tr>
+                <td>Testing and Iteration</td>
+                <td>10</td>
+                <td>Team tests the design, identifies problems, gathers feedback, and makes meaningful improvements before the final version.</td>
+              </tr>
+              <tr>
+                <td>Engineering Notebook and Reflection</td>
+                <td>5</td>
+                <td>Notebook is complete, organized, and shows design thinking. Reflection explains what worked, what changed, and what the team learned.</td>
+              </tr>
+              <tr>
+                <td>Teamwork and Professionalism</td>
+                <td>5</td>
+                <td>Team uses class time well, shares responsibilities, communicates respectfully, and follows all safety and fabrication expectations.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-card">
+      <div>
+        <h2>Ready to begin?</h2>
+        <p>Start by reviewing the constraints, sketching multiple ideas, and planning how your team will build and test a playable design.</p>
+      </div>
+      <a class="btn" href="ied-projects.html">Back to Projects</a>
+    </section>
+  </main>
+<footer class="ls-global-footer">
+  <strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation
+  <div class="ls-footer-links">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="fablab.html">FabLab</a>
+    <a href="fablab-certification/index.html">Certification Hub</a>
+    <a href="fabrication.html">Fabrication Request</a>
+  </div>
+</footer>
+</body>
+</html>
