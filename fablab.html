@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>FabLab Workflow | Lockwood STEM</title>
 <style id="lockwood-critical-fallback">
 /* Critical Lockwood STEM fallback + Google Sites embed support.
@@ -48,22 +49,19 @@ p,.subtitle{font-size:clamp(1rem,1.45vw,1.18rem);line-height:1.6;color:var(--ls-
 .ls-footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:10px;}.ls-footer-links a{color:#fff;}
 @media(max-width:900px){.ls-global-nav{align-items:flex-start;flex-direction:column}.ls-global-links{justify-content:flex-start}.hero-grid,.course-hero-inner{grid-template-columns:1fr}section{padding:24px 16px}h1{letter-spacing:-.045em}.visual-panel img{max-height:150px}}
 </style>
-
-<link rel="stylesheet" href="assets/course-styles.css" /><style id="lockwood-anchor-fix">
+<link href="assets/course-styles.css" rel="stylesheet"/><style id="lockwood-anchor-fix">
 html { scroll-behavior: smooth; }
 [id] { scroll-margin-top: 110px; }
 </style>
-
-<link rel="stylesheet" href="assets/lockwood-polish.css">
-<link rel="stylesheet" href="assets/google-sites-embed.css">
+<link href="assets/lockwood-polish.css" rel="stylesheet"/>
+<link href="assets/google-sites-embed.css" rel="stylesheet"/>
 <style id="fablab-workflow-styles">
 .fablab-workflow-hero .visual-panel{position:relative;overflow:hidden;text-align:left;background:linear-gradient(180deg,#fff 0%,#f7fbff 100%)}
 .fablab-workflow-hero .visual-panel::before{content:"";position:absolute;right:-36px;top:-36px;width:130px;height:130px;border-radius:50%;border:18px solid rgba(51,204,102,.18)}
 .workflow-mini-list{display:grid;gap:10px;margin-top:16px;position:relative;z-index:1}.workflow-mini-list div{display:flex;align-items:center;gap:10px;background:#f8fbff;border:1px solid rgba(0,51,153,.10);border-radius:14px;padding:12px;font-weight:800;color:#1f2937}.workflow-mini-list span{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:999px;background:var(--ls-blue);color:#fff;font-size:.85rem;flex:0 0 auto}.workflow-overview{width:min(100%,1500px);margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.workflow-step-card{background:rgba(255,255,255,.93);border:1px solid rgba(0,51,153,.12);border-radius:22px;padding:18px;box-shadow:0 12px 28px rgba(17,24,39,.08);position:relative;overflow:hidden;min-height:210px;display:flex;flex-direction:column}.workflow-step-card::before{content:"";position:absolute;inset:0 0 auto 0;height:7px;background:linear-gradient(90deg,var(--ls-blue),var(--ls-green),var(--ls-yellow))}.workflow-number{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:16px;background:linear-gradient(135deg,var(--ls-blue),var(--ls-blue-2));color:#fff;font-weight:900;margin:10px 0 12px}.workflow-step-card:nth-child(2) .workflow-number,.workflow-step-card:nth-child(5) .workflow-number{background:linear-gradient(135deg,var(--ls-green),#17964a);color:#07111f}.workflow-step-card:nth-child(3) .workflow-number,.workflow-step-card:nth-child(6) .workflow-number{background:linear-gradient(135deg,var(--ls-yellow),#f2b400);color:#211800}.workflow-step-card h3{margin:0 0 8px;letter-spacing:-.04em}.workflow-step-card p{font-size:.96rem;line-height:1.5;margin:0 0 16px}.workflow-step-card a{margin-top:auto;color:var(--ls-blue);font-weight:900;text-decoration:none}.workflow-step-card a:hover{text-decoration:underline}.fablab-pathway{width:min(100%,1500px);margin:0 auto;display:grid;grid-template-columns:1fr;gap:16px}.pathway-row{display:grid;grid-template-columns:86px 1fr auto;gap:18px;align-items:center;background:rgba(255,255,255,.92);border:1px solid rgba(0,51,153,.12);border-radius:24px;box-shadow:0 12px 28px rgba(17,24,39,.07);padding:18px}.pathway-marker{width:64px;height:64px;border-radius:20px;display:grid;place-items:center;background:var(--ls-blue);color:#fff;font-weight:900;font-size:1.15rem}.pathway-row:nth-child(even) .pathway-marker{background:var(--ls-green);color:#07111f}.pathway-row:nth-child(3n) .pathway-marker{background:var(--ls-yellow);color:#211800}.pathway-copy h3{margin:0 0 6px}.pathway-copy p{margin:0;font-size:.98rem}.pathway-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.workflow-tag{display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#f5f8ff;border:1px solid rgba(0,51,153,.12);color:var(--ls-blue);font-weight:900;padding:9px 12px;text-decoration:none;white-space:nowrap}.workflow-tag:hover{background:var(--ls-blue);color:#fff}.fablab-support-grid{width:min(100%,1500px);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:18px}.support-panel{background:rgba(255,255,255,.92);border:1px solid rgba(0,51,153,.12);border-radius:24px;box-shadow:0 12px 28px rgba(17,24,39,.07);padding:26px}.support-panel h3{margin-top:0}.support-panel ul{margin:0;padding-left:20px;color:var(--ls-muted);line-height:1.7}.support-panel li strong{color:var(--ls-dark)}.fablab-alert{width:min(100%,1500px);margin:0 auto;background:linear-gradient(135deg,#fffaf0,#ffffff);border:1px solid rgba(255,204,0,.42);border-left:9px solid var(--ls-yellow);border-radius:24px;padding:24px;box-shadow:0 12px 28px rgba(17,24,39,.06)}.fablab-alert h2{margin-top:0;color:#7a4d00}.fablab-alert p{margin-bottom:0}.button-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}@media(max-width:1280px){.workflow-overview{grid-template-columns:repeat(3,1fr)}}@media(max-width:900px){.workflow-overview,.fablab-support-grid{grid-template-columns:1fr}.pathway-row{grid-template-columns:1fr}.pathway-actions{justify-content:flex-start}.workflow-step-card{min-height:0}}
 </style>
-
-<link rel="stylesheet" href="assets/lockwood-standard-chrome.css">
-<link rel="stylesheet" href="assets/lockwood-contrast-final.css">
+<link href="assets/lockwood-standard-chrome.css" rel="stylesheet"/>
+<link href="assets/lockwood-contrast-final.css" rel="stylesheet"/>
 <style id="lockwood-contrast-final-inline">
 
 /* =========================================================
@@ -380,7 +378,7 @@ footer p,
 }
 
 </style>
-<link rel="stylesheet" href="assets/lockwood-readability-final.css">
+<link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <style id="lockwood-readability-final-inline">
 .visual-panel,.card,.resource,.resource-card,.project-card,.unit-card,.course-card,.tool-card,.feature-panel,.intro-card,.info-card,.dashboard-card,.launch-card,.quick-card,.tile,.panel,.light-panel,.white-panel{color:#101827!important;text-shadow:none!important;}
 .visual-panel :is(h1,h2,h3,h4,h5,h6,strong,b),.card :is(h1,h2,h3,h4,h5,h6,strong,b),.resource :is(h1,h2,h3,h4,h5,h6,strong,b),.resource-card :is(h1,h2,h3,h4,h5,h6,strong,b),.feature-panel :is(h1,h2,h3,h4,h5,h6,strong,b),.info-card :is(h1,h2,h3,h4,h5,h6,strong,b),.dashboard-card :is(h1,h2,h3,h4,h5,h6,strong,b),.tile :is(h1,h2,h3,h4,h5,h6,strong,b),.panel :is(h1,h2,h3,h4,h5,h6,strong,b){color:#101827!important;text-shadow:none!important;}
@@ -390,81 +388,75 @@ footer p,
 :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.visual-panel,.card,.feature-panel,.info-card,.resource-card,.dashboard-card,.tile,.panel,.light-panel,.white-panel) :is(p,li,span,small,div,.subtitle,.description,.muted){color:#334155!important;text-shadow:none!important;}
 .card-header:not(.yellow),.resource-header:not(.yellow),.project-header:not(.yellow),.ls-card-header:not(.yellow){background:linear-gradient(135deg,#003399,#0b2452)!important;color:#fff!important;}.card-header:not(.yellow) *,.resource-header:not(.yellow) *,.project-header:not(.yellow) *,.ls-card-header:not(.yellow) *{color:#fff!important;}
 </style>
-<link rel="stylesheet" href="assets/lockwood-dark-callout-fix.css">
+<link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-fablab ls-has-standard-chrome"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
 <header class="ls-global-header" role="banner">
-  <nav class="ls-global-nav" aria-label="Main navigation">
-    <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
-      <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
-      <span>Lockwood STEM</span>
-    </a>
-    <div class="ls-global-links">
-      <a href="index.html">Home</a>
-      <a href="start-here.html">Start Here</a>
-      <a href="agenda.html">Agenda</a>
-      <a href="courses.html">Courses</a>
-      <a href="ied.html">IED</a>
-      <a href="poe.html">POE</a>
-      <a href="adm.html">Advanced Manufacturing</a>
-      <a href="fablab.html" aria-current="page">FabLab</a>
-      <a href="fablab-certification/index.html">Certifications</a>
-      <a href="resources.html">Resources</a>
-      <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
-    </div>
-  </nav>
+<nav aria-label="Main navigation" class="ls-global-nav">
+<a aria-label="Lockwood STEM Home" class="ls-global-brand" href="index.html">
+<img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"/>
+<span>Lockwood STEM</span>
+</a>
+<div class="ls-global-links">
+<a href="index.html">Home</a>
+<a href="start-here.html">Start Here</a>
+<a href="agenda.html">Agenda</a>
+<a href="courses.html">Courses</a>
+
+
+
+<a aria-current="page" href="fablab.html">FabLab</a>
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="resources.html">Resources</a>
+<a class="ls-global-cta" href="fabrication.html">Fabrication</a>
+</div>
+</nav>
 </header>
 <main id="main-content">
 <div class="ls-course-jump"><strong>FabLab Quick Links:</strong><a href="#workflow">Student Workflow</a><a href="fablab-certification/index.html">Certification</a><a href="fabrication.html">Submit Request</a><a href="fablab-faq.html">FAQ</a><a href="resources.html">Resources</a></div>
-
 <section class="hero fablab-workflow-hero"><div class="hero-shell"><div class="hero-grid"><div>
 <div class="eyebrow"><span class="spark"></span> Lockwood STEM FabLab</div>
 <h1>FabLab <span>Workflow</span></h1>
 <p class="subtitle">A clear student pathway for getting trained, preparing files, submitting fabrication requests, tracking feedback, and picking up finished work.</p>
 <div class="actions"><a class="btn btn-primary" href="#workflow">Start the Workflow</a><a class="btn btn-secondary" href="fablab-certification/index.html">Get Certified</a><a class="btn btn-secondary" href="fabrication.html">Submit Fabrication Request</a></div>
-</div><div class="visual-panel"><img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo" /><h2>From idea to finished part</h2><p>Use this page as the standard route for all FabLab projects.</p><div class="workflow-mini-list"><div><span>1</span> Certify before using tools</div><div><span>2</span> Prepare files before submitting</div><div><span>3</span> Track status and pick up work</div></div></div></div></div></section>
-
+</div><div class="visual-panel"><img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"><h2>From idea to finished part</h2><p>Use this page as the standard route for all FabLab projects.</p><div class="workflow-mini-list"><div><span>1</span> Certify before using tools</div><div><span>2</span> Prepare files before submitting</div><div><span>3</span> Track status and pick up work</div></div></img></div></div></div></section>
 <section id="workflow"><div class="section-heading"><h2>Student FabLab Workflow</h2><p>Follow these six steps before using equipment or submitting files for fabrication.</p></div>
 <div class="workflow-overview">
-  <article class="workflow-step-card"><div class="workflow-number">1</div><h3>Learn the Safety Rules</h3><p>Start with lab expectations, safe behavior, emergency procedures, and tool-specific restrictions.</p><a href="fablab-certification/shop-safety.html">Open safety training →</a></article>
-  <article class="workflow-step-card"><div class="workflow-number">2</div><h3>Complete Certification</h3><p>Earn the required access level before using tools independently or requesting advanced fabrication.</p><a href="fablab-certification/index.html">Go to Certification Hub →</a></article>
-  <article class="workflow-step-card"><div class="workflow-number">3</div><h3>Prepare Your File</h3><p>Check dimensions, scale, material, units, orientation, file type, and project requirements before submitting.</p><a href="fusion-resource-page.html">Review CAD resources →</a></article>
-  <article class="workflow-step-card"><div class="workflow-number">4</div><h3>Submit Request</h3><p>Send the file for review only when it is ready to print, cut, machine, or fabricate.</p><a href="fabrication.html">Submit fabrication request →</a></article>
-  <article class="workflow-step-card"><div class="workflow-number">5</div><h3>Watch for Feedback</h3><p>Check for approval, revision requests, machine assignment, material issues, or pickup instructions.</p><a href="fablab-faq.html">Review common questions →</a></article>
-  <article class="workflow-step-card"><div class="workflow-number">6</div><h3>Pick Up and Improve</h3><p>Collect finished work, inspect quality, document results, and revise the design if needed.</p><a href="resources.html">Find support resources →</a></article>
+<article class="workflow-step-card"><div class="workflow-number">1</div><h3>Learn the Safety Rules</h3><p>Start with lab expectations, safe behavior, emergency procedures, and tool-specific restrictions.</p><a href="fablab-certification/shop-safety.html">Open safety training →</a></article>
+<article class="workflow-step-card"><div class="workflow-number">2</div><h3>Complete Certification</h3><p>Earn the required access level before using tools independently or requesting advanced fabrication.</p><a href="fablab-certification/index.html">Go to Certification Hub →</a></article>
+<article class="workflow-step-card"><div class="workflow-number">3</div><h3>Prepare Your File</h3><p>Check dimensions, scale, material, units, orientation, file type, and project requirements before submitting.</p><a href="fusion-resource-page.html">Review CAD resources →</a></article>
+<article class="workflow-step-card"><div class="workflow-number">4</div><h3>Submit Request</h3><p>Send the file for review only when it is ready to print, cut, machine, or fabricate.</p><a href="fabrication.html">Submit fabrication request →</a></article>
+<article class="workflow-step-card"><div class="workflow-number">5</div><h3>Watch for Feedback</h3><p>Check for approval, revision requests, machine assignment, material issues, or pickup instructions.</p><a href="fablab-faq.html">Review common questions →</a></article>
+<article class="workflow-step-card"><div class="workflow-number">6</div><h3>Pick Up and Improve</h3><p>Collect finished work, inspect quality, document results, and revise the design if needed.</p><a href="resources.html">Find support resources →</a></article>
 </div></section>
-
 <section><div class="section-heading"><h2>Choose Your Path</h2><p>Different students enter the FabLab workflow at different points. Use the pathway below to find the right next action.</p></div>
 <div class="fablab-pathway">
-  <div class="pathway-row"><div class="pathway-marker">NEW</div><div class="pathway-copy"><h3>I am new to the FabLab</h3><p>Start with shop safety and Level 1 certification before using tools or requesting independent access.</p></div><div class="pathway-actions"><a class="workflow-tag" href="fablab-certification/level-1.html">Level 1</a><a class="workflow-tag" href="fablab-certification/shop-safety.html">Safety</a></div></div>
-  <div class="pathway-row"><div class="pathway-marker">CAD</div><div class="pathway-copy"><h3>I need help preparing a design file</h3><p>Use Fusion and CAD resources to check scale, dimensions, file naming, and design intent before submitting.</p></div><div class="pathway-actions"><a class="workflow-tag" href="fusion-resource-page.html">Fusion Tutorials</a><a class="workflow-tag" href="cad-resources.html">CAD Resources</a></div></div>
-  <div class="pathway-row"><div class="pathway-marker">REQ</div><div class="pathway-copy"><h3>My file is ready for fabrication</h3><p>Submit your request with the correct file link, material choice, course, class period, and special instructions.</p></div><div class="pathway-actions"><a class="workflow-tag" href="fabrication.html">Submit Request</a><a class="workflow-tag" href="fabrication-request.html">Request Page</a></div></div>
-  <div class="pathway-row"><div class="pathway-marker">TOOL</div><div class="pathway-copy"><h3>I want to learn a specific tool</h3><p>Go directly to the tool training page for 3D printers, laser cutting, CNC, hand tools, power tools, or electronics.</p></div><div class="pathway-actions"><a class="workflow-tag" href="fablab-certification/3d-printers.html">3D Printers</a><a class="workflow-tag" href="fablab-certification/laser-cutter.html">Laser Cutter</a><a class="workflow-tag" href="fablab-certification/cnc-mill.html">CNC</a></div></div>
+<div class="pathway-row"><div class="pathway-marker">NEW</div><div class="pathway-copy"><h3>I am new to the FabLab</h3><p>Start with shop safety and Level 1 certification before using tools or requesting independent access.</p></div><div class="pathway-actions"><a class="workflow-tag" href="fablab-certification/level-1.html">Level 1</a><a class="workflow-tag" href="fablab-certification/shop-safety.html">Safety</a></div></div>
+<div class="pathway-row"><div class="pathway-marker">CAD</div><div class="pathway-copy"><h3>I need help preparing a design file</h3><p>Use Fusion and CAD resources to check scale, dimensions, file naming, and design intent before submitting.</p></div><div class="pathway-actions"><a class="workflow-tag" href="fusion-resource-page.html">Fusion Tutorials</a><a class="workflow-tag" href="cad-resources.html">CAD Resources</a></div></div>
+<div class="pathway-row"><div class="pathway-marker">REQ</div><div class="pathway-copy"><h3>My file is ready for fabrication</h3><p>Submit your request with the correct file link, material choice, course, class period, and special instructions.</p></div><div class="pathway-actions"><a class="workflow-tag" href="fabrication.html">Submit Request</a><a class="workflow-tag" href="fabrication-request.html">Request Page</a></div></div>
+<div class="pathway-row"><div class="pathway-marker">TOOL</div><div class="pathway-copy"><h3>I want to learn a specific tool</h3><p>Go directly to the tool training page for 3D printers, laser cutting, CNC, hand tools, power tools, or electronics.</p></div><div class="pathway-actions"><a class="workflow-tag" href="fablab-certification/3d-printers.html">3D Printers</a><a class="workflow-tag" href="fablab-certification/laser-cutter.html">Laser Cutter</a><a class="workflow-tag" href="fablab-certification/cnc-mill.html">CNC</a></div></div>
 </div></section>
-
 <section><div class="fablab-alert"><h2>Before You Submit a Fabrication Request</h2><p>Only submit files that are complete, correctly scaled, clearly named, and ready for instructor review. If the design is unfinished, use CAD resources or ask for help before submitting.</p><div class="button-row"><a class="btn btn-primary" href="fabrication.html">Submit Fabrication Request</a><a class="btn btn-secondary" href="fablab-faq.html">Read FabLab FAQ</a></div></div></section>
-
 <section><div class="section-heading"><h2>Preparation Checklist</h2><p>Use this checklist before tool use, printing, laser cutting, CNC work, or submitting a request.</p></div><div class="fablab-support-grid"><div class="support-panel"><h3>File and Design Checks</h3><ul><li><strong>Scale:</strong> dimensions match the project requirements.</li><li><strong>Units:</strong> millimeters or inches are correct for the tool workflow.</li><li><strong>Name:</strong> file name includes your name, course, and project.</li><li><strong>Material:</strong> material choice is appropriate and available.</li><li><strong>Safety:</strong> design does not create sharp, unsafe, or fragile hazards.</li></ul></div><div class="support-panel"><h3>Lab Behavior Checks</h3><ul><li><strong>Ask first</strong> before using unfamiliar machines or materials.</li><li><strong>Do not change settings</strong> unless instructed.</li><li><strong>Do not remove work</strong> from a machine unless it is yours or you are told to.</li><li><strong>Keep the area clean</strong> before, during, and after work.</li><li><strong>Report issues</strong> immediately instead of trying to force a tool to work.</li></ul></div></div></section>
-
 <section><div class="section-heading"><h2>Tool Training Shortcuts</h2><p>Jump directly to the certification or training page for the equipment you need.</p></div>
 <div class="fablab-grid">
 <a class="fablab-card" href="fablab-certification/3d-printers.html"><div class="fablab-icon">3DP</div><h3>3D Printers</h3><p>Training for slicing, printer safety, print setup, job submission, and print quality expectations.</p><span class="fablab-link">Open 3D printer training →</span></a>
 <a class="fablab-card" href="fablab-certification/laser-cutter.html"><div class="fablab-icon">LASER</div><h3>Laser Cutter</h3><p>Training for laser safety, material selection, cut settings, ventilation, and job preparation.</p><span class="fablab-link">Open laser training →</span></a>
 <a class="fablab-card" href="fablab-certification/cnc-mill.html"><div class="fablab-icon">CNC</div><h3>CNC Mill</h3><p>Training for CAM setup, workholding, toolpaths, machine safety, and supervised operation.</p><span class="fablab-link">Open CNC training →</span></a>
-<a class="fablab-card" href="fablab-certification/soldering-electronics.html"><div class="fablab-icon">ELEC</div><h3>Soldering & Electronics</h3><p>Training for basic electronics safety, soldering expectations, components, and workspace cleanup.</p><span class="fablab-link">Open electronics training →</span></a>
+<a class="fablab-card" href="fablab-certification/soldering-electronics.html"><div class="fablab-icon">ELEC</div><h3>Soldering &amp; Electronics</h3><p>Training for basic electronics safety, soldering expectations, components, and workspace cleanup.</p><span class="fablab-link">Open electronics training →</span></a>
 </div></section>
 </main>
 <footer class="ls-global-footer" role="contentinfo">
-  <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
-  <div class="ls-footer-links" aria-label="Footer navigation">
-    <a href="index.html">Home</a>
-    <a href="start-here.html">Start Here</a>
-    <a href="agenda.html">Agenda</a>
-    <a href="courses.html">Courses</a>
-    <a href="fablab.html">FabLab</a>
-    <a href="fablab-certification/index.html">Certifications</a>
-    <a href="fabrication.html">Fabrication Request</a>
-    <a href="resources.html">Resources</a>
-  </div>
+<p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
+<div aria-label="Footer navigation" class="ls-footer-links">
+<a href="index.html">Home</a>
+<a href="start-here.html">Start Here</a>
+<a href="agenda.html">Agenda</a>
+<a href="courses.html">Courses</a>
+<a href="fablab.html">FabLab</a>
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="fabrication.html">Fabrication Request</a>
+<a href="resources.html">Resources</a>
+</div>
 </footer>
 </body></html>

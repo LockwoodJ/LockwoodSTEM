@@ -1,10 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Lockwood STEM | Daily Agenda</title>
-
 <style>
 :root {
   --dark: #101827;
@@ -447,8 +447,6 @@ button.primary {
 html { scroll-behavior: smooth; }
 [id] { scroll-margin-top: 110px; }
 </style>
-
-
 <style id="lockwood-critical-fallback">
 /* Critical Lockwood STEM fallback + Google Sites embed support.
    This keeps pages styled even if an external CSS file is slow or missing. */
@@ -496,10 +494,8 @@ p,.subtitle{font-size:clamp(1rem,1.45vw,1.18rem);line-height:1.6;color:var(--ls-
 .ls-footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:10px;}.ls-footer-links a{color:#fff;}
 @media(max-width:900px){.ls-global-nav{align-items:flex-start;flex-direction:column}.ls-global-links{justify-content:flex-start}.hero-grid,.course-hero-inner{grid-template-columns:1fr}section{padding:24px 16px}h1{letter-spacing:-.045em}.visual-panel img{max-height:150px}}
 </style>
-
-<link rel="stylesheet" href="assets/lockwood-polish.css">
-<link rel="stylesheet" href="assets/google-sites-embed.css">
-
+<link href="assets/lockwood-polish.css" rel="stylesheet"/>
+<link href="assets/google-sites-embed.css" rel="stylesheet"/>
 <style id="agenda-page-contrast-fix">
 /* Agenda-specific override loaded after shared CSS.
    Keeps the agenda page readable even when the global visual-upgrade hero styles apply. */
@@ -572,9 +568,8 @@ body.agenda-page .badge::before {
   background: var(--course-accent) !important;
 }
 </style>
-
-<link rel="stylesheet" href="assets/lockwood-standard-chrome.css">
-<link rel="stylesheet" href="assets/lockwood-contrast-final.css">
+<link href="assets/lockwood-standard-chrome.css" rel="stylesheet"/>
+<link href="assets/lockwood-contrast-final.css" rel="stylesheet"/>
 <style id="lockwood-contrast-final-inline">
 
 /* =========================================================
@@ -891,7 +886,7 @@ footer p,
 }
 
 </style>
-<link rel="stylesheet" href="assets/lockwood-readability-final.css">
+<link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <style id="lockwood-readability-final-inline">
 .visual-panel,.card,.resource,.resource-card,.project-card,.unit-card,.course-card,.tool-card,.feature-panel,.intro-card,.info-card,.dashboard-card,.launch-card,.quick-card,.tile,.panel,.light-panel,.white-panel{color:#101827!important;text-shadow:none!important;}
 .visual-panel :is(h1,h2,h3,h4,h5,h6,strong,b),.card :is(h1,h2,h3,h4,h5,h6,strong,b),.resource :is(h1,h2,h3,h4,h5,h6,strong,b),.resource-card :is(h1,h2,h3,h4,h5,h6,strong,b),.feature-panel :is(h1,h2,h3,h4,h5,h6,strong,b),.info-card :is(h1,h2,h3,h4,h5,h6,strong,b),.dashboard-card :is(h1,h2,h3,h4,h5,h6,strong,b),.tile :is(h1,h2,h3,h4,h5,h6,strong,b),.panel :is(h1,h2,h3,h4,h5,h6,strong,b){color:#101827!important;text-shadow:none!important;}
@@ -901,7 +896,6 @@ footer p,
 :is(.hero,.course-hero,.ls-hero,.ls-page-hero) :is(.visual-panel,.card,.feature-panel,.info-card,.resource-card,.dashboard-card,.tile,.panel,.light-panel,.white-panel) :is(p,li,span,small,div,.subtitle,.description,.muted){color:#334155!important;text-shadow:none!important;}
 .card-header:not(.yellow),.resource-header:not(.yellow),.project-header:not(.yellow),.ls-card-header:not(.yellow){background:linear-gradient(135deg,#003399,#0b2452)!important;color:#fff!important;}.card-header:not(.yellow) *,.resource-header:not(.yellow) *,.project-header:not(.yellow) *,.ls-card-header:not(.yellow) *{color:#fff!important;}
 </style>
-
 <style id="agenda-day-week-view-upgrade">
 /* Day / Week view upgrade for the Daily Agenda page. */
 body.agenda-page .controls {
@@ -1058,8 +1052,6 @@ body.agenda-page .week-help {
   }
 }
 </style>
-
-
 <style id="agenda-final-section-heading-contrast-fix">
 /* FINAL agenda section heading contrast fix.
    This loads last so broader card readability rules cannot turn blue header text black. */
@@ -1116,79 +1108,70 @@ body.agenda-page #app .card-header.yellow div {
   text-shadow: none !important;
 }
 </style>
-
-<link rel="stylesheet" href="assets/lockwood-dark-callout-fix.css">
+<link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 </head>
-
 <body class="theme-ied ls-visual-upgrade ls-theme-resource agenda-page ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
 <header class="ls-global-header" role="banner">
-  <nav class="ls-global-nav" aria-label="Main navigation">
-    <a class="ls-global-brand" href="index.html" aria-label="Lockwood STEM Home">
-      <img src="assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
-      <span>Lockwood STEM</span>
-    </a>
-    <div class="ls-global-links">
-      <a href="index.html">Home</a>
-      <a href="start-here.html">Start Here</a>
-      <a href="agenda.html" aria-current="page">Agenda</a>
-      <a href="courses.html">Courses</a>
-      <a href="ied.html">IED</a>
-      <a href="poe.html">POE</a>
-      <a href="adm.html">Advanced Manufacturing</a>
-      <a href="fablab.html">FabLab</a>
-      <a href="fablab-certification/index.html">Certifications</a>
-      <a href="resources.html">Resources</a>
-      <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
-    </div>
-  </nav>
+<nav aria-label="Main navigation" class="ls-global-nav">
+<a aria-label="Lockwood STEM Home" class="ls-global-brand" href="index.html">
+<img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"/>
+<span>Lockwood STEM</span>
+</a>
+<div class="ls-global-links">
+<a href="index.html">Home</a>
+<a href="start-here.html">Start Here</a>
+<a aria-current="page" href="agenda.html">Agenda</a>
+<a href="courses.html">Courses</a>
+
+
+
+<a href="fablab.html">FabLab</a>
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="resources.html">Resources</a>
+<a class="ls-global-cta" href="fabrication.html">Fabrication</a>
+</div>
+</nav>
 </header>
 <div id="main-content"></div>
 <div class="page">
-  <section class="hero">
-    <div class="hero-top">
-      <div>
-        <div class="eyebrow"><span class="spark"></span> Lockwood STEM</div>
-        <h1>Daily <span>Agenda</span></h1>
-        <p class="subtitle">Select your course, move between dates, and check what you need to complete today.</p>
-      </div>
-
-      <div class="controls">
-        <div class="select-wrap">
-          <label for="courseSelect">Course</label>
-          <select id="courseSelect">
-            <option value="IED">IED</option>
-            <option value="POE">POE</option>
-            <option value="AM">Advanced Manufacturing</option>
-          </select>
-        </div>
-
-        <div class="date-wrap">
-          <label for="datePicker">Date</label>
-          <input id="datePicker" type="date" />
-        </div>
-
-        <div class="view-toggle" role="group" aria-label="Agenda view mode">
-          <button id="dayViewBtn" type="button" class="view-btn active" aria-pressed="true">Day</button>
-          <button id="weekViewBtn" type="button" class="view-btn" aria-pressed="false">Week</button>
-        </div>
-
-        <button id="prevBtn">◀ Previous</button>
-        <button id="todayBtn" class="primary">Today</button>
-        <button id="nextBtn">Next ▶</button>
-      </div>
-    </div>
-
-    <div class="status-row">
-      <div class="badge" id="dateBadge">Loading date...</div>
-      <div class="badge" id="courseBadge">Loading course...</div>
-      <div class="badge" id="lessonBadge">Loading lesson...</div>
-    </div>
-  </section>
-
-  <div id="app" class="loading">Loading agenda...</div>
+<section class="hero">
+<div class="hero-top">
+<div>
+<div class="eyebrow"><span class="spark"></span> Lockwood STEM</div>
+<h1>Daily <span>Agenda</span></h1>
+<p class="subtitle">Select your course, move between dates, and check what you need to complete today.</p>
 </div>
-
+<div class="controls">
+<div class="select-wrap">
+<label for="courseSelect">Course</label>
+<select id="courseSelect">
+<option value="IED">IED</option>
+<option value="POE">POE</option>
+<option value="AM">Advanced Manufacturing</option>
+</select>
+</div>
+<div class="date-wrap">
+<label for="datePicker">Date</label>
+<input id="datePicker" type="date"/>
+</div>
+<div aria-label="Agenda view mode" class="view-toggle" role="group">
+<button aria-pressed="true" class="view-btn active" id="dayViewBtn" type="button">Day</button>
+<button aria-pressed="false" class="view-btn" id="weekViewBtn" type="button">Week</button>
+</div>
+<button id="prevBtn">◀ Previous</button>
+<button class="primary" id="todayBtn">Today</button>
+<button id="nextBtn">Next ▶</button>
+</div>
+</div>
+<div class="status-row">
+<div class="badge" id="dateBadge">Loading date...</div>
+<div class="badge" id="courseBadge">Loading course...</div>
+<div class="badge" id="lessonBadge">Loading lesson...</div>
+</div>
+</section>
+<div class="loading" id="app">Loading agenda...</div>
+</div>
 <script>
 const csvUrls = {
   IED: "https://docs.google.com/spreadsheets/d/e/2PACX-1vS4L3J5287xZ94Awc47kSrjAKOUIenbvYYlt15zdUAM4oL7Z_nVNegZ8M84JiKfrCr2x4FATCDS81Ng/pub?gid=1181780759&single=true&output=csv",
@@ -1641,17 +1624,17 @@ els.todayBtn.addEventListener("click", () => {
 })();
 </script>
 <footer class="ls-global-footer" role="contentinfo">
-  <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
-  <div class="ls-footer-links" aria-label="Footer navigation">
-    <a href="index.html">Home</a>
-    <a href="start-here.html">Start Here</a>
-    <a href="agenda.html">Agenda</a>
-    <a href="courses.html">Courses</a>
-    <a href="fablab.html">FabLab</a>
-    <a href="fablab-certification/index.html">Certifications</a>
-    <a href="fabrication.html">Fabrication Request</a>
-    <a href="resources.html">Resources</a>
-  </div>
+<p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
+<div aria-label="Footer navigation" class="ls-footer-links">
+<a href="index.html">Home</a>
+<a href="start-here.html">Start Here</a>
+<a href="agenda.html">Agenda</a>
+<a href="courses.html">Courses</a>
+<a href="fablab.html">FabLab</a>
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="fabrication.html">Fabrication Request</a>
+<a href="resources.html">Resources</a>
+</div>
 </footer>
 </body>
 </html>
