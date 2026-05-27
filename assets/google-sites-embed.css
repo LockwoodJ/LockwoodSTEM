@@ -1,0 +1,190 @@
+/* Full-width support for Google Sites embeds */
+html,body{margin:0!important;padding:0!important;width:100%!important;overflow-x:hidden!important;}
+main,.page,.site-wrapper,.container{width:100%!important;max-width:none!important;margin-left:0!important;margin-right:0!important;}
+section{max-width:none;}
+
+
+/* Accessibility and visibility hardening added by ChatGPT
+   Purpose: preserve Lockwood STEM styling while preventing low-contrast text,
+   especially dark text on dark hero/footer backgrounds in Google Sites embeds. */
+:root{
+  --ls-accessible-dark:#101827;
+  --ls-accessible-dark-2:#0b1220;
+  --ls-accessible-white:#ffffff;
+  --ls-accessible-soft:#f8fafc;
+  --ls-accessible-link:#c7ddff;
+  --ls-accessible-link-hover:#ffcc00;
+  --ls-accessible-blue:#003399;
+  --ls-accessible-focus:#ffcc00;
+}
+
+/* Footer contrast: fixes muted/dark text accidentally applied over dark footer backgrounds. */
+.ls-global-footer,
+footer{
+  background:var(--ls-accessible-dark)!important;
+  color:var(--ls-accessible-soft)!important;
+  border-top:1px solid rgba(255,255,255,.12)!important;
+}
+.ls-global-footer *,
+footer *{
+  color:var(--ls-accessible-soft)!important;
+}
+.ls-global-footer strong,
+footer strong{
+  color:var(--ls-accessible-white)!important;
+}
+.ls-global-footer a,
+footer a,
+.ls-footer-links a{
+  color:var(--ls-accessible-link)!important;
+  text-decoration:none!important;
+  font-weight:900!important;
+}
+.ls-global-footer a:hover,
+footer a:hover,
+.ls-footer-links a:hover,
+.ls-global-footer a:focus-visible,
+footer a:focus-visible,
+.ls-footer-links a:focus-visible{
+  color:var(--ls-accessible-link-hover)!important;
+  text-decoration:underline!important;
+  background:rgba(255,255,255,.10)!important;
+}
+
+/* Dark hero/header contrast. These only target pages using the visual-upgrade dark hero treatment. */
+body.ls-visual-upgrade .ls-page-hero,
+body.ls-visual-upgrade .hero,
+body.ls-visual-upgrade .course-hero,
+body.ls-visual-upgrade .ls-hero{
+  color:var(--ls-accessible-white)!important;
+}
+body.ls-visual-upgrade .ls-page-hero h1,
+body.ls-visual-upgrade .ls-page-hero h2,
+body.ls-visual-upgrade .ls-page-hero h3,
+body.ls-visual-upgrade .hero h1,
+body.ls-visual-upgrade .hero h2,
+body.ls-visual-upgrade .hero h3,
+body.ls-visual-upgrade .course-hero h1,
+body.ls-visual-upgrade .course-hero h2,
+body.ls-visual-upgrade .course-hero h3,
+body.ls-visual-upgrade .ls-hero h1,
+body.ls-visual-upgrade .ls-hero h2,
+body.ls-visual-upgrade .ls-hero h3{
+  color:var(--ls-accessible-white)!important;
+  text-shadow:0 2px 10px rgba(0,0,0,.35)!important;
+}
+body.ls-visual-upgrade .ls-page-hero p,
+body.ls-visual-upgrade .ls-page-hero .subtitle,
+body.ls-visual-upgrade .hero p,
+body.ls-visual-upgrade .hero .subtitle,
+body.ls-visual-upgrade .course-hero p,
+body.ls-visual-upgrade .course-hero .subtitle,
+body.ls-visual-upgrade .ls-hero p,
+body.ls-visual-upgrade .ls-hero .subtitle{
+  color:#eef4ff!important;
+}
+body.ls-visual-upgrade .ls-page-hero a,
+body.ls-visual-upgrade .hero a,
+body.ls-visual-upgrade .course-hero a,
+body.ls-visual-upgrade .ls-hero a{
+  color:var(--ls-accessible-white)!important;
+}
+body.ls-visual-upgrade .ls-page-hero .btn,
+body.ls-visual-upgrade .hero .btn,
+body.ls-visual-upgrade .course-hero .btn,
+body.ls-visual-upgrade .ls-hero .btn,
+body.ls-visual-upgrade .ls-page-hero .button,
+body.ls-visual-upgrade .hero .button,
+body.ls-visual-upgrade .course-hero .button,
+body.ls-visual-upgrade .ls-hero .button{
+  background:#ffffff!important;
+  color:var(--ls-accessible-blue)!important;
+  border-color:rgba(255,255,255,.45)!important;
+}
+body.ls-visual-upgrade .ls-page-hero .btn-primary,
+body.ls-visual-upgrade .hero .btn-primary,
+body.ls-visual-upgrade .course-hero .btn-primary,
+body.ls-visual-upgrade .ls-hero .btn-primary,
+body.ls-visual-upgrade .ls-page-hero .button-primary,
+body.ls-visual-upgrade .hero .button-primary,
+body.ls-visual-upgrade .course-hero .button-primary,
+body.ls-visual-upgrade .ls-hero .button-primary{
+  background:#33cc66!important;
+  color:#062713!important;
+}
+
+/* Navigation readability on sticky white navs. */
+.ls-global-header,
+.ls-global-nav{
+  color:#172033!important;
+}
+.ls-global-brand,
+.ls-global-links a{
+  color:#172033!important;
+}
+.ls-global-links a:hover,
+.ls-global-links a:focus-visible{
+  color:var(--ls-accessible-blue)!important;
+  background:#eef4ff!important;
+}
+.ls-global-links .ls-global-cta{
+  color:#ffffff!important;
+  background:linear-gradient(135deg,#003399,#0054c8)!important;
+}
+.ls-global-links .ls-global-cta:hover,
+.ls-global-links .ls-global-cta:focus-visible{
+  color:#ffffff!important;
+  background:linear-gradient(135deg,#002266,#003399)!important;
+}
+
+/* Generic dark-section safeguard for pages/cards with custom dark panels. */
+.dark,
+.dark-section,
+.bg-dark,
+.panel-dark,
+section[style*="background:#101827"],
+section[style*="background: #101827"],
+div[style*="background:#101827"],
+div[style*="background: #101827"]{
+  color:var(--ls-accessible-soft)!important;
+}
+.dark *,
+.dark-section *,
+.bg-dark *,
+.panel-dark *,
+section[style*="background:#101827"] *,
+section[style*="background: #101827"] *,
+div[style*="background:#101827"] *,
+div[style*="background: #101827"] *{
+  color:var(--ls-accessible-soft)!important;
+}
+
+/* Keyboard accessibility and visible focus indicators. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--ls-accessible-focus)!important;
+  outline-offset:3px!important;
+  box-shadow:0 0 0 6px rgba(255,204,0,.22)!important;
+}
+
+/* Keep clickable targets usable on touch screens. */
+a,
+button,
+.button,
+.btn{
+  min-height:40px;
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    scroll-behavior:auto!important;
+    transition-duration:.001ms!important;
+  }
+}
