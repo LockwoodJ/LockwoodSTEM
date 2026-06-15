@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Unit 3: CAD Modeling for Aerospace Components | Lockwood STEM</title>
+<style>
+:root{--ls-blue:#003399;--ls-blue-2:#0054c8;--ls-green:#33cc66;--ls-yellow:#ffcc00;--ls-dark:#101827;--ls-text:#1f2937;--ls-muted:#475467;--ls-bg:#f6f9ff;--ls-card:#ffffff;--ls-border:rgba(0,51,153,.14);--ls-shadow:0 16px 40px rgba(0,51,153,.14)}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ls-text);background:radial-gradient(circle at top left,rgba(0,51,153,.12),transparent 28%),linear-gradient(180deg,#fff 0%,var(--ls-bg) 65%,#eef4ff 100%);overflow-x:hidden} a{color:inherit}.ls-skip-link{position:absolute;left:-999px;top:auto}.ls-skip-link:focus{left:12px;top:12px;z-index:9999;background:#fff;color:#003399;padding:10px;border-radius:8px}.ls-global-header{position:sticky;top:0;z-index:1000;width:100%;background:rgba(255,255,255,.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(0,51,153,.12);box-shadow:0 8px 22px rgba(17,24,39,.06)}.ls-global-nav{width:min(100%,1600px);margin:0 auto;padding:10px clamp(14px,2vw,28px);display:flex;align-items:center;justify-content:space-between;gap:18px}.ls-global-brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;color:var(--ls-blue);white-space:nowrap}.ls-global-brand img{width:42px;height:42px;object-fit:contain}.ls-global-links{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap}.ls-global-links a,.ls-footer-links a{display:inline-flex;align-items:center;text-decoration:none;font-weight:800;color:var(--ls-text);padding:9px 11px;border-radius:999px;transition:.16s ease}.ls-global-links a:hover,.ls-footer-links a:hover{background:rgba(0,51,153,.08);color:var(--ls-blue);transform:translateY(-1px)}.ls-global-cta,.btn-primary{background:linear-gradient(135deg,var(--ls-blue),var(--ls-blue-2))!important;color:#fff!important;box-shadow:0 10px 22px rgba(0,51,153,.22)}
+main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);background:radial-gradient(circle at 84% 18%,rgba(255,204,0,.28),transparent 28%),linear-gradient(135deg,#071733 0%,#003399 52%,#0054c8 100%);color:#fff}.hero-inner{width:min(100%,1500px);margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(22px,4vw,52px);align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 12px;border-radius:999px;background:#fff;color:#003399;font-size:.78rem;font-weight:900;text-transform:uppercase;letter-spacing:.04em}.spark{width:9px;height:9px;border-radius:50%;background:var(--ls-green);box-shadow:0 0 0 5px rgba(51,204,102,.18)}h1{font-size:clamp(2.55rem,6vw,5.4rem);line-height:.94;letter-spacing:-.065em;margin:.3em 0 .22em;color:#fff}h1 span{color:var(--ls-yellow)}.subtitle,.unit-hero p{font-size:clamp(1rem,1.45vw,1.2rem);line-height:1.62;color:#f8fafc;font-weight:700}.hero-card,.card,.panel,.checklist,.lesson-card{background:rgba(255,255,255,.95);border:1px solid rgba(0,51,153,.12);border-radius:24px;box-shadow:var(--ls-shadow);padding:clamp(18px,2.3vw,30px);color:#101827}.hero-card img{max-width:150px;display:block;margin:0 auto 14px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border-radius:999px;text-decoration:none;font-weight:900;border:1px solid rgba(0,51,153,.14);background:#fff;color:#003399;box-shadow:0 8px 20px rgba(17,24,39,.07)}.btn:hover,.card:hover,.lesson-card:hover{transform:translateY(-2px)}section{width:min(100%,1500px);margin:0 auto;padding:clamp(22px,4vw,52px) clamp(16px,3vw,34px)}.section-heading{margin-bottom:22px}.section-heading h2,h2{font-size:clamp(1.65rem,3vw,2.5rem);line-height:1.05;letter-spacing:-.04em;color:#101827;margin:0 0 10px}.section-heading p,p,li{font-size:1.04rem;line-height:1.62;color:#334155}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.lesson-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}.card h3,.lesson-card h3,.panel h3{font-size:1.22rem;color:#101827;margin:.2rem 0 .4rem}.tag,.pill{display:inline-flex;align-items:center;justify-content:center;padding:6px 10px;border-radius:999px;background:rgba(0,51,153,.08);color:#003399;font-weight:900;font-size:.8rem;margin-bottom:10px}.pill.green{background:rgba(51,204,102,.16);color:#176b38}.pill.yellow{background:#ffefb0;color:#101827}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px}.table-wrap{overflow-x:auto}.table{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 20px rgba(17,24,39,.06)}.table th{background:#003399;color:#fff;text-align:left}.table th,.table td{padding:12px 14px;border-bottom:1px solid rgba(0,51,153,.1)}.callout{background:linear-gradient(135deg,#101827,#003399);color:#fff;border-radius:28px;padding:clamp(18px,3vw,34px);box-shadow:var(--ls-shadow)}.callout h2,.callout h3,.callout p,.callout li{color:#fff}.checklist li{margin:7px 0}.lesson-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.ls-global-footer,footer{width:100%;padding:26px 18px;text-align:center;background:#101827;color:#fff;margin-top:28px}.ls-footer-links{display:flex;justify-content:center;flex-wrap:wrap;gap:6px;margin-top:10px}.ls-footer-links a,.ls-global-footer p{color:#fff!important}@media(max-width:900px){.ls-global-nav{align-items:flex-start;flex-direction:column}.ls-global-links{justify-content:flex-start}.hero-inner,.two-col{grid-template-columns:1fr}h1{letter-spacing:-.045em}}
+</style>
+<link href="assets/lockwood-polish.css" rel="stylesheet"/>
+<link href="assets/google-sites-embed.css" rel="stylesheet"/>
+<link href="assets/lockwood-standard-chrome.css" rel="stylesheet"/>
+<link href="assets/lockwood-contrast-final.css" rel="stylesheet"/>
+<link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
+<link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
+<link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
+</head>
+<body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
+<a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<header class="ls-global-header" role="banner">
+<nav aria-label="Main navigation" class="ls-global-nav">
+<a aria-label="Lockwood STEM Home" class="ls-global-brand" href="index.html">
+<img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"/>
+<span>Lockwood STEM</span>
+</a>
+<div class="ls-global-links">
+<a href="index.html">Home</a>
+<a href="start-here.html">Start Here</a>
+<a href="agenda.html">Agenda</a>
+<a href="courses.html">Courses</a>
+<a href="fablab.html">FabLab</a>
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="resources.html">Resources</a>
+<a class="ls-global-cta" href="fabrication.html">Fabrication</a>
+</div>
+</nav>
+</header>
+<main id="main-content"><section class="unit-hero">
+<div class="hero-inner">
+<div>
+<div class="eyebrow"><span class="spark"></span> Introduction to Engineering Design</div>
+<h1>Unit 3:<br/><span> CAD Modeling for Aerospace Components</span></h1>
+<p class="subtitle">Turn aerospace sketches and drawings into accurate, editable 3D models in Fusion.</p>
+<div class="actions">
+<a class="btn btn-primary" href="ied-unit-3.html">Unit 3 Hub</a>
+<a class="btn" href="ied-units.html">All IED Units</a>
+</div>
+</div>
+<div class="hero-card">
+<img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"/>
+<h2>Unit 3</h2>
+<p>Turn aerospace sketches and drawings into accurate, editable 3D models in Fusion.</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="section-heading">
+<h2>Start Unit 3 Here</h2>
+<p>Unit 3 moves from hand sketches and technical drawings into 3D CAD modeling. You will use Fusion to create aerospace components with clear design intent, controlled dimensions, organized features, and documentation that prepares your part for review, prototyping, or fabrication.</p>
+</div>
+<div class="grid"><a class="card" href="ied-unit-3-start-here.html"><span class="tag">Overview</span><h3>Start Here</h3><p>Unit overview, learning targets, deliverables, pacing, and what you will submit.</p></a>
+<a class="card" href="ied-unit-3-fusion-interface.html"><span class="tag">Fusion Basics</span><h3>Fusion Interface & Workflow</h3><p>Learn the Fusion workspace, browser, timeline, navigation, and file habits.</p></a>
+<a class="card" href="ied-unit-3-parametric-modeling.html"><span class="tag">Design Intent</span><h3>Parametric Modeling</h3><p>Use dimensions and constraints so aerospace parts can be edited intentionally.</p></a>
+<a class="card" href="ied-unit-3-sketch-constraints.html"><span class="tag">Sketching</span><h3>2D Sketches & Constraints</h3><p>Create controlled 2D sketches using dimensions, geometric constraints, and profiles.</p></a>
+<a class="card" href="ied-unit-3-core-features.html"><span class="tag">Features</span><h3>Extrude, Revolve & Core Features</h3><p>Turn sketches into 3D parts using the most important CAD features.</p></a>
+<a class="card" href="ied-unit-3-aerospace-features.html"><span class="tag">Details</span><h3>Holes, Fillets, Chamfers & Shells</h3><p>Add aerospace-style details that improve fit, strength, weight, and manufacturability.</p></a>
+<a class="card" href="ied-unit-3-model-inspection.html"><span class="tag">Quality Check</span><h3>Model Inspection & Revision</h3><p>Check dimensions, feature order, naming, and design intent before submission.</p></a>
+<a class="card" href="ied-unit-3-component-project.html"><span class="tag">Project</span><h3>Aerospace Component CAD Project</h3><p>Model a complete aerospace component from a drawing package or design brief.</p></a>
+<a class="card" href="ied-unit-3-export-documentation.html"><span class="tag">Submit</span><h3>Exporting & CAD Documentation</h3><p>Save, export, screenshot, and document your CAD model for review and fabrication.</p></a></div>
+</section>
+<section>
+<div class="two-col">
+<div class="panel"><h2>Unit 3 Essential Question</h2><p><strong>How do engineers turn technical sketches into accurate, editable 3D models?</strong></p></div>
+<div class="panel"><h2>Unit 3 CAD Portfolio</h2><ul><li>Fusion navigation and setup evidence</li><li>2D sketch and constraint practice</li><li>Core feature practice models</li><li>Aerospace feature practice</li><li>Model inspection checklist</li><li>Final aerospace component CAD model</li><li>Exported images/files and reflection</li></ul></div>
+</div>
+</section>
+<section>
+<div class="section-heading"><h2>25-Day Unit 3 Pacing</h2><p>Each lesson is designed for a 45-minute class period. Pacing can be shortened or extended depending on Fusion experience and FabLab access.</p></div>
+<div class="table-wrap"><table class="table"><thead><tr><th>Day</th><th>Focus</th><th>Student Output</th></tr></thead><tbody>
+<tr><td>3.1</td><td>What is CAD?</td><td>CAD purpose and workflow notes</td></tr>
+<tr><td>3.2</td><td>Fusion interface</td><td>Navigation practice screenshots</td></tr>
+<tr><td>3.3</td><td>File setup and naming</td><td>Correctly named Fusion file</td></tr>
+<tr><td>3.4</td><td>2D sketch basics</td><td>Basic sketch profile</td></tr>
+<tr><td>3.5</td><td>Dimensions and constraints</td><td>Fully controlled sketch practice</td></tr>
+<tr><td>3.6</td><td>Design intent</td><td>Parametric edit challenge</td></tr>
+<tr><td>3.7</td><td>Extrude basics</td><td>Simple bracket body</td></tr>
+<tr><td>3.8</td><td>Cut features</td><td>Cutouts and slots practice</td></tr>
+<tr><td>3.9</td><td>Revolve features</td><td>Nose cone or wheel-like part</td></tr>
+<tr><td>3.10</td><td>Hole tool and patterns</td><td>Mounting hole practice</td></tr>
+<tr><td>3.11</td><td>Fillets and chamfers</td><td>Edge treatment practice</td></tr>
+<tr><td>3.12</td><td>Shell and lightweighting</td><td>Lightweight housing practice</td></tr>
+<tr><td>3.13</td><td>Construction planes and axes</td><td>Offset feature practice</td></tr>
+<tr><td>3.14</td><td>Timeline and browser organization</td><td>Renamed features and bodies</td></tr>
+<tr><td>3.15</td><td>Model inspection checkpoint</td><td>CAD checklist submission</td></tr>
+<tr><td>3.16</td><td>Aerospace component brief</td><td>Project planning and dimensions</td></tr>
+<tr><td>3.17</td><td>Component base geometry</td><td>Base model created</td></tr>
+<tr><td>3.18</td><td>Functional features</td><td>Holes, cutouts, mounts, ribs</td></tr>
+<tr><td>3.19</td><td>Weight and material considerations</td><td>Lightweighting revision</td></tr>
+<tr><td>3.20</td><td>Fit and manufacturing considerations</td><td>Fit check and revision notes</td></tr>
+<tr><td>3.21</td><td>Peer CAD review</td><td>Peer feedback checklist</td></tr>
+<tr><td>3.22</td><td>Revision day</td><td>Updated model</td></tr>
+<tr><td>3.23</td><td>Exporting and screenshots</td><td>Export package draft</td></tr>
+<tr><td>3.24</td><td>CAD design review preparation</td><td>Short CAD review slide or doc</td></tr>
+<tr><td>3.25</td><td>Submission and reflection</td><td>Final CAD portfolio</td></tr>
+</tbody></table></div>
+</section>
+<section><div class="callout dark"><h2>Unit Project</h2><p><strong>Aerospace Component CAD Model:</strong> Model a part such as a payload bracket, UAV sensor mount, rocket fin alignment jig, wing rib, small avionics housing, or fuselage panel support. Your model should be dimensioned, editable, organized, and documented clearly enough for review or fabrication planning.</p></div></section>
+
+</main>
+<footer class="ls-global-footer" role="contentinfo">
+<p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
+<div aria-label="Footer navigation" class="ls-footer-links">
+<a href="index.html">Home</a>
+<a href="start-here.html">Start Here</a>
+<a href="agenda.html">Agenda</a>
+<a href="courses.html">Courses</a>
+<a href="fablab.html">FabLab</a>
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="fabrication.html">Fabrication Request</a>
+<a href="resources.html">Resources</a>
+</div>
+</footer>
+</body>
+</html>
