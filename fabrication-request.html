@@ -584,6 +584,95 @@ footer p,
 </style>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
+
+
+<!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
+<style id="lockwood-final-contrast-hotfix">
+  /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
+  a.btn-primary,
+  .btn-primary,
+  a.button-primary,
+  .button-primary,
+  a.primary,
+  .primary,
+  a.cta,
+  .cta,
+  a.ls-global-cta,
+  .ls-global-cta,
+  .actions a.btn-primary,
+  .lesson-card a.btn-primary,
+  .card a.btn-primary,
+  .unit-card a.btn-primary,
+  .project-card a.btn-primary,
+  .course-card a.btn-primary,
+  a[href].btn-primary,
+  button.btn-primary {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #003399, #3a32c7) !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,.35) !important;
+    border-color: rgba(255,255,255,.22) !important;
+  }
+  a.btn-primary:visited,
+  a.button-primary:visited,
+  a.primary:visited,
+  a.cta:visited,
+  a.ls-global-cta:visited {
+    color: #ffffff !important;
+  }
+  a.btn-primary *,
+  .btn-primary *,
+  a.button-primary *,
+  .button-primary *,
+  a.primary *,
+  .primary *,
+  a.cta *,
+  .cta *,
+  a.ls-global-cta *,
+  .ls-global-cta * {
+    color: #ffffff !important;
+  }
+
+  /* Dark panels/callouts/heroes must use light text. */
+  .callout,
+  .callout.dark,
+  .dark-callout,
+  .key-idea,
+  .unit-hero,
+  .course-hero,
+  .hero.dark,
+  .ls-page-hero.dark,
+  [class*="dark"]:not(.card):not(.lesson-card):not(.unit-card):not(.project-card) {
+    color: #ffffff !important;
+  }
+  .callout :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .callout.dark :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .dark-callout :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .key-idea :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .unit-hero :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .course-hero :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .hero.dark :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .ls-page-hero.dark :is(h1,h2,h3,h4,p,li,span,strong,em) {
+    color: #ffffff !important;
+  }
+
+  /* Secondary white buttons stay readable on light and dark backgrounds. */
+  a.btn:not(.btn-primary):not(.button-primary):not(.primary):not(.cta),
+  .btn:not(.btn-primary):not(.button-primary):not(.primary):not(.cta) {
+    color: #003399 !important;
+  }
+
+  /* Yellow/green buttons need dark readable text. */
+  .btn-green,
+  a.btn-green,
+  .btn-yellow,
+  a.btn-yellow,
+  .callout .btn-yellow,
+  .callout .btn-green {
+    color: #101827 !important;
+    text-shadow: none !important;
+  }
+</style>
+
 </head>
 <body class="ls-visual-upgrade ls-theme-fablab ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>

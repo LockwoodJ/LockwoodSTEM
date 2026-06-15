@@ -16,6 +16,96 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
+
+
+<!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
+<style id="lockwood-final-contrast-hotfix">
+  /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
+  a.btn-primary,
+  .btn-primary,
+  a.button-primary,
+  .button-primary,
+  a.primary,
+  .primary,
+  a.cta,
+  .cta,
+  a.ls-global-cta,
+  .ls-global-cta,
+  .actions a.btn-primary,
+  .lesson-card a.btn-primary,
+  .card a.btn-primary,
+  .unit-card a.btn-primary,
+  .project-card a.btn-primary,
+  .course-card a.btn-primary,
+  a[href].btn-primary,
+  button.btn-primary {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #003399, #3a32c7) !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,.35) !important;
+    border-color: rgba(255,255,255,.22) !important;
+  }
+  a.btn-primary:visited,
+  a.button-primary:visited,
+  a.primary:visited,
+  a.cta:visited,
+  a.ls-global-cta:visited {
+    color: #ffffff !important;
+  }
+  a.btn-primary *,
+  .btn-primary *,
+  a.button-primary *,
+  .button-primary *,
+  a.primary *,
+  .primary *,
+  a.cta *,
+  .cta *,
+  a.ls-global-cta *,
+  .ls-global-cta * {
+    color: #ffffff !important;
+  }
+
+  /* Dark panels/callouts/heroes must use light text. */
+  .callout,
+  .callout.dark,
+  .dark-callout,
+  .key-idea,
+  .unit-hero,
+  .course-hero,
+  .hero.dark,
+  .ls-page-hero.dark,
+  [class*="dark"]:not(.card):not(.lesson-card):not(.unit-card):not(.project-card) {
+    color: #ffffff !important;
+  }
+  .callout :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .callout.dark :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .dark-callout :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .key-idea :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .unit-hero :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .course-hero :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .hero.dark :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .ls-page-hero.dark :is(h1,h2,h3,h4,p,li,span,strong,em) {
+    color: #ffffff !important;
+  }
+
+  /* Secondary white buttons stay readable on light and dark backgrounds. */
+  a.btn:not(.btn-primary):not(.button-primary):not(.primary):not(.cta),
+  .btn:not(.btn-primary):not(.button-primary):not(.primary):not(.cta) {
+    color: #003399 !important;
+  }
+
+  /* Yellow/green buttons need dark readable text. */
+  .btn-green,
+  a.btn-green,
+  .btn-yellow,
+  a.btn-yellow,
+  .callout .btn-yellow,
+  .callout .btn-green {
+    color: #101827 !important;
+    text-shadow: none !important;
+  }
+</style>
+
+<link href="assets/ied-media.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -49,11 +139,24 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </div>
 <div class="hero-card">
-<img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"/>
+<img class="media-hero-img" alt="Design Process &amp; Aerospace Missions visual" src="assets/ied-media/unit1-hero.svg"/>
 <h2>Unit 1</h2>
 <p>Design process, aerospace missions, criteria, constraints, research, concept selection, and design review.</p>
 </div>
 </div>
+</section>
+
+<section class="media-section ied-media-enhancement" aria-label="Visual reference">
+  <div class="media-mini">
+    <img src="assets/ied-media/unit1-hero.svg" alt="Design Process &amp; Aerospace Missions visual reference" loading="lazy"/>
+    <div>
+      <span class="badge">Visual Reference</span>
+      <h2>Design Process &amp; Aerospace Missions</h2>
+      <p><strong>Turn mission needs into clear, testable design concepts.</strong></p>
+      <p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
+      <div class="actions"><a class="btn btn-primary" href="ied-unit-1.html">Open Unit 1 Media Hub</a></div>
+    </div>
+  </div>
 </section>
 <section><div class="section-heading"><h2>What Is a Design Review?</h2><p>A design review is a professional checkpoint where engineers explain their problem, show evidence, defend design choices, and receive feedback before moving forward.</p></div>
 <div class="grid"><div class="card"><h3>Problem</h3><p>What mission need are you solving?</p></div><div class="card"><h3>Requirements</h3><p>What criteria and constraints shape the design?</p></div><div class="card"><h3>Concepts</h3><p>What possible ideas did you consider?</p></div><div class="card"><h3>Recommendation</h3><p>Which concept should move forward and why?</p></div></div></section>

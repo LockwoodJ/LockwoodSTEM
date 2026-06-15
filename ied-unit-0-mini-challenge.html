@@ -16,6 +16,96 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
+
+
+<!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
+<style id="lockwood-final-contrast-hotfix">
+  /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
+  a.btn-primary,
+  .btn-primary,
+  a.button-primary,
+  .button-primary,
+  a.primary,
+  .primary,
+  a.cta,
+  .cta,
+  a.ls-global-cta,
+  .ls-global-cta,
+  .actions a.btn-primary,
+  .lesson-card a.btn-primary,
+  .card a.btn-primary,
+  .unit-card a.btn-primary,
+  .project-card a.btn-primary,
+  .course-card a.btn-primary,
+  a[href].btn-primary,
+  button.btn-primary {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #003399, #3a32c7) !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,.35) !important;
+    border-color: rgba(255,255,255,.22) !important;
+  }
+  a.btn-primary:visited,
+  a.button-primary:visited,
+  a.primary:visited,
+  a.cta:visited,
+  a.ls-global-cta:visited {
+    color: #ffffff !important;
+  }
+  a.btn-primary *,
+  .btn-primary *,
+  a.button-primary *,
+  .button-primary *,
+  a.primary *,
+  .primary *,
+  a.cta *,
+  .cta *,
+  a.ls-global-cta *,
+  .ls-global-cta * {
+    color: #ffffff !important;
+  }
+
+  /* Dark panels/callouts/heroes must use light text. */
+  .callout,
+  .callout.dark,
+  .dark-callout,
+  .key-idea,
+  .unit-hero,
+  .course-hero,
+  .hero.dark,
+  .ls-page-hero.dark,
+  [class*="dark"]:not(.card):not(.lesson-card):not(.unit-card):not(.project-card) {
+    color: #ffffff !important;
+  }
+  .callout :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .callout.dark :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .dark-callout :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .key-idea :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .unit-hero :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .course-hero :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .hero.dark :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .ls-page-hero.dark :is(h1,h2,h3,h4,p,li,span,strong,em) {
+    color: #ffffff !important;
+  }
+
+  /* Secondary white buttons stay readable on light and dark backgrounds. */
+  a.btn:not(.btn-primary):not(.button-primary):not(.primary):not(.cta),
+  .btn:not(.btn-primary):not(.button-primary):not(.primary):not(.cta) {
+    color: #003399 !important;
+  }
+
+  /* Yellow/green buttons need dark readable text. */
+  .btn-green,
+  a.btn-green,
+  .btn-yellow,
+  a.btn-yellow,
+  .callout .btn-yellow,
+  .callout .btn-green {
+    color: #101827 !important;
+    text-shadow: none !important;
+  }
+</style>
+
+<link href="assets/ied-media.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -51,13 +141,26 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </div>
 <div class="hero-card">
-<img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"/>
+<img class="media-hero-img" alt="Course Launch, Procedures &amp; FabLab Foundations visual" src="assets/ied-media/unit0-hero.svg"/>
 <h2>Course Launch</h2>
 <p>Use this page as your student-facing guide for procedures, FabLab readiness, and engineering habits.</p>
 </div>
 </div>
 </section>
 
+
+<section class="media-section ied-media-enhancement" aria-label="Visual reference">
+  <div class="media-mini">
+    <img src="assets/ied-media/unit0-hero.svg" alt="Course Launch, Procedures &amp; FabLab Foundations visual reference" loading="lazy"/>
+    <div>
+      <span class="badge">Visual Reference</span>
+      <h2>Course Launch, Procedures &amp; FabLab Foundations</h2>
+      <p><strong>Work safely and professionally before using engineering tools.</strong></p>
+      <p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
+      <div class="actions"><a class="btn btn-primary" href="ied-unit-0.html">Open Unit 0 Media Hub</a></div>
+    </div>
+  </div>
+</section>
 <section><div class="section-heading"><h2>Aerospace Teamwork Challenge: Mission Control Tower</h2><p>A remote launch site needs a lightweight temporary communication tower. Your team must design a freestanding tower that can support a small antenna payload.</p></div><div class="grid"><div class="card"><h3>Materials</h3><ul><li>Paper</li><li>Index cards</li><li>Paper clips or binder clips</li><li>Ruler</li><li>Small payload</li><li>Optional: scissors</li></ul></div><div class="card"><h3>Criteria</h3><ul><li>As tall as possible</li><li>Freestanding</li><li>Supports payload for 10 seconds</li><li>Uses materials efficiently</li><li>Documented clearly</li></ul></div><div class="card"><h3>Constraints</h3><ul><li>Use only provided materials</li><li>Fit within the time limit</li><li>Support the assigned payload</li><li>Clean up completely</li><li>Follow all safety expectations</li></ul></div></div></section>
 <section><div class="section-heading"><h2>Team Roles</h2></div><div class="table-wrap"><table class="table"><thead><tr><th>Role</th><th>Responsibility</th></tr></thead><tbody><tr><td>Project Lead</td><td>Keeps team focused and manages time.</td></tr><tr><td>Documentation Lead</td><td>Records sketches, decisions, and results.</td></tr><tr><td>Materials Lead</td><td>Manages materials and cleanup.</td></tr><tr><td>Test Lead</td><td>Measures, tests, and records performance.</td></tr></tbody></table></div></section>
 <section><div class="two-col"><div class="panel"><h2>Planning Day</h2><ul><li>Assign roles.</li><li>Identify criteria and constraints.</li><li>Create at least two concept sketches.</li><li>Select a design and explain why.</li><li>Write a test plan.</li></ul></div><div class="panel"><h2>Build/Test Day</h2><ul><li>Build safely.</li><li>Document changes.</li><li>Measure final height.</li><li>Test payload support for 10 seconds.</li><li>Record what worked, what failed, and what should change.</li></ul></div></div></section>

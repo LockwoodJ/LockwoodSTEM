@@ -16,6 +16,96 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
+
+
+<!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
+<style id="lockwood-final-contrast-hotfix">
+  /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
+  a.btn-primary,
+  .btn-primary,
+  a.button-primary,
+  .button-primary,
+  a.primary,
+  .primary,
+  a.cta,
+  .cta,
+  a.ls-global-cta,
+  .ls-global-cta,
+  .actions a.btn-primary,
+  .lesson-card a.btn-primary,
+  .card a.btn-primary,
+  .unit-card a.btn-primary,
+  .project-card a.btn-primary,
+  .course-card a.btn-primary,
+  a[href].btn-primary,
+  button.btn-primary {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #003399, #3a32c7) !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,.35) !important;
+    border-color: rgba(255,255,255,.22) !important;
+  }
+  a.btn-primary:visited,
+  a.button-primary:visited,
+  a.primary:visited,
+  a.cta:visited,
+  a.ls-global-cta:visited {
+    color: #ffffff !important;
+  }
+  a.btn-primary *,
+  .btn-primary *,
+  a.button-primary *,
+  .button-primary *,
+  a.primary *,
+  .primary *,
+  a.cta *,
+  .cta *,
+  a.ls-global-cta *,
+  .ls-global-cta * {
+    color: #ffffff !important;
+  }
+
+  /* Dark panels/callouts/heroes must use light text. */
+  .callout,
+  .callout.dark,
+  .dark-callout,
+  .key-idea,
+  .unit-hero,
+  .course-hero,
+  .hero.dark,
+  .ls-page-hero.dark,
+  [class*="dark"]:not(.card):not(.lesson-card):not(.unit-card):not(.project-card) {
+    color: #ffffff !important;
+  }
+  .callout :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .callout.dark :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .dark-callout :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .key-idea :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .unit-hero :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .course-hero :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .hero.dark :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .ls-page-hero.dark :is(h1,h2,h3,h4,p,li,span,strong,em) {
+    color: #ffffff !important;
+  }
+
+  /* Secondary white buttons stay readable on light and dark backgrounds. */
+  a.btn:not(.btn-primary):not(.button-primary):not(.primary):not(.cta),
+  .btn:not(.btn-primary):not(.button-primary):not(.primary):not(.cta) {
+    color: #003399 !important;
+  }
+
+  /* Yellow/green buttons need dark readable text. */
+  .btn-green,
+  a.btn-green,
+  .btn-yellow,
+  a.btn-yellow,
+  .callout .btn-yellow,
+  .callout .btn-green {
+    color: #101827 !important;
+    text-shadow: none !important;
+  }
+</style>
+
+<link href="assets/ied-media.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -51,13 +141,38 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </div>
 <div class="hero-card">
-<img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"/>
+<img class="media-hero-img" alt="Course Launch, Procedures &amp; FabLab Foundations visual" src="assets/ied-media/unit0-hero.svg"/>
 <h2>Course Launch</h2>
 <p>Use this page as your student-facing guide for procedures, FabLab readiness, and engineering habits.</p>
 </div>
 </div>
 </section>
 
+
+<section class="media-section ied-media-enhancement" aria-labelledby="unit0-media-heading">
+  <div class="section-heading">
+    <h2 id="unit0-media-heading">Media & Examples</h2>
+    <p>Use these visuals and short videos to connect this unit to real engineering work.</p>
+  </div>
+  <div class="media-feature">
+    <div class="media-dark">
+      <h2>Real Aerospace Connection</h2>
+      <p><strong>Work safely and professionally before using engineering tools.</strong></p>
+      <p>As you work through this unit, focus on how the skill supports safer, clearer, and more testable aerospace design decisions.</p>
+    </div>
+    <div class="media-card">
+      <img class="media-image" src="assets/ied-media/unit0-hero.svg" alt="Course Launch, Procedures &amp; FabLab Foundations visual" loading="lazy"/>
+      <h3>Course Launch, Procedures &amp; FabLab Foundations</h3>
+      <p>This visual can be used as a quick reference when reviewing the unit goal, project expectations, and design context.</p>
+    </div>
+  </div>
+  <div class="video-grid">
+    <div class="video-card"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube.com/embed/wE-z_TJyziI" title="NASA for Kids: Intro to Engineering" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="body"><span class="badge green">Watch & Learn</span><h3>NASA for Kids: Intro to Engineering</h3><p>NASA Goddard public-domain overview of what engineers do.</p></div></div>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-card"><img src="assets/ied-media/unit0-hero.svg" alt="FabLab readiness" loading="lazy"/><div class="body"><span class="badge">Visual</span><h3>FabLab readiness</h3><p>Use this unit to learn routines, safety culture, and tool-access expectations.</p></div></div><div class="visual-card"><img src="assets/ied-media/drawing-package-example.svg" alt="Certification pathway" loading="lazy"/><div class="body"><span class="badge">Visual</span><h3>Certification pathway</h3><p>Certification separates training from teacher permission.</p></div></div><div class="visual-card"><img src="assets/ied-media/structure-test-example.svg" alt="Workspace reset" loading="lazy"/><div class="body"><span class="badge">Visual</span><h3>Workspace reset</h3><p>A clean workspace is a safety system, not just a classroom rule.</p></div></div>
+  </div>
+</section>
 <section>
 <div class="section-heading">
 <h2>Start Unit 0 Here</h2>
