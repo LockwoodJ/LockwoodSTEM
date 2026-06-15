@@ -18,6 +18,96 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
+
+
+<!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
+<style id="lockwood-final-contrast-hotfix">
+  /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
+  a.btn-primary,
+  .btn-primary,
+  a.button-primary,
+  .button-primary,
+  a.primary,
+  .primary,
+  a.cta,
+  .cta,
+  a.ls-global-cta,
+  .ls-global-cta,
+  .actions a.btn-primary,
+  .lesson-card a.btn-primary,
+  .card a.btn-primary,
+  .unit-card a.btn-primary,
+  .project-card a.btn-primary,
+  .course-card a.btn-primary,
+  a[href].btn-primary,
+  button.btn-primary {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #003399, #3a32c7) !important;
+    text-shadow: 0 1px 2px rgba(0,0,0,.35) !important;
+    border-color: rgba(255,255,255,.22) !important;
+  }
+  a.btn-primary:visited,
+  a.button-primary:visited,
+  a.primary:visited,
+  a.cta:visited,
+  a.ls-global-cta:visited {
+    color: #ffffff !important;
+  }
+  a.btn-primary *,
+  .btn-primary *,
+  a.button-primary *,
+  .button-primary *,
+  a.primary *,
+  .primary *,
+  a.cta *,
+  .cta *,
+  a.ls-global-cta *,
+  .ls-global-cta * {
+    color: #ffffff !important;
+  }
+
+  /* Dark panels/callouts/heroes must use light text. */
+  .callout,
+  .callout.dark,
+  .dark-callout,
+  .key-idea,
+  .unit-hero,
+  .course-hero,
+  .hero.dark,
+  .ls-page-hero.dark,
+  [class*="dark"]:not(.card):not(.lesson-card):not(.unit-card):not(.project-card) {
+    color: #ffffff !important;
+  }
+  .callout :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .callout.dark :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .dark-callout :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .key-idea :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .unit-hero :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .course-hero :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .hero.dark :is(h1,h2,h3,h4,p,li,span,strong,em),
+  .ls-page-hero.dark :is(h1,h2,h3,h4,p,li,span,strong,em) {
+    color: #ffffff !important;
+  }
+
+  /* Secondary white buttons stay readable on light and dark backgrounds. */
+  a.btn:not(.btn-primary):not(.button-primary):not(.primary):not(.cta),
+  .btn:not(.btn-primary):not(.button-primary):not(.primary):not(.cta) {
+    color: #003399 !important;
+  }
+
+  /* Yellow/green buttons need dark readable text. */
+  .btn-green,
+  a.btn-green,
+  .btn-yellow,
+  a.btn-yellow,
+  .callout .btn-yellow,
+  .callout .btn-green {
+    color: #101827 !important;
+    text-shadow: none !important;
+  }
+</style>
+
+<link href="assets/ied-media.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 
@@ -45,7 +135,32 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <h1>Unit 5:<br/><span> Materials, Structures &amp; Prototype Testing</span></h1>
 <p class="subtitle">Design, test, and improve lightweight aerospace structures.</p>
 <div class="actions"><a class="btn btn-primary" href="ied-unit-5.html">Unit 5 Hub</a><a class="btn" href="ied-units.html">All IED Units</a></div></div>
-<div class="hero-card"><img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"/><h2>Unit 5</h2><p>Design, test, and improve lightweight aerospace structures.</p></div></div>
+<div class="hero-card"><img class="media-hero-img" alt="Materials, Structures &amp; Prototype Testing visual" src="assets/ied-media/unit5-hero.svg"/><h2>Unit 5</h2><p>Design, test, and improve lightweight aerospace structures.</p></div></div>
+</section>
+
+<section class="media-section ied-media-enhancement" aria-labelledby="unit5-media-heading">
+  <div class="section-heading">
+    <h2 id="unit5-media-heading">Media & Examples</h2>
+    <p>Use these visuals and short videos to connect this unit to real engineering work.</p>
+  </div>
+  <div class="media-feature">
+    <div class="media-dark">
+      <h2>Real Aerospace Connection</h2>
+      <p><strong>Use test evidence to improve strength, weight, and reliability.</strong></p>
+      <p>As you work through this unit, focus on how the skill supports safer, clearer, and more testable aerospace design decisions.</p>
+    </div>
+    <div class="media-card">
+      <img class="media-image" src="assets/ied-media/unit5-hero.svg" alt="Materials, Structures &amp; Prototype Testing visual" loading="lazy"/>
+      <h3>Materials, Structures &amp; Prototype Testing</h3>
+      <p>This visual can be used as a quick reference when reviewing the unit goal, project expectations, and design context.</p>
+    </div>
+  </div>
+  <div class="video-grid">
+    <div class="video-card"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube.com/embed/sLJU_3UtkaQ" title="NASA STEMonstrations: Engineering Design — Trusses" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="body"><span class="badge green">Watch & Learn</span><h3>NASA STEMonstrations: Engineering Design — Trusses</h3><p>Learn how truss structures support the International Space Station.</p></div></div><div class="video-card"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube.com/embed/P6sCjXISmEU" title="NASA Now: Engineering Design — Wind Tunnel Testing" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="body"><span class="badge green">Watch & Learn</span><h3>NASA Now: Engineering Design — Wind Tunnel Testing</h3><p>See how aerospace models are tested before full-scale systems fly.</p></div></div>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-card"><img src="assets/ied-media/unit5-hero.svg" alt="Structure challenge" loading="lazy"/><div class="body"><span class="badge">Visual</span><h3>Structure challenge</h3><p>Compare strength, weight, material use, and failure points.</p></div></div><div class="visual-card"><img src="assets/ied-media/structure-test-example.svg" alt="Load paths" loading="lazy"/><div class="body"><span class="badge">Visual</span><h3>Load paths</h3><p>Trace how forces move through a structure.</p></div></div><div class="visual-card"><img src="assets/ied-media/design-process-map.svg" alt="Redesign from data" loading="lazy"/><div class="body"><span class="badge">Visual</span><h3>Redesign from data</h3><p>Use failure as evidence for your next iteration.</p></div></div>
+  </div>
 </section>
 <section><div class="section-heading"><h2>Start Unit 5 Here</h2><p>Unit 5 shifts from documentation to physical performance. You will investigate material choices, load paths, strength-to-weight ratio, testing methods, failure analysis, and redesign through aerospace-inspired structures.</p></div><div class="grid"><a class="card" href="ied-unit-5-start-here.html"><span class="tag">Overview</span><h3>Start Here</h3><p>Unit overview, learning targets, deliverables, pacing, and final structure challenge expectations.</p></a>
 <a class="card" href="ied-unit-5-materials.html"><span class="tag">Materials</span><h3>Aerospace Materials</h3><p>Compare materials based on strength, weight, cost, manufacturability, and mission needs.</p></a>
