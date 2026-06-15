@@ -84,3 +84,95 @@
   color:#ffffff!important;
   text-shadow:none!important;
 }
+
+/* =========================================================
+   Site-wide contrast hotfix — 2026-06-15
+   Fixes Unit 0–2 dark gradient callout panels where global readability
+   rules were forcing dark headings/body text onto navy backgrounds.
+   ========================================================= */
+.callout.dark,
+.callout.blue,
+.callout.navy,
+.callout.is-dark,
+.ls-callout.blue,
+.ls-callout.navy,
+.ls-callout.dark {
+  background: linear-gradient(135deg,#101827,#003399) !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+.callout.dark :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,div:not(.btn):not(.button):not(.tag):not(.pill):not(.eyebrow)),
+.callout.blue :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,div:not(.btn):not(.button):not(.tag):not(.pill):not(.eyebrow)),
+.callout.navy :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,div:not(.btn):not(.button):not(.tag):not(.pill):not(.eyebrow)),
+.callout.is-dark :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,div:not(.btn):not(.button):not(.tag):not(.pill):not(.eyebrow)),
+.ls-callout.blue :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,div:not(.btn):not(.button):not(.tag):not(.pill):not(.eyebrow)),
+.ls-callout.navy :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,div:not(.btn):not(.button):not(.tag):not(.pill):not(.eyebrow)),
+.ls-callout.dark :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,div:not(.btn):not(.button):not(.tag):not(.pill):not(.eyebrow)) {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+.callout.dark p,
+.callout.dark li,
+.callout.blue p,
+.callout.blue li,
+.callout.navy p,
+.callout.navy li,
+.callout.is-dark p,
+.callout.is-dark li,
+.ls-callout.blue p,
+.ls-callout.blue li,
+.ls-callout.navy p,
+.ls-callout.navy li,
+.ls-callout.dark p,
+.ls-callout.dark li {
+  color: #f8fafc !important;
+  font-weight: 700 !important;
+}
+.callout.dark a:not(.btn):not(.button),
+.callout.blue a:not(.btn):not(.button),
+.callout.navy a:not(.btn):not(.button),
+.callout.is-dark a:not(.btn):not(.button),
+.ls-callout.blue a:not(.btn):not(.button),
+.ls-callout.navy a:not(.btn):not(.button),
+.ls-callout.dark a:not(.btn):not(.button) {
+  color: #ffec99 !important;
+  font-weight: 900 !important;
+}
+.callout.dark .tag,
+.callout.dark .pill,
+.callout.dark .eyebrow,
+.callout.blue .tag,
+.callout.blue .pill,
+.callout.blue .eyebrow,
+.callout.navy .tag,
+.callout.navy .pill,
+.callout.navy .eyebrow,
+.callout.is-dark .tag,
+.callout.is-dark .pill,
+.callout.is-dark .eyebrow {
+  background: #ffffff !important;
+  color: #003399 !important;
+  border-color: rgba(255,255,255,.88) !important;
+  text-shadow: none !important;
+}
+.callout.yellow,
+.callout.light,
+.callout.white,
+.callout.soft,
+.ls-callout.yellow,
+.ls-callout.light,
+.ls-callout.white,
+.ls-callout.soft {
+  color:#101827 !important;
+}
+.callout.yellow *,
+.callout.light *,
+.callout.white *,
+.callout.soft *,
+.ls-callout.yellow *,
+.ls-callout.light *,
+.ls-callout.white *,
+.ls-callout.soft * {
+  color:#101827 !important;
+  text-shadow:none !important;
+}
