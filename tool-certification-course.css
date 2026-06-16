@@ -1,0 +1,47 @@
+
+/* Lockwood STEM FabLab Tool Certification Course Styles */
+.tool-course-page .course-hero, .tool-test-page .course-hero{
+  background: radial-gradient(circle at 82% 14%, rgba(255,204,0,.26), transparent 28%),
+              radial-gradient(circle at 10% 18%, rgba(51,204,102,.20), transparent 28%),
+              linear-gradient(135deg,#071733,#003399 58%,#0054c8);
+  color:#fff;
+}
+.tool-course-page .course-hero h1,
+.tool-course-page .course-hero p,
+.tool-test-page .course-hero h1,
+.tool-test-page .course-hero p{color:#fff!important;}
+.tool-course-page .course-hero h1 span,
+.tool-test-page .course-hero h1 span{color:#ffcc00!important;}
+.tool-course-page .eyebrow,
+.tool-test-page .eyebrow{background:#fff;color:#003399;text-shadow:none;}
+.tool-course-page .container,
+.tool-test-page .container{width:min(100%,1500px);margin:0 auto;}
+.tool-course-page .tool-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+.tool-course-page .tool-card,
+.tool-course-page .course-card,
+.tool-test-page .course-card{
+  background:#fff;color:#101827;border:1px solid rgba(0,51,153,.14);border-radius:24px;padding:clamp(18px,2.4vw,30px);box-shadow:0 14px 34px rgba(0,51,153,.12);
+}
+.tool-course-page .tool-card h2,.tool-course-page .tool-card h3,
+.tool-course-page .course-card h2,.tool-course-page .course-card h3,
+.tool-test-page .course-card h2,.tool-test-page .course-card h3{color:#101827!important;text-shadow:none!important;}
+.tool-course-page .tool-card p,.tool-course-page .tool-card li,
+.tool-course-page .course-card p,.tool-course-page .course-card li,
+.tool-test-page .course-card p,.tool-test-page .course-card li{color:#334155!important;}
+.tool-course-page .module-number{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:14px;background:#003399;color:#fff;font-weight:900;margin-bottom:10px;}
+.tool-course-page .course-strip{border-left:8px solid #33cc66;}
+.tool-course-page .warning-strip{border-left:8px solid #ffcc00;}
+.tool-course-page .cert-strip{border-left:8px solid #003399;}
+.tool-course-page .checklist-clean{padding-left:1.25rem;margin-bottom:0;}
+.tool-course-page .checklist-clean li{margin:.45rem 0;}
+.tool-course-page .button-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px;}
+.tool-course-page .btn.primary,.tool-test-page .btn.primary{background:linear-gradient(135deg,#003399,#0054c8)!important;color:#fff!important;border-color:#003399!important;}
+.tool-course-page .btn.secondary,.tool-test-page .btn.secondary{background:#fff!important;color:#003399!important;}
+.tool-course-page .mini-tag{display:inline-flex;align-items:center;border-radius:999px;background:#eef4ff;color:#003399;font-weight:900;font-size:.78rem;padding:7px 10px;margin:0 6px 8px 0;}
+.tool-directory-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:18px;}
+.tool-directory-card{background:#fff;color:#101827!important;border:1px solid rgba(0,51,153,.14);border-radius:20px;padding:20px;text-decoration:none;box-shadow:0 10px 26px rgba(0,51,153,.10);display:flex;flex-direction:column;gap:10px;}
+.tool-directory-card:hover{transform:translateY(-2px);}
+.tool-directory-card h3{margin:0;color:#101827!important;}
+.tool-directory-card p{margin:0;color:#334155!important;}
+.tool-directory-card .go{margin-top:auto;font-weight:900;color:#003399!important;}
+@media(max-width:760px){.tool-course-page .button-row .btn{width:100%;}.tool-course-page .tool-grid{grid-template-columns:1fr;}}

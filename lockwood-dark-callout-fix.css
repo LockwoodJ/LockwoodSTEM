@@ -1,0 +1,51 @@
+
+/* Lockwood STEM final dark callout contrast fix
+   Fixes dark navy/blue callout panels that were being treated as light cards by broad readability guards. */
+.callout.dark,
+.callout.dark :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,div:not(.btn):not(.button)),
+.callout-inner,
+.callout-inner :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b,div:not(.btn):not(.button)) {
+  color: #ffffff !important;
+}
+
+.callout.dark p,
+.callout.dark li,
+.callout-inner p,
+.callout-inner li {
+  color: #f8fafc !important;
+}
+
+.callout.dark a:not(.btn):not(.button),
+.callout-inner a:not(.btn):not(.button) {
+  color: #ffec99 !important;
+}
+
+.callout.dark .btn,
+.callout.dark .button,
+.callout-inner .btn,
+.callout-inner .button {
+  background: #ffcc00 !important;
+  color: #211800 !important;
+  border-color: rgba(255,255,255,.35) !important;
+}
+
+.callout.dark .btn *,
+.callout.dark .button *,
+.callout-inner .btn *,
+.callout-inner .button * {
+  color: #211800 !important;
+}
+
+/* Keep intentionally light callouts readable as dark text on light surfaces. */
+.callout.light,
+.callout.white,
+.callout.soft,
+.callout.yellow {
+  color: #101827 !important;
+}
+.callout.light :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b),
+.callout.white :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b),
+.callout.soft :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b),
+.callout.yellow :is(h1,h2,h3,h4,h5,h6,p,li,span,strong,b) {
+  color: #101827 !important;
+}

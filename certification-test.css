@@ -1,0 +1,38 @@
+
+/* Lockwood STEM FabLab certification test and certificate styling */
+.cert-test-page .test-shell{width:min(100%,1500px);margin:0 auto;}
+.cert-test-page .test-layout{display:grid;grid-template-columns:1fr;gap:18px;}
+.cert-test-page .test-card{background:rgba(255,255,255,.96);border:1px solid rgba(0,51,153,.14);border-radius:24px;box-shadow:0 16px 40px rgba(0,51,153,.12);padding:clamp(18px,2.5vw,32px);color:#101827;}
+.cert-test-page .test-card h2,.cert-test-page .test-card h3{color:#101827!important;text-shadow:none!important;}
+.cert-test-page .test-card p,.cert-test-page .test-card li,.cert-test-page .test-card label{color:#334155!important;text-shadow:none!important;}
+.cert-test-page .student-info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px;}
+.cert-test-page .field label{display:block;font-size:.78rem;font-weight:900;color:#334155;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;}
+.cert-test-page .field input{width:100%;min-height:44px;border:1px solid rgba(0,51,153,.22);border-radius:14px;padding:10px 12px;font-weight:800;color:#101827;background:#fff;}
+.cert-test-page .question{border:1px solid rgba(0,51,153,.12);border-radius:18px;padding:16px;background:#f8fbff;margin:14px 0;}
+.cert-test-page .question h3{font-size:1.02rem;margin:.1rem 0 .75rem;line-height:1.35;}
+.cert-test-page .answers{display:grid;gap:8px;}
+.cert-test-page .answer{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;background:#fff;border:1px solid rgba(0,51,153,.10);border-radius:14px;cursor:pointer;}
+.cert-test-page .answer:hover{border-color:#003399;background:#eef4ff;}
+.cert-test-page .answer input{margin-top:4px;accent-color:#003399;}
+.cert-test-page .test-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;align-items:center;}
+.cert-test-page .cert-btn{border:none;border-radius:999px;padding:12px 18px;font-weight:900;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;background:#003399;color:#fff!important;box-shadow:0 10px 22px rgba(0,51,153,.22);}
+.cert-test-page .cert-btn.secondary{background:#fff;color:#003399!important;border:1px solid rgba(0,51,153,.16);}
+.cert-test-page .cert-btn.yellow{background:#ffcc00;color:#101827!important;}
+.cert-test-page .result-box{display:none;margin-top:18px;border-radius:18px;padding:18px;font-weight:900;}
+.cert-test-page .result-box.pass{display:block;background:#ecfff3;border:1px solid #86efac;color:#14532d;}
+.cert-test-page .result-box.fail{display:block;background:#fff7ed;border:1px solid #fdba74;color:#7c2d12;}
+.cert-test-page .certificate-wrap{display:none;margin-top:24px;}
+.cert-test-page .certificate{position:relative;overflow:hidden;background:linear-gradient(135deg,#ffffff,#eef4ff);border:8px solid #003399;border-radius:28px;padding:42px;text-align:center;color:#101827;box-shadow:0 18px 44px rgba(0,51,153,.18);}
+.cert-test-page .certificate::before{content:"";position:absolute;inset:18px;border:2px solid #ffcc00;border-radius:18px;pointer-events:none;}
+.cert-test-page .certificate img{width:170px;max-height:100px;object-fit:contain;margin-bottom:12px;}
+.cert-test-page .certificate .cert-title{font-size:clamp(2rem,5vw,4rem);line-height:.95;letter-spacing:-.06em;color:#003399;font-weight:900;margin:8px 0;}
+.cert-test-page .certificate .cert-subtitle{font-size:1.1rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:#334155;}
+.cert-test-page .certificate .student-name{font-size:clamp(1.8rem,4vw,3rem);font-weight:900;color:#101827;margin:22px 0 8px;border-bottom:3px solid rgba(0,51,153,.25);display:inline-block;min-width:min(100%,560px);padding-bottom:8px;}
+.cert-test-page .certificate .cert-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:28px;text-align:left;}
+.cert-test-page .certificate .cert-meta div{background:rgba(255,255,255,.72);border:1px solid rgba(0,51,153,.14);border-radius:14px;padding:12px;}
+.cert-test-page .certificate .cert-meta strong{display:block;color:#003399;text-transform:uppercase;font-size:.75rem;letter-spacing:.05em;}
+.cert-test-page .certificate .cert-meta span{font-weight:900;color:#101827;}
+.cert-test-page .print-only-note{font-size:.9rem;color:#475569;margin-top:12px;}
+.cert-test-page .progress-note{background:#071733;color:#fff;border-radius:20px;padding:18px;margin-top:18px;}
+.cert-test-page .progress-note p,.cert-test-page .progress-note li,.cert-test-page .progress-note strong{color:#fff!important;}
+@media print{body *{visibility:hidden!important}.certificate-wrap,.certificate-wrap *{visibility:visible!important}.certificate-wrap{display:block!important;position:absolute;left:0;top:0;width:100%;margin:0!important}.certificate{box-shadow:none!important;border-radius:0!important;min-height:95vh}.ls-global-header,.ls-global-footer,.hero,.test-card:not(.certificate-wrap){display:none!important}}

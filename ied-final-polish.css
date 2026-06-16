@@ -1,0 +1,21 @@
+
+/* Final IED polish pass: consistency, readability, navigation state, and resource cards */
+:root{--ied-radius:24px;--ied-shadow:0 16px 38px rgba(17,24,39,.10)}
+.ied-course-subnav{position:sticky;top:64px;z-index:900;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,51,153,.12);box-shadow:0 10px 20px rgba(17,24,39,.04);display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:10px 14px}
+.ied-course-subnav a{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:9px 12px;text-decoration:none;font-weight:900;color:#0f172a;border:1px solid transparent;line-height:1.1}
+.ied-course-subnav a:hover{background:rgba(0,51,153,.08);color:#003399;transform:translateY(-1px)}
+.ied-course-subnav a[aria-current="page"]{background:#003399;color:#fff;border-color:#003399;box-shadow:0 10px 20px rgba(0,51,153,.22)}
+.unit-hero .hero-card,.hero-card{overflow:hidden}
+.unit-hero .hero-card img.media-hero-img,.hero-card img.media-hero-img{width:100%;max-width:520px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:20px;margin-bottom:16px;border:1px solid rgba(0,51,153,.10)}
+.media-section,.ied-flow-section,.ied-resource-downloads{scroll-margin-top:150px}
+.visual-card,.resource-card,.card,.lesson-card,.panel{border-radius:var(--ied-radius);box-shadow:var(--ied-shadow)}
+.visual-card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.resource-card a,.visual-card a{word-break:normal}
+.ied-resource-downloads .resource-card,.grid .resource-card{height:100%;display:flex;flex-direction:column;justify-content:space-between}
+.resource-kicker,.badge,.tag,.pill{letter-spacing:.03em}
+main[id="main-content"]{outline:none}
+section>p:first-child{margin-top:0}
+.callout a,.unit-hero a.btn-primary,.btn-primary{color:#fff!important}
+.callout a.btn,.unit-hero a.btn:not(.btn-primary){color:#003399!important}
+@media(max-width:760px){.ied-course-subnav{position:relative;top:auto;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}.ied-course-subnav a{white-space:nowrap}.unit-hero .hero-card img.media-hero-img,.hero-card img.media-hero-img{max-width:100%}}
+@media print{.ls-global-header,.ied-course-subnav,.ls-global-footer,footer,.actions,.ied-flow-section{display:none!important}body{background:#fff!important}.unit-hero{background:#fff!important;color:#111!important}.unit-hero h1,.unit-hero p{color:#111!important}.card,.panel,.resource-card,.visual-card{box-shadow:none!important;border:1px solid #ddd!important}}

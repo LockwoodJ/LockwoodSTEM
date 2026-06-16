@@ -1,0 +1,426 @@
+/* Full-width support for Google Sites embeds */
+html,body{margin:0!important;padding:0!important;width:100%!important;overflow-x:hidden!important;}
+main,.page,.site-wrapper,.container{width:100%!important;max-width:none!important;margin-left:0!important;margin-right:0!important;}
+section{max-width:none;}
+
+
+/* Accessibility and visibility hardening added by ChatGPT
+   Purpose: preserve Lockwood STEM styling while preventing low-contrast text,
+   especially dark text on dark hero/footer backgrounds in Google Sites embeds. */
+:root{
+  --ls-accessible-dark:#101827;
+  --ls-accessible-dark-2:#0b1220;
+  --ls-accessible-white:#ffffff;
+  --ls-accessible-soft:#f8fafc;
+  --ls-accessible-link:#c7ddff;
+  --ls-accessible-link-hover:#ffcc00;
+  --ls-accessible-blue:#003399;
+  --ls-accessible-focus:#ffcc00;
+}
+
+/* Footer contrast: fixes muted/dark text accidentally applied over dark footer backgrounds. */
+.ls-global-footer,
+footer{
+  background:var(--ls-accessible-dark)!important;
+  color:var(--ls-accessible-soft)!important;
+  border-top:1px solid rgba(255,255,255,.12)!important;
+}
+.ls-global-footer *,
+footer *{
+  color:var(--ls-accessible-soft)!important;
+}
+.ls-global-footer strong,
+footer strong{
+  color:var(--ls-accessible-white)!important;
+}
+.ls-global-footer a,
+footer a,
+.ls-footer-links a{
+  color:var(--ls-accessible-link)!important;
+  text-decoration:none!important;
+  font-weight:900!important;
+}
+.ls-global-footer a:hover,
+footer a:hover,
+.ls-footer-links a:hover,
+.ls-global-footer a:focus-visible,
+footer a:focus-visible,
+.ls-footer-links a:focus-visible{
+  color:var(--ls-accessible-link-hover)!important;
+  text-decoration:underline!important;
+  background:rgba(255,255,255,.10)!important;
+}
+
+/* Dark hero/header contrast. These only target pages using the visual-upgrade dark hero treatment. */
+body.ls-visual-upgrade .ls-page-hero,
+body.ls-visual-upgrade .hero,
+body.ls-visual-upgrade .course-hero,
+body.ls-visual-upgrade .ls-hero{
+  color:var(--ls-accessible-white)!important;
+}
+body.ls-visual-upgrade .ls-page-hero h1,
+body.ls-visual-upgrade .ls-page-hero h2,
+body.ls-visual-upgrade .ls-page-hero h3,
+body.ls-visual-upgrade .hero h1,
+body.ls-visual-upgrade .hero h2,
+body.ls-visual-upgrade .hero h3,
+body.ls-visual-upgrade .course-hero h1,
+body.ls-visual-upgrade .course-hero h2,
+body.ls-visual-upgrade .course-hero h3,
+body.ls-visual-upgrade .ls-hero h1,
+body.ls-visual-upgrade .ls-hero h2,
+body.ls-visual-upgrade .ls-hero h3{
+  color:var(--ls-accessible-white)!important;
+  text-shadow:0 2px 10px rgba(0,0,0,.35)!important;
+}
+body.ls-visual-upgrade .ls-page-hero p,
+body.ls-visual-upgrade .ls-page-hero .subtitle,
+body.ls-visual-upgrade .hero p,
+body.ls-visual-upgrade .hero .subtitle,
+body.ls-visual-upgrade .course-hero p,
+body.ls-visual-upgrade .course-hero .subtitle,
+body.ls-visual-upgrade .ls-hero p,
+body.ls-visual-upgrade .ls-hero .subtitle{
+  color:#eef4ff!important;
+}
+body.ls-visual-upgrade .ls-page-hero a,
+body.ls-visual-upgrade .hero a,
+body.ls-visual-upgrade .course-hero a,
+body.ls-visual-upgrade .ls-hero a{
+  color:var(--ls-accessible-white)!important;
+}
+body.ls-visual-upgrade .ls-page-hero .btn,
+body.ls-visual-upgrade .hero .btn,
+body.ls-visual-upgrade .course-hero .btn,
+body.ls-visual-upgrade .ls-hero .btn,
+body.ls-visual-upgrade .ls-page-hero .button,
+body.ls-visual-upgrade .hero .button,
+body.ls-visual-upgrade .course-hero .button,
+body.ls-visual-upgrade .ls-hero .button{
+  background:#ffffff!important;
+  color:var(--ls-accessible-blue)!important;
+  border-color:rgba(255,255,255,.45)!important;
+}
+body.ls-visual-upgrade .ls-page-hero .btn-primary,
+body.ls-visual-upgrade .hero .btn-primary,
+body.ls-visual-upgrade .course-hero .btn-primary,
+body.ls-visual-upgrade .ls-hero .btn-primary,
+body.ls-visual-upgrade .ls-page-hero .button-primary,
+body.ls-visual-upgrade .hero .button-primary,
+body.ls-visual-upgrade .course-hero .button-primary,
+body.ls-visual-upgrade .ls-hero .button-primary{
+  background:#33cc66!important;
+  color:#062713!important;
+}
+
+/* Navigation readability on sticky white navs. */
+.ls-global-header,
+.ls-global-nav{
+  color:#172033!important;
+}
+.ls-global-brand,
+.ls-global-links a{
+  color:#172033!important;
+}
+.ls-global-links a:hover,
+.ls-global-links a:focus-visible{
+  color:var(--ls-accessible-blue)!important;
+  background:#eef4ff!important;
+}
+.ls-global-links .ls-global-cta{
+  color:#ffffff!important;
+  background:linear-gradient(135deg,#003399,#0054c8)!important;
+}
+.ls-global-links .ls-global-cta:hover,
+.ls-global-links .ls-global-cta:focus-visible{
+  color:#ffffff!important;
+  background:linear-gradient(135deg,#002266,#003399)!important;
+}
+
+/* Generic dark-section safeguard for pages/cards with custom dark panels. */
+.dark,
+.dark-section,
+.bg-dark,
+.panel-dark,
+section[style*="background:#101827"],
+section[style*="background: #101827"],
+div[style*="background:#101827"],
+div[style*="background: #101827"]{
+  color:var(--ls-accessible-soft)!important;
+}
+.dark *,
+.dark-section *,
+.bg-dark *,
+.panel-dark *,
+section[style*="background:#101827"] *,
+section[style*="background: #101827"] *,
+div[style*="background:#101827"] *,
+div[style*="background: #101827"] *{
+  color:var(--ls-accessible-soft)!important;
+}
+
+/* Keyboard accessibility and visible focus indicators. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible{
+  outline:3px solid var(--ls-accessible-focus)!important;
+  outline-offset:3px!important;
+  box-shadow:0 0 0 6px rgba(255,204,0,.22)!important;
+}
+
+/* Keep clickable targets usable on touch screens. */
+a,
+button,
+.button,
+.btn{
+  min-height:40px;
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    scroll-behavior:auto!important;
+    transition-duration:.001ms!important;
+  }
+}
+
+
+/* Additional contrast safeguards for nested colored text inside dark hero treatments.
+   Fixes cases such as a blue word inside a dark navy agenda hero. */
+body.ls-visual-upgrade .ls-page-hero h1 span,
+body.ls-visual-upgrade .hero h1 span,
+body.ls-visual-upgrade .course-hero h1 span,
+body.ls-visual-upgrade .ls-hero h1 span,
+body.ls-visual-upgrade .ls-page-hero .accent,
+body.ls-visual-upgrade .hero .accent,
+body.ls-visual-upgrade .course-hero .accent,
+body.ls-visual-upgrade .ls-hero .accent{
+  color:#ffcc00!important;
+  text-shadow:0 2px 10px rgba(0,0,0,.45)!important;
+}
+
+body.ls-visual-upgrade .hero .eyebrow,
+body.ls-visual-upgrade .course-hero .eyebrow,
+body.ls-visual-upgrade .ls-page-hero .eyebrow{
+  background:#ffffff!important;
+  color:#003399!important;
+  border-color:rgba(255,255,255,.85)!important;
+}
+
+body.ls-visual-upgrade .hero .subtitle,
+body.ls-visual-upgrade .course-hero .subtitle,
+body.ls-visual-upgrade .ls-page-hero .subtitle{
+  color:#f8fafc!important;
+  font-weight:700!important;
+}
+
+
+/* =========================================================
+   Lockwood STEM Standard Header + Footer System
+   Added to keep navigation, contrast, and spacing consistent
+   across the main site and FabLab Certification Hub.
+   ========================================================= */
+:root {
+  --ls-blue: #003399;
+  --ls-blue-2: #0054c8;
+  --ls-green: #33cc66;
+  --ls-yellow: #ffcc00;
+  --ls-dark: #101827;
+  --ls-text: #1f2937;
+  --ls-muted: #667085;
+  --ls-header-bg: rgba(255, 255, 255, 0.96);
+  --ls-footer-bg: #101827;
+  --ls-footer-text: #f8fafc;
+}
+
+.ls-global-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  background: var(--ls-header-bg) !important;
+  border-bottom: 1px solid rgba(0, 51, 153, 0.14) !important;
+  box-shadow: 0 8px 24px rgba(16, 24, 39, 0.08) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.ls-global-nav {
+  width: min(100%, 1600px);
+  margin: 0 auto;
+  padding: 10px clamp(14px, 2vw, 28px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.ls-global-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ls-blue) !important;
+  text-decoration: none !important;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.ls-global-brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.ls-global-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ls-global-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 8px 11px;
+  border-radius: 999px;
+  color: var(--ls-text) !important;
+  text-decoration: none !important;
+  font-size: 0.9rem;
+  font-weight: 850;
+  line-height: 1;
+  background: transparent;
+  border: 1px solid transparent;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.ls-global-links a:hover,
+.ls-global-links a:focus-visible {
+  color: var(--ls-blue) !important;
+  background: rgba(0, 51, 153, 0.08) !important;
+  border-color: rgba(0, 51, 153, 0.14) !important;
+  transform: translateY(-1px);
+}
+
+.ls-global-links .ls-global-cta {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, var(--ls-blue), var(--ls-blue-2)) !important;
+  border-color: rgba(0, 51, 153, 0.2) !important;
+  box-shadow: 0 10px 22px rgba(0, 51, 153, 0.22);
+}
+
+.ls-global-links .ls-global-cta:hover,
+.ls-global-links .ls-global-cta:focus-visible {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, var(--ls-blue-2), var(--ls-blue)) !important;
+}
+
+.ls-global-footer {
+  width: 100%;
+  margin-top: 32px;
+  padding: 28px 18px;
+  text-align: center;
+  background: var(--ls-footer-bg) !important;
+  color: var(--ls-footer-text) !important;
+  border-top: 4px solid var(--ls-blue);
+}
+
+.ls-global-footer strong,
+.ls-global-footer p,
+.ls-global-footer span {
+  color: var(--ls-footer-text) !important;
+}
+
+.ls-footer-brand-line {
+  margin: 0;
+  color: var(--ls-footer-text) !important;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.ls-footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.ls-footer-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  color: #eaf1ff !important;
+  text-decoration: none !important;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ls-footer-links a:hover,
+.ls-footer-links a:focus-visible {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.26);
+}
+
+.ls-footer-meta {
+  margin: 12px 0 0;
+  color: #b8c3d6 !important;
+  font-size: 0.86rem;
+}
+
+.ls-global-header a:focus-visible,
+.ls-global-footer a:focus-visible {
+  outline: 3px solid var(--ls-yellow);
+  outline-offset: 3px;
+}
+
+body.agenda-page .ls-global-footer {
+  margin-top: 0;
+}
+
+body.agenda-page .page {
+  min-height: calc(100vh - 86px);
+}
+
+@media (max-width: 980px) {
+  .ls-global-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ls-global-links {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 620px) {
+  .ls-global-brand span {
+    font-size: 0.98rem;
+  }
+
+  .ls-global-brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .ls-global-links a {
+    font-size: 0.82rem;
+    padding: 8px 9px;
+  }
+}
