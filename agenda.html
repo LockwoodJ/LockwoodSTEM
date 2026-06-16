@@ -1199,6 +1199,101 @@ body.agenda-page #app .card-header.yellow div {
   }
 </style>
 
+
+<style id="agenda-large-agenda-box-fix">
+/* Larger agenda display area for long semicolon-separated agenda cells.
+   This keeps the Agenda row from being clipped when Google Sheet cells expand into bullet lists. */
+body.agenda-page #app.main-grid {
+  grid-template-columns: minmax(0, 1.55fr) minmax(280px, .45fr) !important;
+}
+
+body.agenda-page #app .left-stack {
+  grid-template-rows: minmax(0, 1fr) auto !important;
+}
+
+body.agenda-page #app .agenda-card {
+  min-height: 0 !important;
+}
+
+body.agenda-page #app .agenda-card .card-body {
+  min-height: 0 !important;
+  overflow: auto !important;
+  padding: 10px !important;
+}
+
+body.agenda-page #app .meta-table {
+  min-height: 100% !important;
+  grid-template-rows: auto auto minmax(260px, 1fr) auto !important;
+  gap: 8px !important;
+}
+
+body.agenda-page #app .meta-row {
+  overflow: visible !important;
+  align-items: start !important;
+}
+
+body.agenda-page #app .meta-row.agenda-row {
+  min-height: 260px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+body.agenda-page #app .meta-row.agenda-row > div:last-child {
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+
+body.agenda-page #app .agenda-list {
+  font-size: clamp(.9rem, 1.05vw, 1.05rem) !important;
+  line-height: 1.38 !important;
+  padding-left: 22px !important;
+}
+
+body.agenda-page #app .agenda-row .agenda-list li {
+  margin: 7px 0 !important;
+}
+
+body.agenda-page #app .content-text {
+  font-size: clamp(.88rem, 1vw, 1rem) !important;
+  line-height: 1.4 !important;
+}
+
+body.agenda-page #app .meta-label {
+  font-size: .86rem !important;
+}
+
+body.agenda-page #app .meta-value {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+body.agenda-page #app .side-grid {
+  grid-template-rows: auto minmax(0, 1fr) auto !important;
+}
+
+body.agenda-page #app .side-grid .card-body {
+  overflow: auto !important;
+}
+
+@media(max-width: 1100px) {
+  body.agenda-page #app.main-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.agenda-page #app .left-stack {
+    grid-template-rows: none !important;
+  }
+
+  body.agenda-page #app .meta-table {
+    grid-template-rows: auto auto minmax(220px, auto) auto !important;
+  }
+
+  body.agenda-page #app .meta-row.agenda-row {
+    min-height: 220px !important;
+  }
+}
+</style>
 </head>
 <body class="theme-ied ls-visual-upgrade ls-theme-resource agenda-page ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>

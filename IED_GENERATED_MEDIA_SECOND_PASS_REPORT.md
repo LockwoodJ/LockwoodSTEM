@@ -1,0 +1,90 @@
+# IED Generated Media Second Pass
+
+Updated all IED unit visuals to prioritize generated Lockwood STEM-style aerospace classroom imagery.
+
+## Improvements
+- Replaced residual unit hero SVG placeholders with generated images.
+- Rebuilt unit hub media galleries using generated visuals instead of mixed placeholder/stock-style cards.
+- Added page-specific visual reference images for safety, sketching, CAD/modeling, and testing/data pages.
+- Updated IED Home and IED Units media galleries with generated unit cards.
+- Added CSS polish for consistent image cropping, hover behavior, and visual-card alignment.
+
+## Changed pages
+- ied-unit-0-certification.html
+- ied-unit-0-digital-workflow.html
+- ied-unit-0-expectations.html
+- ied-unit-0-fablab-safety.html
+- ied-unit-0-mini-challenge.html
+- ied-unit-0-notebook.html
+- ied-unit-0-start-here.html
+- ied-unit-0.html
+- ied-unit-1-concept-sketching.html
+- ied-unit-1-criteria-constraints.html
+- ied-unit-1-decision-matrix.html
+- ied-unit-1-design-process.html
+- ied-unit-1-design-review.html
+- ied-unit-1-mission-problem.html
+- ied-unit-1-research.html
+- ied-unit-1-start-here.html
+- ied-unit-1.html
+- ied-unit-2-annotated-drawings.html
+- ied-unit-2-concept-sketching.html
+- ied-unit-2-dimensioning.html
+- ied-unit-2-drawing-package.html
+- ied-unit-2-isometric-sketching.html
+- ied-unit-2-line-conventions.html
+- ied-unit-2-multiview-drawings.html
+- ied-unit-2-start-here.html
+- ied-unit-2.html
+- ied-unit-3-aerospace-features.html
+- ied-unit-3-component-project.html
+- ied-unit-3-core-features.html
+- ied-unit-3-export-documentation.html
+- ied-unit-3-fusion-interface.html
+- ied-unit-3-model-inspection.html
+- ied-unit-3-parametric-modeling.html
+- ied-unit-3-sketch-constraints.html
+- ied-unit-3-start-here.html
+- ied-unit-3.html
+- ied-unit-4-bom-revisions.html
+- ied-unit-4-dimensioning.html
+- ied-unit-4-documentation-package.html
+- ied-unit-4-fabrication-planning.html
+- ied-unit-4-manufacturing-notes.html
+- ied-unit-4-measurement-tools.html
+- ied-unit-4-start-here.html
+- ied-unit-4-technical-drawings.html
+- ied-unit-4-tolerances.html
+- ied-unit-4.html
+- ied-unit-5-data-analysis.html
+- ied-unit-5-load-paths.html
+- ied-unit-5-materials.html
+- ied-unit-5-redesign.html
+- ied-unit-5-start-here.html
+- ied-unit-5-strength-weight.html
+- ied-unit-5-structure-challenge.html
+- ied-unit-5-structure-types.html
+- ied-unit-5-test-planning.html
+- ied-unit-5.html
+- ied-unit-6-assemblies.html
+- ied-unit-6-assembly-instructions.html
+- ied-unit-6-exploded-views.html
+- ied-unit-6-fasteners-interfaces.html
+- ied-unit-6-joints-motion.html
+- ied-unit-6-mechanism-project.html
+- ied-unit-6-start-here.html
+- ied-unit-6-system-testing.html
+- ied-unit-6-systems-thinking.html
+- ied-unit-6.html
+- ied-unit-7-cad-prototype.html
+- ied-unit-7-concept-development.html
+- ied-unit-7-design-review.html
+- ied-unit-7-documentation.html
+- ied-unit-7-mission-brief.html
+- ied-unit-7-requirements.html
+- ied-unit-7-research.html
+- ied-unit-7-start-here.html
+- ied-unit-7-testing-redesign.html
+- ied-unit-7.html
+- ied-units.html
+- ied.html
