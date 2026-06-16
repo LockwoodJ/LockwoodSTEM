@@ -1,0 +1,168 @@
+
+/* Final resource button polish for IED pages */
+.resource-page-polished .section-heading {
+  max-width: 980px;
+}
+
+.resource-page-polished .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.resource-page-polished .card,
+.resource-page-polished .resource-card,
+.resource-page-polished .template-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 245px;
+  padding: 24px;
+  border-radius: 26px;
+  border: 1px solid rgba(0, 51, 153, 0.16);
+  background:
+    radial-gradient(circle at top right, rgba(51, 204, 102, 0.14), transparent 38%),
+    linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+  box-shadow: 0 18px 40px rgba(17, 24, 39, 0.08);
+  color: #101827;
+  overflow: hidden;
+}
+
+.resource-page-polished .card::before,
+.resource-page-polished .resource-card::before,
+.resource-page-polished .template-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 7px;
+  background: linear-gradient(180deg, #003399, #33cc66);
+}
+
+.resource-page-polished .tag,
+.resource-page-polished .badge {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: rgba(0, 51, 153, 0.09);
+  color: #003399;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.resource-page-polished h3 {
+  margin: 13px 0 8px;
+  color: #101827;
+  letter-spacing: -0.025em;
+}
+
+.resource-page-polished .card p,
+.resource-page-polished .resource-card p,
+.resource-page-polished .template-card p {
+  color: #334155;
+  line-height: 1.6;
+}
+
+.resource-page-polished .actions,
+.resource-page-polished .resource-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.resource-page-polished a.btn,
+.resource-page-polished .resource-actions a,
+.resource-page-polished a.resource-download-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 15px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(0, 51, 153, 0.20) !important;
+  background: #ffffff !important;
+  color: #003399 !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+  line-height: 1.15;
+  box-shadow: 0 8px 18px rgba(0, 51, 153, 0.08);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+}
+
+.resource-page-polished a.btn:hover,
+.resource-page-polished .resource-actions a:hover,
+.resource-page-polished a.resource-download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 51, 153, 0.15);
+  background: #eef5ff !important;
+}
+
+.resource-page-polished a.btn-primary,
+.resource-page-polished .resource-actions a:first-child,
+.resource-page-polished a.resource-download-btn.primary {
+  background: linear-gradient(135deg, #003399 0%, #0055cc 100%) !important;
+  color: #ffffff !important;
+  border-color: rgba(0, 51, 153, 0.0) !important;
+}
+
+.resource-page-polished a.btn-primary:hover,
+.resource-page-polished .resource-actions a:first-child:hover,
+.resource-page-polished a.resource-download-btn.primary:hover {
+  background: linear-gradient(135deg, #002a80 0%, #0046aa 100%) !important;
+  color: #ffffff !important;
+}
+
+.resource-page-polished .editable-template-section .resource-grid,
+.resource-page-polished .template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.resource-page-polished .resource-card {
+  text-decoration: none !important;
+}
+
+.resource-page-polished .resource-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 48px rgba(17, 24, 39, 0.12);
+}
+
+.resource-page-polished .resource-card .resource-card-footer,
+.resource-page-polished .resource-card .download-pill {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: auto;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #003399, #0055cc);
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: 0 10px 22px rgba(0, 51, 153, 0.18);
+}
+
+@media (max-width: 720px) {
+  .resource-page-polished .grid,
+  .resource-page-polished .editable-template-section .resource-grid,
+  .resource-page-polished .template-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-page-polished .actions,
+  .resource-page-polished .resource-actions {
+    flex-direction: column;
+  }
+
+  .resource-page-polished a.btn,
+  .resource-page-polished .resource-actions a,
+  .resource-page-polished a.resource-download-btn {
+    width: 100%;
+  }
+}
