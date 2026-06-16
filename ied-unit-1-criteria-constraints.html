@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -16,8 +17,6 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -104,10 +103,9 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/ied-media.css" rel="stylesheet"/>
 <link href="assets/ied-resources.css" rel="stylesheet"/>
-<link href="assets/ied-navigation-polish.css" rel="stylesheet"/>
+<link href="assets/ied-navigation-polish.css" rel="stylesheet"/><link href="assets/ied-final-polish.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -129,19 +127,20 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </nav>
 </header>
-<nav class="ied-course-subnav" aria-label="Introduction to Engineering Design course navigation">
-  <a href="ied.html">IED Home</a>
-  <a href="ied-units.html">Units 0–7</a>
-  <a href="ied-syllabus.html">Syllabus</a>
-  <a href="ied-projects.html">Projects</a>
-  <a href="fablab-certification/index.html">Certifications</a>
-  <a href="ied-resource-library.html">IED Resources</a>
+<nav aria-label="Introduction to Engineering Design course navigation" class="ied-course-subnav">
+<a href="ied.html">IED Home</a>
+<a aria-current="page" href="ied-units.html">Units 0–7</a>
+<a href="ied-syllabus.html">Syllabus</a>
+
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="ied-resource-library.html">IED Resources</a>
+<a href="ied-editable-templates.html">Templates</a>
 </nav>
 <main id="main-content"><section class="unit-hero">
 <div class="hero-inner">
 <div>
 <div class="eyebrow"><span class="spark"></span> Introduction to Engineering Design</div>
-<h1>Unit 1:<br/><span> Criteria & Constraints</span></h1>
+<h1>Unit 1:<br/><span> Criteria &amp; Constraints</span></h1>
 <p class="subtitle">Identify what success looks like and what limits the design.</p>
 <div class="actions">
 <a class="btn btn-primary" href="ied-unit-1.html">Unit 1 Hub</a>
@@ -149,24 +148,23 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </div>
 <div class="hero-card">
-<img class="media-hero-img" alt="Design Process &amp; Aerospace Missions visual" src="assets/ied-media/unit1-hero.svg"/>
+<img alt="Students collaborating around an aerospace design concept board with sketches, maps, and a drone model." class="media-hero-img" loading="lazy" src="assets/ied-media/generated/unit1-design-process.png"/>
 <h2>Unit 1</h2>
 <p>Design process, aerospace missions, criteria, constraints, research, concept selection, and design review.</p>
 </div>
 </div>
 </section>
-
-<section class="media-section ied-media-enhancement" aria-label="Visual reference">
-  <div class="media-mini">
-    <img src="assets/ied-media/unit1-hero.svg" alt="Design Process &amp; Aerospace Missions visual reference" loading="lazy"/>
-    <div>
-      <span class="badge">Visual Reference</span>
-      <h2>Design Process &amp; Aerospace Missions</h2>
-      <p><strong>Turn mission needs into clear, testable design concepts.</strong></p>
-      <p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
-      <div class="actions"><a class="btn btn-primary" href="ied-unit-1.html">Open Unit 1 Media Hub</a></div>
-    </div>
-  </div>
+<section aria-label="Visual reference" class="media-section ied-media-enhancement">
+<div class="media-mini">
+<img alt="Student working on aerospace CAD models displayed on dual monitors in a modern engineering lab." loading="lazy" src="assets/ied-media/generated/cad-modeling-closeup.png"/>
+<div>
+<span class="badge">Visual Reference</span>
+<h2>CAD and digital modeling</h2>
+<p><strong>Parametric CAD connects design intent to accurate digital models.</strong></p>
+<p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
+<div class="actions"><a class="btn btn-primary" href="ied-unit-1.html">Open Unit 1 Media Hub</a></div>
+</div>
+</div>
 </section>
 <section><div class="section-heading"><h2>Criteria vs. Constraints</h2><p>Engineering problems are shaped by what the design must do and what limits the design must follow.</p></div>
 <div class="two-col"><div class="panel"><h3>Criteria</h3><p>Criteria describe what makes a design successful.</p><ul><li>Deliver payload safely</li><li>Be lightweight</li><li>Be reliable</li><li>Be easy to recover</li><li>Protect fragile components</li></ul></div><div class="panel"><h3>Constraints</h3><p>Constraints are limits or restrictions on the design.</p><ul><li>Limited materials</li><li>Maximum size or mass</li><li>Time limit</li><li>Cost limit</li><li>Safety requirements</li></ul></div></div></section>

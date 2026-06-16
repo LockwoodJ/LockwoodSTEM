@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -16,8 +17,6 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -104,10 +103,9 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/ied-media.css" rel="stylesheet"/>
 <link href="assets/ied-resources.css" rel="stylesheet"/>
-<link href="assets/ied-navigation-polish.css" rel="stylesheet"/>
+<link href="assets/ied-navigation-polish.css" rel="stylesheet"/><link href="assets/ied-final-polish.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -129,13 +127,14 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </nav>
 </header>
-<nav class="ied-course-subnav" aria-label="Introduction to Engineering Design course navigation">
-  <a href="ied.html">IED Home</a>
-  <a href="ied-units.html">Units 0–7</a>
-  <a href="ied-syllabus.html">Syllabus</a>
-  <a href="ied-projects.html">Projects</a>
-  <a href="fablab-certification/index.html">Certifications</a>
-  <a href="ied-resource-library.html">IED Resources</a>
+<nav aria-label="Introduction to Engineering Design course navigation" class="ied-course-subnav">
+<a href="ied.html">IED Home</a>
+<a aria-current="page" href="ied-units.html">Units 0–7</a>
+<a href="ied-syllabus.html">Syllabus</a>
+
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="ied-resource-library.html">IED Resources</a>
+<a href="ied-editable-templates.html">Templates</a>
 </nav>
 <main id="main-content"><section class="unit-hero">
 <div class="hero-inner">
@@ -149,24 +148,23 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </div>
 <div class="hero-card">
-<img class="media-hero-img" alt="Design Process &amp; Aerospace Missions visual" src="assets/ied-media/unit1-hero.svg"/>
+<img alt="Students collaborating around an aerospace design concept board with sketches, maps, and a drone model." class="media-hero-img" loading="lazy" src="assets/ied-media/generated/unit1-design-process.png"/>
 <h2>Unit 1</h2>
 <p>Design process, aerospace missions, criteria, constraints, research, concept selection, and design review.</p>
 </div>
 </div>
 </section>
-
-<section class="media-section ied-media-enhancement" aria-label="Visual reference">
-  <div class="media-mini">
-    <img src="assets/ied-media/unit1-hero.svg" alt="Design Process &amp; Aerospace Missions visual reference" loading="lazy"/>
-    <div>
-      <span class="badge">Visual Reference</span>
-      <h2>Design Process &amp; Aerospace Missions</h2>
-      <p><strong>Turn mission needs into clear, testable design concepts.</strong></p>
-      <p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
-      <div class="actions"><a class="btn btn-primary" href="ied-unit-1.html">Open Unit 1 Media Hub</a></div>
-    </div>
-  </div>
+<section aria-label="Visual reference" class="media-section ied-media-enhancement">
+<div class="media-mini">
+<img alt="Aerospace sketches on graph paper with rulers, pencils, and technical drawing tools." loading="lazy" src="assets/ied-media/generated/sketching-drawing-closeup.png"/>
+<div>
+<span class="badge">Visual Reference</span>
+<h2>Sketching and drawing evidence</h2>
+<p><strong>Graph paper, linework, and annotations help designs communicate clearly.</strong></p>
+<p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
+<div class="actions"><a class="btn btn-primary" href="ied-unit-1.html">Open Unit 1 Media Hub</a></div>
+</div>
+</div>
 </section>
 <section><div class="section-heading"><h2>What Is a Concept Sketch?</h2><p>A concept sketch is an early drawing that communicates an idea. It does not need to be perfect, but it should be clear enough that someone else can understand the design intent.</p></div>
 <div class="grid"><div class="card"><h3>Shape</h3><p>Show the general form of the solution.</p></div><div class="card"><h3>Function</h3><p>Show how the design works or what each major part does.</p></div><div class="card"><h3>Annotations</h3><p>Add labels, arrows, notes, and explanations.</p></div><div class="card"><h3>Differences</h3><p>Each concept should be meaningfully different, not just the same idea redrawn.</p></div></div></section>

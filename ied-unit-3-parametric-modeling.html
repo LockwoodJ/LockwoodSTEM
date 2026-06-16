@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -16,8 +17,6 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -104,10 +103,9 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/ied-media.css" rel="stylesheet"/>
 <link href="assets/ied-resources.css" rel="stylesheet"/>
-<link href="assets/ied-navigation-polish.css" rel="stylesheet"/>
+<link href="assets/ied-navigation-polish.css" rel="stylesheet"/><link href="assets/ied-final-polish.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -129,13 +127,14 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </nav>
 </header>
-<nav class="ied-course-subnav" aria-label="Introduction to Engineering Design course navigation">
-  <a href="ied.html">IED Home</a>
-  <a href="ied-units.html">Units 0–7</a>
-  <a href="ied-syllabus.html">Syllabus</a>
-  <a href="ied-projects.html">Projects</a>
-  <a href="fablab-certification/index.html">Certifications</a>
-  <a href="ied-resource-library.html">IED Resources</a>
+<nav aria-label="Introduction to Engineering Design course navigation" class="ied-course-subnav">
+<a href="ied.html">IED Home</a>
+<a aria-current="page" href="ied-units.html">Units 0–7</a>
+<a href="ied-syllabus.html">Syllabus</a>
+
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="ied-resource-library.html">IED Resources</a>
+<a href="ied-editable-templates.html">Templates</a>
 </nav>
 <main id="main-content"><section class="unit-hero">
 <div class="hero-inner">
@@ -149,25 +148,23 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </div>
 <div class="hero-card">
-<img class="media-hero-img" alt="CAD Modeling for Aerospace Components visual" src="assets/ied-media/unit3-hero.svg"/>
+<img alt="Students using CAD software and inspecting a prototype in a modern engineering lab." class="media-hero-img" loading="lazy" src="assets/ied-media/generated/unit3-cad-modeling.png"/>
 <h2>Unit 3</h2>
 <p>Use dimensions and constraints so aerospace parts can be edited intentionally.</p>
 </div>
 </div>
 </section>
-
-
-<section class="media-section ied-media-enhancement" aria-label="Visual reference">
-  <div class="media-mini">
-    <img src="assets/ied-media/unit3-hero.svg" alt="CAD Modeling for Aerospace Components visual reference" loading="lazy"/>
-    <div>
-      <span class="badge">Visual Reference</span>
-      <h2>CAD Modeling for Aerospace Components</h2>
-      <p><strong>Create editable parametric CAD models that communicate design intent.</strong></p>
-      <p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
-      <div class="actions"><a class="btn btn-primary" href="ied-unit-3.html">Open Unit 3 Media Hub</a></div>
-    </div>
-  </div>
+<section aria-label="Visual reference" class="media-section ied-media-enhancement">
+<div class="media-mini">
+<img alt="Student working on aerospace CAD models displayed on dual monitors in a modern engineering lab." loading="lazy" src="assets/ied-media/generated/cad-modeling-closeup.png"/>
+<div>
+<span class="badge">Visual Reference</span>
+<h2>CAD and digital modeling</h2>
+<p><strong>Parametric CAD connects design intent to accurate digital models.</strong></p>
+<p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
+<div class="actions"><a class="btn btn-primary" href="ied-unit-3.html">Open Unit 3 Media Hub</a></div>
+</div>
+</div>
 </section>
 <section><div class="section-heading"><h2>What Is Parametric Modeling?</h2><p>Parametric modeling means a CAD model is controlled by dimensions, constraints, and relationships. When a value changes, the model updates in a predictable way.</p></div><div class="grid"><div class="card"><h3>Why It Matters</h3><ul><li>Parts can be revised quickly</li><li>Design intent is preserved</li><li>Dimensions can be adjusted after testing</li><li>Teams can make controlled changes</li><li>Manufacturing versions can be created</li></ul></div><div class="card"><h3>Aerospace Example</h3><p>A payload bracket may need different hole spacing, wall thickness, or overall width after testing. A parametric model lets engineers update those features without rebuilding the entire part.</p></div></div></section>
 <section><div class="callout dark"><h2>Student Task</h2><p>Create a simple parametric part, change at least three dimensions, and describe how the model updated.</p></div></section>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -16,8 +17,6 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -104,10 +103,9 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/ied-media.css" rel="stylesheet"/>
 <link href="assets/ied-resources.css" rel="stylesheet"/>
-<link href="assets/ied-navigation-polish.css" rel="stylesheet"/>
+<link href="assets/ied-navigation-polish.css" rel="stylesheet"/><link href="assets/ied-final-polish.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -129,13 +127,14 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </nav>
 </header>
-<nav class="ied-course-subnav" aria-label="Introduction to Engineering Design course navigation">
-  <a href="ied.html">IED Home</a>
-  <a href="ied-units.html">Units 0–7</a>
-  <a href="ied-syllabus.html">Syllabus</a>
-  <a href="ied-projects.html">Projects</a>
-  <a href="fablab-certification/index.html">Certifications</a>
-  <a href="ied-resource-library.html">IED Resources</a>
+<nav aria-label="Introduction to Engineering Design course navigation" class="ied-course-subnav">
+<a href="ied.html">IED Home</a>
+<a aria-current="page" href="ied-units.html">Units 0–7</a>
+<a href="ied-syllabus.html">Syllabus</a>
+
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="ied-resource-library.html">IED Resources</a>
+<a href="ied-editable-templates.html">Templates</a>
 </nav>
 <main id="main-content"><section class="unit-hero">
 <div class="hero-inner">
@@ -149,27 +148,26 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </div>
 <div class="hero-card">
-<img class="media-hero-img" alt="Design Process &amp; Aerospace Missions visual" src="assets/ied-media/unit1-hero.svg"/>
+<img alt="Students collaborating around an aerospace design concept board with sketches, maps, and a drone model." class="media-hero-img" loading="lazy" src="assets/ied-media/generated/unit1-design-process.png"/>
 <h2>Unit 1</h2>
 <p>Design process, aerospace missions, criteria, constraints, research, concept selection, and design review.</p>
 </div>
 </div>
 </section>
-
-<section class="media-section ied-media-enhancement" aria-label="Visual reference">
-  <div class="media-mini">
-    <img src="assets/ied-media/unit1-hero.svg" alt="Design Process &amp; Aerospace Missions visual reference" loading="lazy"/>
-    <div>
-      <span class="badge">Visual Reference</span>
-      <h2>Design Process &amp; Aerospace Missions</h2>
-      <p><strong>Turn mission needs into clear, testable design concepts.</strong></p>
-      <p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
-      <div class="actions"><a class="btn btn-primary" href="ied-unit-1.html">Open Unit 1 Media Hub</a></div>
-    </div>
-  </div>
+<section aria-label="Visual reference" class="media-section ied-media-enhancement">
+<div class="media-mini">
+<img alt="Aerospace structure test rig with sensors, weights, charts, and tablet data visualization." loading="lazy" src="assets/ied-media/generated/structures-data-testing-closeup.png"/>
+<div>
+<span class="badge">Visual Reference</span>
+<h2>Testing and data analysis</h2>
+<p><strong>Test data turns prototype failure into design evidence.</strong></p>
+<p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
+<div class="actions"><a class="btn btn-primary" href="ied-unit-1.html">Open Unit 1 Media Hub</a></div>
+</div>
+</div>
 </section>
 <section><div class="section-heading"><h2>What Is the Engineering Design Process?</h2><p>The engineering design process is a flexible method engineers use to solve problems. It is not always perfectly linear. Engineers often return to earlier steps as they learn more.</p></div>
-<div class="grid"><div class="card"><span class="tag">1</span><h3>Define the Problem</h3><p>Clarify the mission, user need, criteria, constraints, and stakeholders.</p></div><div class="card"><span class="tag">2</span><h3>Research</h3><p>Study existing systems, materials, failures, and design approaches.</p></div><div class="card"><span class="tag">3</span><h3>Imagine</h3><p>Generate multiple possible ideas without choosing too early.</p></div><div class="card"><span class="tag">4</span><h3>Plan</h3><p>Select a promising idea using evidence, trade-offs, and decision tools.</p></div><div class="card"><span class="tag">5</span><h3>Create</h3><p>Build a model, prototype, sketch package, or simulation.</p></div><div class="card"><span class="tag">6</span><h3>Test & Improve</h3><p>Collect data, identify weaknesses, revise, and communicate next steps.</p></div></div></section>
+<div class="grid"><div class="card"><span class="tag">1</span><h3>Define the Problem</h3><p>Clarify the mission, user need, criteria, constraints, and stakeholders.</p></div><div class="card"><span class="tag">2</span><h3>Research</h3><p>Study existing systems, materials, failures, and design approaches.</p></div><div class="card"><span class="tag">3</span><h3>Imagine</h3><p>Generate multiple possible ideas without choosing too early.</p></div><div class="card"><span class="tag">4</span><h3>Plan</h3><p>Select a promising idea using evidence, trade-offs, and decision tools.</p></div><div class="card"><span class="tag">5</span><h3>Create</h3><p>Build a model, prototype, sketch package, or simulation.</p></div><div class="card"><span class="tag">6</span><h3>Test &amp; Improve</h3><p>Collect data, identify weaknesses, revise, and communicate next steps.</p></div></div></section>
 <section><div class="callout dark"><h2>Aerospace Design Mindset</h2><p>Aerospace engineers rarely design one isolated object. They design systems that must complete a mission while balancing mass, cost, safety, reliability, manufacturability, and performance.</p></div></section>
 <section><div class="section-heading"><h2>Student Task</h2><p>In your notebook, choose one aerospace object and explain how each step of the design process could apply to it.</p></div></section>
 </main>

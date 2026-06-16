@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -16,8 +17,6 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -104,10 +103,9 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/ied-media.css" rel="stylesheet"/>
 <link href="assets/ied-resources.css" rel="stylesheet"/>
-<link href="assets/ied-navigation-polish.css" rel="stylesheet"/>
+<link href="assets/ied-navigation-polish.css" rel="stylesheet"/><link href="assets/ied-final-polish.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -129,13 +127,14 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </nav>
 </header>
-<nav class="ied-course-subnav" aria-label="Introduction to Engineering Design course navigation">
-  <a href="ied.html">IED Home</a>
-  <a href="ied-units.html">Units 0–7</a>
-  <a href="ied-syllabus.html">Syllabus</a>
-  <a href="ied-projects.html">Projects</a>
-  <a href="fablab-certification/index.html">Certifications</a>
-  <a href="ied-resource-library.html">IED Resources</a>
+<nav aria-label="Introduction to Engineering Design course navigation" class="ied-course-subnav">
+<a href="ied.html">IED Home</a>
+<a aria-current="page" href="ied-units.html">Units 0–7</a>
+<a href="ied-syllabus.html">Syllabus</a>
+
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="ied-resource-library.html">IED Resources</a>
+<a href="ied-editable-templates.html">Templates</a>
 </nav>
 <main id="main-content">
 <section class="unit-hero">
@@ -147,34 +146,30 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <div class="actions">
 <a class="btn btn-primary" href="ied-unit-0.html">Unit 0 Hub</a>
 <a class="btn" href="ied-units.html">All IED Units</a>
-
 </div>
 </div>
 <div class="hero-card">
-<img class="media-hero-img" alt="Course Launch, Procedures &amp; FabLab Foundations visual" src="assets/ied-media/unit0-hero.svg"/>
+<img alt="Students beginning work in a modern aerospace makerspace with engineering notebook, CAD workstation, and FabLab tools." class="media-hero-img" loading="lazy" src="assets/ied-media/generated/unit0-fablab-foundations.png"/>
 <h2>Course Launch</h2>
 <p>Use this page as your student-facing guide for procedures, FabLab readiness, and engineering habits.</p>
 </div>
 </div>
 </section>
-
-
-<section class="media-section ied-media-enhancement" aria-label="Visual reference">
-  <div class="media-mini">
-    <img src="assets/ied-media/unit0-hero.svg" alt="Course Launch, Procedures &amp; FabLab Foundations visual reference" loading="lazy"/>
-    <div>
-      <span class="badge">Visual Reference</span>
-      <h2>Course Launch, Procedures &amp; FabLab Foundations</h2>
-      <p><strong>Work safely and professionally before using engineering tools.</strong></p>
-      <p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
-      <div class="actions"><a class="btn btn-primary" href="ied-unit-0.html">Open Unit 0 Media Hub</a></div>
-    </div>
-  </div>
+<section aria-label="Visual reference" class="media-section ied-media-enhancement">
+<div class="media-mini">
+<img alt="A clean PPE station with safety glasses, face shields, gloves, binder, and aerospace lab background." loading="lazy" src="assets/ied-media/generated/ppe-safety-closeup.png"/>
+<div>
+<span class="badge">Visual Reference</span>
+<h2>Safety and PPE readiness</h2>
+<p><strong>Safety systems make advanced project work possible.</strong></p>
+<p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
+<div class="actions"><a class="btn btn-primary" href="ied-unit-0.html">Open Unit 0 Media Hub</a></div>
+</div>
+</div>
 </section>
 <section><div class="section-heading"><h2>Aerospace Teamwork Challenge: Mission Control Tower</h2><p>A remote launch site needs a lightweight temporary communication tower. Your team must design a freestanding tower that can support a small antenna payload.</p></div><div class="grid"><div class="card"><h3>Materials</h3><ul><li>Paper</li><li>Index cards</li><li>Paper clips or binder clips</li><li>Ruler</li><li>Small payload</li><li>Optional: scissors</li></ul></div><div class="card"><h3>Criteria</h3><ul><li>As tall as possible</li><li>Freestanding</li><li>Supports payload for 10 seconds</li><li>Uses materials efficiently</li><li>Documented clearly</li></ul></div><div class="card"><h3>Constraints</h3><ul><li>Use only provided materials</li><li>Fit within the time limit</li><li>Support the assigned payload</li><li>Clean up completely</li><li>Follow all safety expectations</li></ul></div></div></section>
 <section><div class="section-heading"><h2>Team Roles</h2></div><div class="table-wrap"><table class="table"><thead><tr><th>Role</th><th>Responsibility</th></tr></thead><tbody><tr><td>Project Lead</td><td>Keeps team focused and manages time.</td></tr><tr><td>Documentation Lead</td><td>Records sketches, decisions, and results.</td></tr><tr><td>Materials Lead</td><td>Manages materials and cleanup.</td></tr><tr><td>Test Lead</td><td>Measures, tests, and records performance.</td></tr></tbody></table></div></section>
 <section><div class="two-col"><div class="panel"><h2>Planning Day</h2><ul><li>Assign roles.</li><li>Identify criteria and constraints.</li><li>Create at least two concept sketches.</li><li>Select a design and explain why.</li><li>Write a test plan.</li></ul></div><div class="panel"><h2>Build/Test Day</h2><ul><li>Build safely.</li><li>Document changes.</li><li>Measure final height.</li><li>Test payload support for 10 seconds.</li><li>Record what worked, what failed, and what should change.</li></ul></div></div></section>
-
 </main>
 <footer class="ls-global-footer" role="contentinfo">
 <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>

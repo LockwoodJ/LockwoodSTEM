@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -16,8 +17,6 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -104,10 +103,9 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/ied-media.css" rel="stylesheet"/>
 <link href="assets/ied-resources.css" rel="stylesheet"/>
-<link href="assets/ied-navigation-polish.css" rel="stylesheet"/>
+<link href="assets/ied-navigation-polish.css" rel="stylesheet"/><link href="assets/ied-final-polish.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -129,19 +127,20 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </nav>
 </header>
-<nav class="ied-course-subnav" aria-label="Introduction to Engineering Design course navigation">
-  <a href="ied.html">IED Home</a>
-  <a href="ied-units.html">Units 0–7</a>
-  <a href="ied-syllabus.html">Syllabus</a>
-  <a href="ied-projects.html">Projects</a>
-  <a href="fablab-certification/index.html">Certifications</a>
-  <a href="ied-resource-library.html">IED Resources</a>
+<nav aria-label="Introduction to Engineering Design course navigation" class="ied-course-subnav">
+<a href="ied.html">IED Home</a>
+<a aria-current="page" href="ied-units.html">Units 0–7</a>
+<a href="ied-syllabus.html">Syllabus</a>
+
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="ied-resource-library.html">IED Resources</a>
+<a href="ied-editable-templates.html">Templates</a>
 </nav>
 <main id="main-content"><section class="unit-hero">
 <div class="hero-inner">
 <div>
 <div class="eyebrow"><span class="spark"></span> Introduction to Engineering Design</div>
-<h1>Unit 1:<br/><span> Design Process & Aerospace Missions</span></h1>
+<h1>Unit 1:<br/><span> Design Process &amp; Aerospace Missions</span></h1>
 <p class="subtitle">Define mission-based engineering problems and develop an early aerospace design concept.</p>
 <div class="actions">
 <a class="btn btn-primary" href="ied-unit-1.html">Unit 1 Hub</a>
@@ -149,70 +148,64 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </div>
 <div class="hero-card">
-<img class="media-hero-img" alt="Design Process &amp; Aerospace Missions visual" src="assets/ied-media/unit1-hero.svg"/>
+<img alt="Students collaborating around an aerospace design concept board with sketches, maps, and a drone model." class="media-hero-img" loading="lazy" src="assets/ied-media/generated/unit1-design-process.png"/>
 <h2>Unit 1</h2>
 <p>Design process, aerospace missions, criteria, constraints, research, concept selection, and design review.</p>
 </div>
 </div>
 </section>
-
-
-
-<section class="ied-flow-section" aria-labelledby="unit1-flow-heading">
-  <div class="ied-flow-panel">
-    <div class="ied-flow-header">
-      <div>
-        <p class="ied-breadcrumb"><a href="ied.html">IED</a> / <a href="ied-units.html">Units</a> / Unit 1</p>
-        <h2 id="unit1-flow-heading">Unit 1 classroom path</h2>
-        <p>Start with the hub, open the student packet, review the rubric, then move through the lesson pages in order.</p>
-      </div>
-      <div class="ied-flow-actions">
-        <a href="ied-unit-0.html">← Unit 0</a>
-        <a class="primary" href="ied-unit-1-start-here.html">Start Here</a>
-        <a href="ied-unit-2.html">Unit 2 →</a>
-      </div>
-    </div>
-    <div class="ied-resource-strip" aria-label="Unit 1 student resources">
-      <a href="resources/ied/unit1/unit1-student-packet.pdf" target="_blank" rel="noopener"><span>PDF</span><strong>Student Packet</strong><small>Daily work, templates, sketches, and reflections.</small></a>
-      <a href="resources/ied/unit1/unit1-rubric.pdf" target="_blank" rel="noopener"><span>PDF</span><strong>Project Rubric</strong><small>Review grading criteria before the final submission.</small></a>
-      <a href="ied-units.html"><span>Course Map</span><strong>All Units</strong><small>Move between Unit 0 through Unit 7.</small></a>
-    </div>
-  </div>
+<section aria-labelledby="unit1-flow-heading" class="ied-flow-section">
+<div class="ied-flow-panel">
+<div class="ied-flow-header">
+<div>
+<p class="ied-breadcrumb"><a href="ied.html">IED</a> / <a href="ied-units.html">Units</a> / Unit 1</p>
+<h2 id="unit1-flow-heading">Unit 1 classroom path</h2>
+<p>Start with the hub, open the student packet, review the rubric, then move through the lesson pages in order.</p>
+</div>
+<div class="ied-flow-actions">
+<a href="ied-unit-0.html">← Unit 0</a>
+<a class="primary" href="ied-unit-1-start-here.html">Start Here</a>
+<a href="ied-unit-2.html">Unit 2 →</a>
+</div>
+</div>
+<div aria-label="Unit 1 student resources" class="ied-resource-strip">
+<a download="" href="resources/ied/unit1/unit1-student-packet.pdf" rel="noopener" target="_blank"><span>PDF</span><strong>Student Packet</strong><small>Daily work, templates, sketches, and reflections.</small></a>
+<a download="" href="resources/ied/unit1/unit1-rubric.pdf" rel="noopener" target="_blank"><span>PDF</span><strong>Project Rubric</strong><small>Review grading criteria before the final submission.</small></a>
+<a href="ied-units.html"><span>Course Map</span><strong>All Units</strong><small>Move between Unit 0 through Unit 7.</small></a>
+</div>
+</div>
 </section>
-<section class="media-section ied-media-enhancement" aria-labelledby="unit1-media-heading">
-  <div class="section-heading">
-    <p class="eyebrow"><span class="spark"></span>Media & Real Aerospace Examples</p>
-    <h2 id="unit1-media-heading">See the unit in context</h2>
-    <p>Use the photos, videos, and references below to connect this unit's classroom skills to real aerospace engineering work.</p>
-  </div>
-  <div class="video-grid"><div class="video-card"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube.com/embed/IbbxjA5e2hw" title="NASA STEMonstrations: Engineering Design Process" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="body"><span class="badge green">Watch & Learn</span><h3>NASA STEMonstrations: Engineering Design Process</h3><p>Astronauts aboard the ISS discuss how engineers solve technical problems.</p></div></div><div class="video-card"><div class="video-frame"><iframe loading="lazy" src="https://www.youtube.com/embed/videoseries?list=PLTUZypZ67cduoz4n5fu8j-K8yzrgxRZ75" title="NASA Engineering Design Challenges" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><div class="body"><span class="badge green">Watch & Learn</span><h3>NASA Engineering Design Challenges</h3><p>A playlist of NASA design challenge examples for students.</p></div></div></div>
-  <div class="real-aerospace-gallery"><div class="visual-card real-photo"><img src="assets/ied-media/photos/drone_monitoring.jpg" alt="Mission-driven design" loading="lazy"/><div class="body"><span class="badge">Real Example</span><h3>Mission-driven design</h3><p>Aerospace systems solve problems under real constraints.</p></div></div><div class="visual-card real-photo"><img src="assets/ied-media/photos/uas_integration.jpg" alt="UAS integration" loading="lazy"/><div class="body"><span class="badge">Real Example</span><h3>UAS integration</h3><p>Drones and payloads are systems made of connected subsystems.</p></div></div><div class="visual-card real-photo"><img src="assets/ied-media/photos/mars_helicopter.jpg" alt="Mission success" loading="lazy"/><div class="body"><span class="badge">Real Example</span><h3>Mission success</h3><p>Aerospace concepts must be justified with evidence before they are built.</p></div></div></div>
+<section aria-labelledby="unit1-media-heading" class="media-section ied-media-enhancement">
+<div class="section-heading">
+<p class="eyebrow"><span class="spark"></span>Media &amp; Real Aerospace Examples</p>
+<h2 id="unit1-media-heading">See the unit in context</h2>
+<p>Use the photos, videos, and references below to connect this unit's classroom skills to real aerospace engineering work.</p>
+</div>
+<div class="video-grid"><div class="video-card"><div class="video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/IbbxjA5e2hw" title="NASA STEMonstrations: Engineering Design Process"></iframe></div><div class="body"><span class="badge green">Watch &amp; Learn</span><h3>NASA STEMonstrations: Engineering Design Process</h3><p>Astronauts aboard the ISS discuss how engineers solve technical problems.</p></div></div><div class="video-card"><div class="video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" loading="lazy" src="https://www.youtube.com/embed/videoseries?list=PLTUZypZ67cduoz4n5fu8j-K8yzrgxRZ75" title="NASA Engineering Design Challenges"></iframe></div><div class="body"><span class="badge green">Watch &amp; Learn</span><h3>NASA Engineering Design Challenges</h3><p>A playlist of NASA design challenge examples for students.</p></div></div></div>
+<div class="real-aerospace-gallery"><div class="visual-card generated-photo"><img alt="Students collaborating around an aerospace mission design board with sketches, maps, and a drone model." loading="lazy" src="assets/ied-media/generated/unit1-design-process.png"/><div class="body"><span class="badge green">Unit 1 Visual</span><h3>Design Process &amp; Aerospace Missions</h3><p>Turn mission needs into clear, testable design concepts.</p></div></div><div class="visual-card generated-photo"><img alt="Aerospace sketches on graph paper with rulers, pencils, and technical drawing tools." loading="lazy" src="assets/ied-media/generated/sketching-drawing-closeup.png"/><div class="body"><span class="badge green">Skill Visual</span><h3>Sketching and drawing evidence</h3><p>Graph paper, linework, and annotations help designs communicate clearly.</p></div></div><div class="visual-card generated-photo"><img alt="Student working on aerospace CAD models displayed on dual monitors in a modern engineering lab." loading="lazy" src="assets/ied-media/generated/cad-modeling-closeup.png"/><div class="body"><span class="badge green">Skill Visual</span><h3>CAD and digital modeling</h3><p>Parametric CAD connects design intent to accurate digital models.</p></div></div></div>
 </section>
-
-
-<section class="ied-resource-downloads" aria-labelledby="unit1-resources-heading">
-  <div class="section-heading">
-    <p class="eyebrow"><span class="spark"></span>Unit Resources</p>
-    <h2 id="unit1-resources-heading">Download Unit 1 Materials</h2>
-    <p>Mission design portfolio materials and project rubric.</p>
-  </div>
-  <div class="resource-grid">
-    <a class="resource-card" href="resources/ied/unit1/unit1-student-packet.pdf" target="_blank" rel="noopener">
-      <span class="resource-kicker">PDF</span>
-      <h3>Student Packet</h3>
-      <p>Use this packet for daily work, planning templates, sketches, reflections, and portfolio evidence.</p>
-    </a>
-    <a class="resource-card" href="resources/ied/unit1/unit1-rubric.pdf" target="_blank" rel="noopener">
-      <span class="resource-kicker">PDF</span>
-      <h3>Project Rubric</h3>
-      <p>Review how the major unit deliverables will be graded before submitting your final work.</p>
-    </a>
-  </div>
-  <div class="resource-note">
-    <p><strong>Student note:</strong> Download or open the packet at the start of the unit. Your teacher will tell you which pages are submitted digitally and which are completed in your engineering notebook.</p>
-  </div>
+<section aria-labelledby="unit1-resources-heading" class="ied-resource-downloads">
+<div class="section-heading">
+<p class="eyebrow"><span class="spark"></span>Unit Resources</p>
+<h2 id="unit1-resources-heading">Download Unit 1 Materials</h2>
+<p>Mission design portfolio materials and project rubric.</p>
+</div>
+<div class="resource-grid">
+<a class="resource-card" download="" href="resources/ied/unit1/unit1-student-packet.pdf" rel="noopener" target="_blank">
+<span class="resource-kicker">PDF</span>
+<h3>Student Packet</h3>
+<p>Use this packet for daily work, planning templates, sketches, reflections, and portfolio evidence.</p>
+</a>
+<a class="resource-card" download="" href="resources/ied/unit1/unit1-rubric.pdf" rel="noopener" target="_blank">
+<span class="resource-kicker">PDF</span>
+<h3>Project Rubric</h3>
+<p>Review how the major unit deliverables will be graded before submitting your final work.</p>
+</a>
+<a class="resource-card" download="" href="resources/ied/templates/Decision_Matrix_Template.xlsx" rel="noopener" target="_blank"><span class="resource-kicker">Spreadsheet</span><h3>Decision Matrix Template</h3><p>Score and compare concept options using weighted criteria.</p></a><a class="resource-card" download="" href="resources/ied/templates/Design_Review_Google_Slides_Template.pptx" rel="noopener" target="_blank"><span class="resource-kicker">Slides</span><h3>Design Review Slides Template</h3><p>Copy-ready presentation structure for mission concepts and design reviews.</p></a></div>
+<div class="resource-note">
+<p><strong>Student note:</strong> Download or open the packet at the start of the unit. Your teacher will tell you which pages are submitted digitally and which are completed in your engineering notebook.</p>
+</div>
 </section>
-
 <section>
 <div class="section-heading">
 <h2>Start Unit 1 Here</h2>
@@ -222,7 +215,7 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <a class="card" href="ied-unit-1-start-here.html"><span class="tag">Overview</span><h3>Start Here</h3><p>Unit overview, essential question, learning targets, deliverables, and pacing.</p></a>
 <a class="card" href="ied-unit-1-design-process.html"><span class="tag">Process</span><h3>Engineering Design Process</h3><p>Learn how engineers move from mission need to researched, testable design concept.</p></a>
 <a class="card" href="ied-unit-1-mission-problem.html"><span class="tag">Mission</span><h3>Mission Problem</h3><p>Define the aerospace mission, stakeholders, problem statement, and design need.</p></a>
-<a class="card" href="ied-unit-1-criteria-constraints.html"><span class="tag">Requirements</span><h3>Criteria & Constraints</h3><p>Identify what success looks like and what limits the design.</p></a>
+<a class="card" href="ied-unit-1-criteria-constraints.html"><span class="tag">Requirements</span><h3>Criteria &amp; Constraints</h3><p>Identify what success looks like and what limits the design.</p></a>
 <a class="card" href="ied-unit-1-research.html"><span class="tag">Research</span><h3>Research Without Copying</h3><p>Study existing aerospace solutions and record useful design insights.</p></a>
 <a class="card" href="ied-unit-1-concept-sketching.html"><span class="tag">Concepts</span><h3>Concept Sketching</h3><p>Generate, annotate, and improve multiple early design ideas.</p></a>
 <a class="card" href="ied-unit-1-decision-matrix.html"><span class="tag">Selection</span><h3>Decision Matrix</h3><p>Compare ideas using weighted criteria and justify a selected concept.</p></a>

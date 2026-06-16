@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -16,8 +17,6 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -104,10 +103,9 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/ied-media.css" rel="stylesheet"/>
 <link href="assets/ied-resources.css" rel="stylesheet"/>
-<link href="assets/ied-navigation-polish.css" rel="stylesheet"/>
+<link href="assets/ied-navigation-polish.css" rel="stylesheet"/><link href="assets/ied-final-polish.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -129,13 +127,14 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </nav>
 </header>
-<nav class="ied-course-subnav" aria-label="Introduction to Engineering Design course navigation">
-  <a href="ied.html">IED Home</a>
-  <a href="ied-units.html">Units 0–7</a>
-  <a href="ied-syllabus.html">Syllabus</a>
-  <a href="ied-projects.html">Projects</a>
-  <a href="fablab-certification/index.html">Certifications</a>
-  <a href="ied-resource-library.html">IED Resources</a>
+<nav aria-label="Introduction to Engineering Design course navigation" class="ied-course-subnav">
+<a href="ied.html">IED Home</a>
+<a aria-current="page" href="ied-units.html">Units 0–7</a>
+<a href="ied-syllabus.html">Syllabus</a>
+
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="ied-resource-library.html">IED Resources</a>
+<a href="ied-editable-templates.html">Templates</a>
 </nav>
 <main id="main-content">
 <section class="unit-hero">
@@ -147,33 +146,29 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <div class="actions">
 <a class="btn btn-primary" href="ied-unit-0.html">Unit 0 Hub</a>
 <a class="btn" href="ied-units.html">All IED Units</a>
-
 </div>
 </div>
 <div class="hero-card">
-<img class="media-hero-img" alt="Course Launch, Procedures &amp; FabLab Foundations visual" src="assets/ied-media/unit0-hero.svg"/>
+<img alt="Students beginning work in a modern aerospace makerspace with engineering notebook, CAD workstation, and FabLab tools." class="media-hero-img" loading="lazy" src="assets/ied-media/generated/unit0-fablab-foundations.png"/>
 <h2>Course Launch</h2>
 <p>Use this page as your student-facing guide for procedures, FabLab readiness, and engineering habits.</p>
 </div>
 </div>
 </section>
-
-
-<section class="media-section ied-media-enhancement" aria-label="Visual reference">
-  <div class="media-mini">
-    <img src="assets/ied-media/unit0-hero.svg" alt="Course Launch, Procedures &amp; FabLab Foundations visual reference" loading="lazy"/>
-    <div>
-      <span class="badge">Visual Reference</span>
-      <h2>Course Launch, Procedures &amp; FabLab Foundations</h2>
-      <p><strong>Work safely and professionally before using engineering tools.</strong></p>
-      <p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
-      <div class="actions"><a class="btn btn-primary" href="ied-unit-0.html">Open Unit 0 Media Hub</a></div>
-    </div>
-  </div>
+<section aria-label="Visual reference" class="media-section ied-media-enhancement">
+<div class="media-mini">
+<img alt="A clean PPE station with safety glasses, face shields, gloves, binder, and aerospace lab background." loading="lazy" src="assets/ied-media/generated/ppe-safety-closeup.png"/>
+<div>
+<span class="badge">Visual Reference</span>
+<h2>Safety and PPE readiness</h2>
+<p><strong>Safety systems make advanced project work possible.</strong></p>
+<p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
+<div class="actions"><a class="btn btn-primary" href="ied-unit-0.html">Open Unit 0 Media Hub</a></div>
+</div>
+</div>
 </section>
 <section><div class="section-heading"><h2>Required Folder Structure</h2><p>Create one main folder for the course, then create a folder for each unit.</p></div><div class="panel"><h3>Main Folder</h3><p><strong>IED_LastName_FirstName</strong></p><h3>Unit Folders</h3><ul><li>Unit_0_Course_Launch</li><li>Unit_1_Design_Process</li><li>Unit_2_Sketching</li><li>Unit_3_CAD</li><li>Unit_4_Drawings</li><li>Unit_5_Structures</li><li>Unit_6_Assemblies</li><li>Unit_7_Final_Challenge</li></ul></div></section>
 <section><div class="grid"><div class="card"><h3>Assignment File Names</h3><p><strong>Period_LastName_AssignmentName_Version</strong></p><p>Example: <strong>3_Smith_Unit0Reflection_V1</strong></p></div><div class="card"><h3>CAD File Names</h3><p><strong>Period_LastName_ProjectName_PartName_Version</strong></p><p>Example: <strong>2_Smith_PayloadMount_BasePlate_V1</strong></p></div><div class="card"><h3>Version Control</h3><p>Use V1, V2, V3, etc. to track changes over time. Never overwrite important project progress without saving a copy.</p></div></div></section>
-
 </main>
 <footer class="ls-global-footer" role="contentinfo">
 <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
