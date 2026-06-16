@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -16,8 +17,6 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -104,10 +103,9 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/ied-media.css" rel="stylesheet"/>
 <link href="assets/ied-resources.css" rel="stylesheet"/>
-<link href="assets/ied-navigation-polish.css" rel="stylesheet"/>
+<link href="assets/ied-navigation-polish.css" rel="stylesheet"/><link href="assets/ied-final-polish.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -129,13 +127,14 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </nav>
 </header>
-<nav class="ied-course-subnav" aria-label="Introduction to Engineering Design course navigation">
-  <a href="ied.html">IED Home</a>
-  <a href="ied-units.html">Units 0–7</a>
-  <a href="ied-syllabus.html">Syllabus</a>
-  <a href="ied-projects.html">Projects</a>
-  <a href="fablab-certification/index.html">Certifications</a>
-  <a href="ied-resource-library.html">IED Resources</a>
+<nav aria-label="Introduction to Engineering Design course navigation" class="ied-course-subnav">
+<a href="ied.html">IED Home</a>
+<a aria-current="page" href="ied-units.html">Units 0–7</a>
+<a href="ied-syllabus.html">Syllabus</a>
+
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="ied-resource-library.html">IED Resources</a>
+<a href="ied-editable-templates.html">Templates</a>
 </nav>
 <main id="main-content"><section class="unit-hero">
 <div class="hero-inner">
@@ -149,82 +148,75 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </div>
 <div class="hero-card">
-<img class="media-hero-img" alt="Measurement, Drawings &amp; Manufacturing Documentation visual" src="assets/ied-media/unit4-hero.svg"/>
+<img alt="Students measuring mechanical parts and reviewing technical drawings at a workbench." class="media-hero-img" loading="lazy" src="assets/ied-media/generated/unit4-measurement-documentation.png"/>
 <h2>Unit 4</h2>
 <p>Create manufacturing-ready documentation for aerospace components.</p>
 </div>
 </div>
 </section>
-
-
-
-
-<section class="ied-flow-section" aria-labelledby="unit4-flow-heading">
-  <div class="ied-flow-panel">
-    <div class="ied-flow-header">
-      <div>
-        <p class="ied-breadcrumb"><a href="ied.html">IED</a> / <a href="ied-units.html">Units</a> / Unit 4</p>
-        <h2 id="unit4-flow-heading">Unit 4 classroom path</h2>
-        <p>Start with the hub, open the student packet, review the rubric, then move through the lesson pages in order.</p>
-      </div>
-      <div class="ied-flow-actions">
-        <a href="ied-unit-3.html">← Unit 3</a>
-        <a class="primary" href="ied-unit-4-start-here.html">Start Here</a>
-        <a href="ied-unit-5.html">Unit 5 →</a>
-      </div>
-    </div>
-    <div class="ied-resource-strip" aria-label="Unit 4 student resources">
-      <a href="resources/ied/unit4/unit4-student-packet.pdf" target="_blank" rel="noopener"><span>PDF</span><strong>Student Packet</strong><small>Daily work, templates, sketches, and reflections.</small></a>
-      <a href="resources/ied/unit4/unit4-rubric.pdf" target="_blank" rel="noopener"><span>PDF</span><strong>Project Rubric</strong><small>Review grading criteria before the final submission.</small></a>
-      <a href="ied-units.html"><span>Course Map</span><strong>All Units</strong><small>Move between Unit 0 through Unit 7.</small></a>
-    </div>
-  </div>
+<section aria-labelledby="unit4-flow-heading" class="ied-flow-section">
+<div class="ied-flow-panel">
+<div class="ied-flow-header">
+<div>
+<p class="ied-breadcrumb"><a href="ied.html">IED</a> / <a href="ied-units.html">Units</a> / Unit 4</p>
+<h2 id="unit4-flow-heading">Unit 4 classroom path</h2>
+<p>Start with the hub, open the student packet, review the rubric, then move through the lesson pages in order.</p>
+</div>
+<div class="ied-flow-actions">
+<a href="ied-unit-3.html">← Unit 3</a>
+<a class="primary" href="ied-unit-4-start-here.html">Start Here</a>
+<a href="ied-unit-5.html">Unit 5 →</a>
+</div>
+</div>
+<div aria-label="Unit 4 student resources" class="ied-resource-strip">
+<a download="" href="resources/ied/unit4/unit4-student-packet.pdf" rel="noopener" target="_blank"><span>PDF</span><strong>Student Packet</strong><small>Daily work, templates, sketches, and reflections.</small></a>
+<a download="" href="resources/ied/unit4/unit4-rubric.pdf" rel="noopener" target="_blank"><span>PDF</span><strong>Project Rubric</strong><small>Review grading criteria before the final submission.</small></a>
+<a href="ied-units.html"><span>Course Map</span><strong>All Units</strong><small>Move between Unit 0 through Unit 7.</small></a>
+</div>
+</div>
 </section>
-<section class="media-section ied-media-enhancement" aria-labelledby="unit4-media-heading">
-  <div class="section-heading">
-    <p class="eyebrow"><span class="spark"></span>Media & Real Aerospace Examples</p>
-    <h2 id="unit4-media-heading">See the unit in context</h2>
-    <p>Use the photos, videos, and references below to connect this unit's classroom skills to real aerospace engineering work.</p>
-  </div>
-  <div class="video-grid"><div class="external-resource-card"><span class="badge green">Reference</span><h3>NASA Glenn: Wind Tunnel Testing</h3><p>Learn how engineers use models, measurement, and instrumentation to test proposed aircraft and engine components.</p><a href="https://www.grc.nasa.gov/www/k-12/airplane/tuntest.html" target="_blank" rel="noopener">Open Resource</a></div></div>
-  <div class="real-aerospace-gallery"><div class="visual-card real-photo"><img src="assets/ied-media/photos/instrument_testing.jpg" alt="Measurement evidence" loading="lazy"/><div class="body"><span class="badge">Real Example</span><h3>Measurement evidence</h3><p>Manufacturing decisions rely on accurate measurement and inspection.</p></div></div><div class="visual-card real-photo"><img src="assets/ied-media/photos/gpm_cleanroom.jpg" alt="Documentation matters" loading="lazy"/><div class="body"><span class="badge">Real Example</span><h3>Documentation matters</h3><p>Aerospace work requires drawings, notes, revisions, and clear handoffs.</p></div></div><div class="visual-card real-photo"><img src="assets/ied-media/photos/nisar.jpg" alt="System documentation" loading="lazy"/><div class="body"><span class="badge">Real Example</span><h3>System documentation</h3><p>Every manufactured component must fit the larger system.</p></div></div></div>
+<section aria-labelledby="unit4-media-heading" class="media-section ied-media-enhancement">
+<div class="section-heading">
+<p class="eyebrow"><span class="spark"></span>Media &amp; Real Aerospace Examples</p>
+<h2 id="unit4-media-heading">See the unit in context</h2>
+<p>Use the photos, videos, and references below to connect this unit's classroom skills to real aerospace engineering work.</p>
+</div>
+<div class="video-grid"><div class="external-resource-card"><span class="badge green">Reference</span><h3>NASA Glenn: Wind Tunnel Testing</h3><p>Learn how engineers use models, measurement, and instrumentation to test proposed aircraft and engine components.</p><a href="https://www.grc.nasa.gov/www/k-12/airplane/tuntest.html" rel="noopener noreferrer" target="_blank">Open Resource</a></div></div>
+<div class="real-aerospace-gallery"><div class="visual-card generated-photo"><img alt="Students measuring mechanical parts and reviewing technical drawings at a workbench." loading="lazy" src="assets/ied-media/generated/unit4-measurement-documentation.png"/><div class="body"><span class="badge green">Unit 4 Visual</span><h3>Measurement, Drawings &amp; Manufacturing Documentation</h3><p>Create documentation that someone else can manufacture, inspect, and revise.</p></div></div><div class="visual-card generated-photo"><img alt="Aerospace sketches on graph paper with rulers, pencils, and technical drawing tools." loading="lazy" src="assets/ied-media/generated/sketching-drawing-closeup.png"/><div class="body"><span class="badge green">Skill Visual</span><h3>Sketching and drawing evidence</h3><p>Graph paper, linework, and annotations help designs communicate clearly.</p></div></div><div class="visual-card generated-photo"><img alt="Aerospace structure test rig with sensors, weights, charts, and tablet data visualization." loading="lazy" src="assets/ied-media/generated/structures-data-testing-closeup.png"/><div class="body"><span class="badge green">Skill Visual</span><h3>Testing and data analysis</h3><p>Test data turns prototype failure into design evidence.</p></div></div></div>
 </section>
-
-
-<section class="ied-resource-downloads" aria-labelledby="unit4-resources-heading">
-  <div class="section-heading">
-    <p class="eyebrow"><span class="spark"></span>Unit Resources</p>
-    <h2 id="unit4-resources-heading">Download Unit 4 Materials</h2>
-    <p>Measurement, tolerance, drawing, BOM, and documentation resources.</p>
-  </div>
-  <div class="resource-grid">
-    <a class="resource-card" href="resources/ied/unit4/unit4-student-packet.pdf" target="_blank" rel="noopener">
-      <span class="resource-kicker">PDF</span>
-      <h3>Student Packet</h3>
-      <p>Use this packet for daily work, planning templates, sketches, reflections, and portfolio evidence.</p>
-    </a>
-    <a class="resource-card" href="resources/ied/unit4/unit4-rubric.pdf" target="_blank" rel="noopener">
-      <span class="resource-kicker">PDF</span>
-      <h3>Project Rubric</h3>
-      <p>Review how the major unit deliverables will be graded before submitting your final work.</p>
-    </a>
-  </div>
-  <div class="resource-note">
-    <p><strong>Student note:</strong> Download or open the packet at the start of the unit. Your teacher will tell you which pages are submitted digitally and which are completed in your engineering notebook.</p>
-  </div>
+<section aria-labelledby="unit4-resources-heading" class="ied-resource-downloads">
+<div class="section-heading">
+<p class="eyebrow"><span class="spark"></span>Unit Resources</p>
+<h2 id="unit4-resources-heading">Download Unit 4 Materials</h2>
+<p>Measurement, tolerance, drawing, BOM, and documentation resources.</p>
+</div>
+<div class="resource-grid">
+<a class="resource-card" download="" href="resources/ied/unit4/unit4-student-packet.pdf" rel="noopener" target="_blank">
+<span class="resource-kicker">PDF</span>
+<h3>Student Packet</h3>
+<p>Use this packet for daily work, planning templates, sketches, reflections, and portfolio evidence.</p>
+</a>
+<a class="resource-card" download="" href="resources/ied/unit4/unit4-rubric.pdf" rel="noopener" target="_blank">
+<span class="resource-kicker">PDF</span>
+<h3>Project Rubric</h3>
+<p>Review how the major unit deliverables will be graded before submitting your final work.</p>
+</a>
+<a class="resource-card" download="" href="resources/ied/templates/BOM_Template.xlsx" rel="noopener" target="_blank"><span class="resource-kicker">Spreadsheet</span><h3>BOM Template</h3><p>Track parts, quantities, materials, fabrication methods, costs, and status.</p></a></div>
+<div class="resource-note">
+<p><strong>Student note:</strong> Download or open the packet at the start of the unit. Your teacher will tell you which pages are submitted digitally and which are completed in your engineering notebook.</p>
+</div>
 </section>
-
 <section>
 <div class="section-heading">
 <h2>Start Unit 4 Here</h2>
 <p>Unit 4 turns CAD models and sketches into manufacturing-ready documentation. You will learn how engineers communicate dimensions, tolerances, materials, processes, inspection needs, and revisions so a part can be made, checked, and improved.</p>
 </div>
 <div class="grid"><a class="card" href="ied-unit-4-start-here.html"><span class="tag">Overview</span><h3>Start Here</h3><p>Unit overview, learning targets, deliverables, pacing, and final documentation package expectations.</p></a>
-<a class="card" href="ied-unit-4-measurement-tools.html"><span class="tag">Measurement</span><h3>Measurement Tools & Precision</h3><p>Use rulers, calipers, and measurement habits to inspect parts accurately.</p></a>
-<a class="card" href="ied-unit-4-tolerances.html"><span class="tag">Fit & Function</span><h3>Tolerances and Fit</h3><p>Understand acceptable variation, clearance, interference, and why aerospace parts need precision.</p></a>
+<a class="card" href="ied-unit-4-measurement-tools.html"><span class="tag">Measurement</span><h3>Measurement Tools &amp; Precision</h3><p>Use rulers, calipers, and measurement habits to inspect parts accurately.</p></a>
+<a class="card" href="ied-unit-4-tolerances.html"><span class="tag">Fit &amp; Function</span><h3>Tolerances and Fit</h3><p>Understand acceptable variation, clearance, interference, and why aerospace parts need precision.</p></a>
 <a class="card" href="ied-unit-4-technical-drawings.html"><span class="tag">Drawings</span><h3>Technical Drawing Setup</h3><p>Create clean technical drawings with views, scale, title block, and notes.</p></a>
 <a class="card" href="ied-unit-4-dimensioning.html"><span class="tag">Dimensions</span><h3>Dimensioning for Manufacturing</h3><p>Apply clear dimensions so a part can be made and inspected.</p></a>
-<a class="card" href="ied-unit-4-manufacturing-notes.html"><span class="tag">Manufacturing</span><h3>Materials, Processes & Notes</h3><p>Add manufacturing notes that describe material, process, finish, and inspection requirements.</p></a>
+<a class="card" href="ied-unit-4-manufacturing-notes.html"><span class="tag">Manufacturing</span><h3>Materials, Processes &amp; Notes</h3><p>Add manufacturing notes that describe material, process, finish, and inspection requirements.</p></a>
 <a class="card" href="ied-unit-4-bom-revisions.html"><span class="tag">Documentation</span><h3>BOMs and Revision Control</h3><p>Track parts, quantities, materials, versions, and design changes like an engineering team.</p></a>
 <a class="card" href="ied-unit-4-fabrication-planning.html"><span class="tag">Planning</span><h3>Fabrication Planning</h3><p>Prepare a part for 3D printing, laser cutting, or classroom fabrication review.</p></a>
 <a class="card" href="ied-unit-4-documentation-package.html"><span class="tag">Project</span><h3>Manufacturing Documentation Package</h3><p>Submit a complete drawing and documentation package for an aerospace component.</p></a></div>
@@ -264,7 +256,6 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <tr><td>4.25</td><td>Final submission and reflection</td><td>Final manufacturing documentation package</td></tr></tbody></table></div>
 </section>
 <section><div class="callout dark"><h2>Unit Project</h2><p><strong>Aerospace Manufacturing Documentation Package:</strong> Create a complete documentation package for an aerospace component such as a payload bracket, wing rib, sensor mount, fin jig, avionics housing, or fuselage panel support. Your package should be clear enough for another person to understand the part, make it, inspect it, and track revisions.</p></div></section>
-
 </main>
 <footer class="ls-global-footer" role="contentinfo">
 <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>

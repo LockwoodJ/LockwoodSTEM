@@ -497,8 +497,6 @@ footer p,
 </style>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -585,10 +583,9 @@ footer p,
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/ied-media.css" rel="stylesheet"/>
 <link href="assets/ied-resources.css" rel="stylesheet"/>
-<link href="assets/ied-navigation-polish.css" rel="stylesheet"/>
+<link href="assets/ied-navigation-polish.css" rel="stylesheet"/><link href="assets/ied-final-polish.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -603,9 +600,6 @@ footer p,
 <a href="start-here.html">Start Here</a>
 <a href="agenda.html">Agenda</a>
 <a href="courses.html">Courses</a>
-
-
-
 <a href="fablab.html">FabLab</a>
 <a href="fablab-certification/index.html">Certifications</a>
 <a href="resources.html">Resources</a>
@@ -613,41 +607,40 @@ footer p,
 </div>
 </nav>
 </header>
-<nav class="ied-course-subnav" aria-label="Introduction to Engineering Design course navigation">
-  <a href="ied.html">IED Home</a>
-  <a href="ied-units.html">Units 0–7</a>
-  <a href="ied-syllabus.html">Syllabus</a>
-  <a href="ied-projects.html">Projects</a>
-  <a href="fablab-certification/index.html">Certifications</a>
-  <a href="ied-resource-library.html">IED Resources</a>
+<nav aria-label="Introduction to Engineering Design course navigation" class="ied-course-subnav">
+<a href="ied.html">IED Home</a>
+<a aria-current="page" href="ied-units.html">Units 0–7</a>
+<a href="ied-syllabus.html">Syllabus</a>
+
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="ied-resource-library.html">IED Resources</a>
+<a href="ied-editable-templates.html">Templates</a>
 </nav>
 <div id="main-content"></div>
 <div class="page">
 <section class="hero">
 <div class="floating-logo">
-<img src="assets/ied-logo.png"/>
+<img alt="IED course visual" src="assets/ied-logo.png"/>
 </div>
 <h1>IED Units</h1>
 <p class="subtitle">Select a unit to access lessons, materials, procedures, and activities for Introduction to Engineering Design.</p>
 </section>
-
-<section class="media-section ied-course-media-overview" aria-labelledby="ied-media-overview-heading">
-  <div class="section-heading"><h2 id="ied-media-overview-heading">Aerospace Design Media Library</h2><p>Each unit now includes visual references, example graphics, and embedded learning videos to support student work.</p></div>
-  <div class="visual-grid"><a class="visual-card" href="ied-unit-0.html"><img src="assets/ied-media/unit0-hero.svg" alt="Unit 0 media preview" loading="lazy"/><div class="body"><span class="badge yellow">Unit 0</span><h3>Course Launch, Procedures &amp; FabLab Foundations</h3><p>Work safely and professionally before using engineering tools.</p></div></a><a class="visual-card" href="ied-unit-1.html"><img src="assets/ied-media/unit1-hero.svg" alt="Unit 1 media preview" loading="lazy"/><div class="body"><span class="badge yellow">Unit 1</span><h3>Design Process &amp; Aerospace Missions</h3><p>Turn mission needs into clear, testable design concepts.</p></div></a><a class="visual-card" href="ied-unit-2.html"><img src="assets/ied-media/unit2-hero.svg" alt="Unit 2 media preview" loading="lazy"/><div class="body"><span class="badge yellow">Unit 2</span><h3>Technical Sketching for Aerospace Design</h3><p>Use sketches, views, annotations, and dimensions to communicate shape and intent.</p></div></a><a class="visual-card" href="ied-unit-3.html"><img src="assets/ied-media/unit3-hero.svg" alt="Unit 3 media preview" loading="lazy"/><div class="body"><span class="badge yellow">Unit 3</span><h3>CAD Modeling for Aerospace Components</h3><p>Create editable parametric CAD models that communicate design intent.</p></div></a><a class="visual-card" href="ied-unit-4.html"><img src="assets/ied-media/unit4-hero.svg" alt="Unit 4 media preview" loading="lazy"/><div class="body"><span class="badge yellow">Unit 4</span><h3>Measurement, Drawings &amp; Manufacturing Documentation</h3><p>Create documentation that lets another person manufacture and inspect a part.</p></div></a><a class="visual-card" href="ied-unit-5.html"><img src="assets/ied-media/unit5-hero.svg" alt="Unit 5 media preview" loading="lazy"/><div class="body"><span class="badge yellow">Unit 5</span><h3>Materials, Structures &amp; Prototype Testing</h3><p>Use test evidence to improve strength, weight, and reliability.</p></div></a><a class="visual-card" href="ied-unit-6.html"><img src="assets/ied-media/unit6-hero.svg" alt="Unit 6 media preview" loading="lazy"/><div class="body"><span class="badge yellow">Unit 6</span><h3>Assemblies, Mechanisms &amp; Aerospace Systems</h3><p>Design systems where multiple parts fit, move, and work together.</p></div></a><a class="visual-card" href="ied-unit-7.html"><img src="assets/ied-media/unit7-hero.svg" alt="Unit 7 media preview" loading="lazy"/><div class="body"><span class="badge yellow">Unit 7</span><h3>Final Engineering Design Challenge</h3><p>Bring the full design process together in a final aerospace mission project.</p></div></a></div>
+<section aria-labelledby="ied-media-overview-heading" class="media-section ied-course-media-overview">
+<div class="section-heading"><h2 id="ied-media-overview-heading">Aerospace Design Media Library</h2><p>Each unit now includes visual references, example graphics, and embedded learning videos to support student work.</p></div>
+<div class="visual-grid"><a class="visual-card generated-photo" href="ied-unit-0.html"><img alt="Students beginning work in a modern aerospace makerspace with notebooks, CAD workstations, safety gear, and FabLab tools." loading="lazy" src="assets/ied-media/generated/unit0-fablab-foundations.png"/><div class="body"><span class="badge yellow">Unit 0</span><h3>Course Launch, Procedures &amp; FabLab Foundations</h3><p>Set up the habits, systems, and safety culture needed for engineering work.</p></div></a><a class="visual-card generated-photo" href="ied-unit-1.html"><img alt="Students collaborating around an aerospace mission design board with sketches, maps, and a drone model." loading="lazy" src="assets/ied-media/generated/unit1-design-process.png"/><div class="body"><span class="badge yellow">Unit 1</span><h3>Design Process &amp; Aerospace Missions</h3><p>Turn mission needs into clear, testable design concepts.</p></div></a><a class="visual-card generated-photo" href="ied-unit-2.html"><img alt="Students sketching aircraft concepts on graph paper in an aerospace engineering design studio." loading="lazy" src="assets/ied-media/generated/unit2-technical-sketching.png"/><div class="body"><span class="badge yellow">Unit 2</span><h3>Technical Sketching for Aerospace Design</h3><p>Use sketches, views, annotations, and dimensions to communicate design intent.</p></div></a><a class="visual-card generated-photo" href="ied-unit-3.html"><img alt="Students using CAD software and inspecting a prototype in a modern engineering lab." loading="lazy" src="assets/ied-media/generated/unit3-cad-modeling.png"/><div class="body"><span class="badge yellow">Unit 3</span><h3>CAD Modeling for Aerospace Components</h3><p>Move from sketches into editable parametric models and digital design evidence.</p></div></a><a class="visual-card generated-photo" href="ied-unit-4.html"><img alt="Students measuring mechanical parts and reviewing technical drawings at a workbench." loading="lazy" src="assets/ied-media/generated/unit4-measurement-documentation.png"/><div class="body"><span class="badge yellow">Unit 4</span><h3>Measurement, Drawings &amp; Manufacturing Documentation</h3><p>Create documentation that someone else can manufacture, inspect, and revise.</p></div></a><a class="visual-card generated-photo" href="ied-unit-5.html"><img alt="Students testing a bridge or truss model with hanging weights in an engineering lab." loading="lazy" src="assets/ied-media/generated/unit5-structures-testing.png"/><div class="body"><span class="badge yellow">Unit 5</span><h3>Materials, Structures &amp; Prototype Testing</h3><p>Use test evidence to improve strength, weight, and reliability.</p></div></a><a class="visual-card generated-photo" href="ied-unit-6.html"><img alt="Students assembling a mechanical mechanism with tools and parts spread across a workbench." loading="lazy" src="assets/ied-media/generated/unit6-assemblies-mechanisms.png"/><div class="body"><span class="badge yellow">Unit 6</span><h3>Assemblies, Mechanisms &amp; Aerospace Systems</h3><p>Design systems where parts fit, move, and work together.</p></div></a><a class="visual-card generated-photo" href="ied-unit-7.html"><img alt="Student team presenting an aerospace prototype during a final engineering design review." loading="lazy" src="assets/ied-media/generated/unit7-design-review.png"/><div class="body"><span class="badge yellow">Unit 7</span><h3>Final Engineering Design Challenge</h3><p>Bring the full design process together in a final aerospace mission project.</p></div></a></div>
 </section>
-<section class="ied-flow-section ied-units-pathway-overview" aria-labelledby="ied-units-pathway-heading">
-  <div class="ied-flow-panel">
-    <div class="ied-flow-header">
-      <div>
-        <p class="eyebrow"><span class="spark"></span>Course pathway</p>
-        <h2 id="ied-units-pathway-heading">Recommended student flow</h2>
-        <p>Use the unit cards below in order. Unit 0 prepares students for safe work, Units 1–4 build design communication and CAD/documentation skills, Units 5–7 move into testing, systems, and the final challenge.</p>
-      </div>
-      <div class="ied-flow-actions"><a class="primary" href="ied-unit-0.html">Begin Unit 0</a><a href="ied.html">Back to IED Home</a></div>
-    </div>
-  </div>
+<section aria-labelledby="ied-units-pathway-heading" class="ied-flow-section ied-units-pathway-overview">
+<div class="ied-flow-panel">
+<div class="ied-flow-header">
+<div>
+<p class="eyebrow"><span class="spark"></span>Course pathway</p>
+<h2 id="ied-units-pathway-heading">Recommended student flow</h2>
+<p>Use the unit cards below in order. Unit 0 prepares students for safe work, Units 1–4 build design communication and CAD/documentation skills, Units 5–7 move into testing, systems, and the final challenge.</p>
+</div>
+<div class="ied-flow-actions"><a class="primary" href="ied-unit-0.html">Begin Unit 0</a><a href="ied.html">Back to IED Home</a></div>
+</div>
+</div>
 </section>
-
 <div class="units-grid">
 <div class="unit-card">
 <div class="unit-title">Unit 0<br/>Course Launch &amp; FabLab Foundations</div>
@@ -670,17 +663,17 @@ footer p,
 <a class="unit-btn" href="ied-unit-3.html">Go to Unit</a>
 </div>
 <div class="unit-card">
-<div class="unit-title">Unit 4<br/>Measurement, Drawings & Manufacturing Documentation</div>
+<div class="unit-title">Unit 4<br/>Measurement, Drawings &amp; Manufacturing Documentation</div>
 <p>Measurement tools, tolerances, technical drawings, dimensions, manufacturing notes, BOMs, revision control, and fabrication planning.</p>
 <a class="unit-btn" href="ied-unit-4.html">Go to Unit</a>
 </div>
 <div class="unit-card">
-<div class="unit-title">Unit 5<br/>Materials, Structures & Prototype Testing</div>
+<div class="unit-title">Unit 5<br/>Materials, Structures &amp; Prototype Testing</div>
 <p>Aerospace materials, load paths, strength-to-weight ratio, structure testing, failure analysis, and redesign.</p>
 <a class="unit-btn" href="ied-unit-5.html">Go to Unit</a>
 </div>
 <div class="unit-card">
-<div class="unit-title">Unit 6<br/>Assemblies, Mechanisms & Aerospace Systems</div>
+<div class="unit-title">Unit 6<br/>Assemblies, Mechanisms &amp; Aerospace Systems</div>
 <p>Systems and subsystems, assemblies, joints, fasteners, exploded views, assembly instructions, and system testing.</p>
 <a class="unit-btn" href="ied-unit-6.html">Go to Unit</a>
 </div>

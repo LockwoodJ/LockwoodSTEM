@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -16,8 +17,6 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 <link href="assets/lockwood-readability-final.css" rel="stylesheet"/>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -104,10 +103,9 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/ied-media.css" rel="stylesheet"/>
 <link href="assets/ied-resources.css" rel="stylesheet"/>
-<link href="assets/ied-navigation-polish.css" rel="stylesheet"/>
+<link href="assets/ied-navigation-polish.css" rel="stylesheet"/><link href="assets/ied-final-polish.css" rel="stylesheet"/>
 </head>
 <body class="ls-visual-upgrade ls-theme-ied ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
@@ -129,13 +127,14 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </nav>
 </header>
-<nav class="ied-course-subnav" aria-label="Introduction to Engineering Design course navigation">
-  <a href="ied.html">IED Home</a>
-  <a href="ied-units.html">Units 0–7</a>
-  <a href="ied-syllabus.html">Syllabus</a>
-  <a href="ied-projects.html">Projects</a>
-  <a href="fablab-certification/index.html">Certifications</a>
-  <a href="ied-resource-library.html">IED Resources</a>
+<nav aria-label="Introduction to Engineering Design course navigation" class="ied-course-subnav">
+<a href="ied.html">IED Home</a>
+<a aria-current="page" href="ied-units.html">Units 0–7</a>
+<a href="ied-syllabus.html">Syllabus</a>
+
+<a href="fablab-certification/index.html">Certifications</a>
+<a href="ied-resource-library.html">IED Resources</a>
+<a href="ied-editable-templates.html">Templates</a>
 </nav>
 <main id="main-content"><section class="unit-hero">
 <div class="hero-inner">
@@ -149,25 +148,23 @@ main{width:100%}.unit-hero{padding:clamp(28px,5vw,76px) clamp(18px,4vw,52px);bac
 </div>
 </div>
 <div class="hero-card">
-<img class="media-hero-img" alt="Measurement, Drawings &amp; Manufacturing Documentation visual" src="assets/ied-media/unit4-hero.svg"/>
+<img alt="Students measuring mechanical parts and reviewing technical drawings at a workbench." class="media-hero-img" loading="lazy" src="assets/ied-media/generated/unit4-measurement-documentation.png"/>
 <h2>Unit 4</h2>
 <p>Track parts, quantities, materials, versions, and design changes like an engineering team.</p>
 </div>
 </div>
 </section>
-
-
-<section class="media-section ied-media-enhancement" aria-label="Visual reference">
-  <div class="media-mini">
-    <img src="assets/ied-media/unit4-hero.svg" alt="Measurement, Drawings &amp; Manufacturing Documentation visual reference" loading="lazy"/>
-    <div>
-      <span class="badge">Visual Reference</span>
-      <h2>Measurement, Drawings &amp; Manufacturing Documentation</h2>
-      <p><strong>Create documentation that lets another person manufacture and inspect a part.</strong></p>
-      <p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
-      <div class="actions"><a class="btn btn-primary" href="ied-unit-4.html">Open Unit 4 Media Hub</a></div>
-    </div>
-  </div>
+<section aria-label="Visual reference" class="media-section ied-media-enhancement">
+<div class="media-mini">
+<img alt="Aerospace sketches on graph paper with rulers, pencils, and technical drawing tools." loading="lazy" src="assets/ied-media/generated/sketching-drawing-closeup.png"/>
+<div>
+<span class="badge">Visual Reference</span>
+<h2>Sketching and drawing evidence</h2>
+<p><strong>Graph paper, linework, and annotations help designs communicate clearly.</strong></p>
+<p class="media-note">Use the unit hub for additional videos, examples, and inspiration galleries.</p>
+<div class="actions"><a class="btn btn-primary" href="ied-unit-4.html">Open Unit 4 Media Hub</a></div>
+</div>
+</div>
 </section>
 <section><div class="section-heading"><h2>Bill of Materials</h2><p>A bill of materials, or BOM, lists the parts, materials, and quantities needed to make or assemble a design.</p></div><div class="table-wrap"><table class="table"><thead><tr><th>Item</th><th>Part Name</th><th>Quantity</th><th>Material</th><th>Notes</th></tr></thead><tbody><tr><td>1</td><td>Payload bracket</td><td>1</td><td>PLA</td><td>3D printed</td></tr><tr><td>2</td><td>Mounting screw</td><td>4</td><td>Steel</td><td>Teacher provided</td></tr><tr><td>3</td><td>Base plate</td><td>1</td><td>Plywood</td><td>Laser cut</td></tr></tbody></table></div></section>
 <section><div class="section-heading"><h2>Revision Control</h2><p>Revision control tracks changes over time. Engineers use revisions so the team knows which version is current and why changes were made.</p></div><div class="grid"><div class="card"><h3>Revision Record</h3><ul><li>Revision letter or number</li><li>Date</li><li>What changed</li><li>Why it changed</li><li>Who made the change</li></ul></div><div class="card"><h3>Common Revision Reasons</h3><ul><li>Dimension correction</li><li>Fit issue</li><li>Material change</li><li>Weight reduction</li><li>Manufacturing improvement</li></ul></div></div></section>
