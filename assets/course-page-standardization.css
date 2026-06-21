@@ -1,0 +1,21 @@
+
+/* Course page standardization pass: student-facing layout, accessible navigation, consistent resource panels. */
+.ls-course-standardized main > section{scroll-margin-top:92px;}
+.ls-course-standardized .hero,.ls-course-standardized .rover-hero{border-bottom:1px solid rgba(255,255,255,.16);}
+.ls-course-standardized .section-heading h2{letter-spacing:-.02em;}
+.ls-standard-course-panel{max-width:1120px;margin:36px auto;padding:0 20px;}
+.ls-standard-course-panel__inner{background:#ffffff;color:#0f172a;border:1px solid #cbd5e1;border-radius:24px;box-shadow:0 18px 42px rgba(15,23,42,.12);padding:28px;}
+.ls-standard-course-panel h2{margin:0 0 8px;color:#0b3b66;font-size:clamp(1.45rem,2vw,2rem);}
+.ls-standard-course-panel p{color:#334155;line-height:1.65;}
+.ls-standard-course-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:20px;}
+.ls-standard-course-tile{display:flex;flex-direction:column;gap:10px;min-height:150px;padding:18px;border-radius:18px;background:#f8fafc;border:1px solid #dbe4ee;color:#0f172a;text-decoration:none;}
+.ls-standard-course-tile:hover,.ls-standard-course-tile:focus-visible{outline:4px solid #facc15;outline-offset:3px;background:#eef6ff;}
+.ls-standard-course-tile strong{color:#0b3b66;font-size:1.08rem;}
+.ls-standard-course-tile span{color:#334155;}
+.ls-course-standardized a:focus-visible,.ls-course-standardized button:focus-visible,.ls-course-standardized input:focus-visible{outline:4px solid #facc15!important;outline-offset:3px!important;}
+.ls-course-standardized .btn,.ls-course-standardized button{font-weight:800;}
+.ls-course-standardized table{border-collapse:collapse;width:100%;}
+.ls-course-standardized th{background:#0b3b66;color:#fff;}
+.ls-course-standardized td,.ls-course-standardized th{border:1px solid #cbd5e1;padding:.8rem;}
+.ls-course-standardized .card,.ls-course-standardized .panel,.ls-course-standardized .rover-card{color:#0f172a;}
+@media (max-width:800px){.ls-standard-course-grid{grid-template-columns:1fr}.ls-standard-course-panel__inner{padding:20px}.ls-global-links{max-height:none;overflow:visible;}}

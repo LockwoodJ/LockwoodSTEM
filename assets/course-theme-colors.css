@@ -1,0 +1,223 @@
+
+/* Course color identity system: accessible visual themes for IED, POE, and ADM.
+   These themes intentionally use dark text on light surfaces and white text on
+   dark accent surfaces for strong WCAG-oriented contrast. */
+:root {
+  --course-radius: 22px;
+}
+body.ls-theme-ied {
+  --course-primary: #005A8D;
+  --course-primary-dark: #003F66;
+  --course-accent: #F97316;
+  --course-accent-dark: #9A3412;
+  --course-soft: #EAF7FF;
+  --course-soft-2: #FFF3E8;
+  --course-border: rgba(0, 90, 141, .22);
+  --course-shadow: 0 18px 42px rgba(0, 90, 141, .16);
+  --ls-blue: var(--course-primary);
+  --ls-blue-2: #0077B6;
+  --ls-green: var(--course-accent);
+  --ls-bg: #F3FAFF;
+  --ls-border: var(--course-border);
+  --ls-shadow: var(--course-shadow);
+}
+body.ls-theme-poe {
+  --course-primary: #2F6B3F;
+  --course-primary-dark: #1F4D2D;
+  --course-accent: #B45309;
+  --course-accent-dark: #78350F;
+  --course-soft: #EEF8EF;
+  --course-soft-2: #FFF7ED;
+  --course-border: rgba(47, 107, 63, .24);
+  --course-shadow: 0 18px 42px rgba(47, 107, 63, .16);
+  --ls-blue: var(--course-primary);
+  --ls-blue-2: #3F8C55;
+  --ls-green: var(--course-accent);
+  --ls-bg: #F4FBF5;
+  --ls-border: var(--course-border);
+  --ls-shadow: var(--course-shadow);
+}
+body.ls-theme-adm {
+  --course-primary: #5B21B6;
+  --course-primary-dark: #3B1682;
+  --course-accent: #0F766E;
+  --course-accent-dark: #115E59;
+  --course-soft: #F3EFFF;
+  --course-soft-2: #ECFDF5;
+  --course-border: rgba(91, 33, 182, .22);
+  --course-shadow: 0 18px 42px rgba(91, 33, 182, .16);
+  --ls-blue: var(--course-primary);
+  --ls-blue-2: #7C3AED;
+  --ls-green: var(--course-accent);
+  --ls-bg: #F8F5FF;
+  --ls-border: var(--course-border);
+  --ls-shadow: var(--course-shadow);
+}
+body.ls-theme-ied,
+body.ls-theme-poe,
+body.ls-theme-adm {
+  background:
+    radial-gradient(circle at top left, color-mix(in srgb, var(--course-primary) 18%, transparent), transparent 32%),
+    radial-gradient(circle at top right, color-mix(in srgb, var(--course-accent) 14%, transparent), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, var(--ls-bg) 62%, #ffffff 100%) !important;
+}
+@supports not (color: color-mix(in srgb, white, black)) {
+  body.ls-theme-ied { background: linear-gradient(180deg, #ffffff 0%, #F3FAFF 62%, #ffffff 100%) !important; }
+  body.ls-theme-poe { background: linear-gradient(180deg, #ffffff 0%, #F4FBF5 62%, #ffffff 100%) !important; }
+  body.ls-theme-adm { background: linear-gradient(180deg, #ffffff 0%, #F8F5FF 62%, #ffffff 100%) !important; }
+}
+body.ls-theme-ied .ls-global-brand,
+body.ls-theme-poe .ls-global-brand,
+body.ls-theme-adm .ls-global-brand,
+body.ls-theme-ied h1,
+body.ls-theme-poe h1,
+body.ls-theme-adm h1,
+body.ls-theme-ied h2,
+body.ls-theme-poe h2,
+body.ls-theme-adm h2,
+body.ls-theme-ied h3,
+body.ls-theme-poe h3,
+body.ls-theme-adm h3 {
+  color: var(--course-primary-dark) !important;
+}
+body.ls-theme-ied .hero,
+body.ls-theme-poe .hero,
+body.ls-theme-adm .hero,
+body.ls-theme-ied .course-hero,
+body.ls-theme-poe .course-hero,
+body.ls-theme-adm .course-hero,
+body.ls-theme-ied .hero-shell,
+body.ls-theme-poe .hero-shell,
+body.ls-theme-adm .hero-shell,
+body.ls-theme-ied .hero-grid,
+body.ls-theme-poe .hero-grid,
+body.ls-theme-adm .hero-grid {
+  border-color: var(--course-border) !important;
+  box-shadow: var(--course-shadow) !important;
+}
+body.ls-theme-ied .hero,
+body.ls-theme-poe .hero,
+body.ls-theme-adm .hero,
+body.ls-theme-ied .course-hero,
+body.ls-theme-poe .course-hero,
+body.ls-theme-adm .course-hero {
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--course-soft) 88%, white), #ffffff 68%) !important;
+}
+body.ls-theme-ied .tag,
+body.ls-theme-poe .tag,
+body.ls-theme-adm .tag,
+body.ls-theme-ied .eyebrow,
+body.ls-theme-poe .eyebrow,
+body.ls-theme-adm .eyebrow,
+body.ls-theme-ied .badge,
+body.ls-theme-poe .badge,
+body.ls-theme-adm .badge,
+body.ls-theme-ied .pill,
+body.ls-theme-poe .pill,
+body.ls-theme-adm .pill {
+  background: var(--course-soft) !important;
+  color: var(--course-primary-dark) !important;
+  border-color: var(--course-border) !important;
+}
+body.ls-theme-ied .card,
+body.ls-theme-poe .card,
+body.ls-theme-adm .card,
+body.ls-theme-ied .resource-card,
+body.ls-theme-poe .resource-card,
+body.ls-theme-adm .resource-card,
+body.ls-theme-ied .unit-card,
+body.ls-theme-poe .unit-card,
+body.ls-theme-adm .unit-card,
+body.ls-theme-ied .project-card,
+body.ls-theme-poe .project-card,
+body.ls-theme-adm .project-card,
+body.ls-theme-ied .mission-card,
+body.ls-theme-poe .mission-card,
+body.ls-theme-adm .mission-card {
+  border-color: var(--course-border) !important;
+  box-shadow: 0 12px 28px rgba(17, 24, 39, .08) !important;
+}
+body.ls-theme-ied .card:hover,
+body.ls-theme-poe .card:hover,
+body.ls-theme-adm .card:hover,
+body.ls-theme-ied .resource-card:hover,
+body.ls-theme-poe .resource-card:hover,
+body.ls-theme-adm .resource-card:hover,
+body.ls-theme-ied .unit-card:hover,
+body.ls-theme-poe .unit-card:hover,
+body.ls-theme-adm .unit-card:hover,
+body.ls-theme-ied .project-card:hover,
+body.ls-theme-poe .project-card:hover,
+body.ls-theme-adm .project-card:hover {
+  border-color: var(--course-primary) !important;
+}
+body.ls-theme-ied .btn,
+body.ls-theme-poe .btn,
+body.ls-theme-adm .btn,
+body.ls-theme-ied .button,
+body.ls-theme-poe .button,
+body.ls-theme-adm .button,
+body.ls-theme-ied .btn-primary,
+body.ls-theme-poe .btn-primary,
+body.ls-theme-adm .btn-primary,
+body.ls-theme-ied .ls-global-cta,
+body.ls-theme-poe .ls-global-cta,
+body.ls-theme-adm .ls-global-cta,
+body.ls-theme-ied .resource-button,
+body.ls-theme-poe .resource-button,
+body.ls-theme-adm .resource-button,
+body.ls-theme-ied a[class*="button"],
+body.ls-theme-poe a[class*="button"],
+body.ls-theme-adm a[class*="button"] {
+  background: linear-gradient(135deg, var(--course-primary-dark), var(--course-primary)) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--course-primary-dark) !important;
+}
+body.ls-theme-ied .btn-secondary,
+body.ls-theme-poe .btn-secondary,
+body.ls-theme-adm .btn-secondary,
+body.ls-theme-ied .secondary,
+body.ls-theme-poe .secondary,
+body.ls-theme-adm .secondary {
+  background: #ffffff !important;
+  color: var(--course-primary-dark) !important;
+  border: 2px solid var(--course-primary) !important;
+}
+body.ls-theme-ied .ls-global-links a[aria-current="page"],
+body.ls-theme-poe .ls-global-links a[aria-current="page"],
+body.ls-theme-adm .ls-global-links a[aria-current="page"],
+body.ls-theme-ied .ls-global-links a:hover,
+body.ls-theme-poe .ls-global-links a:hover,
+body.ls-theme-adm .ls-global-links a:hover {
+  background: var(--course-soft) !important;
+  color: var(--course-primary-dark) !important;
+}
+body.ls-theme-ied table th,
+body.ls-theme-poe table th,
+body.ls-theme-adm table th {
+  background: var(--course-primary-dark) !important;
+  color: #ffffff !important;
+}
+body.ls-theme-ied a:focus-visible,
+body.ls-theme-poe a:focus-visible,
+body.ls-theme-adm a:focus-visible,
+body.ls-theme-ied button:focus-visible,
+body.ls-theme-poe button:focus-visible,
+body.ls-theme-adm button:focus-visible,
+body.ls-theme-ied input:focus-visible,
+body.ls-theme-poe input:focus-visible,
+body.ls-theme-adm input:focus-visible {
+  outline: 4px solid var(--course-accent) !important;
+  outline-offset: 3px !important;
+}
+/* Course-specific accent bars for quick visual identification. */
+body.ls-theme-ied main::before,
+body.ls-theme-poe main::before,
+body.ls-theme-adm main::before {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--course-primary-dark), var(--course-primary), var(--course-accent));
+}
