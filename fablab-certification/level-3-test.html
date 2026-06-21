@@ -385,11 +385,8 @@ footer p,
 </style>
 <link href="../assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="../assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
 <link href="../assets/certification-test.css" rel="stylesheet"/>
-<script defer src="../assets/certification-test.js"></script>
-
-
+<script defer="" src="../assets/certification-test.js"></script>
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -476,8 +473,7 @@ footer p,
     text-shadow: none !important;
   }
 </style>
-
-</head>
+<link href="../assets/academy-search.css" rel="stylesheet"/></head>
 <body class="ls-has-standard-chrome cert-test-page"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
 <header class="ls-global-header" role="banner">
 <nav aria-label="Main navigation" class="ls-global-nav">
@@ -489,15 +485,12 @@ footer p,
 <a href="../index.html">Home</a>
 <a href="../start-here.html">Start Here</a>
 <a href="../agenda.html">Agenda</a>
-<a href="../courses.html">Courses</a>
-
-
-
+<a href="../courses.html">Courses</a><a href="../academy.html">Academy</a>
 <a href="../fablab.html">FabLab</a>
 <a aria-current="page" href="../fablab-certification/index.html">Certifications</a>
 <a href="../resources.html">Resources</a>
 <a class="ls-global-cta" href="../fabrication.html">Fabrication</a>
-</div>
+<form action="../search.html" class="ls-site-search" method="get" role="search"><label for="global-site-search">Search this site</label><input aria-label="Search this site" autocomplete="off" id="global-site-search" name="q" placeholder="Search site" type="search"/><button type="submit">Search</button></form></div>
 </nav>
 </header>
 <div id="main-content"></div>
@@ -508,8 +501,8 @@ footer p,
 <h2>Student Information</h2>
 <p>Enter your name exactly as you want it to appear on the certificate. A passing score is 80% or higher.</p>
 <div class="student-info-grid">
-<div class="field"><label for="studentName">Student Name</label><input id="studentName" type="text" autocomplete="name" placeholder="First and last name"></div>
-<div class="field"><label for="studentPeriod">Class Period / Course</label><input id="studentPeriod" type="text" placeholder="Example: IED Period 2"></div>
+<div class="field"><label for="studentName">Student Name</label><input autocomplete="name" id="studentName" placeholder="First and last name" type="text"/></div>
+<div class="field"><label for="studentPeriod">Class Period / Course</label><input id="studentPeriod" placeholder="Example: IED Period 2" type="text"/></div>
 </div>
 <div class="progress-note"><p><strong>Certificate rule:</strong> When you score 80% or higher, a certificate of completion will appear at the bottom of this page. Print or save it as a PDF and submit it where your instructor requests.</p></div>
 </div>
@@ -520,238 +513,238 @@ footer p,
 <div class="question" data-answer="a">
 <h3>1. What must be true before running a laser cutter job?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q1" value="a"> <span><strong>A.</strong> The material is approved, settings are appropriate, ventilation is on, and supervision rules are followed</span></label>
-<label class="answer"><input type="radio" name="q1" value="b"> <span><strong>B.</strong> The lid is open</span></label>
-<label class="answer"><input type="radio" name="q1" value="c"> <span><strong>C.</strong> The file is unnamed</span></label>
-<label class="answer"><input type="radio" name="q1" value="d"> <span><strong>D.</strong> The machine is left unattended</span></label>
+<label class="answer"><input name="q1" type="radio" value="a"/> <span><strong>A.</strong> The material is approved, settings are appropriate, ventilation is on, and supervision rules are followed</span></label>
+<label class="answer"><input name="q1" type="radio" value="b"/> <span><strong>B.</strong> The lid is open</span></label>
+<label class="answer"><input name="q1" type="radio" value="c"/> <span><strong>C.</strong> The file is unnamed</span></label>
+<label class="answer"><input name="q1" type="radio" value="d"/> <span><strong>D.</strong> The machine is left unattended</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>2. Why are unknown plastics dangerous in a laser cutter?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q2" value="a"> <span><strong>A.</strong> They may release hazardous fumes or damage the machine</span></label>
-<label class="answer"><input type="radio" name="q2" value="b"> <span><strong>B.</strong> They cut too fast only</span></label>
-<label class="answer"><input type="radio" name="q2" value="c"> <span><strong>C.</strong> They always engrave nicely</span></label>
-<label class="answer"><input type="radio" name="q2" value="d"> <span><strong>D.</strong> They improve ventilation</span></label>
+<label class="answer"><input name="q2" type="radio" value="a"/> <span><strong>A.</strong> They may release hazardous fumes or damage the machine</span></label>
+<label class="answer"><input name="q2" type="radio" value="b"/> <span><strong>B.</strong> They cut too fast only</span></label>
+<label class="answer"><input name="q2" type="radio" value="c"/> <span><strong>C.</strong> They always engrave nicely</span></label>
+<label class="answer"><input name="q2" type="radio" value="d"/> <span><strong>D.</strong> They improve ventilation</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>3. What should a student do while a laser job is running?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q3" value="a"> <span><strong>A.</strong> Monitor the job and be ready to stop it if needed</span></label>
-<label class="answer"><input type="radio" name="q3" value="b"> <span><strong>B.</strong> Leave to work on another assignment</span></label>
-<label class="answer"><input type="radio" name="q3" value="c"> <span><strong>C.</strong> Put headphones on and look away</span></label>
-<label class="answer"><input type="radio" name="q3" value="d"> <span><strong>D.</strong> Open the lid repeatedly</span></label>
+<label class="answer"><input name="q3" type="radio" value="a"/> <span><strong>A.</strong> Monitor the job and be ready to stop it if needed</span></label>
+<label class="answer"><input name="q3" type="radio" value="b"/> <span><strong>B.</strong> Leave to work on another assignment</span></label>
+<label class="answer"><input name="q3" type="radio" value="c"/> <span><strong>C.</strong> Put headphones on and look away</span></label>
+<label class="answer"><input name="q3" type="radio" value="d"/> <span><strong>D.</strong> Open the lid repeatedly</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>4. Which laser setting controls how fast the head moves?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q4" value="a"> <span><strong>A.</strong> Speed</span></label>
-<label class="answer"><input type="radio" name="q4" value="b"> <span><strong>B.</strong> Infill</span></label>
-<label class="answer"><input type="radio" name="q4" value="c"> <span><strong>C.</strong> Nozzle temperature</span></label>
-<label class="answer"><input type="radio" name="q4" value="d"> <span><strong>D.</strong> Layer height</span></label>
+<label class="answer"><input name="q4" type="radio" value="a"/> <span><strong>A.</strong> Speed</span></label>
+<label class="answer"><input name="q4" type="radio" value="b"/> <span><strong>B.</strong> Infill</span></label>
+<label class="answer"><input name="q4" type="radio" value="c"/> <span><strong>C.</strong> Nozzle temperature</span></label>
+<label class="answer"><input name="q4" type="radio" value="d"/> <span><strong>D.</strong> Layer height</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>5. Which laser setting controls beam output intensity?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q5" value="a"> <span><strong>A.</strong> Power</span></label>
-<label class="answer"><input type="radio" name="q5" value="b"> <span><strong>B.</strong> Class period</span></label>
-<label class="answer"><input type="radio" name="q5" value="c"> <span><strong>C.</strong> CAD units</span></label>
-<label class="answer"><input type="radio" name="q5" value="d"> <span><strong>D.</strong> File color only</span></label>
+<label class="answer"><input name="q5" type="radio" value="a"/> <span><strong>A.</strong> Power</span></label>
+<label class="answer"><input name="q5" type="radio" value="b"/> <span><strong>B.</strong> Class period</span></label>
+<label class="answer"><input name="q5" type="radio" value="c"/> <span><strong>C.</strong> CAD units</span></label>
+<label class="answer"><input name="q5" type="radio" value="d"/> <span><strong>D.</strong> File color only</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>6. Why should test cuts be used?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q6" value="a"> <span><strong>A.</strong> To confirm settings before cutting the final part</span></label>
-<label class="answer"><input type="radio" name="q6" value="b"> <span><strong>B.</strong> To waste material intentionally</span></label>
-<label class="answer"><input type="radio" name="q6" value="c"> <span><strong>C.</strong> To avoid measuring</span></label>
-<label class="answer"><input type="radio" name="q6" value="d"> <span><strong>D.</strong> To skip ventilation</span></label>
+<label class="answer"><input name="q6" type="radio" value="a"/> <span><strong>A.</strong> To confirm settings before cutting the final part</span></label>
+<label class="answer"><input name="q6" type="radio" value="b"/> <span><strong>B.</strong> To waste material intentionally</span></label>
+<label class="answer"><input name="q6" type="radio" value="c"/> <span><strong>C.</strong> To avoid measuring</span></label>
+<label class="answer"><input name="q6" type="radio" value="d"/> <span><strong>D.</strong> To skip ventilation</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>7. What is kerf?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q7" value="a"> <span><strong>A.</strong> Material removed by the cutting beam/tool</span></label>
-<label class="answer"><input type="radio" name="q7" value="b"> <span><strong>B.</strong> The name of the laser lens</span></label>
-<label class="answer"><input type="radio" name="q7" value="c"> <span><strong>C.</strong> The file folder</span></label>
-<label class="answer"><input type="radio" name="q7" value="d"> <span><strong>D.</strong> A type of glue</span></label>
+<label class="answer"><input name="q7" type="radio" value="a"/> <span><strong>A.</strong> Material removed by the cutting beam/tool</span></label>
+<label class="answer"><input name="q7" type="radio" value="b"/> <span><strong>B.</strong> The name of the laser lens</span></label>
+<label class="answer"><input name="q7" type="radio" value="c"/> <span><strong>C.</strong> The file folder</span></label>
+<label class="answer"><input name="q7" type="radio" value="d"/> <span><strong>D.</strong> A type of glue</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>8. Why does focus matter on a laser cutter?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q8" value="a"> <span><strong>A.</strong> Proper focus affects cut quality and energy concentration</span></label>
-<label class="answer"><input type="radio" name="q8" value="b"> <span><strong>B.</strong> It changes the student name</span></label>
-<label class="answer"><input type="radio" name="q8" value="c"> <span><strong>C.</strong> It prevents all fires automatically</span></label>
-<label class="answer"><input type="radio" name="q8" value="d"> <span><strong>D.</strong> It replaces material approval</span></label>
+<label class="answer"><input name="q8" type="radio" value="a"/> <span><strong>A.</strong> Proper focus affects cut quality and energy concentration</span></label>
+<label class="answer"><input name="q8" type="radio" value="b"/> <span><strong>B.</strong> It changes the student name</span></label>
+<label class="answer"><input name="q8" type="radio" value="c"/> <span><strong>C.</strong> It prevents all fires automatically</span></label>
+<label class="answer"><input name="q8" type="radio" value="d"/> <span><strong>D.</strong> It replaces material approval</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>9. If you see flame, smoke buildup, or unusual behavior during a laser job, what should you do?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q9" value="a"> <span><strong>A.</strong> Stop the job and notify the instructor immediately</span></label>
-<label class="answer"><input type="radio" name="q9" value="b"> <span><strong>B.</strong> Increase power</span></label>
-<label class="answer"><input type="radio" name="q9" value="c"> <span><strong>C.</strong> Walk away</span></label>
-<label class="answer"><input type="radio" name="q9" value="d"> <span><strong>D.</strong> Open another file</span></label>
+<label class="answer"><input name="q9" type="radio" value="a"/> <span><strong>A.</strong> Stop the job and notify the instructor immediately</span></label>
+<label class="answer"><input name="q9" type="radio" value="b"/> <span><strong>B.</strong> Increase power</span></label>
+<label class="answer"><input name="q9" type="radio" value="c"/> <span><strong>C.</strong> Walk away</span></label>
+<label class="answer"><input name="q9" type="radio" value="d"/> <span><strong>D.</strong> Open another file</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>10. What is a CNC toolpath?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q10" value="a"> <span><strong>A.</strong> A programmed path the cutting tool follows through material</span></label>
-<label class="answer"><input type="radio" name="q10" value="b"> <span><strong>B.</strong> A printed certificate</span></label>
-<label class="answer"><input type="radio" name="q10" value="c"> <span><strong>C.</strong> A laser color setting</span></label>
-<label class="answer"><input type="radio" name="q10" value="d"> <span><strong>D.</strong> A hand sketch only</span></label>
+<label class="answer"><input name="q10" type="radio" value="a"/> <span><strong>A.</strong> A programmed path the cutting tool follows through material</span></label>
+<label class="answer"><input name="q10" type="radio" value="b"/> <span><strong>B.</strong> A printed certificate</span></label>
+<label class="answer"><input name="q10" type="radio" value="c"/> <span><strong>C.</strong> A laser color setting</span></label>
+<label class="answer"><input name="q10" type="radio" value="d"/> <span><strong>D.</strong> A hand sketch only</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>11. Why must CNC workpieces be held securely?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q11" value="a"> <span><strong>A.</strong> Loose material can shift, damage tools, or become unsafe</span></label>
-<label class="answer"><input type="radio" name="q11" value="b"> <span><strong>B.</strong> It makes the machine quieter only</span></label>
-<label class="answer"><input type="radio" name="q11" value="c"> <span><strong>C.</strong> It lets the tool cut faster without limits</span></label>
-<label class="answer"><input type="radio" name="q11" value="d"> <span><strong>D.</strong> It removes the need for simulation</span></label>
+<label class="answer"><input name="q11" type="radio" value="a"/> <span><strong>A.</strong> Loose material can shift, damage tools, or become unsafe</span></label>
+<label class="answer"><input name="q11" type="radio" value="b"/> <span><strong>B.</strong> It makes the machine quieter only</span></label>
+<label class="answer"><input name="q11" type="radio" value="c"/> <span><strong>C.</strong> It lets the tool cut faster without limits</span></label>
+<label class="answer"><input name="q11" type="radio" value="d"/> <span><strong>D.</strong> It removes the need for simulation</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>12. What should be checked before starting a CNC job?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q12" value="a"> <span><strong>A.</strong> Tool, workholding, origin/zero, material, simulation, and supervision</span></label>
-<label class="answer"><input type="radio" name="q12" value="b"> <span><strong>B.</strong> Only the file name</span></label>
-<label class="answer"><input type="radio" name="q12" value="c"> <span><strong>C.</strong> Only the due date</span></label>
-<label class="answer"><input type="radio" name="q12" value="d"> <span><strong>D.</strong> Only the color of the part</span></label>
+<label class="answer"><input name="q12" type="radio" value="a"/> <span><strong>A.</strong> Tool, workholding, origin/zero, material, simulation, and supervision</span></label>
+<label class="answer"><input name="q12" type="radio" value="b"/> <span><strong>B.</strong> Only the file name</span></label>
+<label class="answer"><input name="q12" type="radio" value="c"/> <span><strong>C.</strong> Only the due date</span></label>
+<label class="answer"><input name="q12" type="radio" value="d"/> <span><strong>D.</strong> Only the color of the part</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>13. What is the purpose of simulating a CNC toolpath?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q13" value="a"> <span><strong>A.</strong> To catch collisions, wrong depths, or unsafe moves before cutting</span></label>
-<label class="answer"><input type="radio" name="q13" value="b"> <span><strong>B.</strong> To decorate the file</span></label>
-<label class="answer"><input type="radio" name="q13" value="c"> <span><strong>C.</strong> To print a photo</span></label>
-<label class="answer"><input type="radio" name="q13" value="d"> <span><strong>D.</strong> To skip setup</span></label>
+<label class="answer"><input name="q13" type="radio" value="a"/> <span><strong>A.</strong> To catch collisions, wrong depths, or unsafe moves before cutting</span></label>
+<label class="answer"><input name="q13" type="radio" value="b"/> <span><strong>B.</strong> To decorate the file</span></label>
+<label class="answer"><input name="q13" type="radio" value="c"/> <span><strong>C.</strong> To print a photo</span></label>
+<label class="answer"><input name="q13" type="radio" value="d"/> <span><strong>D.</strong> To skip setup</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>14. Why are feeds and speeds important?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q14" value="a"> <span><strong>A.</strong> They affect cut quality, tool life, and safety</span></label>
-<label class="answer"><input type="radio" name="q14" value="b"> <span><strong>B.</strong> They only affect page color</span></label>
-<label class="answer"><input type="radio" name="q14" value="c"> <span><strong>C.</strong> They replace the need for clamps</span></label>
-<label class="answer"><input type="radio" name="q14" value="d"> <span><strong>D.</strong> They are only for 3D printers</span></label>
+<label class="answer"><input name="q14" type="radio" value="a"/> <span><strong>A.</strong> They affect cut quality, tool life, and safety</span></label>
+<label class="answer"><input name="q14" type="radio" value="b"/> <span><strong>B.</strong> They only affect page color</span></label>
+<label class="answer"><input name="q14" type="radio" value="c"/> <span><strong>C.</strong> They replace the need for clamps</span></label>
+<label class="answer"><input name="q14" type="radio" value="d"/> <span><strong>D.</strong> They are only for 3D printers</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>15. What is an emergency stop used for?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q15" value="a"> <span><strong>A.</strong> Stopping the machine quickly during unsafe or unexpected operation</span></label>
-<label class="answer"><input type="radio" name="q15" value="b"> <span><strong>B.</strong> Normal shutdown after every click</span></label>
-<label class="answer"><input type="radio" name="q15" value="c"> <span><strong>C.</strong> Changing the design color</span></label>
-<label class="answer"><input type="radio" name="q15" value="d"> <span><strong>D.</strong> Starting the next job</span></label>
+<label class="answer"><input name="q15" type="radio" value="a"/> <span><strong>A.</strong> Stopping the machine quickly during unsafe or unexpected operation</span></label>
+<label class="answer"><input name="q15" type="radio" value="b"/> <span><strong>B.</strong> Normal shutdown after every click</span></label>
+<label class="answer"><input name="q15" type="radio" value="c"/> <span><strong>C.</strong> Changing the design color</span></label>
+<label class="answer"><input name="q15" type="radio" value="d"/> <span><strong>D.</strong> Starting the next job</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>16. What should happen if the CNC makes unusual noise or vibration?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q16" value="a"> <span><strong>A.</strong> Stop or pause as instructed and get help</span></label>
-<label class="answer"><input type="radio" name="q16" value="b"> <span><strong>B.</strong> Push the part harder</span></label>
-<label class="answer"><input type="radio" name="q16" value="c"> <span><strong>C.</strong> Increase depth of cut</span></label>
-<label class="answer"><input type="radio" name="q16" value="d"> <span><strong>D.</strong> Ignore it</span></label>
+<label class="answer"><input name="q16" type="radio" value="a"/> <span><strong>A.</strong> Stop or pause as instructed and get help</span></label>
+<label class="answer"><input name="q16" type="radio" value="b"/> <span><strong>B.</strong> Push the part harder</span></label>
+<label class="answer"><input name="q16" type="radio" value="c"/> <span><strong>C.</strong> Increase depth of cut</span></label>
+<label class="answer"><input name="q16" type="radio" value="d"/> <span><strong>D.</strong> Ignore it</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>17. Which action is unsafe around a running CNC machine?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q17" value="a"> <span><strong>A.</strong> Reaching near the tool or workpiece while it is operating</span></label>
-<label class="answer"><input type="radio" name="q17" value="b"> <span><strong>B.</strong> Watching from a safe distance</span></label>
-<label class="answer"><input type="radio" name="q17" value="c"> <span><strong>C.</strong> Wearing required PPE</span></label>
-<label class="answer"><input type="radio" name="q17" value="d"> <span><strong>D.</strong> Following instructor directions</span></label>
+<label class="answer"><input name="q17" type="radio" value="a"/> <span><strong>A.</strong> Reaching near the tool or workpiece while it is operating</span></label>
+<label class="answer"><input name="q17" type="radio" value="b"/> <span><strong>B.</strong> Watching from a safe distance</span></label>
+<label class="answer"><input name="q17" type="radio" value="c"/> <span><strong>C.</strong> Wearing required PPE</span></label>
+<label class="answer"><input name="q17" type="radio" value="d"/> <span><strong>D.</strong> Following instructor directions</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>18. What is a good file habit for laser/CNC work?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q18" value="a"> <span><strong>A.</strong> Use clear units, clean geometry, and remove duplicate/extra lines</span></label>
-<label class="answer"><input type="radio" name="q18" value="b"> <span><strong>B.</strong> Leave overlapping lines everywhere</span></label>
-<label class="answer"><input type="radio" name="q18" value="c"> <span><strong>C.</strong> Use random scale</span></label>
-<label class="answer"><input type="radio" name="q18" value="d"> <span><strong>D.</strong> Ignore material thickness</span></label>
+<label class="answer"><input name="q18" type="radio" value="a"/> <span><strong>A.</strong> Use clear units, clean geometry, and remove duplicate/extra lines</span></label>
+<label class="answer"><input name="q18" type="radio" value="b"/> <span><strong>B.</strong> Leave overlapping lines everywhere</span></label>
+<label class="answer"><input name="q18" type="radio" value="c"/> <span><strong>C.</strong> Use random scale</span></label>
+<label class="answer"><input name="q18" type="radio" value="d"/> <span><strong>D.</strong> Ignore material thickness</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>19. Why does material thickness matter for laser/CNC projects?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q19" value="a"> <span><strong>A.</strong> It affects fit, cut settings, depth, and assembly</span></label>
-<label class="answer"><input type="radio" name="q19" value="b"> <span><strong>B.</strong> It only affects font choice</span></label>
-<label class="answer"><input type="radio" name="q19" value="c"> <span><strong>C.</strong> It does not matter</span></label>
-<label class="answer"><input type="radio" name="q19" value="d"> <span><strong>D.</strong> It automatically adjusts itself</span></label>
+<label class="answer"><input name="q19" type="radio" value="a"/> <span><strong>A.</strong> It affects fit, cut settings, depth, and assembly</span></label>
+<label class="answer"><input name="q19" type="radio" value="b"/> <span><strong>B.</strong> It only affects font choice</span></label>
+<label class="answer"><input name="q19" type="radio" value="c"/> <span><strong>C.</strong> It does not matter</span></label>
+<label class="answer"><input name="q19" type="radio" value="d"/> <span><strong>D.</strong> It automatically adjusts itself</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>20. What should students do with dust, chips, or debris?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q20" value="a"> <span><strong>A.</strong> Clean up using the approved method after the machine is safe/off</span></label>
-<label class="answer"><input type="radio" name="q20" value="b"> <span><strong>B.</strong> Blow it across the room</span></label>
-<label class="answer"><input type="radio" name="q20" value="c"> <span><strong>C.</strong> Leave it in the machine</span></label>
-<label class="answer"><input type="radio" name="q20" value="d"> <span><strong>D.</strong> Brush it into electronics</span></label>
+<label class="answer"><input name="q20" type="radio" value="a"/> <span><strong>A.</strong> Clean up using the approved method after the machine is safe/off</span></label>
+<label class="answer"><input name="q20" type="radio" value="b"/> <span><strong>B.</strong> Blow it across the room</span></label>
+<label class="answer"><input name="q20" type="radio" value="c"/> <span><strong>C.</strong> Leave it in the machine</span></label>
+<label class="answer"><input name="q20" type="radio" value="d"/> <span><strong>D.</strong> Brush it into electronics</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>21. When is instructor approval especially important?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q21" value="a"> <span><strong>A.</strong> Before running advanced equipment jobs</span></label>
-<label class="answer"><input type="radio" name="q21" value="b"> <span><strong>B.</strong> Only after the job finishes</span></label>
-<label class="answer"><input type="radio" name="q21" value="c"> <span><strong>C.</strong> Only for paper sketches</span></label>
-<label class="answer"><input type="radio" name="q21" value="d"> <span><strong>D.</strong> Never after Level 3</span></label>
+<label class="answer"><input name="q21" type="radio" value="a"/> <span><strong>A.</strong> Before running advanced equipment jobs</span></label>
+<label class="answer"><input name="q21" type="radio" value="b"/> <span><strong>B.</strong> Only after the job finishes</span></label>
+<label class="answer"><input name="q21" type="radio" value="c"/> <span><strong>C.</strong> Only for paper sketches</span></label>
+<label class="answer"><input name="q21" type="radio" value="d"/> <span><strong>D.</strong> Never after Level 3</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>22. What is one risk of running duplicate cut lines on a laser?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q22" value="a"> <span><strong>A.</strong> The machine may cut the same path multiple times and over-burn material</span></label>
-<label class="answer"><input type="radio" name="q22" value="b"> <span><strong>B.</strong> It makes the part stronger</span></label>
-<label class="answer"><input type="radio" name="q22" value="c"> <span><strong>C.</strong> It reduces smoke</span></label>
-<label class="answer"><input type="radio" name="q22" value="d"> <span><strong>D.</strong> It improves the grade</span></label>
+<label class="answer"><input name="q22" type="radio" value="a"/> <span><strong>A.</strong> The machine may cut the same path multiple times and over-burn material</span></label>
+<label class="answer"><input name="q22" type="radio" value="b"/> <span><strong>B.</strong> It makes the part stronger</span></label>
+<label class="answer"><input name="q22" type="radio" value="c"/> <span><strong>C.</strong> It reduces smoke</span></label>
+<label class="answer"><input name="q22" type="radio" value="d"/> <span><strong>D.</strong> It improves the grade</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>23. What is a safe response to a file that does not match project requirements?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q23" value="a"> <span><strong>A.</strong> Revise the file before running the job</span></label>
-<label class="answer"><input type="radio" name="q23" value="b"> <span><strong>B.</strong> Run it anyway and fix later</span></label>
-<label class="answer"><input type="radio" name="q23" value="c"> <span><strong>C.</strong> Ask the machine to correct it</span></label>
-<label class="answer"><input type="radio" name="q23" value="d"> <span><strong>D.</strong> Change the material secretly</span></label>
+<label class="answer"><input name="q23" type="radio" value="a"/> <span><strong>A.</strong> Revise the file before running the job</span></label>
+<label class="answer"><input name="q23" type="radio" value="b"/> <span><strong>B.</strong> Run it anyway and fix later</span></label>
+<label class="answer"><input name="q23" type="radio" value="c"/> <span><strong>C.</strong> Ask the machine to correct it</span></label>
+<label class="answer"><input name="q23" type="radio" value="d"/> <span><strong>D.</strong> Change the material secretly</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>24. Why is constant attention required for advanced equipment?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q24" value="a"> <span><strong>A.</strong> Problems can develop quickly and need immediate response</span></label>
-<label class="answer"><input type="radio" name="q24" value="b"> <span><strong>B.</strong> The machines are boring</span></label>
-<label class="answer"><input type="radio" name="q24" value="c"> <span><strong>C.</strong> It makes the job slower</span></label>
-<label class="answer"><input type="radio" name="q24" value="d"> <span><strong>D.</strong> It is only for attendance</span></label>
+<label class="answer"><input name="q24" type="radio" value="a"/> <span><strong>A.</strong> Problems can develop quickly and need immediate response</span></label>
+<label class="answer"><input name="q24" type="radio" value="b"/> <span><strong>B.</strong> The machines are boring</span></label>
+<label class="answer"><input name="q24" type="radio" value="c"/> <span><strong>C.</strong> It makes the job slower</span></label>
+<label class="answer"><input name="q24" type="radio" value="d"/> <span><strong>D.</strong> It is only for attendance</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>25. Level 3 certification means a student can:</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q25" value="a"> <span><strong>A.</strong> Prepare and operate advanced equipment only within approved supervision and safety rules</span></label>
-<label class="answer"><input type="radio" name="q25" value="b"> <span><strong>B.</strong> Run any laser/CNC job alone anytime</span></label>
-<label class="answer"><input type="radio" name="q25" value="c"> <span><strong>C.</strong> Approve unsafe materials</span></label>
-<label class="answer"><input type="radio" name="q25" value="d"> <span><strong>D.</strong> Skip cleanup</span></label>
+<label class="answer"><input name="q25" type="radio" value="a"/> <span><strong>A.</strong> Prepare and operate advanced equipment only within approved supervision and safety rules</span></label>
+<label class="answer"><input name="q25" type="radio" value="b"/> <span><strong>B.</strong> Run any laser/CNC job alone anytime</span></label>
+<label class="answer"><input name="q25" type="radio" value="c"/> <span><strong>C.</strong> Approve unsafe materials</span></label>
+<label class="answer"><input name="q25" type="radio" value="d"/> <span><strong>D.</strong> Skip cleanup</span></label>
 </div>
 </div>
 </form>
 <div class="test-actions">
-<button class="cert-btn" type="button" onclick="gradeCertificationTest()">Submit Test</button>
+<button class="cert-btn" onclick="gradeCertificationTest()" type="button">Submit Test</button>
 <a class="cert-btn secondary" href="level-3.html">Review Training</a>
 </div>
-<div id="testResult" class="result-box"></div>
+<div class="result-box" id="testResult"></div>
 </div>
 <div class="certificate-wrap test-card" id="certificateWrap">
 <div class="certificate" id="certificate">
-<img src="../assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+<img alt="Lockwood STEM logo" src="../assets/lockwood-stem-logo.png"/>
 <div class="cert-subtitle">Certificate of Completion</div>
 <div class="cert-title" id="certTitle">FabLab Level 3 Certification</div>
 <p>This certifies that</p>
@@ -767,7 +760,7 @@ footer p,
 </div>
 </div>
 <div class="test-actions">
-<button class="cert-btn yellow" type="button" onclick="printCertificate()">Print / Save Certificate</button>
+<button class="cert-btn yellow" onclick="printCertificate()" type="button">Print / Save Certificate</button>
 <a class="cert-btn secondary" href="index.html">Return to Certification Home</a>
 </div>
 <p class="print-only-note">Tip: Use your browser print menu and choose “Save as PDF” if you need to upload the certificate digitally.</p>

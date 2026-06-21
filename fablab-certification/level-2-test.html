@@ -385,11 +385,8 @@ footer p,
 </style>
 <link href="../assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="../assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
 <link href="../assets/certification-test.css" rel="stylesheet"/>
-<script defer src="../assets/certification-test.js"></script>
-
-
+<script defer="" src="../assets/certification-test.js"></script>
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -476,8 +473,7 @@ footer p,
     text-shadow: none !important;
   }
 </style>
-
-</head>
+<link href="../assets/academy-search.css" rel="stylesheet"/></head>
 <body class="ls-has-standard-chrome cert-test-page"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
 <header class="ls-global-header" role="banner">
 <nav aria-label="Main navigation" class="ls-global-nav">
@@ -489,15 +485,12 @@ footer p,
 <a href="../index.html">Home</a>
 <a href="../start-here.html">Start Here</a>
 <a href="../agenda.html">Agenda</a>
-<a href="../courses.html">Courses</a>
-
-
-
+<a href="../courses.html">Courses</a><a href="../academy.html">Academy</a>
 <a href="../fablab.html">FabLab</a>
 <a aria-current="page" href="../fablab-certification/index.html">Certifications</a>
 <a href="../resources.html">Resources</a>
 <a class="ls-global-cta" href="../fabrication.html">Fabrication</a>
-</div>
+<form action="../search.html" class="ls-site-search" method="get" role="search"><label for="global-site-search">Search this site</label><input aria-label="Search this site" autocomplete="off" id="global-site-search" name="q" placeholder="Search site" type="search"/><button type="submit">Search</button></form></div>
 </nav>
 </header>
 <div id="main-content"></div>
@@ -508,8 +501,8 @@ footer p,
 <h2>Student Information</h2>
 <p>Enter your name exactly as you want it to appear on the certificate. A passing score is 80% or higher.</p>
 <div class="student-info-grid">
-<div class="field"><label for="studentName">Student Name</label><input id="studentName" type="text" autocomplete="name" placeholder="First and last name"></div>
-<div class="field"><label for="studentPeriod">Class Period / Course</label><input id="studentPeriod" type="text" placeholder="Example: IED Period 2"></div>
+<div class="field"><label for="studentName">Student Name</label><input autocomplete="name" id="studentName" placeholder="First and last name" type="text"/></div>
+<div class="field"><label for="studentPeriod">Class Period / Course</label><input id="studentPeriod" placeholder="Example: IED Period 2" type="text"/></div>
 </div>
 <div class="progress-note"><p><strong>Certificate rule:</strong> When you score 80% or higher, a certificate of completion will appear at the bottom of this page. Print or save it as a PDF and submit it where your instructor requests.</p></div>
 </div>
@@ -520,238 +513,238 @@ footer p,
 <div class="question" data-answer="b">
 <h3>1. Before submitting a 3D print, what should be checked first?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q1" value="a"> <span><strong>A.</strong> That the model is huge</span></label>
-<label class="answer"><input type="radio" name="q1" value="b"> <span><strong>B.</strong> That the file is complete, properly oriented, and appropriate for printing</span></label>
-<label class="answer"><input type="radio" name="q1" value="c"> <span><strong>C.</strong> That the color is rare</span></label>
-<label class="answer"><input type="radio" name="q1" value="d"> <span><strong>D.</strong> That the print will take the entire day</span></label>
+<label class="answer"><input name="q1" type="radio" value="a"/> <span><strong>A.</strong> That the model is huge</span></label>
+<label class="answer"><input name="q1" type="radio" value="b"/> <span><strong>B.</strong> That the file is complete, properly oriented, and appropriate for printing</span></label>
+<label class="answer"><input name="q1" type="radio" value="c"/> <span><strong>C.</strong> That the color is rare</span></label>
+<label class="answer"><input name="q1" type="radio" value="d"/> <span><strong>D.</strong> That the print will take the entire day</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>2. What does slicing software do?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q2" value="a"> <span><strong>A.</strong> Turns a 3D model into printer instructions/layers</span></label>
-<label class="answer"><input type="radio" name="q2" value="b"> <span><strong>B.</strong> Paints the part</span></label>
-<label class="answer"><input type="radio" name="q2" value="c"> <span><strong>C.</strong> Approves the grade automatically</span></label>
-<label class="answer"><input type="radio" name="q2" value="d"> <span><strong>D.</strong> Deletes supports</span></label>
+<label class="answer"><input name="q2" type="radio" value="a"/> <span><strong>A.</strong> Turns a 3D model into printer instructions/layers</span></label>
+<label class="answer"><input name="q2" type="radio" value="b"/> <span><strong>B.</strong> Paints the part</span></label>
+<label class="answer"><input name="q2" type="radio" value="c"/> <span><strong>C.</strong> Approves the grade automatically</span></label>
+<label class="answer"><input name="q2" type="radio" value="d"/> <span><strong>D.</strong> Deletes supports</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>3. Which setting most directly affects layer-by-layer surface quality?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q3" value="a"> <span><strong>A.</strong> Layer height</span></label>
-<label class="answer"><input type="radio" name="q3" value="b"> <span><strong>B.</strong> File name</span></label>
-<label class="answer"><input type="radio" name="q3" value="c"> <span><strong>C.</strong> Student period</span></label>
-<label class="answer"><input type="radio" name="q3" value="d"> <span><strong>D.</strong> Computer brightness</span></label>
+<label class="answer"><input name="q3" type="radio" value="a"/> <span><strong>A.</strong> Layer height</span></label>
+<label class="answer"><input name="q3" type="radio" value="b"/> <span><strong>B.</strong> File name</span></label>
+<label class="answer"><input name="q3" type="radio" value="c"/> <span><strong>C.</strong> Student period</span></label>
+<label class="answer"><input name="q3" type="radio" value="d"/> <span><strong>D.</strong> Computer brightness</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>4. When are supports usually needed?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q4" value="a"> <span><strong>A.</strong> When overhangs or unsupported features need help during printing</span></label>
-<label class="answer"><input type="radio" name="q4" value="b"> <span><strong>B.</strong> For every cube</span></label>
-<label class="answer"><input type="radio" name="q4" value="c"> <span><strong>C.</strong> Only for blue filament</span></label>
-<label class="answer"><input type="radio" name="q4" value="d"> <span><strong>D.</strong> Never</span></label>
+<label class="answer"><input name="q4" type="radio" value="a"/> <span><strong>A.</strong> When overhangs or unsupported features need help during printing</span></label>
+<label class="answer"><input name="q4" type="radio" value="b"/> <span><strong>B.</strong> For every cube</span></label>
+<label class="answer"><input name="q4" type="radio" value="c"/> <span><strong>C.</strong> Only for blue filament</span></label>
+<label class="answer"><input name="q4" type="radio" value="d"/> <span><strong>D.</strong> Never</span></label>
 </div>
 </div>
 <div class="question" data-answer="b">
 <h3>5. What should you do if a 3D print starts failing?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q5" value="a"> <span><strong>A.</strong> Let it continue no matter what</span></label>
-<label class="answer"><input type="radio" name="q5" value="b"> <span><strong>B.</strong> Notify the instructor or follow the approved stop procedure</span></label>
-<label class="answer"><input type="radio" name="q5" value="c"> <span><strong>C.</strong> Pull it off the bed immediately without asking</span></label>
-<label class="answer"><input type="radio" name="q5" value="d"> <span><strong>D.</strong> Open the printer and touch the nozzle</span></label>
+<label class="answer"><input name="q5" type="radio" value="a"/> <span><strong>A.</strong> Let it continue no matter what</span></label>
+<label class="answer"><input name="q5" type="radio" value="b"/> <span><strong>B.</strong> Notify the instructor or follow the approved stop procedure</span></label>
+<label class="answer"><input name="q5" type="radio" value="c"/> <span><strong>C.</strong> Pull it off the bed immediately without asking</span></label>
+<label class="answer"><input name="q5" type="radio" value="d"/> <span><strong>D.</strong> Open the printer and touch the nozzle</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>6. Why should hands stay away from a hot nozzle or heated bed?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q6" value="a"> <span><strong>A.</strong> They can be hot enough to burn skin</span></label>
-<label class="answer"><input type="radio" name="q6" value="b"> <span><strong>B.</strong> They are magnetic</span></label>
-<label class="answer"><input type="radio" name="q6" value="c"> <span><strong>C.</strong> They erase the file</span></label>
-<label class="answer"><input type="radio" name="q6" value="d"> <span><strong>D.</strong> They reduce Wi-Fi speed</span></label>
+<label class="answer"><input name="q6" type="radio" value="a"/> <span><strong>A.</strong> They can be hot enough to burn skin</span></label>
+<label class="answer"><input name="q6" type="radio" value="b"/> <span><strong>B.</strong> They are magnetic</span></label>
+<label class="answer"><input name="q6" type="radio" value="c"/> <span><strong>C.</strong> They erase the file</span></label>
+<label class="answer"><input name="q6" type="radio" value="d"/> <span><strong>D.</strong> They reduce Wi-Fi speed</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>7. What does infill affect?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q7" value="a"> <span><strong>A.</strong> Internal structure, strength, material use, and print time</span></label>
-<label class="answer"><input type="radio" name="q7" value="b"> <span><strong>B.</strong> The student’s password</span></label>
-<label class="answer"><input type="radio" name="q7" value="c"> <span><strong>C.</strong> The file thumbnail only</span></label>
-<label class="answer"><input type="radio" name="q7" value="d"> <span><strong>D.</strong> The color of the screen</span></label>
+<label class="answer"><input name="q7" type="radio" value="a"/> <span><strong>A.</strong> Internal structure, strength, material use, and print time</span></label>
+<label class="answer"><input name="q7" type="radio" value="b"/> <span><strong>B.</strong> The student’s password</span></label>
+<label class="answer"><input name="q7" type="radio" value="c"/> <span><strong>C.</strong> The file thumbnail only</span></label>
+<label class="answer"><input name="q7" type="radio" value="d"/> <span><strong>D.</strong> The color of the screen</span></label>
 </div>
 </div>
 <div class="question" data-answer="b">
 <h3>8. What is the safest approach before using a drill or driver?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q8" value="a"> <span><strong>A.</strong> Hold the workpiece by hand near the bit</span></label>
-<label class="answer"><input type="radio" name="q8" value="b"> <span><strong>B.</strong> Secure the workpiece and confirm the correct bit and direction</span></label>
-<label class="answer"><input type="radio" name="q8" value="c"> <span><strong>C.</strong> Use the fastest speed always</span></label>
-<label class="answer"><input type="radio" name="q8" value="d"> <span><strong>D.</strong> Start drilling before positioning</span></label>
+<label class="answer"><input name="q8" type="radio" value="a"/> <span><strong>A.</strong> Hold the workpiece by hand near the bit</span></label>
+<label class="answer"><input name="q8" type="radio" value="b"/> <span><strong>B.</strong> Secure the workpiece and confirm the correct bit and direction</span></label>
+<label class="answer"><input name="q8" type="radio" value="c"/> <span><strong>C.</strong> Use the fastest speed always</span></label>
+<label class="answer"><input name="q8" type="radio" value="d"/> <span><strong>D.</strong> Start drilling before positioning</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>9. Why should bits/blades be matched to the material and task?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q9" value="a"> <span><strong>A.</strong> Incorrect tools can damage the work, tool, or user</span></label>
-<label class="answer"><input type="radio" name="q9" value="b"> <span><strong>B.</strong> It makes the tool louder</span></label>
-<label class="answer"><input type="radio" name="q9" value="c"> <span><strong>C.</strong> It changes the due date</span></label>
-<label class="answer"><input type="radio" name="q9" value="d"> <span><strong>D.</strong> It removes the need for PPE</span></label>
+<label class="answer"><input name="q9" type="radio" value="a"/> <span><strong>A.</strong> Incorrect tools can damage the work, tool, or user</span></label>
+<label class="answer"><input name="q9" type="radio" value="b"/> <span><strong>B.</strong> It makes the tool louder</span></label>
+<label class="answer"><input name="q9" type="radio" value="c"/> <span><strong>C.</strong> It changes the due date</span></label>
+<label class="answer"><input name="q9" type="radio" value="d"/> <span><strong>D.</strong> It removes the need for PPE</span></label>
 </div>
 </div>
 <div class="question" data-answer="b">
 <h3>10. What should you do if a power tool binds, catches, or feels wrong?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q10" value="a"> <span><strong>A.</strong> Push harder</span></label>
-<label class="answer"><input type="radio" name="q10" value="b"> <span><strong>B.</strong> Stop and ask for help</span></label>
-<label class="answer"><input type="radio" name="q10" value="c"> <span><strong>C.</strong> Switch hands quickly</span></label>
-<label class="answer"><input type="radio" name="q10" value="d"> <span><strong>D.</strong> Ignore it</span></label>
+<label class="answer"><input name="q10" type="radio" value="a"/> <span><strong>A.</strong> Push harder</span></label>
+<label class="answer"><input name="q10" type="radio" value="b"/> <span><strong>B.</strong> Stop and ask for help</span></label>
+<label class="answer"><input name="q10" type="radio" value="c"/> <span><strong>C.</strong> Switch hands quickly</span></label>
+<label class="answer"><input name="q10" type="radio" value="d"/> <span><strong>D.</strong> Ignore it</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>11. When using a hot glue gun or heat gun, what hazard is most important?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q11" value="a"> <span><strong>A.</strong> Heat and burns</span></label>
-<label class="answer"><input type="radio" name="q11" value="b"> <span><strong>B.</strong> Low battery only</span></label>
-<label class="answer"><input type="radio" name="q11" value="c"> <span><strong>C.</strong> The color of the handle</span></label>
-<label class="answer"><input type="radio" name="q11" value="d"> <span><strong>D.</strong> CAD constraints</span></label>
+<label class="answer"><input name="q11" type="radio" value="a"/> <span><strong>A.</strong> Heat and burns</span></label>
+<label class="answer"><input name="q11" type="radio" value="b"/> <span><strong>B.</strong> Low battery only</span></label>
+<label class="answer"><input name="q11" type="radio" value="c"/> <span><strong>C.</strong> The color of the handle</span></label>
+<label class="answer"><input name="q11" type="radio" value="d"/> <span><strong>D.</strong> CAD constraints</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>12. What is the purpose of clamping or securing work?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q12" value="a"> <span><strong>A.</strong> To keep the work from moving unpredictably</span></label>
-<label class="answer"><input type="radio" name="q12" value="b"> <span><strong>B.</strong> To make it harder to finish</span></label>
-<label class="answer"><input type="radio" name="q12" value="c"> <span><strong>C.</strong> To hide mistakes</span></label>
-<label class="answer"><input type="radio" name="q12" value="d"> <span><strong>D.</strong> To avoid measuring</span></label>
+<label class="answer"><input name="q12" type="radio" value="a"/> <span><strong>A.</strong> To keep the work from moving unpredictably</span></label>
+<label class="answer"><input name="q12" type="radio" value="b"/> <span><strong>B.</strong> To make it harder to finish</span></label>
+<label class="answer"><input name="q12" type="radio" value="c"/> <span><strong>C.</strong> To hide mistakes</span></label>
+<label class="answer"><input name="q12" type="radio" value="d"/> <span><strong>D.</strong> To avoid measuring</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>13. Before soldering, what should be confirmed?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q13" value="a"> <span><strong>A.</strong> The workspace is ventilated and the iron/stand are set up safely</span></label>
-<label class="answer"><input type="radio" name="q13" value="b"> <span><strong>B.</strong> The wire is tangled</span></label>
-<label class="answer"><input type="radio" name="q13" value="c"> <span><strong>C.</strong> The iron is resting on paper</span></label>
-<label class="answer"><input type="radio" name="q13" value="d"> <span><strong>D.</strong> The instructor is not nearby</span></label>
+<label class="answer"><input name="q13" type="radio" value="a"/> <span><strong>A.</strong> The workspace is ventilated and the iron/stand are set up safely</span></label>
+<label class="answer"><input name="q13" type="radio" value="b"/> <span><strong>B.</strong> The wire is tangled</span></label>
+<label class="answer"><input name="q13" type="radio" value="c"/> <span><strong>C.</strong> The iron is resting on paper</span></label>
+<label class="answer"><input name="q13" type="radio" value="d"/> <span><strong>D.</strong> The instructor is not nearby</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>14. What part of a soldering iron should be treated as extremely hot?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q14" value="a"> <span><strong>A.</strong> The metal tip</span></label>
-<label class="answer"><input type="radio" name="q14" value="b"> <span><strong>B.</strong> The power cord only</span></label>
-<label class="answer"><input type="radio" name="q14" value="c"> <span><strong>C.</strong> The plastic handle only</span></label>
-<label class="answer"><input type="radio" name="q14" value="d"> <span><strong>D.</strong> The switch label</span></label>
+<label class="answer"><input name="q14" type="radio" value="a"/> <span><strong>A.</strong> The metal tip</span></label>
+<label class="answer"><input name="q14" type="radio" value="b"/> <span><strong>B.</strong> The power cord only</span></label>
+<label class="answer"><input name="q14" type="radio" value="c"/> <span><strong>C.</strong> The plastic handle only</span></label>
+<label class="answer"><input name="q14" type="radio" value="d"/> <span><strong>D.</strong> The switch label</span></label>
 </div>
 </div>
 <div class="question" data-answer="b">
 <h3>15. What should you do with soldering equipment when finished?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q15" value="a"> <span><strong>A.</strong> Leave the iron wherever it lands</span></label>
-<label class="answer"><input type="radio" name="q15" value="b"> <span><strong>B.</strong> Return it to its stand, turn it off as directed, and clean the area</span></label>
-<label class="answer"><input type="radio" name="q15" value="c"> <span><strong>C.</strong> Wrap the hot cord around the iron</span></label>
-<label class="answer"><input type="radio" name="q15" value="d"> <span><strong>D.</strong> Put hot tools in a drawer</span></label>
+<label class="answer"><input name="q15" type="radio" value="a"/> <span><strong>A.</strong> Leave the iron wherever it lands</span></label>
+<label class="answer"><input name="q15" type="radio" value="b"/> <span><strong>B.</strong> Return it to its stand, turn it off as directed, and clean the area</span></label>
+<label class="answer"><input name="q15" type="radio" value="c"/> <span><strong>C.</strong> Wrap the hot cord around the iron</span></label>
+<label class="answer"><input name="q15" type="radio" value="d"/> <span><strong>D.</strong> Put hot tools in a drawer</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>16. Which statement about electronics is safest?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q16" value="a"> <span><strong>A.</strong> Polarity and wiring matter; check before powering a circuit</span></label>
-<label class="answer"><input type="radio" name="q16" value="b"> <span><strong>B.</strong> Any wire can go anywhere</span></label>
-<label class="answer"><input type="radio" name="q16" value="c"> <span><strong>C.</strong> Short circuits are helpful</span></label>
-<label class="answer"><input type="radio" name="q16" value="d"> <span><strong>D.</strong> Batteries should be tested by touching wires together</span></label>
+<label class="answer"><input name="q16" type="radio" value="a"/> <span><strong>A.</strong> Polarity and wiring matter; check before powering a circuit</span></label>
+<label class="answer"><input name="q16" type="radio" value="b"/> <span><strong>B.</strong> Any wire can go anywhere</span></label>
+<label class="answer"><input name="q16" type="radio" value="c"/> <span><strong>C.</strong> Short circuits are helpful</span></label>
+<label class="answer"><input name="q16" type="radio" value="d"/> <span><strong>D.</strong> Batteries should be tested by touching wires together</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>17. Why should prints and tool jobs be labeled or tracked?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q17" value="a"> <span><strong>A.</strong> So jobs can be matched to the correct student and status</span></label>
-<label class="answer"><input type="radio" name="q17" value="b"> <span><strong>B.</strong> So they look decorative</span></label>
-<label class="answer"><input type="radio" name="q17" value="c"> <span><strong>C.</strong> So the machine runs faster</span></label>
-<label class="answer"><input type="radio" name="q17" value="d"> <span><strong>D.</strong> So supports disappear</span></label>
+<label class="answer"><input name="q17" type="radio" value="a"/> <span><strong>A.</strong> So jobs can be matched to the correct student and status</span></label>
+<label class="answer"><input name="q17" type="radio" value="b"/> <span><strong>B.</strong> So they look decorative</span></label>
+<label class="answer"><input name="q17" type="radio" value="c"/> <span><strong>C.</strong> So the machine runs faster</span></label>
+<label class="answer"><input name="q17" type="radio" value="d"/> <span><strong>D.</strong> So supports disappear</span></label>
 </div>
 </div>
 <div class="question" data-answer="b">
 <h3>18. If you are not certified on a tool, what should you do?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q18" value="a"> <span><strong>A.</strong> Use it only if a friend is certified</span></label>
-<label class="answer"><input type="radio" name="q18" value="b"> <span><strong>B.</strong> Complete training and get instructor permission before use</span></label>
-<label class="answer"><input type="radio" name="q18" value="c"> <span><strong>C.</strong> Use it while the instructor is busy</span></label>
-<label class="answer"><input type="radio" name="q18" value="d"> <span><strong>D.</strong> Use it if it is unplugged</span></label>
+<label class="answer"><input name="q18" type="radio" value="a"/> <span><strong>A.</strong> Use it only if a friend is certified</span></label>
+<label class="answer"><input name="q18" type="radio" value="b"/> <span><strong>B.</strong> Complete training and get instructor permission before use</span></label>
+<label class="answer"><input name="q18" type="radio" value="c"/> <span><strong>C.</strong> Use it while the instructor is busy</span></label>
+<label class="answer"><input name="q18" type="radio" value="d"/> <span><strong>D.</strong> Use it if it is unplugged</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>19. What is a good reason to choose 3D printing over laser cutting?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q19" value="a"> <span><strong>A.</strong> The part needs 3D geometry or thickness that cannot be cut from flat sheet</span></label>
-<label class="answer"><input type="radio" name="q19" value="b"> <span><strong>B.</strong> The part is just a rectangle of cardboard</span></label>
-<label class="answer"><input type="radio" name="q19" value="c"> <span><strong>C.</strong> You want the slowest method possible</span></label>
-<label class="answer"><input type="radio" name="q19" value="d"> <span><strong>D.</strong> The drawing has no dimensions</span></label>
+<label class="answer"><input name="q19" type="radio" value="a"/> <span><strong>A.</strong> The part needs 3D geometry or thickness that cannot be cut from flat sheet</span></label>
+<label class="answer"><input name="q19" type="radio" value="b"/> <span><strong>B.</strong> The part is just a rectangle of cardboard</span></label>
+<label class="answer"><input name="q19" type="radio" value="c"/> <span><strong>C.</strong> You want the slowest method possible</span></label>
+<label class="answer"><input name="q19" type="radio" value="d"/> <span><strong>D.</strong> The drawing has no dimensions</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>20. What should you do with failed prints or scrap material?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q20" value="a"> <span><strong>A.</strong> Follow the class scrap/recycling/disposal procedure</span></label>
-<label class="answer"><input type="radio" name="q20" value="b"> <span><strong>B.</strong> Hide them in the printer</span></label>
-<label class="answer"><input type="radio" name="q20" value="c"> <span><strong>C.</strong> Throw everything in any bin</span></label>
-<label class="answer"><input type="radio" name="q20" value="d"> <span><strong>D.</strong> Take filament from another print</span></label>
+<label class="answer"><input name="q20" type="radio" value="a"/> <span><strong>A.</strong> Follow the class scrap/recycling/disposal procedure</span></label>
+<label class="answer"><input name="q20" type="radio" value="b"/> <span><strong>B.</strong> Hide them in the printer</span></label>
+<label class="answer"><input name="q20" type="radio" value="c"/> <span><strong>C.</strong> Throw everything in any bin</span></label>
+<label class="answer"><input name="q20" type="radio" value="d"/> <span><strong>D.</strong> Take filament from another print</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>21. Which factor usually increases 3D print time?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q21" value="a"> <span><strong>A.</strong> More supports, higher infill, smaller layer height, or larger size</span></label>
-<label class="answer"><input type="radio" name="q21" value="b"> <span><strong>B.</strong> Shorter file name</span></label>
-<label class="answer"><input type="radio" name="q21" value="c"> <span><strong>C.</strong> A clearer sketch</span></label>
-<label class="answer"><input type="radio" name="q21" value="d"> <span><strong>D.</strong> Sitting closer to the printer</span></label>
+<label class="answer"><input name="q21" type="radio" value="a"/> <span><strong>A.</strong> More supports, higher infill, smaller layer height, or larger size</span></label>
+<label class="answer"><input name="q21" type="radio" value="b"/> <span><strong>B.</strong> Shorter file name</span></label>
+<label class="answer"><input name="q21" type="radio" value="c"/> <span><strong>C.</strong> A clearer sketch</span></label>
+<label class="answer"><input name="q21" type="radio" value="d"/> <span><strong>D.</strong> Sitting closer to the printer</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>22. For power tools, what should happen before changing bits or accessories?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q22" value="a"> <span><strong>A.</strong> Power should be off/unplugged or secured as instructed</span></label>
-<label class="answer"><input type="radio" name="q22" value="b"> <span><strong>B.</strong> The tool should be running slowly</span></label>
-<label class="answer"><input type="radio" name="q22" value="c"> <span><strong>C.</strong> A classmate should hold the trigger</span></label>
-<label class="answer"><input type="radio" name="q22" value="d"> <span><strong>D.</strong> Nothing special</span></label>
+<label class="answer"><input name="q22" type="radio" value="a"/> <span><strong>A.</strong> Power should be off/unplugged or secured as instructed</span></label>
+<label class="answer"><input name="q22" type="radio" value="b"/> <span><strong>B.</strong> The tool should be running slowly</span></label>
+<label class="answer"><input name="q22" type="radio" value="c"/> <span><strong>C.</strong> A classmate should hold the trigger</span></label>
+<label class="answer"><input name="q22" type="radio" value="d"/> <span><strong>D.</strong> Nothing special</span></label>
 </div>
 </div>
 <div class="question" data-answer="b">
 <h3>23. What should you do if solder smoke or smell seems unusual?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q23" value="a"> <span><strong>A.</strong> Keep your face closer</span></label>
-<label class="answer"><input type="radio" name="q23" value="b"> <span><strong>B.</strong> Stop and notify the instructor/check ventilation</span></label>
-<label class="answer"><input type="radio" name="q23" value="c"> <span><strong>C.</strong> Wave it toward another table</span></label>
-<label class="answer"><input type="radio" name="q23" value="d"> <span><strong>D.</strong> Ignore it</span></label>
+<label class="answer"><input name="q23" type="radio" value="a"/> <span><strong>A.</strong> Keep your face closer</span></label>
+<label class="answer"><input name="q23" type="radio" value="b"/> <span><strong>B.</strong> Stop and notify the instructor/check ventilation</span></label>
+<label class="answer"><input name="q23" type="radio" value="c"/> <span><strong>C.</strong> Wave it toward another table</span></label>
+<label class="answer"><input name="q23" type="radio" value="d"/> <span><strong>D.</strong> Ignore it</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>24. Why is tool cleanup part of certification?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q24" value="a"> <span><strong>A.</strong> Safe access includes leaving the tool ready for the next user</span></label>
-<label class="answer"><input type="radio" name="q24" value="b"> <span><strong>B.</strong> It is unrelated to safety</span></label>
-<label class="answer"><input type="radio" name="q24" value="c"> <span><strong>C.</strong> It only matters for grades</span></label>
-<label class="answer"><input type="radio" name="q24" value="d"> <span><strong>D.</strong> It is optional after passing</span></label>
+<label class="answer"><input name="q24" type="radio" value="a"/> <span><strong>A.</strong> Safe access includes leaving the tool ready for the next user</span></label>
+<label class="answer"><input name="q24" type="radio" value="b"/> <span><strong>B.</strong> It is unrelated to safety</span></label>
+<label class="answer"><input name="q24" type="radio" value="c"/> <span><strong>C.</strong> It only matters for grades</span></label>
+<label class="answer"><input name="q24" type="radio" value="d"/> <span><strong>D.</strong> It is optional after passing</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>25. Level 2 certification means a student can:</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q25" value="a"> <span><strong>A.</strong> Use foundational tools only within the approved expectations and supervision rules</span></label>
-<label class="answer"><input type="radio" name="q25" value="b"> <span><strong>B.</strong> Use every FabLab machine alone</span></label>
-<label class="answer"><input type="radio" name="q25" value="c"> <span><strong>C.</strong> Skip Level 3 training</span></label>
-<label class="answer"><input type="radio" name="q25" value="d"> <span><strong>D.</strong> Approve other students</span></label>
+<label class="answer"><input name="q25" type="radio" value="a"/> <span><strong>A.</strong> Use foundational tools only within the approved expectations and supervision rules</span></label>
+<label class="answer"><input name="q25" type="radio" value="b"/> <span><strong>B.</strong> Use every FabLab machine alone</span></label>
+<label class="answer"><input name="q25" type="radio" value="c"/> <span><strong>C.</strong> Skip Level 3 training</span></label>
+<label class="answer"><input name="q25" type="radio" value="d"/> <span><strong>D.</strong> Approve other students</span></label>
 </div>
 </div>
 </form>
 <div class="test-actions">
-<button class="cert-btn" type="button" onclick="gradeCertificationTest()">Submit Test</button>
+<button class="cert-btn" onclick="gradeCertificationTest()" type="button">Submit Test</button>
 <a class="cert-btn secondary" href="level-2.html">Review Training</a>
 </div>
-<div id="testResult" class="result-box"></div>
+<div class="result-box" id="testResult"></div>
 </div>
 <div class="certificate-wrap test-card" id="certificateWrap">
 <div class="certificate" id="certificate">
-<img src="../assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+<img alt="Lockwood STEM logo" src="../assets/lockwood-stem-logo.png"/>
 <div class="cert-subtitle">Certificate of Completion</div>
 <div class="cert-title" id="certTitle">FabLab Level 2 Certification</div>
 <p>This certifies that</p>
@@ -767,7 +760,7 @@ footer p,
 </div>
 </div>
 <div class="test-actions">
-<button class="cert-btn yellow" type="button" onclick="printCertificate()">Print / Save Certificate</button>
+<button class="cert-btn yellow" onclick="printCertificate()" type="button">Print / Save Certificate</button>
 <a class="cert-btn secondary" href="index.html">Return to Certification Home</a>
 </div>
 <p class="print-only-note">Tip: Use your browser print menu and choose “Save as PDF” if you need to upload the certificate digitally.</p>

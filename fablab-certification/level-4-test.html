@@ -385,11 +385,8 @@ footer p,
 </style>
 <link href="../assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="../assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
 <link href="../assets/certification-test.css" rel="stylesheet"/>
-<script defer src="../assets/certification-test.js"></script>
-
-
+<script defer="" src="../assets/certification-test.js"></script>
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -476,8 +473,7 @@ footer p,
     text-shadow: none !important;
   }
 </style>
-
-</head>
+<link href="../assets/academy-search.css" rel="stylesheet"/></head>
 <body class="ls-has-standard-chrome cert-test-page"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
 <header class="ls-global-header" role="banner">
 <nav aria-label="Main navigation" class="ls-global-nav">
@@ -489,15 +485,12 @@ footer p,
 <a href="../index.html">Home</a>
 <a href="../start-here.html">Start Here</a>
 <a href="../agenda.html">Agenda</a>
-<a href="../courses.html">Courses</a>
-
-
-
+<a href="../courses.html">Courses</a><a href="../academy.html">Academy</a>
 <a href="../fablab.html">FabLab</a>
 <a aria-current="page" href="../fablab-certification/index.html">Certifications</a>
 <a href="../resources.html">Resources</a>
 <a class="ls-global-cta" href="../fabrication.html">Fabrication</a>
-</div>
+<form action="../search.html" class="ls-site-search" method="get" role="search"><label for="global-site-search">Search this site</label><input aria-label="Search this site" autocomplete="off" id="global-site-search" name="q" placeholder="Search site" type="search"/><button type="submit">Search</button></form></div>
 </nav>
 </header>
 <div id="main-content"></div>
@@ -508,8 +501,8 @@ footer p,
 <h2>Student Information</h2>
 <p>Enter your name exactly as you want it to appear on the certificate. A passing score is 80% or higher.</p>
 <div class="student-info-grid">
-<div class="field"><label for="studentName">Student Name</label><input id="studentName" type="text" autocomplete="name" placeholder="First and last name"></div>
-<div class="field"><label for="studentPeriod">Class Period / Course</label><input id="studentPeriod" type="text" placeholder="Example: IED Period 2"></div>
+<div class="field"><label for="studentName">Student Name</label><input autocomplete="name" id="studentName" placeholder="First and last name" type="text"/></div>
+<div class="field"><label for="studentPeriod">Class Period / Course</label><input id="studentPeriod" placeholder="Example: IED Period 2" type="text"/></div>
 </div>
 <div class="progress-note"><p><strong>Certificate rule:</strong> When you score 80% or higher, a certificate of completion will appear at the bottom of this page. Print or save it as a PDF and submit it where your instructor requests.</p></div>
 </div>
@@ -520,238 +513,238 @@ footer p,
 <div class="question" data-answer="a">
 <h3>1. What is the first responsibility of a Level 4 lab assistant?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q1" value="a"> <span><strong>A.</strong> Safety and responsible behavior</span></label>
-<label class="answer"><input type="radio" name="q1" value="b"> <span><strong>B.</strong> Finishing other students projects</span></label>
-<label class="answer"><input type="radio" name="q1" value="c"> <span><strong>C.</strong> Running every machine</span></label>
-<label class="answer"><input type="radio" name="q1" value="d"> <span><strong>D.</strong> Giving final permission without the instructor</span></label>
+<label class="answer"><input name="q1" type="radio" value="a"/> <span><strong>A.</strong> Safety and responsible behavior</span></label>
+<label class="answer"><input name="q1" type="radio" value="b"/> <span><strong>B.</strong> Finishing other students projects</span></label>
+<label class="answer"><input name="q1" type="radio" value="c"/> <span><strong>C.</strong> Running every machine</span></label>
+<label class="answer"><input name="q1" type="radio" value="d"/> <span><strong>D.</strong> Giving final permission without the instructor</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>2. If a peer bypasses a safety rule, what should a lab assistant do?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q2" value="a"> <span><strong>A.</strong> Calmly stop the situation and notify the instructor</span></label>
-<label class="answer"><input type="radio" name="q2" value="b"> <span><strong>B.</strong> Ignore it if they are almost done</span></label>
-<label class="answer"><input type="radio" name="q2" value="c"> <span><strong>C.</strong> Make a joke about it</span></label>
-<label class="answer"><input type="radio" name="q2" value="d"> <span><strong>D.</strong> Fix the machine afterward only</span></label>
+<label class="answer"><input name="q2" type="radio" value="a"/> <span><strong>A.</strong> Calmly stop the situation and notify the instructor</span></label>
+<label class="answer"><input name="q2" type="radio" value="b"/> <span><strong>B.</strong> Ignore it if they are almost done</span></label>
+<label class="answer"><input name="q2" type="radio" value="c"/> <span><strong>C.</strong> Make a joke about it</span></label>
+<label class="answer"><input name="q2" type="radio" value="d"/> <span><strong>D.</strong> Fix the machine afterward only</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>3. What is the best way to help a classmate with a CAD file?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q3" value="a"> <span><strong>A.</strong> Ask guiding questions and help them check requirements</span></label>
-<label class="answer"><input type="radio" name="q3" value="b"> <span><strong>B.</strong> Take over and complete the file for them</span></label>
-<label class="answer"><input type="radio" name="q3" value="c"> <span><strong>C.</strong> Approve it without looking</span></label>
-<label class="answer"><input type="radio" name="q3" value="d"> <span><strong>D.</strong> Delete their sketch</span></label>
+<label class="answer"><input name="q3" type="radio" value="a"/> <span><strong>A.</strong> Ask guiding questions and help them check requirements</span></label>
+<label class="answer"><input name="q3" type="radio" value="b"/> <span><strong>B.</strong> Take over and complete the file for them</span></label>
+<label class="answer"><input name="q3" type="radio" value="c"/> <span><strong>C.</strong> Approve it without looking</span></label>
+<label class="answer"><input name="q3" type="radio" value="d"/> <span><strong>D.</strong> Delete their sketch</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>4. What should a lab assistant do with damaged tools or missing supplies?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q4" value="a"> <span><strong>A.</strong> Report them and help document/organize as directed</span></label>
-<label class="answer"><input type="radio" name="q4" value="b"> <span><strong>B.</strong> Hide them</span></label>
-<label class="answer"><input type="radio" name="q4" value="c"> <span><strong>C.</strong> Use them anyway</span></label>
-<label class="answer"><input type="radio" name="q4" value="d"> <span><strong>D.</strong> Blame the next class</span></label>
+<label class="answer"><input name="q4" type="radio" value="a"/> <span><strong>A.</strong> Report them and help document/organize as directed</span></label>
+<label class="answer"><input name="q4" type="radio" value="b"/> <span><strong>B.</strong> Hide them</span></label>
+<label class="answer"><input name="q4" type="radio" value="c"/> <span><strong>C.</strong> Use them anyway</span></label>
+<label class="answer"><input name="q4" type="radio" value="d"/> <span><strong>D.</strong> Blame the next class</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>5. Which behavior best models leadership?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q5" value="a"> <span><strong>A.</strong> Following the same rules you expect others to follow</span></label>
-<label class="answer"><input type="radio" name="q5" value="b"> <span><strong>B.</strong> Skipping cleanup because you are advanced</span></label>
-<label class="answer"><input type="radio" name="q5" value="c"> <span><strong>C.</strong> Using tools to impress friends</span></label>
-<label class="answer"><input type="radio" name="q5" value="d"> <span><strong>D.</strong> Correcting people loudly</span></label>
+<label class="answer"><input name="q5" type="radio" value="a"/> <span><strong>A.</strong> Following the same rules you expect others to follow</span></label>
+<label class="answer"><input name="q5" type="radio" value="b"/> <span><strong>B.</strong> Skipping cleanup because you are advanced</span></label>
+<label class="answer"><input name="q5" type="radio" value="c"/> <span><strong>C.</strong> Using tools to impress friends</span></label>
+<label class="answer"><input name="q5" type="radio" value="d"/> <span><strong>D.</strong> Correcting people loudly</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>6. What should a lab assistant do when they are unsure?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q6" value="a"> <span><strong>A.</strong> Ask the instructor instead of guessing</span></label>
-<label class="answer"><input type="radio" name="q6" value="b"> <span><strong>B.</strong> Make a quick decision anyway</span></label>
-<label class="answer"><input type="radio" name="q6" value="c"> <span><strong>C.</strong> Let students vote</span></label>
-<label class="answer"><input type="radio" name="q6" value="d"> <span><strong>D.</strong> Ignore the issue</span></label>
+<label class="answer"><input name="q6" type="radio" value="a"/> <span><strong>A.</strong> Ask the instructor instead of guessing</span></label>
+<label class="answer"><input name="q6" type="radio" value="b"/> <span><strong>B.</strong> Make a quick decision anyway</span></label>
+<label class="answer"><input name="q6" type="radio" value="c"/> <span><strong>C.</strong> Let students vote</span></label>
+<label class="answer"><input name="q6" type="radio" value="d"/> <span><strong>D.</strong> Ignore the issue</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>7. Who gives final approval for machine use?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q7" value="a"> <span><strong>A.</strong> The instructor</span></label>
-<label class="answer"><input type="radio" name="q7" value="b"> <span><strong>B.</strong> Any Level 4 student</span></label>
-<label class="answer"><input type="radio" name="q7" value="c"> <span><strong>C.</strong> The student with the best project</span></label>
-<label class="answer"><input type="radio" name="q7" value="d"> <span><strong>D.</strong> The person who submitted first</span></label>
+<label class="answer"><input name="q7" type="radio" value="a"/> <span><strong>A.</strong> The instructor</span></label>
+<label class="answer"><input name="q7" type="radio" value="b"/> <span><strong>B.</strong> Any Level 4 student</span></label>
+<label class="answer"><input name="q7" type="radio" value="c"/> <span><strong>C.</strong> The student with the best project</span></label>
+<label class="answer"><input name="q7" type="radio" value="d"/> <span><strong>D.</strong> The person who submitted first</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>8. What is appropriate peer support?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q8" value="a"> <span><strong>A.</strong> Helping classmates understand the process without doing the work for them</span></label>
-<label class="answer"><input type="radio" name="q8" value="b"> <span><strong>B.</strong> Completing classmates assignments</span></label>
-<label class="answer"><input type="radio" name="q8" value="c"> <span><strong>C.</strong> Changing grades</span></label>
-<label class="answer"><input type="radio" name="q8" value="d"> <span><strong>D.</strong> Approving unsafe shortcuts</span></label>
+<label class="answer"><input name="q8" type="radio" value="a"/> <span><strong>A.</strong> Helping classmates understand the process without doing the work for them</span></label>
+<label class="answer"><input name="q8" type="radio" value="b"/> <span><strong>B.</strong> Completing classmates assignments</span></label>
+<label class="answer"><input name="q8" type="radio" value="c"/> <span><strong>C.</strong> Changing grades</span></label>
+<label class="answer"><input name="q8" type="radio" value="d"/> <span><strong>D.</strong> Approving unsafe shortcuts</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>9. What should happen if a student wants to use a tool they are not certified on?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q9" value="a"> <span><strong>A.</strong> Redirect them to training and instructor approval</span></label>
-<label class="answer"><input type="radio" name="q9" value="b"> <span><strong>B.</strong> Let them try once</span></label>
-<label class="answer"><input type="radio" name="q9" value="c"> <span><strong>C.</strong> Have another student supervise privately</span></label>
-<label class="answer"><input type="radio" name="q9" value="d"> <span><strong>D.</strong> Tell them certification does not matter</span></label>
+<label class="answer"><input name="q9" type="radio" value="a"/> <span><strong>A.</strong> Redirect them to training and instructor approval</span></label>
+<label class="answer"><input name="q9" type="radio" value="b"/> <span><strong>B.</strong> Let them try once</span></label>
+<label class="answer"><input name="q9" type="radio" value="c"/> <span><strong>C.</strong> Have another student supervise privately</span></label>
+<label class="answer"><input name="q9" type="radio" value="d"/> <span><strong>D.</strong> Tell them certification does not matter</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>10. Why should Level 4 students avoid taking over others projects?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q10" value="a"> <span><strong>A.</strong> Students need to learn and own their design decisions</span></label>
-<label class="answer"><input type="radio" name="q10" value="b"> <span><strong>B.</strong> It takes too little time</span></label>
-<label class="answer"><input type="radio" name="q10" value="c"> <span><strong>C.</strong> It makes cleanup easier</span></label>
-<label class="answer"><input type="radio" name="q10" value="d"> <span><strong>D.</strong> It improves every grade</span></label>
+<label class="answer"><input name="q10" type="radio" value="a"/> <span><strong>A.</strong> Students need to learn and own their design decisions</span></label>
+<label class="answer"><input name="q10" type="radio" value="b"/> <span><strong>B.</strong> It takes too little time</span></label>
+<label class="answer"><input name="q10" type="radio" value="c"/> <span><strong>C.</strong> It makes cleanup easier</span></label>
+<label class="answer"><input name="q10" type="radio" value="d"/> <span><strong>D.</strong> It improves every grade</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>11. What is a good way to communicate a safety reminder?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q11" value="a"> <span><strong>A.</strong> Calm, specific, respectful language</span></label>
-<label class="answer"><input type="radio" name="q11" value="b"> <span><strong>B.</strong> Sarcasm</span></label>
-<label class="answer"><input type="radio" name="q11" value="c"> <span><strong>C.</strong> Yelling across the room</span></label>
-<label class="answer"><input type="radio" name="q11" value="d"> <span><strong>D.</strong> Ignoring until later</span></label>
+<label class="answer"><input name="q11" type="radio" value="a"/> <span><strong>A.</strong> Calm, specific, respectful language</span></label>
+<label class="answer"><input name="q11" type="radio" value="b"/> <span><strong>B.</strong> Sarcasm</span></label>
+<label class="answer"><input name="q11" type="radio" value="c"/> <span><strong>C.</strong> Yelling across the room</span></label>
+<label class="answer"><input name="q11" type="radio" value="d"/> <span><strong>D.</strong> Ignoring until later</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>12. What should a lab assistant do during cleanup?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q12" value="a"> <span><strong>A.</strong> Model cleanup, help reset stations, and ensure tools return to correct locations</span></label>
-<label class="answer"><input type="radio" name="q12" value="b"> <span><strong>B.</strong> Leave early</span></label>
-<label class="answer"><input type="radio" name="q12" value="c"> <span><strong>C.</strong> Only clean their own project</span></label>
-<label class="answer"><input type="radio" name="q12" value="d"> <span><strong>D.</strong> Move tools randomly</span></label>
+<label class="answer"><input name="q12" type="radio" value="a"/> <span><strong>A.</strong> Model cleanup, help reset stations, and ensure tools return to correct locations</span></label>
+<label class="answer"><input name="q12" type="radio" value="b"/> <span><strong>B.</strong> Leave early</span></label>
+<label class="answer"><input name="q12" type="radio" value="c"/> <span><strong>C.</strong> Only clean their own project</span></label>
+<label class="answer"><input name="q12" type="radio" value="d"/> <span><strong>D.</strong> Move tools randomly</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>13. What type of information should not be shared publicly?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q13" value="a"> <span><strong>A.</strong> Student private information or grades</span></label>
-<label class="answer"><input type="radio" name="q13" value="b"> <span><strong>B.</strong> General safety reminders</span></label>
-<label class="answer"><input type="radio" name="q13" value="c"> <span><strong>C.</strong> Tool locations</span></label>
-<label class="answer"><input type="radio" name="q13" value="d"> <span><strong>D.</strong> Approved cleanup steps</span></label>
+<label class="answer"><input name="q13" type="radio" value="a"/> <span><strong>A.</strong> Student private information or grades</span></label>
+<label class="answer"><input name="q13" type="radio" value="b"/> <span><strong>B.</strong> General safety reminders</span></label>
+<label class="answer"><input name="q13" type="radio" value="c"/> <span><strong>C.</strong> Tool locations</span></label>
+<label class="answer"><input name="q13" type="radio" value="d"/> <span><strong>D.</strong> Approved cleanup steps</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>14. What should a lab assistant do if a job appears to be failing?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q14" value="a"> <span><strong>A.</strong> Notify the instructor and follow approved stop procedures</span></label>
-<label class="answer"><input type="radio" name="q14" value="b"> <span><strong>B.</strong> Touch moving/hot parts immediately</span></label>
-<label class="answer"><input type="radio" name="q14" value="c"> <span><strong>C.</strong> Walk away</span></label>
-<label class="answer"><input type="radio" name="q14" value="d"> <span><strong>D.</strong> Increase settings randomly</span></label>
+<label class="answer"><input name="q14" type="radio" value="a"/> <span><strong>A.</strong> Notify the instructor and follow approved stop procedures</span></label>
+<label class="answer"><input name="q14" type="radio" value="b"/> <span><strong>B.</strong> Touch moving/hot parts immediately</span></label>
+<label class="answer"><input name="q14" type="radio" value="c"/> <span><strong>C.</strong> Walk away</span></label>
+<label class="answer"><input name="q14" type="radio" value="d"/> <span><strong>D.</strong> Increase settings randomly</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>15. How should a Level 4 student handle disagreement about a safety issue?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q15" value="a"> <span><strong>A.</strong> Defer to the instructor and prioritize safety</span></label>
-<label class="answer"><input type="radio" name="q15" value="b"> <span><strong>B.</strong> Let the loudest person decide</span></label>
-<label class="answer"><input type="radio" name="q15" value="c"> <span><strong>C.</strong> Ignore the rule</span></label>
-<label class="answer"><input type="radio" name="q15" value="d"> <span><strong>D.</strong> Continue working</span></label>
+<label class="answer"><input name="q15" type="radio" value="a"/> <span><strong>A.</strong> Defer to the instructor and prioritize safety</span></label>
+<label class="answer"><input name="q15" type="radio" value="b"/> <span><strong>B.</strong> Let the loudest person decide</span></label>
+<label class="answer"><input name="q15" type="radio" value="c"/> <span><strong>C.</strong> Ignore the rule</span></label>
+<label class="answer"><input name="q15" type="radio" value="d"/> <span><strong>D.</strong> Continue working</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>16. What is the purpose of documenting lab issues?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q16" value="a"> <span><strong>A.</strong> It helps maintain safety, supplies, and equipment reliability</span></label>
-<label class="answer"><input type="radio" name="q16" value="b"> <span><strong>B.</strong> It creates extra paperwork only</span></label>
-<label class="answer"><input type="radio" name="q16" value="c"> <span><strong>C.</strong> It replaces repairs</span></label>
-<label class="answer"><input type="radio" name="q16" value="d"> <span><strong>D.</strong> It is optional gossip</span></label>
+<label class="answer"><input name="q16" type="radio" value="a"/> <span><strong>A.</strong> It helps maintain safety, supplies, and equipment reliability</span></label>
+<label class="answer"><input name="q16" type="radio" value="b"/> <span><strong>B.</strong> It creates extra paperwork only</span></label>
+<label class="answer"><input name="q16" type="radio" value="c"/> <span><strong>C.</strong> It replaces repairs</span></label>
+<label class="answer"><input name="q16" type="radio" value="d"/> <span><strong>D.</strong> It is optional gossip</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>17. Which action supports a professional FabLab culture?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q17" value="a"> <span><strong>A.</strong> Keeping the space organized and ready for the next user</span></label>
-<label class="answer"><input type="radio" name="q17" value="b"> <span><strong>B.</strong> Leaving failed parts everywhere</span></label>
-<label class="answer"><input type="radio" name="q17" value="c"> <span><strong>C.</strong> Running jokes during tool use</span></label>
-<label class="answer"><input type="radio" name="q17" value="d"> <span><strong>D.</strong> Changing procedures without approval</span></label>
+<label class="answer"><input name="q17" type="radio" value="a"/> <span><strong>A.</strong> Keeping the space organized and ready for the next user</span></label>
+<label class="answer"><input name="q17" type="radio" value="b"/> <span><strong>B.</strong> Leaving failed parts everywhere</span></label>
+<label class="answer"><input name="q17" type="radio" value="c"/> <span><strong>C.</strong> Running jokes during tool use</span></label>
+<label class="answer"><input name="q17" type="radio" value="d"/> <span><strong>D.</strong> Changing procedures without approval</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>18. If a classmate asks for an answer to a certification test, what should a lab assistant do?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q18" value="a"> <span><strong>A.</strong> Encourage them to review training and learn the material</span></label>
-<label class="answer"><input type="radio" name="q18" value="b"> <span><strong>B.</strong> Give them the answer</span></label>
-<label class="answer"><input type="radio" name="q18" value="c"> <span><strong>C.</strong> Take the test for them</span></label>
-<label class="answer"><input type="radio" name="q18" value="d"> <span><strong>D.</strong> Tell them the test does not matter</span></label>
+<label class="answer"><input name="q18" type="radio" value="a"/> <span><strong>A.</strong> Encourage them to review training and learn the material</span></label>
+<label class="answer"><input name="q18" type="radio" value="b"/> <span><strong>B.</strong> Give them the answer</span></label>
+<label class="answer"><input name="q18" type="radio" value="c"/> <span><strong>C.</strong> Take the test for them</span></label>
+<label class="answer"><input name="q18" type="radio" value="d"/> <span><strong>D.</strong> Tell them the test does not matter</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>19. Why should lab assistants know emergency equipment locations?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q19" value="a"> <span><strong>A.</strong> They may need to respond quickly or direct others to safety</span></label>
-<label class="answer"><input type="radio" name="q19" value="b"> <span><strong>B.</strong> It is only for decoration</span></label>
-<label class="answer"><input type="radio" name="q19" value="c"> <span><strong>C.</strong> It replaces instructor supervision</span></label>
-<label class="answer"><input type="radio" name="q19" value="d"> <span><strong>D.</strong> It is not part of leadership</span></label>
+<label class="answer"><input name="q19" type="radio" value="a"/> <span><strong>A.</strong> They may need to respond quickly or direct others to safety</span></label>
+<label class="answer"><input name="q19" type="radio" value="b"/> <span><strong>B.</strong> It is only for decoration</span></label>
+<label class="answer"><input name="q19" type="radio" value="c"/> <span><strong>C.</strong> It replaces instructor supervision</span></label>
+<label class="answer"><input name="q19" type="radio" value="d"/> <span><strong>D.</strong> It is not part of leadership</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>20. What is the safest response to overcrowding around a machine?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q20" value="a"> <span><strong>A.</strong> Reduce the crowd and keep only necessary people nearby</span></label>
-<label class="answer"><input type="radio" name="q20" value="b"> <span><strong>B.</strong> Invite more students to watch closely</span></label>
-<label class="answer"><input type="radio" name="q20" value="c"> <span><strong>C.</strong> Ignore it</span></label>
-<label class="answer"><input type="radio" name="q20" value="d"> <span><strong>D.</strong> Speed up the job</span></label>
+<label class="answer"><input name="q20" type="radio" value="a"/> <span><strong>A.</strong> Reduce the crowd and keep only necessary people nearby</span></label>
+<label class="answer"><input name="q20" type="radio" value="b"/> <span><strong>B.</strong> Invite more students to watch closely</span></label>
+<label class="answer"><input name="q20" type="radio" value="c"/> <span><strong>C.</strong> Ignore it</span></label>
+<label class="answer"><input name="q20" type="radio" value="d"/> <span><strong>D.</strong> Speed up the job</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>21. What should Level 4 students remember about authority?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q21" value="a"> <span><strong>A.</strong> They support the instructor but do not replace instructor approval</span></label>
-<label class="answer"><input type="radio" name="q21" value="b"> <span><strong>B.</strong> They outrank all classmates</span></label>
-<label class="answer"><input type="radio" name="q21" value="c"> <span><strong>C.</strong> They can change project rules</span></label>
-<label class="answer"><input type="radio" name="q21" value="d"> <span><strong>D.</strong> They can approve any material</span></label>
+<label class="answer"><input name="q21" type="radio" value="a"/> <span><strong>A.</strong> They support the instructor but do not replace instructor approval</span></label>
+<label class="answer"><input name="q21" type="radio" value="b"/> <span><strong>B.</strong> They outrank all classmates</span></label>
+<label class="answer"><input name="q21" type="radio" value="c"/> <span><strong>C.</strong> They can change project rules</span></label>
+<label class="answer"><input name="q21" type="radio" value="d"/> <span><strong>D.</strong> They can approve any material</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>22. What does good leadership look like when a student is frustrated?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q22" value="a"> <span><strong>A.</strong> Help them slow down, identify the issue, and ask for support if needed</span></label>
-<label class="answer"><input type="radio" name="q22" value="b"> <span><strong>B.</strong> Take the tool and do it yourself</span></label>
-<label class="answer"><input type="radio" name="q22" value="c"> <span><strong>C.</strong> Tell them to quit</span></label>
-<label class="answer"><input type="radio" name="q22" value="d"> <span><strong>D.</strong> Ignore them</span></label>
+<label class="answer"><input name="q22" type="radio" value="a"/> <span><strong>A.</strong> Help them slow down, identify the issue, and ask for support if needed</span></label>
+<label class="answer"><input name="q22" type="radio" value="b"/> <span><strong>B.</strong> Take the tool and do it yourself</span></label>
+<label class="answer"><input name="q22" type="radio" value="c"/> <span><strong>C.</strong> Tell them to quit</span></label>
+<label class="answer"><input name="q22" type="radio" value="d"/> <span><strong>D.</strong> Ignore them</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>23. How should a lab assistant treat tools and materials?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q23" value="a"> <span><strong>A.</strong> As shared resources that must be protected and reset</span></label>
-<label class="answer"><input type="radio" name="q23" value="b"> <span><strong>B.</strong> As personal property</span></label>
-<label class="answer"><input type="radio" name="q23" value="c"> <span><strong>C.</strong> As disposable items</span></label>
-<label class="answer"><input type="radio" name="q23" value="d"> <span><strong>D.</strong> As rewards for advanced students only</span></label>
+<label class="answer"><input name="q23" type="radio" value="a"/> <span><strong>A.</strong> As shared resources that must be protected and reset</span></label>
+<label class="answer"><input name="q23" type="radio" value="b"/> <span><strong>B.</strong> As personal property</span></label>
+<label class="answer"><input name="q23" type="radio" value="c"/> <span><strong>C.</strong> As disposable items</span></label>
+<label class="answer"><input name="q23" type="radio" value="d"/> <span><strong>D.</strong> As rewards for advanced students only</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>24. What is the best summary of Level 4 certification?</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q24" value="a"> <span><strong>A.</strong> Leadership means protecting people, equipment, learning, and the workspace</span></label>
-<label class="answer"><input type="radio" name="q24" value="b"> <span><strong>B.</strong> Leadership means using all machines whenever you want</span></label>
-<label class="answer"><input type="radio" name="q24" value="c"> <span><strong>C.</strong> Leadership means skipping training</span></label>
-<label class="answer"><input type="radio" name="q24" value="d"> <span><strong>D.</strong> Leadership means finishing fastest</span></label>
+<label class="answer"><input name="q24" type="radio" value="a"/> <span><strong>A.</strong> Leadership means protecting people, equipment, learning, and the workspace</span></label>
+<label class="answer"><input name="q24" type="radio" value="b"/> <span><strong>B.</strong> Leadership means using all machines whenever you want</span></label>
+<label class="answer"><input name="q24" type="radio" value="c"/> <span><strong>C.</strong> Leadership means skipping training</span></label>
+<label class="answer"><input name="q24" type="radio" value="d"/> <span><strong>D.</strong> Leadership means finishing fastest</span></label>
 </div>
 </div>
 <div class="question" data-answer="a">
 <h3>25. A Level 4 certificate should show that the student can:</h3>
 <div class="answers">
-<label class="answer"><input type="radio" name="q25" value="a"> <span><strong>A.</strong> Model safe habits, support peers, and communicate when instructor help is needed</span></label>
-<label class="answer"><input type="radio" name="q25" value="b"> <span><strong>B.</strong> Override instructor rules</span></label>
-<label class="answer"><input type="radio" name="q25" value="c"> <span><strong>C.</strong> Access all files and grades</span></label>
-<label class="answer"><input type="radio" name="q25" value="d"> <span><strong>D.</strong> Run the lab alone</span></label>
+<label class="answer"><input name="q25" type="radio" value="a"/> <span><strong>A.</strong> Model safe habits, support peers, and communicate when instructor help is needed</span></label>
+<label class="answer"><input name="q25" type="radio" value="b"/> <span><strong>B.</strong> Override instructor rules</span></label>
+<label class="answer"><input name="q25" type="radio" value="c"/> <span><strong>C.</strong> Access all files and grades</span></label>
+<label class="answer"><input name="q25" type="radio" value="d"/> <span><strong>D.</strong> Run the lab alone</span></label>
 </div>
 </div>
 </form>
 <div class="test-actions">
-<button class="cert-btn" type="button" onclick="gradeCertificationTest()">Submit Test</button>
+<button class="cert-btn" onclick="gradeCertificationTest()" type="button">Submit Test</button>
 <a class="cert-btn secondary" href="level-4.html">Review Training</a>
 </div>
-<div id="testResult" class="result-box"></div>
+<div class="result-box" id="testResult"></div>
 </div>
 <div class="certificate-wrap test-card" id="certificateWrap">
 <div class="certificate" id="certificate">
-<img src="../assets/lockwood-stem-logo.png" alt="Lockwood STEM logo">
+<img alt="Lockwood STEM logo" src="../assets/lockwood-stem-logo.png"/>
 <div class="cert-subtitle">Certificate of Completion</div>
 <div class="cert-title" id="certTitle">FabLab Level 4 Certification</div>
 <p>This certifies that</p>
@@ -767,7 +760,7 @@ footer p,
 </div>
 </div>
 <div class="test-actions">
-<button class="cert-btn yellow" type="button" onclick="printCertificate()">Print / Save Certificate</button>
+<button class="cert-btn yellow" onclick="printCertificate()" type="button">Print / Save Certificate</button>
 <a class="cert-btn secondary" href="index.html">Return to Certification Home</a>
 </div>
 <p class="print-only-note">Tip: Use your browser print menu and choose “Save as PDF” if you need to upload the certificate digitally.</p>
