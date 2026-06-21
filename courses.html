@@ -389,8 +389,6 @@ footer p,
 </style>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -477,10 +475,9 @@ footer p,
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/full-site-a11y-final.css" rel="stylesheet"/>
-</head>
-<body class="ls-visual-upgrade ls-theme-home ls-has-standard-chrome">
+<link href="assets/academy-search.css" rel="stylesheet"/><link href="assets/course-page-standardization.css" rel="stylesheet"/></head>
+<body class="ls-visual-upgrade ls-theme-home ls-has-standard-chrome ls-course-standardized">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
 <header class="ls-global-header" role="banner">
 <nav aria-label="Main navigation" class="ls-global-nav">
@@ -492,15 +489,12 @@ footer p,
 <a href="index.html">Home</a>
 <a href="start-here.html">Start Here</a>
 <a href="agenda.html">Agenda</a>
-<a aria-current="page" href="courses.html">Courses</a>
-
-
-
+<a aria-current="page" href="courses.html">Courses</a><a href="academy.html">Academy</a>
 <a href="fablab.html">FabLab</a>
 <a href="fablab-certification/index.html">Certifications</a>
 <a href="resources.html">Resources</a>
 <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
-</div>
+<form action="search.html" class="ls-site-search" method="get" role="search"><label for="global-site-search">Search this site</label><input aria-label="Search this site" autocomplete="off" id="global-site-search" name="q" placeholder="Search site" type="search"/><button type="submit">Search</button></form></div>
 </nav>
 </header>
 <main id="main-content">
@@ -516,13 +510,13 @@ footer p,
 <a class="btn btn-primary" href="#courses">View Courses</a>
 <a class="btn btn-secondary" href="agenda.html">Daily Agenda</a>
 <a class="btn btn-secondary" href="fabrication.html">Fabrication Request</a>
-</div>
+<a class="btn btn-secondary" href="academy.html">Open Aerospace Academy</a></div>
 </div>
 <div class="visual-panel">
-<img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png">
+<img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"/>
 <h2>Engineering • Manufacturing • Innovation</h2>
 <p>Use this page as the launch point for course-specific work and project resources.</p>
-</img></div>
+</div>
 </div>
 </div>
 </section>
@@ -579,7 +573,7 @@ footer p,
 <p style="color:var(--muted);line-height:1.55;">Start with the course that matches your schedule. Each course hub connects you to projects, resources, FabLab supports, and class materials.</p>
 </div>
 </section>
-</main>
+<section class="ls-standard-course-panel"><div class="ls-standard-course-panel__inner"><h2>Course Navigation &amp; Student Resources</h2><p>Use these links to move through the course, find templates, check project requirements, and keep your engineering notebook complete.</p><div class="ls-standard-course-grid"><a class="ls-standard-course-tile" href="academy.html"><strong>Academy Home</strong><span>Pathway overview</span></a><a class="ls-standard-course-tile" href="courses.html"><strong>Courses</strong><span>All course pages</span></a><a class="ls-standard-course-tile" href="engineering-resources.html"><strong>Engineering Resources</strong><span>Templates and tools</span></a><a class="ls-standard-course-tile" href="fablab.html"><strong>FabLab</strong><span>Equipment and safety</span></a><a class="ls-standard-course-tile" href="search.html"><strong>Search</strong><span>Find site content</span></a></div></div></section></main>
 <footer class="ls-global-footer" role="contentinfo">
 <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
 <div aria-label="Footer navigation" class="ls-footer-links">

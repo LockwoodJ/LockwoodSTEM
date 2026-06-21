@@ -1110,8 +1110,6 @@ body.agenda-page #app .card-header.yellow div {
 </style>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -1198,8 +1196,6 @@ body.agenda-page #app .card-header.yellow div {
     text-shadow: none !important;
   }
 </style>
-
-
 <style id="agenda-large-agenda-box-fix">
 /* Larger agenda display area for long semicolon-separated agenda cells.
    This keeps the Agenda row from being clipped when Google Sheet cells expand into bullet lists. */
@@ -1295,7 +1291,7 @@ body.agenda-page #app .side-grid .card-body {
 }
 </style>
 <link href="assets/full-site-a11y-final.css" rel="stylesheet"/>
-</head>
+<link href="assets/academy-search.css" rel="stylesheet"/></head>
 <body class="theme-ied ls-visual-upgrade ls-theme-resource agenda-page ls-has-standard-chrome">
 <a class="ls-skip-link" href="#main-content">Skip to main content</a>
 <header class="ls-global-header" role="banner">
@@ -1308,15 +1304,12 @@ body.agenda-page #app .side-grid .card-body {
 <a href="index.html">Home</a>
 <a href="start-here.html">Start Here</a>
 <a aria-current="page" href="agenda.html">Agenda</a>
-<a href="courses.html">Courses</a>
-
-
-
+<a href="courses.html">Courses</a><a href="academy.html">Academy</a>
 <a href="fablab.html">FabLab</a>
 <a href="fablab-certification/index.html">Certifications</a>
 <a href="resources.html">Resources</a>
 <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
-</div>
+<form action="search.html" class="ls-site-search" method="get" role="search"><label for="global-site-search">Search this site</label><input aria-label="Search this site" autocomplete="off" id="global-site-search" name="q" placeholder="Search site" type="search"/><button type="submit">Search</button></form></div>
 </nav>
 </header>
 <div id="main-content"></div>
