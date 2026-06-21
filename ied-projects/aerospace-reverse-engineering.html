@@ -32,8 +32,6 @@ main section{width:min(100%,1500px);margin:0 auto;padding:clamp(22px,3vw,44px) c
 </style>
 <link href="../assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="../assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-
-
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -120,9 +118,9 @@ main section{width:min(100%,1500px);margin:0 auto;padding:clamp(22px,3vw,44px) c
     text-shadow: none !important;
   }
 </style>
-
+<link href="../assets/academy-search.css" rel="stylesheet"/><link href="../assets/course-theme-colors.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="ls-theme-ied">
 <a class="skip-link" href="#main">Skip to main content</a>
 <header class="ls-global-header">
 <nav aria-label="Main navigation" class="ls-global-nav">
@@ -134,13 +132,11 @@ main section{width:min(100%,1500px);margin:0 auto;padding:clamp(22px,3vw,44px) c
 <a href="../index.html">Home</a>
 <a href="../start-here.html">Start Here</a>
 <a href="../agenda.html">Agenda</a>
-<a href="../courses.html">Courses</a>
-
-
+<a href="../courses.html">Courses</a><a href="../academy.html">Academy</a>
 <a href="../fablab.html">FabLab</a>
 <a href="../fablab-certification/">Certifications</a>
 <a class="ls-global-cta" href="../fabrication.html">Fabrication</a>
-</div>
+<form action="../search.html" class="ls-site-search" method="get" role="search"><label for="global-site-search">Search this site</label><input aria-label="Search this site" autocomplete="off" id="global-site-search" name="q" placeholder="Search site" type="search"/><button type="submit">Search</button></form></div>
 </nav>
 </header>
 <div class="breadcrumb"><a href="../index.html">Home</a> → <a href="../courses.html">Courses</a> → Project Page</div>
@@ -191,8 +187,6 @@ main section{width:min(100%,1500px);margin:0 auto;padding:clamp(22px,3vw,44px) c
 <strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation
   <div class="ls-footer-links">
 <a href="../index.html">Home</a>
-
-
 <a href="../fablab.html">FabLab</a>
 <a href="../fabrication.html">Fabrication Request</a>
 </div>
