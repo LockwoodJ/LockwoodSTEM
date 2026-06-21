@@ -390,9 +390,7 @@ footer p,
 </style>
 <link href="assets/lockwood-dark-callout-fix.css" rel="stylesheet"/>
 <link href="assets/lockwood-action-contrast-fix.css" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/tool-certification-course.css">
-
-
+<link href="assets/tool-certification-course.css" rel="stylesheet"/>
 <!-- Site-wide final contrast hotfix: keep this as the last style block in the head. -->
 <style id="lockwood-final-contrast-hotfix">
   /* Primary/gradient buttons and CTAs: prevent dark text on blue/purple gradients. */
@@ -479,10 +477,9 @@ footer p,
     text-shadow: none !important;
   }
 </style>
-
 <link href="assets/full-site-a11y-final.css" rel="stylesheet"/>
-</head>
-<body class="ls-visual-upgrade ls-theme-fablab ls-has-standard-chrome"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
+<link href="assets/academy-search.css" rel="stylesheet"/><link href="assets/course-page-standardization.css" rel="stylesheet"/></head>
+<body class="ls-visual-upgrade ls-theme-fablab ls-has-standard-chrome ls-course-standardized"><a class="ls-skip-link" href="#main-content">Skip to main content</a>
 <header class="ls-global-header" role="banner">
 <nav aria-label="Main navigation" class="ls-global-nav">
 <a aria-label="Lockwood STEM Home" class="ls-global-brand" href="index.html">
@@ -493,15 +490,12 @@ footer p,
 <a href="index.html">Home</a>
 <a href="start-here.html">Start Here</a>
 <a href="agenda.html">Agenda</a>
-<a href="courses.html">Courses</a>
-
-
-
+<a href="courses.html">Courses</a><a href="academy.html">Academy</a>
 <a aria-current="page" href="fablab.html">FabLab</a>
 <a href="fablab-certification/index.html">Certifications</a>
 <a href="resources.html">Resources</a>
 <a class="ls-global-cta" href="fabrication.html">Fabrication</a>
-</div>
+<form action="search.html" class="ls-site-search" method="get" role="search"><label for="global-site-search">Search this site</label><input aria-label="Search this site" autocomplete="off" id="global-site-search" name="q" placeholder="Search site" type="search"/><button type="submit">Search</button></form></div>
 </nav>
 </header>
 <main id="main-content">
@@ -511,7 +505,7 @@ footer p,
 <h1>FabLab <span>Workflow</span></h1>
 <p class="subtitle">A clear student pathway for getting trained, preparing files, submitting fabrication requests, tracking feedback, and picking up finished work.</p>
 <div class="actions"><a class="btn btn-primary" href="#workflow">Start the Workflow</a><a class="btn btn-secondary" href="fablab-certification/index.html">Get Certified</a><a class="btn btn-secondary" href="fabrication.html">Submit Fabrication Request</a></div>
-</div><div class="visual-panel"><img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"><h2>From idea to finished part</h2><p>Use this page as the standard route for all FabLab projects.</p><div class="workflow-mini-list"><div><span>1</span> Certify before using tools</div><div><span>2</span> Prepare files before submitting</div><div><span>3</span> Track status and pick up work</div></div></img></div></div></div></section>
+</div><div class="visual-panel"><img alt="Lockwood STEM logo" src="assets/lockwood-stem-logo.png"/><h2>From idea to finished part</h2><p>Use this page as the standard route for all FabLab projects.</p><div class="workflow-mini-list"><div><span>1</span> Certify before using tools</div><div><span>2</span> Prepare files before submitting</div><div><span>3</span> Track status and pick up work</div></div></div></div></div></section>
 <section id="workflow"><div class="section-heading"><h2>Student FabLab Workflow</h2><p>Follow these six steps before using equipment or submitting files for fabrication.</p></div>
 <div class="workflow-overview">
 <article class="workflow-step-card"><div class="workflow-number">1</div><h3>Learn the Safety Rules</h3><p>Start with lab expectations, safe behavior, emergency procedures, and tool-specific restrictions.</p><a href="fablab-certification/shop-safety.html">Open safety training →</a></article>
@@ -537,18 +531,16 @@ footer p,
 <a class="fablab-card" href="fablab-certification/cnc-mill.html"><div class="fablab-icon">CNC</div><h3>CNC Mill</h3><p>Training for CAM setup, workholding, toolpaths, machine safety, and supervised operation.</p><span class="fablab-link">Open CNC training →</span></a>
 <a class="fablab-card" href="fablab-certification/soldering-electronics.html"><div class="fablab-icon">ELEC</div><h3>Soldering &amp; Electronics</h3><p>Training for basic electronics safety, soldering expectations, components, and workspace cleanup.</p><span class="fablab-link">Open electronics training →</span></a>
 </div></section>
-</main>
-
+<section class="ls-standard-course-panel"><div class="ls-standard-course-panel__inner"><h2>Course Navigation &amp; Student Resources</h2><p>Use these links to move through the course, find templates, check project requirements, and keep your engineering notebook complete.</p><div class="ls-standard-course-grid"><a class="ls-standard-course-tile" href="academy.html"><strong>Academy Home</strong><span>Pathway overview</span></a><a class="ls-standard-course-tile" href="courses.html"><strong>Courses</strong><span>All course pages</span></a><a class="ls-standard-course-tile" href="engineering-resources.html"><strong>Engineering Resources</strong><span>Templates and tools</span></a><a class="ls-standard-course-tile" href="fablab.html"><strong>FabLab</strong><span>Equipment and safety</span></a><a class="ls-standard-course-tile" href="search.html"><strong>Search</strong><span>Find site content</span></a></div></div></section></main>
 <section class="section">
-  <div class="section-header"><div class="section-marker"></div><h2>Certification Tests</h2></div>
-  <div class="grid">
-    <a class="card" href="fablab-certification/level-1-test.html"><div class="icon">L1</div><h3>Level 1 Test</h3><p>Core Access certification test and certificate.</p><div class="card-link">Open test →</div></a>
-    <a class="card" href="fablab-certification/level-2-test.html"><div class="icon">L2</div><h3>Level 2 Test</h3><p>Foundational tools certification test and certificate.</p><div class="card-link">Open test →</div></a>
-    <a class="card" href="fablab-certification/level-3-test.html"><div class="icon">L3</div><h3>Level 3 Test</h3><p>Advanced equipment certification test and certificate.</p><div class="card-link">Open test →</div></a>
-    <a class="card" href="fablab-certification/level-4-test.html"><div class="icon">L4</div><h3>Level 4 Test</h3><p>Leadership certification test and certificate.</p><div class="card-link">Open test →</div></a>
-  </div>
+<div class="section-header"><div class="section-marker"></div><h2>Certification Tests</h2></div>
+<div class="grid">
+<a class="card" href="fablab-certification/level-1-test.html"><div class="icon">L1</div><h3>Level 1 Test</h3><p>Core Access certification test and certificate.</p><div class="card-link">Open test →</div></a>
+<a class="card" href="fablab-certification/level-2-test.html"><div class="icon">L2</div><h3>Level 2 Test</h3><p>Foundational tools certification test and certificate.</p><div class="card-link">Open test →</div></a>
+<a class="card" href="fablab-certification/level-3-test.html"><div class="icon">L3</div><h3>Level 3 Test</h3><p>Advanced equipment certification test and certificate.</p><div class="card-link">Open test →</div></a>
+<a class="card" href="fablab-certification/level-4-test.html"><div class="icon">L4</div><h3>Level 4 Test</h3><p>Leadership certification test and certificate.</p><div class="card-link">Open test →</div></a>
+</div>
 </section>
-
 <section class="related-links"><div class="container"><div class="course-card"><h2>Tool Certification Courses</h2><p>Students can complete individual training courses and certification tests for shop safety, hand tools, power tools, 3D printers, soldering/electronics, laser cutting, and CNC.</p><div class="button-row"><a class="btn primary" href="fablab-certification/index.html#tool-certification-courses">Open Tool Certification Courses</a></div></div></div></section>
 <footer class="ls-global-footer" role="contentinfo">
 <p class="ls-footer-brand-line"><strong>Lockwood STEM</strong> | Engineering • Manufacturing • Innovation</p>
